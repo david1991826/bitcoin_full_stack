@@ -24,3 +24,8 @@ these powerful financial technologies.
 ### Bitcoin Node Servers
 
 ![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png)
+
+
+## More...
+
+This has just begun, the repo needs to be cleaned up a bit. The point will be to make this fast and easy to deploy overall. There is much work to be done, PRs and colaborative efforts welcome.👏
