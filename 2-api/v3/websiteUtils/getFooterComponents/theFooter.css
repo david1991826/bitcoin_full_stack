@@ -1,0 +1,60 @@
+#theFooter {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #019BE5;
+    color: black;
+    margin-top: 50px;
+    /* padding: 10px; */
+
+    width: 100%;
+    max-width: 360px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#theFooterLeftOuterBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 67%;
+}
+#theFooterRightOuterBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 66%;
+}
+#theFooterBox {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+    align-items: center;
+}
+#theFooterBoxElement {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+#footerLink {
+    color: white;
+}
+#theFooterBoxElementContents {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+#footerLinkIcon {
+    margin-left: 15px;
+}
+#radioactiveSymbol {
+    font-size: 18px;
+    margin-left: 10px;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Token Activator</title>
+        <meta charset="utf-8" />
+        <meta
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0"
+            name="viewport"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="https://the-watchful-eye.s3.amazonaws.com/images/the-watchful-eye_small.png"
+        />
+        <meta property="og:url" content="https://bitcoin-api.io" />
+        <meta property="og:title" content="$$$_$$$app_name$$$_$$$" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:description"
+            content="Bitcoin-Api.io - Be bitcoin happy with Bitcoin-Api!"
+        />
+        <meta
+            property="og:image"
+            content="https://the-watchful-eye.s3.amazonaws.com/images/the-watchful-eye_small.png"
+        />
+        <meta
+            name="description"
+            content="Bitcoin-Api.io - Be bitcoin happy with Bitcoin-Api!"
+        />
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script src="https://www.google.com/recaptcha/api.js?render=$$$_$$$google_captcha_key$$$_$$$"></script>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <style>
+            html {
+                display: inline-block;
+                background-color: #019BE5;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                background-color:  #019BE5;
+                width: 100%;
+                min-height: 100%;
+                /* height: 100%; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h3 {
+                color: white;
+                text-align: center;
+                width: 90%;
+            }
+            h5 {
+                color: white;
+                text-align: center;
+                width: 90%;
+            }
+            #checkboxContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+            }
+            .linkContainers {
+                padding-left: 55px;
+                /* text-align: center; */
+                /* background-color: green; */
+            }
+            #activateTokenButtonContainer {
+                padding-top: 7px;
+            }
+            .bitcoinApiDataInputText {
+                color: white;
+            }
+            .bitcoinApiDataInput {
+                margin: 10px;
+                padding: 10px;
+            }
+            #spacerDiv {
+                width: 5px;
+                height: 20px;
+            }
+            #outerContainer {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                min-height: 100%;
+                background-color: black;
+                height: 100%;
+                border-radius: 69px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+            }
+        </style>
+        $$$_$$$footer_css_html$$$_$$$
+    </head>
+    <body>
+        <div id="outerContainer">
+            <h3>$$$_$$$app_name$$$_$$$</h3>
+            <h5>Token Activator</h5>
+            <div id="spacerDiv"></div>
+            <div id="checkboxContainer">
+                <div>
+                    <p class="bitcoinApiDataInput">
+                        <label>
+                            <input id="tosAgreeCheckBox" type="checkbox" class="filled-in" />
+                            <span>Agree to Terms of Service</span>
+                        </label>
+                    </p>
+                    <div
+                        class="linkContainers"    
+                    >
+                        <a href="$$$_$$$bitcoin_api_url$$$_$$$/terms-of-service" target="_blank">
+                            View Terms of Service
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p class="bitcoinApiDataInput">
+                        <label>
+                            <input id="privacyPolicyAgreeCheckBox" type="checkbox" class="filled-in" />
+                            <span>Agree to Privacy Policy</span>
+                        </label>
+                    </p>
+                    <div
+                        class="linkContainers"    
+                    >
+                    <a href="$$$_$$$bitcoin_api_url$$$_$$$/privacy-policy" target="_blank">
+                        View Privacy Policy
+                    </a>
+                </div>
+                </div>
+                <div>
+                    <p class="bitcoinApiDataInput">
+                        <div class="input-field col s6">
+                            <input id="tokenInputBox" class="bitcoinApiDataInputText" placeholder="$$$_$$$app_name$$$_$$$ Token" type="text" class="validate">
+                            <label>Token</label>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div id="activateTokenButtonContainer">
+                <p class="bitcoinApiDataInput">
+                    <a id="theSubmitButton" class="btn-large">Activate Token</a>
+                </p>
+            </div>
+            $$$_$$$footer_html$$$_$$$
+        </div>
+        <script>
+            grecaptcha.ready( async () => {
+
+                const theSubmitButton = document.getElementById(
+                    'theSubmitButton'
+                );
+
+                theSubmitButton.addEventListener( 'click', async () => {
+
+                    theSubmitButton.disabled = true;
+
+                    const tosCheckBox = document.getElementById(
+                        'tosAgreeCheckBox'
+                    );
+
+                    const privacyPolicyAgreeCheckBox = document.getElementById(
+                        'privacyPolicyAgreeCheckBox'
+                    );
+
+                    const tokenInputBox = document.getElementById(
+                        'tokenInputBox'
+                    );
+
+                    const inputIsValidToActivateToken = (
+
+                        !!tosCheckBox.checked &&
+                        !!privacyPolicyAgreeCheckBox.checked &&
+                        !!tokenInputBox.value &&
+                        (tokenInputBox.value.length > 303)
+                    );
+
+                    if( inputIsValidToActivateToken ) {
+
+                        const rawToken = tokenInputBox.value;
+
+                        const token = rawToken.trim();
+
+                        tokenInputBox.value = null;
+                        tokenInputBox.placeholder = '...';
+                        
+                        try {
+                            
+                            const isHumanValue = await grecaptcha.execute(
+                                
+                                '$$$_$$$google_captcha_key$$$_$$$',
+
+                                { 
+                                    action: 'activate_token'
+                                }
+                            );
+
+                            const url = (
+
+                                '$$$_$$$bitcoin_api_url$$$_$$$/v3/tokens'
+                            );
+                            
+                            const instance = axios.create({
+                                headers: {
+
+                                    'Token': token
+                                }
+                            });
+
+                            const response = await instance.patch(
+                                
+                                url,
+                                {
+                                    isHumanValue,
+                                    agreeToTerms: true,
+                                    agreeToPrivacyPolicy: true,
+                                }
+                            );
+
+                            if(
+                                !(
+                                    !!response &&
+                                    !!response.data &&
+                                    (response.data.statusCode === 200)
+                                )
+                            ) {
+
+                                throw new Error(
+                                    'error in making request to ' +
+                                    'activate token - invalid ' +
+                                    `statusCode ${ statusCode }`
+                                );
+                            }
+
+                            alert( 'Token activated successfully!' );
+                        }
+                        catch( err ) {
+
+                            console.log(
+                                (
+                                    'an error occurred in '+
+                                    'activating the token'
+                                ),
+                                err
+                            );
+
+                            alert( 'Error in activating token' );
+                        }
+
+                        tokenInputBox.value = null;
+                        tokenInputBox.placeholder = (
+                            '$$$_$$$app_name$$$_$$$ Token'
+                        );
+
+                        privacyPolicyAgreeCheckBox.checked = false;
+                        tosCheckBox.checked = false;
+                    }
+
+                    theSubmitButton.disabled = false;
+                });
+            });
+        </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

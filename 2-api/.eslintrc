@@ -1,0 +1,58 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": false
+        }
+    },
+    "rules": {
+        "semi": "off",
+        "no-undef": 1,
+        "no-dupe-keys": "warn",
+        "no-unused-vars": 1,
+        "no-unused-expressions": 1,
+        "no-use-before-define": "error"
+    },
+    "globals": {
+        "require": true,
+        "describe": true,
+        "afterEach": true,
+        "beforeEach": true,
+        "it": true,
+        "xit": true,
+        "before": true,
+        "after": true,
+        "process": true,
+        "Promise": true,
+        "Buffer": true,
+        "module": true,
+        "console": true,
+        "setTimeout": true,
+        "setInterval": true,
+        "parent": true,
+        "document": true,
+        "window": true,
+        "localStorage": true,
+        "fetch": true,
+        "Headers": true,
+        "$": true,
+        "FormData": true,
+        "FileReader": true,
+        "XMLHttpRequest": true,
+        "Image": true,
+        "Stripe": true,
+        "Request": true,
+        "google": true,
+        "atob": true,
+        "Blob": true,
+        "AWS": true,
+        "Audio": true,
+        "exports": true,
+        "__dirname": true,
+        "__filename": true,
+        "Set": true,
+        "Map": true,
+        "clearInterval": true
+    }
+}

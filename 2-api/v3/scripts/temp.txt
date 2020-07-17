@@ -1,0 +1,14 @@
+- Endpoints
+    /
+    /tokens
+        -POST
+        -GET
+    /addresses
+        -GET
+    /fee_data
+        -GET
+    /deposits
+        -GET
+    /withdraws
+        -GET
+        -POST

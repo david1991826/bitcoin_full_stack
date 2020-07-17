@@ -1,0 +1,33 @@
+{
+  "name": "api",
+  "version": "1.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deployv3": "./scripts/doTheDeploy.sh",
+    "deploy": "node ./scripts/deployFunctionsV3",
+    "update": "./update.sh"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC",
+  "dependencies": {
+    "@npm.m.stecky.efantis/common-exchange": "^2.7.1",
+    "@npm.m.stecky.efantis/commonbridge": "^1.0.1",
+    "@npm.m.stecky.efantis/commonprivate": "^25.2.0",
+    "@npm.m.stecky.efantis/commonpublic": "^1.0.3",
+    "orgasm": "^1.0.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.453.0",
+    "bluebird": "^3.7.0",
+    "dotenv": "^6.2.0",
+    "execa": "^1.0.0",
+    "express": "^4.17.1",
+    "yargs": "^15.3.1"
+  }
+}
