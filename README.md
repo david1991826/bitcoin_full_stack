@@ -20,6 +20,7 @@ entire group of individuals or a company to manage a Bitcoin wallet app,
 exchange or casino, this repo aims to give the user complete individual control over
 these powerful financial technologies.
 
+Github Stars⭐️⭐️⭐️⭐️⭐️ are always super greatly appreciated!😁✌️
 
 PRODUCTS CURRENTLY AVAILABLE:
 
@@ -29,8 +30,6 @@ PRODUCTS CURRENTLY AVAILABLE:
 * advertise large image, text, and link on Github Repo Readme -> `0.0011 BTC / month`
 
 For more information or to purchase one of the available products, please don't hesitate to contact support@bitcoin-api.io!😃❤️
-
-And also, Github Stars⭐️⭐️⭐️⭐️⭐️ are always super greatly appreciated!😁✌️
 
 ### Bitcoin Node Servers
 
