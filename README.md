@@ -3,6 +3,11 @@
 Complete Code Base for Bitcoin-Api
 
 
+## Live Demos (with real bitcoin!):
+* [AtExchange.io](https://atexchange.io) - Bitcoin Exchange
+* [ProbablyCrypto.com](https://probablycrypto.com) - Bitcoin Casino
+
+
 ## Contents
 * [About](#about)
 * [Bitcoin Node Servers](#bitcoin-node-servers)
