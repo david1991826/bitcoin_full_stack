@@ -38,6 +38,6 @@ For more information or to purchase one of the available products, please don't 
 
 ## More...
 
-This has just begun, the repo needs to be cleaned up a bit. The point will be to make this fast and easy to deploy overall. There is much work to be done, PRs and colaborative efforts welcome.👏
+This has just begun, the repo needs to be cleaned up a bit. The point will be to make this fast and easy to deploy overall. There is much work to be done, PRs and collaborative efforts welcome.👏
 
 Please note that the deployments are currently very fast once set up.
