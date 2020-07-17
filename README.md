@@ -21,6 +21,16 @@ exchange or casino, this repo aims to give the user complete individual control 
 these powerful financial technologies.
 
 
+PRODUCTS CURRENTLY AVAILABLE:
+
+* mention on Github Repo Readme -> `0.0001 BTC / month`
+* advertise text and link on Github Repo Readme -> `0.0005 BTC / month`
+* advertise small image, text, and link on Github Repo Readme -> `0.0009 BTC / month`
+* advertise large image, text, and link on Github Repo Readme -> `0.0011 BTC / month`
+
+For more information or to purchase one of the available products, please don't hesitate to contact support@bitcoin-api.io!😃❤️
+
+
 ### Bitcoin Node Servers
 
 ![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png)
