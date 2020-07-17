@@ -20,7 +20,7 @@ entire group of individuals or a company to manage a Bitcoin wallet app,
 exchange or casino, this repo aims to give the user complete individual control over
 these powerful financial technologies.
 
-Github Stars⭐️⭐️⭐️⭐️⭐️ are always super greatly appreciated, thank you very much!😁✌️
+Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated, thank you very much!😁✌️
 
 PRODUCTS CURRENTLY AVAILABLE:
 
