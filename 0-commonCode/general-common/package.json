@@ -1,0 +1,14 @@
+{
+  "name": "@bitcoin-api.io/general-common",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC",
+  "dependencies": {
+    "orgasm": "^1.0.3"
+  }
+}
