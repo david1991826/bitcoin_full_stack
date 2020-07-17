@@ -1,0 +1,20 @@
+{
+  "name": "@bitcoin-api.io/common-private",
+  "version": "25.2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC",
+  "dependencies": {
+    "general-common": "file:../general-common",
+    "aws-sdk": "^2.523.0",
+    "loglevels": "^8.0.1",
+    "orgasm": "^1.0.4",
+    "redis": "^2.8.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

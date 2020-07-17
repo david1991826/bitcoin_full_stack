@@ -1,0 +1,27 @@
+{
+  "name": "updatetransactiondataworker",
+  "version": "1.0.0",
+  "description": "Tiger Omega🐅🐅🐅🐅🐅🐅🐅",
+  "main": "runUpdateTransactionDataWorker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "tiger",
+    "url": "https://google.com"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC",
+  "dependencies": {
+    "@npm.m.stecky.efantis/common-exchange": "^2.7.1",
+    "@npm.m.stecky.efantis/commonprivate": "^25.2.0",
+    "aws-sdk": "^2.395.0",
+    "bluebird": "^3.5.3",
+    "common-utilities": "file:../commonUtilities",
+    "dotenv": "^6.2.0",
+    "execa": "^1.0.0",
+    "loglevels": "^7.0.9",
+    "orgasm": "^1.0.3",
+    "yargs": "^15.0.2"
+  }
+}

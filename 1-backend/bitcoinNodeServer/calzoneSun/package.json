@@ -1,0 +1,23 @@
+{
+  "name": "calzone-sun",
+  "version": "1.0.0",
+  "description": "Calzone-Tiger🍕🦏",
+  "repository": {
+    "type": "tiger",
+    "url": "https://google.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC",
+  "dependencies": {
+    "@npm.m.stecky.efantis/commonprivate": "^25.2.0",
+    "aws-sdk": "^2.501.0",
+    "dotenv": "^8.1.0",
+    "orgasm": "^1.0.3",
+    "qrcode": "^1.4.1",
+    "yargs": "^15.0.2"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "commonutilities",
+  "version": "1.0.2",
+  "description": "Magna-Tiger🦁",
+  "repository": {
+    "type": "tiger",
+    "url": "https://google.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@npm.m.stecky.efantis/commonprivate": "^25.2.0",
+    "execa": "^2.0.4",
+    "mongodb": "^3.4.0"
+  }
+}

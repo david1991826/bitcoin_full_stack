@@ -1,0 +1,23 @@
+{
+  "name": "korg",
+  "version": "2.0.0",
+  "description": "K-Tiger🐯",
+  "main": "WithdrawMoneyDoer.js",
+  "repository": {
+    "type": "tiger",
+    "url": "https://google.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC",
+  "dependencies": {
+    "@npm.m.stecky.efantis/common-exchange": "^2.7.1",
+    "@npm.m.stecky.efantis/commonprivate": "^25.2.0",
+    "bluebird": "^3.7.1",
+    "common-utilities": "file:../commonUtilities",
+    "dotenv": "^8.2.0",
+    "yargs": "^15.0.2"
+  }
+}

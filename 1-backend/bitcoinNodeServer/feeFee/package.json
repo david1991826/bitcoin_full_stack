@@ -1,0 +1,24 @@
+{
+  "name": "updatefeedata",
+  "version": "1.0.0",
+  "description": "Fee Tiger🐆",
+  "main": "runUpdateFeeDataWorker.js",
+  "repository": {
+    "type": "tiger",
+    "url": "https://google.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC",
+  "dependencies": {
+    "@npm.m.stecky.efantis/commonprivate": "^25.2.0",
+    "aws-sdk": "^2.395.0",
+    "common-utilities": "file:../commonUtilities",
+    "dotenv": "^6.2.0",
+    "execa": "^1.0.0",
+    "loglevels": "^7.0.9",
+    "yargs": "^15.0.2"
+  }
+}

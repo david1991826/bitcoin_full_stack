@@ -1,0 +1,19 @@
+{
+  "name": "giraffedeploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "korg": "node ./giraffe/PetGiraffe.js --command=monkeyPaw --mode=production",
+    "korgS": "node ./giraffe/PetGiraffe.js --command=monkeyPaw",
+    "korgSF": "node ./giraffe/PetGiraffe.js --command=monkeyPaw --force=true",
+    "feeFee": "node ./giraffe/PetGiraffe.js --command=refreshingDrank --mode=production",
+    "feeFeeS": "node ./giraffe/PetGiraffe.js --command=refreshingDrank",
+    "feeFeeSF": "node ./giraffe/PetGiraffe.js --command=refreshingDrank --force=true",
+    "theomega": "node ./giraffe/PetGiraffe.js --command=juiceCamel --mode=production",
+    "theomegaS": "node ./giraffe/PetGiraffe.js --command=juiceCamel",
+    "theomegaSF": "node ./giraffe/PetGiraffe.js --command=juiceCamel --force=true"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC"
+}
