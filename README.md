@@ -11,6 +11,7 @@ Complete Code Base for Bitcoin-Api
 ## Contents
 * [About](#about)
 * [Bitcoin Node Servers](#bitcoin-node-servers)
+* [How to Set Up the Backend](#how-to-set-up-the-backend)
 
 ### About
 
@@ -28,8 +29,19 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 ![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png)
 
 
-## More...
+### How to Set Up the Backend
 
-This has just begun, the repo needs to be cleaned up a bit. The point will be to make this fast and easy to set up overall. There is much work to be done, PRs and collaborative efforts welcome.👏
+- TODO --
 
-Please note that the deployments are currently very fast once set up.
+
+
+
+The deployments are lightning fast once set up.
+
+
+This is a work in progress, PRs and collaborative efforts welcome.👏
+
+Sponsor this page and get priority support and other benefits:
+
+[Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api)
+
