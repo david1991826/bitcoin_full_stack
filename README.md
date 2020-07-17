@@ -3,6 +3,11 @@
 Complete Code Base for Bitcoin-Api
 
 
+## Live Demos (with Real Bitcoin!):
+* [AtExchange.io](https://atexchange.io) - Bitcoin Exchange
+* [ProbablyCrypto.com](https://probablycrypto.com) - Bitcoin Casino
+
+
 ## Contents
 * [About](#about)
 * [Bitcoin Node Servers](#bitcoin-node-servers)
@@ -19,3 +24,10 @@ these powerful financial technologies.
 ### Bitcoin Node Servers
 
 ![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png)
+
+
+## More...
+
+This has just begun, the repo needs to be cleaned up a bit. The point will be to make this fast and easy to deploy overall. There is much work to be done, PRs and colaborative efforts welcome.👏
+
+Please note that the deployments are currently very fast once set up.
