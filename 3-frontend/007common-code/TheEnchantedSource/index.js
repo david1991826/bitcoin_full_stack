@@ -1,0 +1,1 @@
+export { default as CoinExperiencePolygon } from './CoinExperiencePolygon';

@@ -1,0 +1,1 @@
+export default message => JSON.stringify( message, null, 4 );
