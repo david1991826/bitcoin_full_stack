@@ -28,10 +28,9 @@ PRODUCTS CURRENTLY AVAILABLE:
 * advertise small image, text, and link on Github Repo Readme -> `0.0009 BTC / month`
 * advertise large image, text, and link on Github Repo Readme -> `0.0011 BTC / month`
 
-Github Stars⭐️⭐️⭐️⭐️⭐️ are always super greatly appreciated!😁✌️
-
 For more information or to purchase one of the available products, please don't hesitate to contact support@bitcoin-api.io!😃❤️
 
+And also, Github Stars⭐️⭐️⭐️⭐️⭐️ are always super greatly appreciated!😁✌️
 
 ### Bitcoin Node Servers
 
