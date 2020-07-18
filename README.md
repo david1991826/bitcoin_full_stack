@@ -39,6 +39,23 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 2. Have to access that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell).
 
 
+### Set Up The Bitcoin Node Server(s)
+
+The backend node server is responsible for updating the database. The backend node server has three main functions:
+
+1. Update the fee data
+
+2. Update the bitcoin deposit data, this includes user balance data
+
+3. Perform bitcoin withdraws
+
+
+>Note about multiple servers:
+You can set up multiple backend servers if you have lots and lots of addresses although you only need one, even if you have a few hundred thousand addresses.
+
+
+
+---
 
 Notes:
 * The deployments are lightning fast once set up.
