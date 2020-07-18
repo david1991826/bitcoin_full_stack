@@ -54,6 +54,29 @@ The backend node server is responsible for updating the database. The backend no
 You can set up multiple backend servers if you have lots and lots of addresses although you only need one, even if you have a few hundred thousand addresses.
 
 
+#### Steps to Setup A Bitcoin-Api Bitcoin Node Server
+
+This section assumes you have access to the server and can perform command-line operations in it.
+
+1. Install and start [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core) on the server. Note that this can take a while because the blockchain takes a decent amount of time to transfer to your server through the internet because of its size (currently over 250GB).
+
+2. Install and start [mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon) using all the default configurations
+
+3. Install NodeJs and NPM, this can be done using [Homebrew](https://brew.sh)
+
+4. Install [pm2](https://www.npmjs.com/package/pm2) globally `npm install pm2 -g`
+
+5. Set up the appropriate directories with the following commands:
+
+```
+touch currentWithdrawReports.txt
+mkdir tigerScript
+mkdir treeDeploy
+```
+
+6. Run script to transfer tree deployment code
+
+7. --- TODO:🚧👷‍♂️👷‍♀️🏗
 
 ---
 
