@@ -14,6 +14,7 @@ Complete Code Base for Bitcoin-Api
 * [How to Set Up the Backend](#how-to-set-up-the-backend)
 * [How to Deploy Backend](#how-to-deploy-backend)
 * [How to Deploy API](#how-to-deploy-api)
+* [How to Deploy Frontend](#how-to-deploy-frontend)
 
 
 ### About
@@ -98,10 +99,14 @@ Here is an example video of a live production API deployment. The website conten
 [![🐑🐑Lamb Lamb Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://youtu.be/8FCWWAyXB8A)
 
 
+### How to Deploy Frontend
+
+The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for [atExchange.io](https://atexchange.io) and [ProbablyCrypto.com](https://probablycrypto.com) is [AWS Amplify](https://aws.amazon.com/amplify) using the monorepo functionality.
+
 
 Notes:
-* The deployments are lightning fast once set up.
-* This is a work in progress, PRs and collaborative efforts welcome.👏
+* This repo itself is a work in progress with the aim of generalizing, speeding up, and simplifying setting up Bitcoin-Api instances (which includes the API, exchange, and casino).
+* PRs and collaborative efforts welcome.👏
 
 Sponsor this page and get priority support and other awesome benefits😁: [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api)
 
