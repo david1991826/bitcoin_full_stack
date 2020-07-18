@@ -87,7 +87,7 @@ mkdir treeDeploy
 
 Here is an example video of a live staging deployment for the backend. This video shows the fee update worker being updated using the Giraffe Lick Leaf deployment tool. This deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server, the service is never down or interrupted:
 
-[![Instant Backend Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo.png)](https://www.youtube.com/watch?v=ZZ4zdq4AJY8)
+[![Instant Backend Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://www.youtube.com/watch?v=ZZ4zdq4AJY8)
 
 
 
@@ -95,7 +95,7 @@ Here is an example video of a live staging deployment for the backend. This vide
 
 Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) are fetched using an [AWS Lambda](https://aws.amazon.com/lambda) function:
 
-[![🐑🐑Lamb Lamb Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo.png)](https://youtu.be/8FCWWAyXB8A)
+[![🐑🐑Lamb Lamb Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://youtu.be/8FCWWAyXB8A)
 
 
 
