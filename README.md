@@ -31,17 +31,18 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 
 ### How to Set Up the Backend
 
-- TODO --
+
+#### Requirements:
+
+1. Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html))
+
+2. Have to access that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell).
 
 
 
+Notes:
+* The deployments are lightning fast once set up.
+* This is a work in progress, PRs and collaborative efforts welcome.👏
 
-The deployments are lightning fast once set up.
-
-
-This is a work in progress, PRs and collaborative efforts welcome.👏
-
-Sponsor this page and get priority support and other benefits:
-
-[Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api)
+Sponsor this page and get priority support and other awesome benefits😁: [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api)
 
