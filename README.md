@@ -12,6 +12,7 @@ Complete Code Base for Bitcoin-Api
 * [About](#about)
 * [Bitcoin Node Servers](#bitcoin-node-servers)
 * [How to Set Up the Backend](#how-to-set-up-the-backend)
+* [How to Deploy Backend](#how-to-deploy-backend)
 * [How to Deploy API](#how-to-deploy-api)
 
 
@@ -30,6 +31,7 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 
 ![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png)
 
+Briefly put: The NodeJs services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. The NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data worker gets an estimate for the fee and updates the Bitcoin-Api database with that fee. That fee estimate can then be fetched publicly using the `https://bitcoin-api.io/v3/fee-data` endpoint.
 
 ### How to Set Up the Backend
 
@@ -81,11 +83,19 @@ mkdir treeDeploy
 7. --- TODO:🚧👷‍♂️👷‍♀️🏗
 
 
+### How to Backend API
+
+Here is an example video of a live staging deployment for the backend. This video shows the fee update worker being updated using the Giraffe Lick Leaf deployment tool. This deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server, the service is never down or interrupted:
+
+[![Instant Backend Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo.png)](https://www.youtube.com/watch?v=ZZ4zdq4AJY8)
+
+
+
 ### How to Deploy API
 
 Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) are fetched using an [AWS Lambda](https://aws.amazon.com/lambda) function:
 
-[![🐑🐑Lamb Lamb Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/lamb-lamb-deploy-test-video-screenshot.png)](https://youtu.be/8FCWWAyXB8A)
+[![🐑🐑Lamb Lamb Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo.png)](https://youtu.be/8FCWWAyXB8A)
 
 
 
