@@ -12,6 +12,8 @@ Complete Code Base for Bitcoin-Api
 * [About](#about)
 * [Bitcoin Node Servers](#bitcoin-node-servers)
 * [How to Set Up the Backend](#how-to-set-up-the-backend)
+* [How to Deploy API](#how-to-deploy-api)
+
 
 ### About
 
@@ -78,7 +80,14 @@ mkdir treeDeploy
 
 7. --- TODO:🚧👷‍♂️👷‍♀️🏗
 
----
+
+### How to Deploy API
+
+Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) is fetched using an [AWS Lambda](https://aws.amazon.com/lambda) function:
+
+[![🐑🐑Lamb Lamb Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/lamb-lamb-deploy-test-video-screenshot.png)](https://youtu.be/8FCWWAyXB8A)
+
+
 
 Notes:
 * The deployments are lightning fast once set up.
