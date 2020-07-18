@@ -54,7 +54,7 @@ The backend node server is responsible for updating the database. The backend no
 You can set up multiple backend servers if you have lots and lots of addresses although you only need one, even if you have a few hundred thousand addresses.
 
 
-#### Steps to Setup A Bitcoin-Api Bitcoin Node Server
+#### Steps to Setup a Bitcoin-Api Bitcoin Node Server
 
 This section assumes you have access to the server and can perform command-line operations in it.
 
@@ -64,9 +64,9 @@ This section assumes you have access to the server and can perform command-line 
 
 3. Install NodeJs and NPM, this can be done using [Homebrew](https://brew.sh)
 
-4. Install [pm2](https://www.npmjs.com/package/pm2) globally `npm install pm2 -g`
+4. Install [pm2](https://www.npmjs.com/package/pm2) globally using the following CLI command `npm install pm2 -g`
 
-5. Set up the appropriate directories with the following commands:
+5. Set up the appropriate files and folders using the following CLI commands:
 
 ```
 touch currentWithdrawReports.txt
