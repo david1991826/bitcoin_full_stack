@@ -250,7 +250,7 @@ sudo systemctl status mongod
 
 **About**
 
-This section goes through how to deploy the Bitcoin-Api Bitcoin node backend NodeJS modules.
+This section goes through how set up the the Bitcoin-Api Bitcoin node backend for deployment.
 
 **Steps**
 
