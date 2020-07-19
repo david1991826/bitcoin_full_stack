@@ -32,7 +32,7 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 
 ![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png)
 
-Briefly put: The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. The NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data worker gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be fetched publicly using the `https://bitcoin-api.io/v3/fee-data` endpoint.
+Briefly put: The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. Overall, this means the NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data worker gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be fetched publicly using the `https://bitcoin-api.io/v3/fee-data` endpoint.
 
 ### How to Set Up the Backend
 
@@ -57,8 +57,8 @@ The backend node server is responsible for updating the database. The backend no
 3. Perform bitcoin withdraws
 
 
-> Note about multiple servers:
-You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (this hasn't been tested yet, although this is according to what [Andreas Antonopoulos](https://aantonop.com/) said)
+> About multiple servers:
+You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (This hasn't been tested yet, although this is according to what [Andreas Antonopoulos](https://aantonop.com/) said. It's also possible he might have amended what he said because of changes in the technology since when he made the initial claim, in 2019)
 
 
 #### Steps to Setup a Bitcoin-Api Bitcoin Node Server
