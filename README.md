@@ -87,6 +87,8 @@ b) Extract the computer-usable code from the downloaded Bitcoin node code:
 tar xzf bitcoin-0.20.0-x86_64-linux-gnu.tar.gz
 ```
 
+... TODO: next steps
+
 ----
 
 TODO: 
