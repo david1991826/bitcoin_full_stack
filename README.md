@@ -66,7 +66,7 @@ You can set up multiple backend servers if you have lots and lots of addresses a
 This section assumes you have the requirements listed above.
 
 
-#### 1) Install and start Bitcoin node
+#### 1) Install and Start Bitcoin node
 
 **About**
 
@@ -205,7 +205,7 @@ Next, install [pm2-logrotate](https://www.npmjs.com/package/pm2-logrotate) with 
 pm2 install pm2-logrotate
 ```
 
-#### 3) Install MongoDB
+#### 3) Install and Start MongoDB
 
 **About**
 
