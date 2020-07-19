@@ -224,7 +224,7 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc
 ```
-> This file can be added with `touch` and `nano` CLI commands. You may need to use `sudo` in front of those commands for admin access.
+> This file can be added using the `touch` and `nano` CLI commands. You may need to use `sudo` in front of those commands for admin access.
 
 
 Install MongoDB with this CLI command:
@@ -237,7 +237,7 @@ Start the `mongod` base process:
 sudo systemctl start mongod
 ```
 
-You can optionally verify that the `mongod` base processes started successfully with: 
+You can optionally verify that the `mongod` base processes has started successfully with: 
 ```
 sudo systemctl status mongod
 ```
