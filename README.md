@@ -58,7 +58,7 @@ The backend node server is responsible for updating the database. The backend no
 
 
 >Note about multiple servers:
-You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (this hasn't been test yet, although is according to what [Andreas Antonopoulos](https://aantonop.com/) said)
+You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (this hasn't been test yet, although this is according to what [Andreas Antonopoulos](https://aantonop.com/) said)
 
 
 #### Steps to Setup a Bitcoin-Api Bitcoin Node Server
@@ -109,7 +109,7 @@ bitcoind -daemon
 
 This should start up your Bitcoin node and trigger the blockchain to begin downloading onto your Linux server.
 
-You can optionally check to see that your Bitcoin node is running and how many blocks have currently been downloaded using the following command:
+You can check to see that your Bitcoin node is running and how many blocks have currently been downloaded using the following command:
 
 in staging
 ```
@@ -122,7 +122,7 @@ in production
 bitcoin-cli getblockcount
 ```
 
-The number derived from this bitcoin-cli command can be compared with the total number of blocks in the Bitcoin blockchain, also called the *block height*:
+The resulting number of this bitcoin-cli command can be compared with the total number of blocks in the Bitcoin blockchain, also called the *block height*:
 
 * [Page with Testnet Total Block Height](https://www.blockchain.com/btc-testnet/blocks)
 
@@ -130,7 +130,7 @@ The number derived from this bitcoin-cli command can be compared with the total 
 
 > Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
 
-Your node is finished downloading and up to date with the Bitcoin blockchain when the number returned from getblockcount is equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
+Your node is finished downloading and is up to date with the Bitcoin blockchain when the number returned from getblockcount is equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
 
 
 #### 2) Install NodeJS and NPM
