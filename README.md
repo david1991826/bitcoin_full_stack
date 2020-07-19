@@ -195,20 +195,57 @@ Try typing in `node` in your CLI and see if your CLI turns into a NodeJS REPL in
 
 **d)** Install pm2 Globally
 
-To install pm2 globally, run the following command:
+To install [pm2](https://pm2.keymetrics.io/) globally, run the following `npm` command:
 ```
 npm install pm2@latest -g
 ```
 
+Next, install [logrotate](https://www.npmjs.com/package/pm2-logrotate) with the following `pm2` command:
+```
+pm2 install pm2-logrotate
+```
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 --- install logrotate
+#### 3) Install MongoDB
+
+**About**
+
+MongoDB is used for caching on your Bitcoin-Api Bitcoin node server. It prevents unnecessary database writes when updating addresses and balances.
+
+These instructions will go through setting up MongoDB on an Amazon Linux server. If your machine is not an Amazon Linux, you can find the appropriate instructions here in the [official MongoDB Linux installation instructions](https://docs.mongodb.com/manual/administration/install-on-linux/)
+
+**Steps**
+Add the following as a file in `/etc/yum.repos.d/mongodb-org-4.2.repo`:
+```
+[mongodb-org-4.2]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2/mongodb-org/4.2/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc
+```
+> this file can be added with `touch` and `nano` CLI commands
+
+
+Install MongoDB with this CLI command:
+```
+sudo yum install -y mongodb-org
+```
+
+Start the `mongod` base process:
+```
+sudo systemctl start mongod
+```
+
+You can optionally verify that the `mongod` base processes started successfully with: 
+```
+sudo systemctl status mongod
+```
+
+TODO: 🚧👷‍♂️👷‍♀️🏗 ---
 
 ----
 
 TODO: 
-
-3. Install and start [mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon) using all the default configurations
-
 4. Set up the appropriate files and folders using the following CLI commands:
 
 ```
