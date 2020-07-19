@@ -75,17 +75,62 @@ Install and start [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core) on the ser
 
 **Steps**
 
-a) First, in the CLI of your Linux server, download the most recent Bitcoin node code with the following command:
+**a)** First, in the CLI of your Linux server, download the most recent Bitcoin node code with the following command:
 ```
 wget https://bitcoin.org/bin/bitcoin-core-0.20.0/bitcoin-0.20.0-x86_64-linux-gnu.tar.gz
 ```
 (you can check the [Official Bitcoin Core Download Page](https://bitcoin.org/en/download) to make sure this is the most recent Linux download link)
 
-b) Extract the computer-usable code from the downloaded Bitcoin node code:
+**b)** Extract the computer-usable code from the downloaded Bitcoin node code:
 
 ```
 tar xzf bitcoin-0.20.0-x86_64-linux-gnu.tar.gz
 ```
+
+**c)** Run this command to set up the Bitcoin node code on your Linux server:
+
+```
+sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.20.0/bin/*
+```
+
+**d)** Start your Bitcoin node:
+
+Start your bitcoin staging node (testnet):
+```
+bitcoind -testnet -daemon
+```
+
+OR
+
+Start your bitcoin production node (livenet):
+```
+bitcoind -daemon
+```
+
+This should start up your Bitcoin node and trigger the blockchain to begin downloading onto your Linux server.
+
+You can optionally check to see that your Bitcoin node is running and how many blocks have currently been downloaded using the following command:
+
+in staging
+```
+bitcoin-cli -testnet getblockcount
+``` 
+OR
+
+in production
+```
+bitcoin-cli getblockcount
+```
+
+The number derived from this bitcoin-cli command can be compared with the total number of blocks in the Bitcoin blockchain, also called the *block height*:
+
+* [Page with Testnet Total Block Height](https://www.blockchain.com/btc-testnet/blocks)
+
+* [Page with Livenet Total Block Height](https://www.blockchain.com/btc/blocks)
+
+
+Your node is finished downloading and up to date with the Bitcoin blockchain when the number returned from getblockcount is equal to the blockchain block height.
+
 
 ... TODO: next steps
 
