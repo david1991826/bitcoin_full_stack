@@ -39,7 +39,7 @@ Briefly put: The NodeJS services interact with the Bitcoin node which in turn in
 
 #### Requirements:
 
-1. Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)). The Linux server must meet [Bitcoin-Core's computer requirements](https://bitcoin.org/en/bitcoin-core/features/requirements).
+1. Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)). The Linux server must meet [Bitcoin Core's computer requirements](https://bitcoin.org/en/bitcoin-core/features/requirements).
 
 2. Have access to that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
 
@@ -57,8 +57,8 @@ The backend node server is responsible for updating the database. The backend no
 3. Perform bitcoin withdraws
 
 
->Note about multiple servers:
-You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (this hasn't been test yet, although this is according to what [Andreas Antonopoulos](https://aantonop.com/) said)
+> Note about multiple servers:
+You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (this hasn't been tested yet, although this is according to what [Andreas Antonopoulos](https://aantonop.com/) said)
 
 
 #### Steps to Setup a Bitcoin-Api Bitcoin Node Server
@@ -70,7 +70,7 @@ This section assumes you have the requirements listed above.
 
 **About**
 
-Install and start [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core) on the server. Note that this can take a while because the livenet blockchain takes a decent amount of time to transfer to your server through the internet because of its size which is currently over 250GB. The testnet blockchain downloads much faster because it's currently only around 25GB.
+Install and start [Bitcoin Core](https://bitcoin.org/en/bitcoin-core) on the server. This can take a while because the livenet blockchain takes a decent amount of time to transfer to your server through the internet because of its size which is currently over 250GB. The testnet blockchain downloads much faster because it's currently only around 25GB.
 
 
 **Steps**
@@ -95,14 +95,14 @@ sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.20.0/bin/*
 
 **d)** Start your Bitcoin node:
 
-Start your bitcoin staging node (testnet):
+Start your bitcoin in staging node (testnet):
 ```
 bitcoind -testnet -daemon
 ```
 
 OR
 
-Start your bitcoin production node (livenet):
+Start your bitcoin in production node (livenet):
 ```
 bitcoind -daemon
 ```
@@ -124,14 +124,15 @@ bitcoin-cli getblockcount
 
 The resulting number of this bitcoin-cli command can be compared with the total number of blocks in the Bitcoin blockchain, also called the *block height*:
 
-* [Page with Testnet Total Block Height](https://www.blockchain.com/btc-testnet/blocks)
+* [Page with the Testnet Total Block Height](https://www.blockchain.com/btc-testnet/blocks)
 
-* [Page with Livenet Total Block Height](https://www.blockchain.com/btc/blocks)
+* [Page with the Livenet Total Block Height](https://www.blockchain.com/btc/blocks)
 
 > Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
 
 Your node is finished downloading and is up to date with the Bitcoin blockchain when the number returned from getblockcount is equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
 
+For reference, here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli)
 
 #### 2) Install NodeJS and NPM
 
