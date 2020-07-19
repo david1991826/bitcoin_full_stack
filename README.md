@@ -141,7 +141,7 @@ Next, NodeJS needs to be installed on your Linux server. NodeJS is used for the 
 
 **Steps**
 
-**a)** Install Git on your Linux server:
+**a)** Install Git on your Linux server (Homebrew requires Git to be installed):
 ```
 sudo apt install git
 ```
@@ -179,6 +179,11 @@ export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib"
 export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/isl@0.18/include"
 export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig"
 ```
+
+**c)** Install NodeJS and NPM with Homebrew
+
+TODO: 🚧👷‍♂️👷‍♀️🏗 ---
+
 ----
 
 TODO: 
