@@ -246,7 +246,7 @@ sudo systemctl status mongod
 ```
 
 
-#### 4) Deploy Backend
+#### 4) Set Up Bitcoin-Api Bitcoin Node Backend
 
 **About**
 
