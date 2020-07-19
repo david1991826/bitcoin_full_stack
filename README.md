@@ -280,11 +280,9 @@ TODO:
 
 5. Run Giraffe Lick Leaf deploy script
 
---
+6. Deploy API
 
-7. Deploy API
-
-8. --- TODO:🚧👷‍♂️👷‍♀️🏗
+7. --- TODO:🚧👷‍♂️👷‍♀️🏗
 
 ---
 
