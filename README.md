@@ -32,7 +32,7 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 
 ![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png)
 
-Briefly put: The NodeJs services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. The NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data worker gets an estimate for the fee and updates the Bitcoin-Api database with that fee. That fee estimate can then be fetched publicly using the `https://bitcoin-api.io/v3/fee-data` endpoint.
+Briefly put: The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. The NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data worker gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be fetched publicly using the `https://bitcoin-api.io/v3/fee-data` endpoint.
 
 ### How to Set Up the Backend
 
@@ -41,7 +41,7 @@ Briefly put: The NodeJs services interact with the Bitcoin node which in turn in
 
 1. Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html))
 
-2. Have to access that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell).
+2. Have access to that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
 
 3. Have a Redis server that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
 
