@@ -215,7 +215,7 @@ These instructions will go through setting up MongoDB on an Amazon Linux server.
 
 **Steps**
 
-Add the following as a file in `/etc/yum.repos.d/mongodb-org-4.2.repo`:
+Add the following as a file at this location on your computer `/etc/yum.repos.d/mongodb-org-4.2.repo`:
 ```
 [mongodb-org-4.2]
 name=MongoDB Repository
