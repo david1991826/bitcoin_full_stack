@@ -224,7 +224,7 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc
 ```
-> this file can be added with `touch` and `nano` CLI commands, you may need to use `sudo` in front of those commands for admin access
+> This file can be added with `touch` and `nano` CLI commands. You may need to use `sudo` in front of those commands for admin access.
 
 
 Install MongoDB with this CLI command:
