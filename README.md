@@ -265,7 +265,9 @@ and in staging:
 ```
 mkdir treeDeploy/stagingCredentials
 ```
-Or in production:
+OR
+
+in production:
 ```
 mkdir treeDeploy/productionCredentials
 ```
