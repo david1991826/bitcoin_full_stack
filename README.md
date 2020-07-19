@@ -219,7 +219,11 @@ mkdir treeDeploy
 
 5. Run script to transfer tree deployment code
 
-6. --- TODO:🚧👷‍♂️👷‍♀️🏗
+6. Run Giraffe Lick Leaf deploy script
+
+7. Deploy API
+
+8. --- TODO:🚧👷‍♂️👷‍♀️🏗
 
 ---
 
