@@ -130,7 +130,7 @@ The resulting number of this bitcoin-cli command can be compared with the total 
 
 > Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
 
-When your node has finished downloading and is up to date with the Bitcoin blockchain, the number returned from getblockcount is equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
+When your node has finished downloading and is up to date with the Bitcoin blockchain, the number returned from getblockcount will be equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
 
 For reference, here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli).
 
