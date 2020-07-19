@@ -32,7 +32,7 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 
 ![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture.png)
 
-Briefly put: The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. Overall, this means the NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data worker gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be fetched publicly using the `https://bitcoin-api.io/v3/fee-data` endpoint.
+Briefly put: The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. Overall, this means the NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data worker gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be retrieved publicly using the `https://bitcoin-api.io/v3/fee-data` endpoint.
 
 ### How to Set Up the Backend
 
@@ -75,19 +75,19 @@ Install and start [Bitcoin Core](https://bitcoin.org/en/bitcoin-core) on the ser
 
 **Steps**
 
-**a)** First, in the CLI of your Linux server, download the most recent Bitcoin node code with the following command:
+**a)** First, in the CLI of your Linux server, download the most recent Bitcoin Core code with the following command:
 ```
 wget https://bitcoin.org/bin/bitcoin-core-0.20.0/bitcoin-0.20.0-x86_64-linux-gnu.tar.gz
 ```
 (you can check the [Official Bitcoin Core Download Page](https://bitcoin.org/en/download) to make sure this is the most recent Linux download link)
 
-**b)** Extract the computer-usable code from the downloaded Bitcoin node code:
+**b)** Extract the computer-usable code from the downloaded Bitcoin Core code:
 
 ```
 tar xzf bitcoin-0.20.0-x86_64-linux-gnu.tar.gz
 ```
 
-**c)** Run this command to set up the Bitcoin node code on your Linux server:
+**c)** Run this command to set up the Bitcoin Core Bitcoin node code on your Linux server:
 
 ```
 sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.20.0/bin/*
@@ -130,7 +130,7 @@ The resulting number of this bitcoin-cli command can be compared with the total 
 
 > Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
 
-Your node is finished downloading and is up to date with the Bitcoin blockchain when the number returned from getblockcount is equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
+When your node has finished downloading and is up to date with the Bitcoin blockchain, the number returned from getblockcount is equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
 
 For reference, here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli)
 
@@ -183,7 +183,23 @@ export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig"
 
 **c)** Install NodeJS and NPM with Homebrew
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 ---
+Run the following commands:
+```
+brew install node@12
+echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/node@12/bin:$PATH"' >> /home/<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>/.bash_profile
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@12/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@12/include"
+```
+
+**d)** Install pm2 Globally
+
+To install pm2 globally, run the following command:
+```
+npm install pm2@latest -g
+```
+
+
+TODO: 🚧👷‍♂️👷‍♀️🏗 --- install logrotate
 
 ----
 
@@ -191,9 +207,7 @@ TODO:
 
 3. Install and start [mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon) using all the default configurations
 
-4. Install [pm2](https://www.npmjs.com/package/pm2) globally using the following CLI command `npm install pm2 -g`
-
-5. Set up the appropriate files and folders using the following CLI commands:
+4. Set up the appropriate files and folders using the following CLI commands:
 
 ```
 touch currentWithdrawReports.txt
@@ -201,9 +215,9 @@ mkdir tigerScript
 mkdir treeDeploy
 ```
 
-6. Run script to transfer tree deployment code
+5. Run script to transfer tree deployment code
 
-7. --- TODO:🚧👷‍♂️👷‍♀️🏗
+6. --- TODO:🚧👷‍♂️👷‍♀️🏗
 
 ---
 
