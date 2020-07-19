@@ -244,7 +244,7 @@ Here is an example video of a live staging deployment for the backend. This vide
 
 ### How to Deploy API
 
-Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) are fetched using an [AWS Lambda](https://aws.amazon.com/lambda) function:
+Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
 
 [![🐑🐑Lamb Lamb Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://youtu.be/8FCWWAyXB8A)
 
