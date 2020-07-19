@@ -200,7 +200,7 @@ To install [pm2](https://pm2.keymetrics.io/) globally, run the following `npm` c
 npm install pm2@latest -g
 ```
 
-Next, install [logrotate](https://www.npmjs.com/package/pm2-logrotate) with the following `pm2` command:
+Next, install [pm2-logrotate](https://www.npmjs.com/package/pm2-logrotate) with the following `pm2` command:
 ```
 pm2 install pm2-logrotate
 ```
