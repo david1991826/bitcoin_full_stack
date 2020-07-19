@@ -43,6 +43,8 @@ Briefly put: The NodeJs services interact with the Bitcoin node which in turn in
 
 2. Have to access that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell).
 
+3. Have a Redis server that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
+
 
 ### Set Up The Bitcoin Node Server(s)
 
@@ -61,9 +63,33 @@ You can set up multiple backend servers if you have lots and lots of addresses a
 
 #### Steps to Setup a Bitcoin-Api Bitcoin Node Server
 
-This section assumes you have access to the server and can perform command-line operations in it.
+This section assumes you have the requirements listed above.
 
-1. Install and start [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core) on the server. Note that this can take a while because the blockchain takes a decent amount of time to transfer to your server through the internet because of its size (currently over 250GB).
+
+#### 1) Install and start Bitcoin node
+
+**About**
+
+Install and start [Bitcoin-Core](https://bitcoin.org/en/bitcoin-core) on the server. Note that this can take a while because the livenet blockchain takes a decent amount of time to transfer to your server through the internet because of its size which is currently over 250GB. The testnet blockchain downloads much faster because it's currently only around 25GB.
+
+
+**Steps**
+
+a) First, in the CLI of your Linux server, download the most recent Bitcoin node code with the following command:
+```
+wget https://bitcoin.org/bin/bitcoin-core-0.20.0/bitcoin-0.20.0-x86_64-linux-gnu.tar.gz
+```
+(you can check the [Official Bitcoin Core Download Page](https://bitcoin.org/en/download) to make sure this is the most recent Linux download link)
+
+b) Extract the computer-usable code from the downloaded Bitcoin node code:
+
+```
+tar xzf bitcoin-0.20.0-x86_64-linux-gnu.tar.gz
+```
+
+----
+
+TODO: 
 
 2. Install and start [mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon) using all the default configurations
 
@@ -83,6 +109,7 @@ mkdir treeDeploy
 
 7. --- TODO:🚧👷‍♂️👷‍♀️🏗
 
+---
 
 ### How to Deploy Backend
 
