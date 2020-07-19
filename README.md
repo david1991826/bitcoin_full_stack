@@ -214,6 +214,7 @@ MongoDB is used for caching on your Bitcoin-Api Bitcoin node server. It prevents
 These instructions will go through setting up MongoDB on an Amazon Linux server. If your machine is not an Amazon Linux, you can find the appropriate instructions here in the [official MongoDB Linux installation instructions](https://docs.mongodb.com/manual/administration/install-on-linux/)
 
 **Steps**
+
 Add the following as a file in `/etc/yum.repos.d/mongodb-org-4.2.repo`:
 ```
 [mongodb-org-4.2]
