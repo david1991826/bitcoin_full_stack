@@ -270,7 +270,7 @@ Or in production:
 mkdir treeDeploy/productionCredentials
 ```
 
-**b)** Transfer Tree🌲🌳 Deploy Code
+**b)** Transfer Tree Deploy🌲🌳 Code
 
 TODO: 🚧👷‍♂️👷‍♀️🏗 --- in the meantime, see `/1-backend/giraffeDeploy/plantTree.template.sh`
 
