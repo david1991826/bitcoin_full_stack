@@ -272,7 +272,7 @@ mkdir treeDeploy/productionCredentials
 
 **b)** Transfer Tree🌲🌳 Deploy Code
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 --- in the meantime, see `1-backend/giraffeDeploy/plantTree.template.sh`
+TODO: 🚧👷‍♂️👷‍♀️🏗 --- in the meantime, see `/1-backend/giraffeDeploy/plantTree.template.sh`
 
 ----
 
