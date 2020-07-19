@@ -191,7 +191,7 @@ export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@12/lib"
 export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@12/include"
 ```
 
-Try typing in `node` in your CLI and see if your CLI turns into a NodeJS REPL interface. If not, try reconnecting to or restarting your Linux server. It's possible that will trigger NodeJS to be activated.
+Try typing in `node` in your CLI and see if your CLI turns into a NodeJS REPL interface. If not, try reconnecting to your Linux server. It's possible that will trigger NodeJS to be activated.
 
 **d)** Install pm2 Globally
 
