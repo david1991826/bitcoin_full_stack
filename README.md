@@ -215,7 +215,7 @@ These instructions will go through setting up MongoDB on an Amazon Linux server.
 
 **Steps**
 
-**b)** Set Up Linux Server for MongoDB
+**a)** Set Up Linux Server for MongoDB
 
 Add the following as a file at this location, `/etc/yum.repos.d/mongodb-org-4.2.repo`, on your Linux server:
 ```
@@ -228,7 +228,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc
 ```
 > This file can be added using the `touch` and `nano` CLI commands. You may need to use `sudo` in front of those commands for admin access.
 
-**a)** Install and Start `mongod` MongoDB Base Process
+**b)** Install and Start `mongod` MongoDB Base Process
 
 Install MongoDB with this CLI command:
 ```
