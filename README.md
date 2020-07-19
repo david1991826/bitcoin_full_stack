@@ -242,27 +242,43 @@ You can optionally verify that the `mongod` base processes has started successfu
 sudo systemctl status mongod
 ```
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 ---
 
-----
+#### 4) Deploy Backend
 
-TODO: 
-4. Set up the appropriate files and folders using the following CLI commands:
+**About**
 
+This section goes through how to deploy the Bitcoin-Api Bitcoin node backend NodeJS modules.
+
+**Steps**
+
+**a)** Set Up Files and Folders
+
+Set up the appropriate files and folders using the following CLI commands:
 ```
 touch currentWithdrawReports.txt
 mkdir tigerScript
 mkdir treeDeploy
+mkdir treeDeploy/giraffeDeploy
 ```
---
 
-5. Run script to transfer tree deployment code
+and in staging:
+```
+mkdir treeDeploy/stagingCredentials
+```
+Or in production:
+```
+mkdir treeDeploy/productionCredentials
+```
 
-6. Run Giraffe Lick Leaf deploy script
+**b)** Transfer Tree🌲🌳 Deploy Code
 
-OR
+TODO: 🚧👷‍♂️👷‍♀️🏗 --- in the meantime, see `1-backend/giraffeDeploy/plantTree.template.sh`
 
-5. manually setup backend modules
+----
+
+TODO: 
+
+5. Run Giraffe Lick Leaf deploy script
 
 --
 
