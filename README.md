@@ -132,7 +132,7 @@ The resulting number of this bitcoin-cli command can be compared with the total 
 
 When your node has finished downloading and is up to date with the Bitcoin blockchain, the number returned from getblockcount is equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
 
-For reference, here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli)
+For reference, here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli).
 
 #### 2) Install NodeJS and NPM
 
