@@ -216,10 +216,17 @@ touch currentWithdrawReports.txt
 mkdir tigerScript
 mkdir treeDeploy
 ```
+--
 
 5. Run script to transfer tree deployment code
 
 6. Run Giraffe Lick Leaf deploy script
+
+OR
+
+5. manually setup backend modules
+
+--
 
 7. Deploy API
 
