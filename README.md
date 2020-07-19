@@ -39,7 +39,7 @@ Briefly put: The NodeJS services interact with the Bitcoin node which in turn in
 
 #### Requirements:
 
-1. Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html))
+1. Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)). The Linux server must meet [Bitcoin-Core's computer requirements](https://bitcoin.org/en/bitcoin-core/features/requirements).
 
 2. Have access to that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
 
@@ -58,7 +58,7 @@ The backend node server is responsible for updating the database. The backend no
 
 
 >Note about multiple servers:
-You can set up multiple backend servers if you have lots and lots of addresses although you only need one, even if you have a few hundred thousand addresses.
+You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (this hasn't been test yet, although is according to what [Andreas Antonopoulos](https://aantonop.com/) said)
 
 
 #### Steps to Setup a Bitcoin-Api Bitcoin Node Server
@@ -128,19 +128,62 @@ The number derived from this bitcoin-cli command can be compared with the total 
 
 * [Page with Livenet Total Block Height](https://www.blockchain.com/btc/blocks)
 
+> Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
 
-Your node is finished downloading and up to date with the Bitcoin blockchain when the number returned from getblockcount is equal to the blockchain block height.
+Your node is finished downloading and up to date with the Bitcoin blockchain when the number returned from getblockcount is equal to the actual blockchain block height. In the meantime, you can move on to the next steps.
 
 
-... TODO: next steps
+#### 2) Install NodeJS and NPM
 
+**About**
+
+Next, NodeJS needs to be installed on your Linux server. NodeJS is used for the modules that interact with the Bitcoin node.
+
+**Steps**
+
+**a)** Install Git on your Linux server:
+```
+sudo apt install git
+```
+OR
+```
+sudo yum install git
+```
+
+**b)** Install and Configure Homebrew
+
+First run:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+Then run:
+```
+sudo apt-get install build-essential
+```
+OR
+```
+sudo yum groupinstall 'Development Tools'
+```
+
+Then run:
+```
+echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>/.bash_profile
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+```
+
+Homebrew also recommends running these commands:
+```
+brew install gcc
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/isl@0.18/include"
+export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig"
+```
 ----
 
 TODO: 
 
-2. Install and start [mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon) using all the default configurations
-
-3. Install NodeJs and NPM, this can be done using [Homebrew](https://brew.sh)
+3. Install and start [mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon) using all the default configurations
 
 4. Install [pm2](https://www.npmjs.com/package/pm2) globally using the following CLI command `npm install pm2 -g`
 
