@@ -211,7 +211,7 @@ pm2 install pm2-logrotate
 
 MongoDB is used for caching on your Bitcoin-Api Bitcoin node server. It prevents unnecessary database writes when updating addresses and balances.
 
-These instructions will go through setting up MongoDB on an Amazon Linux server. If your machine is not an Amazon Linux, you can find the appropriate instructions here in the [official MongoDB Linux installation instructions](https://docs.mongodb.com/manual/administration/install-on-linux/)
+These instructions will go through setting up MongoDB on an Amazon Linux server. If your machine is not an Amazon Linux, you can find the appropriate instructions here in the [official MongoDB Linux installation instructions](https://docs.mongodb.com/manual/administration/install-on-linux/).
 
 **Steps**
 
