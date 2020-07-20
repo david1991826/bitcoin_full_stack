@@ -290,11 +290,11 @@ The following environment files need to be created and set up:
 
 path:
 
-`/1-backend/stagingCredentials/calzoneZone/.env`
+`/1-backend/stagingCredentials/calzoneSun/.env`
 
 OR
 
-`/1-backend/productionCredentials/calzoneZone/.env`
+`/1-backend/productionCredentials/calzoneSun/.env`
 
 template:
 ```
