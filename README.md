@@ -354,7 +354,7 @@ policies: `theomegaIAMUser`, `addTransactionAndUpdateExchangeUser`
 
 This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables are the same expect for `_staging` is appended on the table name.
 
-[AWS DynamoDB Management Console](https://console.aws.amazon.com/iam/home#/users)
+[AWS DynamoDB Management Console](https://console.aws.amazon.com/dynamodb/home)
 
 | Table Name | Partition Key (type) | Sort Key (type ) | 
 |--|--|--|
