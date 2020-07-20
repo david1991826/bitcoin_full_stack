@@ -288,6 +288,8 @@ The following environment files need to be created and set up:
 
 path:
 `/1-backend/stagingCredentials/calzoneZone/.env`
+OR
+`/1-backend/productionCredentials/calzoneZone/.env`
 
 template:
 ```
