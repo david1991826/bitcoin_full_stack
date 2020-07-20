@@ -296,6 +296,11 @@ This section goes over the AWS resources that are needed to operate the backend.
 
 * [JSON Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/calzoneSunUser.json)
 
+`feeFeeUser`
+
+* [JSON Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/feeFeeUser.json)
+
+* [JSON Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/feeFeeUser.json)
 
 `korgUser`
 
