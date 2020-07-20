@@ -287,33 +287,34 @@ This section goes over the AWS resources that are needed to operate the backend.
 
 `addTransactionAndUpdateExchangeUser`
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/addTransactionAndUpdateExchangeUser.json)
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/addTransactionAndUpdateExchangeUser.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/addTransactionAndUpdateExchangeUser.json)
 
 `calzoneSunIAMUser`
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/calzoneSunIAMUser.json)
-
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/calzoneSunIAMUser.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/calzoneSunIAMUser.json)
 
 `feeFeeIAMUser`
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/feeFeeIAMUser.json)
-
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/feeFeeIAMUser.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/feeFeeIAMUser.json)
 
 `korgIAMUser`
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/korgIAMUser.json)
-
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/korgIAMUser.json)
 
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/korgIAMUser.json)
 
 `theomegaIAMUser`
 
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/korgIAMUser.json)
+
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/korgIAMUser.json)
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/korgIAMUser.json)
 
 ##### Backend IAM Users
 
