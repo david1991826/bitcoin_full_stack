@@ -318,6 +318,13 @@ user name: `calzoneSunUser`
 policies: `calzoneSunUser`
 
 
+**Fee Fee User**
+
+user name: `feeFeeUser`
+
+policies: `feeFeeUser`
+
+
 **Korg User**
 
 user name: `korgUser`
