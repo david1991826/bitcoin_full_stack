@@ -338,6 +338,13 @@ user name: `korgIAMUser`
 policies: `korgIAMUser`, `addTransactionAndUpdateExchangeUser`
 
 
+**TheOmega User**
+
+user name: `theomegaIAMUser`
+
+policies: `theomegaIAMUser`, `addTransactionAndUpdateExchangeUser`
+
+
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 **c)** Set Up Backend .env Environment Variable Files
