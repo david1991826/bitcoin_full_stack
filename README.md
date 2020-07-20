@@ -374,6 +374,28 @@ MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
 COMPUTER_USER_NAME="<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>"
 ```
 
+**The Omega**
+
+path:
+
+`/1-backend/stagingCredentials/theomega/.env`
+
+OR
+
+`/1-backend/productionCredentials/theomega/.env`
+
+template:
+```
+AWS_ACCESS_KEY_ID="the_omega_access_key"
+AWS_SECRET_ACCESS_KEY="the_omega_secret_key"
+AWS_REGION="us-east-1"
+ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
+REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
+BITCOIN_API_ENV="staging"
+MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
+ADDRESS_UPDATE_CONCURRENCY=3
+```
+
 ...
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
