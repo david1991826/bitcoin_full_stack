@@ -289,7 +289,7 @@ To create the equivalent staging resources, you must append `_staging` to the po
 
 `addTransactionAndUpdateExchangeUser`
 
-* [JSON Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/master/infrastructure/policies/addTransactionAndUpdateExchangeUser.json)
+* [JSON Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/addTransactionAndUpdateExchangeUser.json)
 
 
 `calzoneSunUser`
@@ -299,7 +299,7 @@ To create the equivalent staging resources, you must append `_staging` to the po
 
 `korgUser`
 
-* [JSON Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/master/infrastructure/policies/korgUser.json)
+* [JSON Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/korgUser.json)
 
 
 
