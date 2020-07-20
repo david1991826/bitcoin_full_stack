@@ -352,6 +352,28 @@ PEM_PATH="<path to pem access key file for Linux server>"
 ZARBON_SPOT="<full path on your home computer to `/bitcoin-api-full-stack/1-backend`>"
 ```
 
+**Korg**
+
+path:
+
+`/1-backend/stagingCredentials/korg/.env`
+
+OR
+
+`/1-backend/productionCredentials/korg/.env`
+
+template:
+```
+AWS_ACCESS_KEY_ID="korg_access_key"
+AWS_SECRET_ACCESS_KEY="korg_secret_key"
+AWS_REGION="us-east-1"
+ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
+REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
+BITCOIN_API_ENV="staging"
+MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
+COMPUTER_USER_NAME="<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>"
+```
+
 ...
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
