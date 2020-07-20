@@ -351,6 +351,8 @@ TODO: 🚧👷‍♂️👷‍♀️🏗
 
 The following environment files need to be created and set up:
 
+(TODO: move templates to `infrastructure/environment` folder)
+
 **Calzone Sun**
 
 path:
