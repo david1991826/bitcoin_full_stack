@@ -284,6 +284,8 @@ This section goes over the AWS resources that are needed to operate the backend.
 
 ##### Backend IAM Policies
 
+[AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
+
 
 `addTransactionAndUpdateExchangeUser`
 
@@ -318,6 +320,8 @@ This section goes over the AWS resources that are needed to operate the backend.
 
 ##### Backend IAM Users
 
+[AWS IAM User Management Console](https://console.aws.amazon.com/iam/home#/users)
+
 **Calzone Sun User**
 
 user name: `calzoneSunIAMUser`
@@ -348,7 +352,9 @@ policies: `theomegaIAMUser`, `addTransactionAndUpdateExchangeUser`
 
 ##### Backend DynamoDB Tables
 
-This section describes the required DynamoDB production tables for Bitcoin-Api. The staging tables are the same expect for `_staging` is appended on the table name.
+This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables are the same expect for `_staging` is appended on the table name.
+
+[AWS DynamoDB Management Console](https://console.aws.amazon.com/iam/home#/users)
 
 | Table Name | Partition Key (type) | Sort Key (type ) | 
 |--|--|--|
