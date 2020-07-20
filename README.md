@@ -286,6 +286,8 @@ TODO: 🚧👷‍♂️👷‍♀️🏗
 
 The following environment files need to be created and set up:
 
+**Calzone Sun**
+
 path:
 
 `/1-backend/stagingCredentials/calzoneZone/.env`
