@@ -335,7 +335,7 @@ policies: `feeFeeIAMUser`
 
 user name: `korgIAMUser`
 
-policies: `korgIAMUser`, `addTransactionAndUpdateExchangeIAMUser`
+policies: `korgIAMUser`, `addTransactionAndUpdateExchangeUser`
 
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
