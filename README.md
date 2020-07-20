@@ -124,15 +124,15 @@ bitcoin-cli getblockcount
 
 The resulting number of this bitcoin-cli command can be compared with the total number of blocks in the Bitcoin blockchain, also called the *block height*:
 
-* [Page with the Testnet Total Block Height](https://www.blockchain.com/btc-testnet/blocks)
+* [Blockchain.com Webpage with the Testnet Total Block Height](https://www.blockchain.com/btc-testnet/blocks)
 
-* [Page with the Livenet Total Block Height](https://www.blockchain.com/btc/blocks)
+* [Blockchain.com Webpage with the Livenet Total Block Height](https://www.blockchain.com/btc/blocks)
 
-> Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
+> ⚠️Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
 
-When your node has finished downloading and is up to date with the Bitcoin blockchain, the number returned from getblockcount will be equal to the actual blockchain block height. In the meantime, you can move forward to the next steps.
+> 👨🏿‍🏫For reference: here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli).
 
-For reference, here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli).
+When your node has finished downloading and is up to date with the Bitcoin blockchain, the number returned from getblockcount will be equal to the actual blockchain block height. In the meantime, you can move forwards to the next steps.
 
 #### 2) Install NodeJS and NPM
 
@@ -250,7 +250,10 @@ sudo systemctl status mongod
 
 **About**
 
-This section goes through how set up the the Bitcoin-Api Bitcoin node backend for deployment.
+This section deals with set up for deployment to a remote Linux server. The deployment method used is called Giraffe Lick Leaf (GLL Deployment). The way GLL Deployment works is you input a deploy command on your home computer that specifies a NodeJS service for the Bitcoin node. The deploy command triggers your home computer to send the most recent code for the specified NodeJS service to the remote Linux server. The Linux server accepts and installs the specified NodeJs service if it doesn't already exist, or it updates the existing service. 
+
+This section goes through how to set up the Bitcoin-Api Bitcoin node backend for deployment. The main task is to transfer the Tree Deploy🌲🌳 code to the Linux server. The tree deploy code runs on your Linux server and it accepts and install the incoming code sent from your home computer.
+
 
 **Steps**
 
@@ -277,7 +280,11 @@ mkdir treeDeploy/productionCredentials
 
 **b)** Transfer Tree Deploy🌲🌳 Code
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 --- in the meantime, see `/1-backend/giraffeDeploy/plantTree.template.sh`
+In this step you set up the tree deploy code.
+
+To transfer the tree deploy code first you must create a `1-backend/giraffeDeploy/plantTree.sh` file. A template is provided at `1-backend/giraffeDeploy/plantTree.template.sh`.
+
+--- TODO:🚧👷‍♂️👷‍♀️🏗
 
 ----
 
