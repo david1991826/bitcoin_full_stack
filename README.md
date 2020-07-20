@@ -396,9 +396,26 @@ MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
 ADDRESS_UPDATE_CONCURRENCY=3
 ```
 
-...
+**Tree**
 
-TODO: 🚧👷‍♂️👷‍♀️🏗
+path:
+
+`/1-backend/stagingCredentials/tree/.env`
+
+OR
+
+`/1-backend/productionCredentials/tree/.env`
+
+template:
+```
+AWS_REGION="tree_aws_region"
+ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
+REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
+BITCOIN_API_ENV="staging"
+LICK_FILE_PATH="/home/<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>/treeDeploy/lick_file.json"
+TREE_TIGER_SPOT="/home/<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>/tigerScript"
+MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
+```
 
 
 **d)** Transfer Tree Deploy🌲🌳 Code
