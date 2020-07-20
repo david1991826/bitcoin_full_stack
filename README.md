@@ -284,7 +284,7 @@ This step explains how to set up the tree deploy code.
 
 To transfer the tree deploy code first you must create a `/1-backend/giraffeDeploy/plantTree.sh` file (gitignored). A template is provided at `/1-backend/giraffeDeploy/plantTree.template.sh`.
 
-A chart is provided showing which values need to be replaced:
+A chart is provided showing how to replace the template placeholder values:
 
 | value to update  | meaning | example |
 |--|--|--|
