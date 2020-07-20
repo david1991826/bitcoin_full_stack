@@ -282,25 +282,26 @@ mkdir treeDeploy/productionCredentials
 
 This section goes over the AWS resources that are needed to operate the backend.
 
-To create the equivalent staging resources, you must append `_staging` to the policy name, role name, and dynamoDB table name.
-
 ##### Backend IAM Policies
 
 
 `addTransactionAndUpdateExchangeUser`
 
-* [JSON Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/addTransactionAndUpdateExchangeUser.json)
-
+* [JSON Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/addTransactionAndUpdateExchangeUser.json)
+* [JSON Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/addTransactionAndUpdateExchangeUser.json)
 
 `calzoneSunUser`
 
-* [JSON Policy](#)
+* [JSON Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/calzoneSunUser.json)
+
+* [JSON Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/calzoneSunUser.json)
 
 
 `korgUser`
 
-* [JSON Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/korgUser.json)
+* [JSON Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/korgUser.json)
 
+* [JSON Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/korgUser.json)
 
 
 ##### Backend IAM Users
