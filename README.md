@@ -95,14 +95,14 @@ sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.20.0/bin/*
 
 **d)** Start your Bitcoin node:
 
-Start your bitcoin in staging node (testnet):
+Start your bitcoin in staging mode (testnet):
 ```
 bitcoind -testnet -daemon
 ```
 
 OR
 
-Start your bitcoin in production node (livenet):
+Start your bitcoin in production mode (livenet):
 ```
 bitcoind -daemon
 ```
@@ -250,7 +250,7 @@ sudo systemctl status mongod
 
 **About**
 
-This section deals with set up for deployment to a remote Linux server. The deployment method used is called Giraffe Lick Leaf (GLL deployment). The way GLL deployment works is you input a deploy command on your home computer that specifies a NodeJS service for the Bitcoin node. The deploy command triggers your home computer to send the most recent code for the specified NodeJS service to the remote Linux server. The Linux server accepts and installs the specified NodeJs service if it doesn't already exist, or it updates the existing service. 
+This section deals with set up for deployment to a remote Linux server. The deployment method used is called Giraffe Lick Leaf (GLL). The way GLL deployment works is you input a deploy command on your home computer that specifies a NodeJS service for the Bitcoin node. The deploy command triggers your home computer to send the most recent code for the specified NodeJS service to the remote Linux server. The Linux server accepts and installs the specified NodeJS service if it doesn't already exist, or it updates the existing service. 
 
 This section goes through how to set up the Bitcoin-Api Bitcoin node backend for deployment. The main task is to transfer the Tree Deploy🌲🌳 code to the Linux server. The tree deploy code runs on your Linux server and it accepts and install the incoming code sent from your home computer.
 
@@ -279,6 +279,62 @@ mkdir treeDeploy/productionCredentials
 ```
 
 **b)** Set Up AWS Resources
+
+This section goes over the AWS resources that are needed to operate the backend.
+
+To create the equivalent staging resources, you must append `_staging` to the policy name, role name, and dynamoDB table name.
+
+##### Backend IAM Policies
+* `addTransactionAndUpdateExchangeUser`
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Sid1",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:PutItem"
+            ],
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/transactionsv1"
+        },
+        {
+            "Sid": "Sid2",
+            "Effect": "Allow",
+            "Action": "dynamodb:Query",
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/transactionsv1/index/exchangeUserId-creationDate-index"
+        },
+        {
+            "Sid": "Sid3",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:GetItem",
+                "dynamodb:PutItem"
+            ],
+            "Resource": "arn:aws:dynamodb:dynamodb:aws_region:aws_account_number:table/exchangeUsersv1"
+        }
+    ]
+}
+```
+
+
+* `calzone_sun_user`
+```
+{}
+```
+
+
+##### Backend IAM Users
+
+**Calzone Sun User**
+
+policies: `calzone_sun_user`
+
+
+**Korg User**
+
+policies: `addTransactionAndUpdateExchangeUser`
+
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
