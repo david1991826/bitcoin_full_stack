@@ -21,7 +21,7 @@ popd
 echo "⛰The planting has commenced🌋"
 
 scp \
-    -i /folder/file.pem \
+    -i <path-to-pem> \
     -r \
     ./commonUtilities \
     ./tree \
