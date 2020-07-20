@@ -293,7 +293,7 @@ A chart is provided showing how to replace the template placeholder values:
 |\<path\>| path on your Linux server to where the tree deploy files are sent, it needs to point to the `/treeDeploy/giraffeDeploy` folder you created in step **a)** | /home/ec2-user/treeDeploy/giraffeDeploy |
 |\<path-to-treenv\> | path to environment variables for the tree deploy code, it needs to point to the `/treeDeploy/stagingCredentials` folder or the `/treeDeploy/productionCredentials` folder created in step **a)** | /home/ec2-user/treeDeploy/stagingCredentials |
 
---- TODO:🚧👷‍♂️👷‍♀️🏗
+--- TODO:🚧👷‍♂️👷‍♀️🏗 ---> set up env files, transfer tree deploy files to Linux server and install node modules for tree deploy on Linux server
 
 ----
 
