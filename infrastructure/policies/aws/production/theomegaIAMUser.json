@@ -28,7 +28,7 @@
             "Sid": "VisualEditor5",
             "Effect": "Allow",
             "Action": "dynamodb:Query",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/addressesv1/index/address"
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/addressesv1/index/address-index"
         }
     ]
 }
