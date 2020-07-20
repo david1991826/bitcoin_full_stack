@@ -280,7 +280,7 @@ mkdir treeDeploy/productionCredentials
 
 **b)** Transfer Tree Deploy🌲🌳 Code
 
-In this step you set up the tree deploy code.
+This step explains how to set up the tree deploy code.
 
 To transfer the tree deploy code first you must create a `/1-backend/giraffeDeploy/plantTree.sh` file (gitignored). A template is provided at `/1-backend/giraffeDeploy/plantTree.template.sh`.
 
