@@ -285,6 +285,7 @@ This section goes over the AWS resources that are needed to operate the backend.
 To create the equivalent staging resources, you must append `_staging` to the policy name, role name, and dynamoDB table name.
 
 ##### Backend IAM Policies
+
 * `addTransactionAndUpdateExchangeUser`
 ```
 {
@@ -324,16 +325,66 @@ To create the equivalent staging resources, you must append `_staging` to the po
 ```
 
 
+* `korg_user`
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "MonkeyEditor",
+            "Effect": "Allow",
+            "Action": "dynamodb:Query",
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/withdrawsv1/index/state-creationDate-index"
+        },
+        {
+            "Sid": "VisualMonkeyEditor2323",
+            "Effect": "Allow",
+            "Action": "dynamodb:GetItem",
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/withdrawsv1"
+        },
+        {
+            "Sid": "UltraMonkeyEditor",
+            "Effect": "Allow",
+            "Action": "dynamodb:Query",
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/withdrawsv1"
+        },
+        {
+            "Sid": "UltraMonkeyEditorGorilla",
+            "Effect": "Allow",
+            "Action": "dynamodb:PutItem",
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/withdrawsv1"
+        },
+        {
+            "Sid": "MonkeyEditorOfBananaTown",
+            "Effect": "Allow",
+            "Action": "dynamodb:GetItem",
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/balancesv1"
+        },
+        {
+            "Sid": "TrustedMegaMonkeyEditor",
+            "Effect": "Allow",
+            "Action": "dynamodb:PutItem",
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/balancesv1"
+        }
+    ]
+}
+```
+
+
 ##### Backend IAM Users
 
 **Calzone Sun User**
+
+user name: `calzone_sun_user`
 
 policies: `calzone_sun_user`
 
 
 **Korg User**
 
-policies: `addTransactionAndUpdateExchangeUser`
+user name: `korg_user`
+
+policies: `korg_user`, `addTransactionAndUpdateExchangeUser`
 
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
