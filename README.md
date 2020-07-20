@@ -128,9 +128,9 @@ The resulting number of this bitcoin-cli command can be compared with the total 
 
 * [Blockchain.com Webpage with the Livenet Total Block Height](https://www.blockchain.com/btc/blocks)
 
-> ⚠️Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
+> Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
 
-> 👨🏿‍🏫For reference: here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli).
+> ‍For reference: here's a list of commands you can use on your bitcoin node: [Chain Query list of commands for bitcoin-cli](https://chainquery.com/bitcoin-cli).
 
 When your node has finished downloading and is up to date with the Bitcoin blockchain, the number returned from getblockcount will be equal to the actual blockchain block height. In the meantime, you can move forwards to the next steps.
 
@@ -282,7 +282,16 @@ mkdir treeDeploy/productionCredentials
 
 In this step you set up the tree deploy code.
 
-To transfer the tree deploy code first you must create a `1-backend/giraffeDeploy/plantTree.sh` file. A template is provided at `1-backend/giraffeDeploy/plantTree.template.sh`.
+To transfer the tree deploy code first you must create a `/1-backend/giraffeDeploy/plantTree.sh` file (gitignored). A template is provided at `/1-backend/giraffeDeploy/plantTree.template.sh`.
+
+A chart is provided showing which values need to be replaced:
+
+| value to update  | meaning | example |
+|--|--|--|
+| \<path-to-pem\>  | path on your home computer to your Linux server's .pem access key file | /Users/mega-monkey/cool_documents/secret_pem_files/mega-monkey-linux.pem |
+| \<url\>  | your Linux server's address with your Linux server user's name prepended with an "@" | ec2-user@ec2-mega-monkey-server.mars-space-1.compute.amazonaws.com |
+|\<path\>| path on your Linux server to where the tree deploy files are sent, it needs to point to the `/treeDeploy/giraffeDeploy` folder you created in step **a)** | /home/ec2-user/treeDeploy/giraffeDeploy |
+|\<path-to-treenv\> | path to environment variables for the tree deploy code, it needs to point to the `/treeDeploy/stagingCredentials` folder or the `/treeDeploy/productionCredentials` folder created in step **a)** | /home/ec2-user/treeDeploy/stagingCredentials |
 
 --- TODO:🚧👷‍♂️👷‍♀️🏗
 
