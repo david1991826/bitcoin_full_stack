@@ -43,7 +43,7 @@ Briefly put: The NodeJS services interact with the Bitcoin node which in turn in
 
 2. Have access to that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
 
-3. Have a Redis server that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
+3. Have a Redis service that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
 
 
 ### Set Up The Bitcoin Node Server(s)
@@ -250,7 +250,7 @@ sudo systemctl status mongod
 
 **About**
 
-This section deals with set up for deployment to a remote Linux server. The deployment method used is called Giraffe Lick Leaf (GLL). The way GLL deployment works is you input a deploy command on your home computer that specifies a NodeJS service for the Bitcoin node. The deploy command triggers your home computer to send the most recent code for the specified NodeJS service to the remote Linux server. The Linux server accepts and installs the specified NodeJS service if it doesn't already exist, or it updates the existing service. 
+This section deals with set up for deployment to a remote Linux server. The deployment method used is called Giraffe Lick Leaf (GLL). The way GLL deployment works is you input a deploy command on your home computer that specifies a NodeJS service for the Bitcoin node. The deploy command triggers your home computer to send the most recent code for the specified NodeJS service to the remote Linux server. The Linux server accepts and installs the NodeJS service if it doesn't already exist, or it updates the existing service. 
 
 This section goes through how to set up the Bitcoin-Api Bitcoin node backend for deployment. The main task is to transfer the Tree Deploy🌲🌳 code to the Linux server. The tree deploy code runs on your Linux server and it accepts and install the incoming code sent from your home computer.
 
@@ -343,6 +343,25 @@ policies: `korgIAMUser`, `addTransactionAndUpdateExchangeUser`
 user name: `theomegaIAMUser`
 
 policies: `theomegaIAMUser`, `addTransactionAndUpdateExchangeUser`
+
+
+##### Backend DynamoDB Tables
+
+These are the production tables. The staging tables are the same expect for `_staging` is appended on the table name.
+
+| Table Name | Partition Key (type) | Sort Key (type ) | 
+|--|--|--|
+| addressesv1 | userId (string) | address (string) | 
+| balancesv1 | userId (string) | - | 
+| exchangeUsersv1 | userId (string) | - | 
+
+
+##### Backend DynamoDB Secondary Indexes
+
+| Table Name | Index Name | Partition Key (type) | Sort Key (type ) |
+|--|--|--|--|
+| addressesv1 | address-index | address (string) | - |
+| exchangeUsersv1 | email-index | email (string) | - |
 
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
