@@ -250,7 +250,7 @@ sudo systemctl status mongod
 
 **About**
 
-This section deals with set up for deployment to a remote Linux server. The deployment method used is called Giraffe Lick Leaf (GLL Deployment). The way GLL Deployment works is you input a deploy command on your home computer that specifies a NodeJS service for the Bitcoin node. The deploy command triggers your home computer to send the most recent code for the specified NodeJS service to the remote Linux server. The Linux server accepts and installs the specified NodeJs service if it doesn't already exist, or it updates the existing service. 
+This section deals with set up for deployment to a remote Linux server. The deployment method used is called Giraffe Lick Leaf (GLL deployment). The way GLL deployment works is you input a deploy command on your home computer that specifies a NodeJS service for the Bitcoin node. The deploy command triggers your home computer to send the most recent code for the specified NodeJS service to the remote Linux server. The Linux server accepts and installs the specified NodeJs service if it doesn't already exist, or it updates the existing service. 
 
 This section goes through how to set up the Bitcoin-Api Bitcoin node backend for deployment. The main task is to transfer the Tree Deploy🌲🌳 code to the Linux server. The tree deploy code runs on your Linux server and it accepts and install the incoming code sent from your home computer.
 
