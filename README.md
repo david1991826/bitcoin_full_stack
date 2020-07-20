@@ -347,7 +347,7 @@ policies: `theomegaIAMUser`, `addTransactionAndUpdateExchangeUser`
 
 ##### Backend DynamoDB Tables
 
-These are the production tables. The staging tables are the same expect for `_staging` is appended on the table name.
+This section describes the required DynamoDB production tables for Bitcoin-Api. The staging tables are the same expect for `_staging` is appended on the table name.
 
 | Table Name | Partition Key (type) | Sort Key (type ) | 
 |--|--|--|
