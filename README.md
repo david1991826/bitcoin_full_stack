@@ -282,7 +282,7 @@ mkdir treeDeploy/productionCredentials
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
-**b)** Set Up Backend .env Environment Variable Files
+**c)** Set Up Backend .env Environment Variable Files
 
 The following environment files need to be created and set up:
 
@@ -305,7 +305,7 @@ MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 
-**c)** Transfer Tree Deploy🌲🌳 Code
+**d)** Transfer Tree Deploy🌲🌳 Code
 
 This step explains how to set up the tree deploy code.
 
