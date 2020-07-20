@@ -286,105 +286,37 @@ To create the equivalent staging resources, you must append `_staging` to the po
 
 ##### Backend IAM Policies
 
-* `addTransactionAndUpdateExchangeUser`
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Sid1",
-            "Effect": "Allow",
-            "Action": [
-                "dynamodb:PutItem"
-            ],
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/transactionsv1"
-        },
-        {
-            "Sid": "Sid2",
-            "Effect": "Allow",
-            "Action": "dynamodb:Query",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/transactionsv1/index/exchangeUserId-creationDate-index"
-        },
-        {
-            "Sid": "Sid3",
-            "Effect": "Allow",
-            "Action": [
-                "dynamodb:GetItem",
-                "dynamodb:PutItem"
-            ],
-            "Resource": "arn:aws:dynamodb:dynamodb:aws_region:aws_account_number:table/exchangeUsersv1"
-        }
-    ]
-}
-```
+
+`addTransactionAndUpdateExchangeUser`
+
+* [JSON Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/master/infrastructure/policies/addTransactionAndUpdateExchangeUser.json)
 
 
-* `calzone_sun_user`
-```
-{}
-```
+`calzoneSunUser`
+
+* [JSON Policy](#)
 
 
-* `korg_user`
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "MonkeyEditor",
-            "Effect": "Allow",
-            "Action": "dynamodb:Query",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/withdrawsv1/index/state-creationDate-index"
-        },
-        {
-            "Sid": "VisualMonkeyEditor2323",
-            "Effect": "Allow",
-            "Action": "dynamodb:GetItem",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/withdrawsv1"
-        },
-        {
-            "Sid": "UltraMonkeyEditor",
-            "Effect": "Allow",
-            "Action": "dynamodb:Query",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/withdrawsv1"
-        },
-        {
-            "Sid": "UltraMonkeyEditorGorilla",
-            "Effect": "Allow",
-            "Action": "dynamodb:PutItem",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/withdrawsv1"
-        },
-        {
-            "Sid": "MonkeyEditorOfBananaTown",
-            "Effect": "Allow",
-            "Action": "dynamodb:GetItem",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/balancesv1"
-        },
-        {
-            "Sid": "TrustedMegaMonkeyEditor",
-            "Effect": "Allow",
-            "Action": "dynamodb:PutItem",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/balancesv1"
-        }
-    ]
-}
-```
+`korgUser`
+
+* [JSON Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/master/infrastructure/policies/korgUser.json)
+
 
 
 ##### Backend IAM Users
 
 **Calzone Sun User**
 
-user name: `calzone_sun_user`
+user name: `calzoneSunUser`
 
-policies: `calzone_sun_user`
+policies: `calzoneSunUser`
 
 
 **Korg User**
 
-user name: `korg_user`
+user name: `korgUser`
 
-policies: `korg_user`, `addTransactionAndUpdateExchangeUser`
+policies: `korgUser`, `addTransactionAndUpdateExchangeUser`
 
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
