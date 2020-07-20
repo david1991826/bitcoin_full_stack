@@ -278,7 +278,34 @@ in production:
 mkdir treeDeploy/productionCredentials
 ```
 
-**b)** Transfer Tree Deploy🌲🌳 Code
+**b)** Set Up AWS Resources
+
+TODO: 🚧👷‍♂️👷‍♀️🏗
+
+**b)** Set Up Backend .env Environment Variable Files
+
+The following environment files need to be created and set up:
+
+path:
+`/1-backend/stagingCredentials/calzoneZone/.env`
+
+template:
+```
+AWS_ACCESS_KEY_ID="calzone_sun_aws_access_key"
+AWS_SECRET_ACCESS_KEY="calzone_sun_aws_secret_key"
+AWS_REGION="calzone_sun_region"
+ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
+REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
+BITCOIN_API_ENV="staging"
+MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
+```
+
+...
+
+TODO: 🚧👷‍♂️👷‍♀️🏗
+
+
+**c)** Transfer Tree Deploy🌲🌳 Code
 
 This step explains how to set up the tree deploy code.
 
