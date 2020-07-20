@@ -82,7 +82,7 @@ module.exports = f({
             addressesTable: {
                 unusedAddressUserId: 'babebabe-babe-4bae-babe-babebabebabe',
                 secondaryIndexNames: {
-                    addressIndex: 'address',
+                    addressIndex: 'address-index',
                 }
             },
             secondaryIndex: {
