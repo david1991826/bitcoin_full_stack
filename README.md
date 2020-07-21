@@ -6,6 +6,15 @@ Complete Code Base for Bitcoin-Api
 [![Video Demo Video of Exchange and Casino Technology](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://youtu.be/EMAwIrHM2Qc)
 
 
+## API, Exchange, and Casino Features
+
+* You can configure the lowest possible fees (blockchain fee only on withdraw)
+* It's quick to set up
+* It's extremely scalable
+* It's really cheap to operate
+* It has very robust security
+
+
 ## Contents
 * [About](#about)
 * [Bitcoin Node Servers](#bitcoin-node-servers)
