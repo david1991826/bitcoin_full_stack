@@ -7,6 +7,7 @@ Complete Code Base for Bitcoin-Api
 * [AtExchange.io](https://atexchange.io) - Bitcoin Exchange
 * [ProbablyCrypto.com](https://probablycrypto.com) - Bitcoin Casino
 
+Note: These are *temporary* and are purely for demonstration. They will be taken down soon.
 
 ## Contents
 * [About](#about)
