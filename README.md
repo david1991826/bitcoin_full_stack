@@ -3,7 +3,7 @@
 Complete Code Base for Bitcoin-Api
 
 ## Video Demo of Exchange and Casino Technology:
-[![Video Demo Video of Exchange and Casino Technology](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://www.youtube.com/watch?v=ZZ4zdq4AJY8)
+[![Video Demo Video of Exchange and Casino Technology](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://youtu.be/EMAwIrHM2Qc)
 
 
 ## Contents
