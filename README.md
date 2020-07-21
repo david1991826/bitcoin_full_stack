@@ -361,6 +361,11 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 | addressesv1 | userId (string) | address (string) | 
 | balancesv1 | userId (string) | - | 
 | exchangeUsersv1 | userId (string) | - | 
+| loginTokensv1 | exchangeUserId (string) | expiryTime (number) | 
+| metadatav1 | key (string) | - |
+| transactionsv1 | exchangeUserId (string) | transactionId (string) |
+| usersv1 | userId (string) | - |
+| withdrawsv1 | userId (string) | ultraKey (number) |
 
 
 ##### Backend DynamoDB Secondary Indexes
@@ -369,9 +374,9 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 |--|--|--|--|
 | addressesv1 | address-index | address (string) | - |
 | exchangeUsersv1 | email-index | email (string) | - |
+| transactionsv1 | exchangeUserId-creationDate-index | exchangeUserId (string) | creationDate (number) |
+| withdrawsv1 | state-creationDate-index | state (number) | creationDate (number) |
 
-
-TODO: 🚧👷‍♂️👷‍♀️🏗
 
 **c)** Set Up Backend .env Environment Variable Files
 
