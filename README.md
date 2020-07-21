@@ -11,7 +11,7 @@ Complete Code Base for Bitcoin-Api
 * Can configure the lowest possible fees (blockchain fee only on withdraw)
 * Quick to set up
 * Extremely scalable
-* Highly economical operation fees 
+* Highly economical operational fees 
 * Very robust security
 
 
