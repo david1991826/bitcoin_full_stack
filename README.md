@@ -352,7 +352,7 @@ policies: `theomegaIAMUser`, `addTransactionAndUpdateExchangeUser`
 
 ##### Backend DynamoDB Tables
 
-This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables are the same expect for `_staging` is appended on the table name.
+This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables are the same except for `_staging` is appended on the table name.
 
 [AWS DynamoDB Management Console](https://console.aws.amazon.com/dynamodb/home)
 
@@ -382,49 +382,19 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 The following environment files need to be created and set up:
 
-(TODO: move templates to `infrastructure/environment` folder)
 
 **Calzone Sun**
 
-path:
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/calzoneSun/.env`
 
-`/1-backend/stagingCredentials/calzoneSun/.env`
+.env Template: [Calzone Sun .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/calzoneSun.env)
 
-OR
-
-`/1-backend/productionCredentials/calzoneSun/.env`
-
-template:
-```
-AWS_ACCESS_KEY_ID="calzone_sun_aws_access_key"
-AWS_SECRET_ACCESS_KEY="calzone_sun_aws_secret_key"
-AWS_REGION="calzone_sun_region"
-ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
-REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
-BITCOIN_API_ENV="staging"
-MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
-```
 
 **Fee Fee**
 
-path:
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/FeeFee/.env`
 
-`/1-backend/stagingCredentials/FeeFee/.env`
-
-OR
-
-`/1-backend/productionCredentials/FeeFee/.env`
-
-template:
-```
-AWS_ACCESS_KEY_ID="fee_fee_aws_access_key"
-AWS_SECRET_ACCESS_KEY="fee_fee_aws_secret_key"
-AWS_REGION="fee_fee_region"
-ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
-REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
-BITCOIN_API_ENV="staging"
-MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
-```
+.env Template: [Fee Fee .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/feeFee.env)
 
 **Giraffe**
 
