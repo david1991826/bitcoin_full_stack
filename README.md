@@ -7,7 +7,7 @@ Complete Code Base for Bitcoin-Api
 * [AtExchange.io](https://atexchange.io) - Bitcoin Exchange
 * [ProbablyCrypto.com](https://probablycrypto.com) - Bitcoin Casino
 
-These are password protected. Email support@bitcoin-api.io for access. Thank you for your understanding.
+These are password protected. Email support@bitcoin-api.io for questions. Thank you for your understanding.
 
 Michael
 
