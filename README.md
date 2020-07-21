@@ -8,11 +8,11 @@ Complete Code Base for Bitcoin-Api
 
 ## API, Exchange, and Casino Features
 
-* You can configure the lowest possible fees (blockchain fee only on withdraw)
-* It's quick to set up
-* It's extremely scalable
-* It's really cheap to operate
-* It has very robust security
+* Can configure the lowest possible fees (blockchain fee only on withdraw)
+* Quick to set up
+* Extremely scalable
+* Highly economical operation fees 
+* Very robust security
 
 
 ## Contents
