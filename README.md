@@ -2,14 +2,9 @@
 
 Complete Code Base for Bitcoin-Api
 
+## Video Demo of Exchange and Casino Technology:
+[![Video Demo Video of Exchange and Casino Technology](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://www.youtube.com/watch?v=ZZ4zdq4AJY8)
 
-## Live Demos (with Real Bitcoin!):
-* [AtExchange.io](https://atexchange.io) - Bitcoin Exchange
-* [ProbablyCrypto.com](https://probablycrypto.com) - Bitcoin Casino
-
-These are password protected. Email support@bitcoin-api.io for questions. Thank you for your understanding.
-
-Michael
 
 ## Contents
 * [About](#about)
@@ -535,7 +530,7 @@ Here is an example video of a live production API deployment. The website conten
 
 ### How to Deploy Frontend
 
-The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for [atExchange.io](https://atexchange.io) and [ProbablyCrypto.com](https://probablycrypto.com) is [AWS Amplify](https://aws.amazon.com/amplify) using the monorepo functionality.
+The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for the webapp in the [exchange and casino video demo](https://youtu.be/EMAwIrHM2Qc) is [AWS Amplify](https://aws.amazon.com/amplify) using its monorepo functionality.
 
 
 Notes:
