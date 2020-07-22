@@ -369,24 +369,24 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 | Table Name | Partition Key (type) | Sort Key (type ) | 
 |--|--|--|
-| bitcoin_api_addressesv1 | userId (string) | address (string) | 
-| bitcoin_api_balancesv1 | userId (string) | - | 
-| bitcoin_api_exchangeUsersv1 | userId (string) | - | 
-| bitcoin_api_loginTokensv1 | exchangeUserId (string) | expiryTime (number) | 
-| bitcoin_api_metadatav1 | key (string) | - |
-| bitcoin_api_transactionsv1 | exchangeUserId (string) | transactionId (string) |
-| bitcoin_api_usersv1 | userId (string) | - |
-| bitcoin_api_withdrawsv1 | userId (string) | ultraKey (number) |
+| bitcoin_api_addresses | userId (string) | address (string) | 
+| bitcoin_api_balances | userId (string) | - | 
+| bitcoin_api_exchangeUsers | userId (string) | - | 
+| bitcoin_api_loginTokens | exchangeUserId (string) | expiryTime (number) | 
+| bitcoin_api_metadata | key (string) | - |
+| bitcoin_api_transactions | exchangeUserId (string) | transactionId (string) |
+| bitcoin_api_users | userId (string) | - |
+| bitcoin_api_withdraws | userId (string) | ultraKey (number) |
 
 
 ##### Backend DynamoDB Secondary Indexes
 
 | Table Name | Index Name | Partition Key (type) | Sort Key (type ) |
 |--|--|--|--|
-| bitcoin_api_addressesv1 | address-index | address (string) | - |
-| bitcoin_api_exchangeUsersv1 | email-index | email (string) | - |
-| bitcoin_api_transactionsv1 | exchangeUserId-creationDate-index | exchangeUserId (string) | creationDate (number) |
-| bitcoin_api_withdrawsv1 | state-creationDate-index | state (number) | creationDate (number) |
+| bitcoin_api_addresses | address-index | address (string) | - |
+| bitcoin_api_exchangeUsers | email-index | email (string) | - |
+| bitcoin_api_transactions | exchangeUserId-creationDate-index | exchangeUserId (string) | creationDate (number) |
+| bitcoin_api_withdraws | state-creationDate-index | state (number) | creationDate (number) |
 
 
 **c)** Set Up Backend .env Environment Variable Files
