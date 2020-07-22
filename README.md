@@ -429,7 +429,7 @@ The following environment files need to be created and set up:
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/tree/.env`
 
-.env Template: [The Omega .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/tree.env)
+.env Template: [Tree .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/tree.env)
 
 
 **d)** Transfer Tree Deploy🌲🌳 Code
