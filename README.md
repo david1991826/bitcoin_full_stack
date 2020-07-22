@@ -403,94 +403,33 @@ The following environment files need to be created and set up:
 
 .env Template: [Fee Fee .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/feeFee.env)
 
+
 **Giraffe**
 
-path:
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/giraffe/.env`
 
-`/1-backend/stagingCredentials/giraffe/.env`
+.env Template: [Giraffe .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/giraffe.env)
 
-OR
-
-`/1-backend/productionCredentials/giraffe/.env`
-
-template:
-```
-AWS_REGION="giraffe_region"
-ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
-REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
-BITCOIN_API_ENV="staging"
-LICK_FILE_DESTINATION="<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>@ec2-address-of-linux-server.compute-service.amazonaws.com"
-LICK_FILE_DESTINATION_PATH="/home/<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>/treeDeploy"
-TIGER_SCRIPT_DESTINATION_PATH="/home/<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>/tigerScript"
-MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
-PEM_PATH="<path to pem access key file for Linux server>"
-ZARBON_SPOT="<full path on your home computer to `/bitcoin-api-full-stack/1-backend`>"
-```
 
 **Korg**
 
-path:
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/korg/.env`
 
-`/1-backend/stagingCredentials/korg/.env`
+.env Template: [Korg .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/korg.env)
 
-OR
-
-`/1-backend/productionCredentials/korg/.env`
-
-template:
-```
-AWS_ACCESS_KEY_ID="korg_access_key"
-AWS_SECRET_ACCESS_KEY="korg_secret_key"
-AWS_REGION="us-east-1"
-ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
-REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
-BITCOIN_API_ENV="staging"
-MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
-COMPUTER_USER_NAME="<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>"
-```
 
 **The Omega**
 
-path:
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/theomega/.env`
 
-`/1-backend/stagingCredentials/theomega/.env`
+.env Template: [The Omega .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/theomega.env)
 
-OR
-
-`/1-backend/productionCredentials/theomega/.env`
-
-template:
-```
-AWS_ACCESS_KEY_ID="the_omega_access_key"
-AWS_SECRET_ACCESS_KEY="the_omega_secret_key"
-AWS_REGION="us-east-1"
-ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
-REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
-BITCOIN_API_ENV="staging"
-MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
-ADDRESS_UPDATE_CONCURRENCY=3
-```
 
 **Tree**
 
-path:
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/tree/.env`
 
-`/1-backend/stagingCredentials/tree/.env`
-
-OR
-
-`/1-backend/productionCredentials/tree/.env`
-
-template:
-```
-AWS_REGION="tree_aws_region"
-ID_OF_CURRENT_MEGA_SERVER="computer_server_1"
-REDIS_URL="redis://instance.region.ec2.cloud.redislabs.com:12345?password=xyz"
-BITCOIN_API_ENV="staging"
-LICK_FILE_PATH="/home/<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>/treeDeploy/lick_file.json"
-TREE_TIGER_SPOT="/home/<PUT COMPUTER USER NAME HERE (e.g. ec2-user)>/tigerScript"
-MONGO_DB_URL="mongodb://127.0.0.1:27017/cache"
-```
+.env Template: [The Omega .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/tree.env)
 
 
 **d)** Transfer Tree Deploy🌲🌳 Code
