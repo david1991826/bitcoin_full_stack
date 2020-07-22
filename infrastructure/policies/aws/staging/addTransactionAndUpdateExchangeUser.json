@@ -7,13 +7,13 @@
             "Action": [
                 "dynamodb:PutItem"
             ],
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/transactionsv1_staging"
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/bitcoin_api_transactionsv1_staging"
         },
         {
             "Sid": "Sid2",
             "Effect": "Allow",
             "Action": "dynamodb:Query",
-            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/transactionsv1_staging/index/exchangeUserId-creationDate-index"
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/bitcoin_api_transactionsv1_staging/index/exchangeUserId-creationDate-index"
         },
         {
             "Sid": "Sid3",
@@ -22,7 +22,7 @@
                 "dynamodb:GetItem",
                 "dynamodb:PutItem"
             ],
-            "Resource": "arn:aws:dynamodb:dynamodb:aws_region:aws_account_number:table/exchangeUsersv1_staging"
+            "Resource": "arn:aws:dynamodb:dynamodb:aws_region:aws_account_number:table/bitcoin_api_exchangeUsersv1_staging"
         }
     ]
 }
