@@ -298,31 +298,31 @@ Here are the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide
 
 `bitcoin_api_function_addTransactionAndUpdateExchangeUser`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_function_addTransactionAndUpdateExchangeUser.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_function_addTransactionAndUpdateExchangeUser_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_function_addTransactionAndUpdateExchangeUser.json)
 
 `bitcoin_api_user_calzoneSun`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_calzoneSun.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_calzoneSun_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_calzoneSun.json)
 
 `bitcoin_api_user_feeFee`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_feeFee.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_feeFee_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_feeFee.json)
 
 `bitcoin_api_user_korg`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_korg.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_korg_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_korg.json)
 
 `bitcoin_api_user_theomega`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_theomega.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_theomega_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_theomega.json)
 
