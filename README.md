@@ -291,70 +291,74 @@ This section goes over the AWS resources that are needed to operate the backend.
 
 ##### Backend IAM Policies
 
+Here are the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-Api's backend. The naming for the staging IAM policies are the same except for `_staging` is appended to the policy name.
+
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
 
-`addTransactionAndUpdateExchangeUser`
+`bitcoin_api_function_addTransactionAndUpdateExchangeUser`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/addTransactionAndUpdateExchangeUser.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_function_addTransactionAndUpdateExchangeUser.json)
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/addTransactionAndUpdateExchangeUser.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_function_addTransactionAndUpdateExchangeUser.json)
 
-`calzoneSunIAMUser`
+`bitcoin_api_user_calzoneSun`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/calzoneSunIAMUser.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_calzoneSun.json)
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/calzoneSunIAMUser.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_calzoneSun.json)
 
-`feeFeeIAMUser`
+`bitcoin_api_user_feeFee`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/feeFeeIAMUser.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_feeFee.json)
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/feeFeeIAMUser.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_feeFee.json)
 
-`korgIAMUser`
+`bitcoin_api_user_korg`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/korgIAMUser.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_korg.json)
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/korgIAMUser.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_korg.json)
 
-`theomegaIAMUser`
+`bitcoin_api_user_theomega`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/korgIAMUser.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_theomega.json)
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/korgIAMUser.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_theomega.json)
 
 
 ##### Backend IAM Users
+
+Next, the [AWS IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) for Bitcoin-Api's backend need to be set up. The naming for the staging IAM users are the same except for `_staging` is appended to the user name.
 
 [AWS IAM User Management Console](https://console.aws.amazon.com/iam/home#/users)
 
 **Calzone Sun User**
 
-user name: `calzoneSunIAMUser`
+user name: `bitcoin_api_user_calzoneSun`
 
-policies: `calzoneSunIAMUser`
+policies: `bitcoin_api_user_calzoneSun`
 
 
 **Fee Fee User**
 
-user name: `feeFeeIAMUser`
+user name: `bitcoin_api_user_feeFee`
 
-policies: `feeFeeIAMUser`
+policies: `bitcoin_api_user_feeFee`
 
 
 **Korg User**
 
-user name: `korgIAMUser`
+user name: `bitcoin_api_user_korg`
 
-policies: `korgIAMUser`, `addTransactionAndUpdateExchangeUser`
+policies: `bitcoin_api_user_korg`, `bitcoin_api_function_addTransactionAndUpdateExchangeUser`
 
 
 **TheOmega User**
 
-user name: `theomegaIAMUser`
+user name: `bitcoin_api_user_theomega`
 
-policies: `theomegaIAMUser`, `addTransactionAndUpdateExchangeUser`
+policies: `bitcoin_api_user_theomega`, `bitcoin_api_function_addTransactionAndUpdateExchangeUser`
 
 
 ##### Backend DynamoDB Tables
