@@ -335,28 +335,28 @@ Next, the [AWS IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_us
 
 **Calzone Sun User**
 
-user name: `bitcoin_api_user_calzoneSun`
+user name: `bitcoin_api_calzoneSun`
 
 policies: `bitcoin_api_user_calzoneSun`
 
 
 **Fee Fee User**
 
-user name: `bitcoin_api_user_feeFee`
+user name: `bitcoin_api_feeFee`
 
 policies: `bitcoin_api_user_feeFee`
 
 
 **Korg User**
 
-user name: `bitcoin_api_user_korg`
+user name: `bitcoin_api_korg`
 
 policies: `bitcoin_api_user_korg`, `bitcoin_api_function_addTransactionAndUpdateExchangeUser`
 
 
 **TheOmega User**
 
-user name: `bitcoin_api_user_theomega`
+user name: `bitcoin_api_theomega`
 
 policies: `bitcoin_api_user_theomega`, `bitcoin_api_function_addTransactionAndUpdateExchangeUser`
 
