@@ -9,8 +9,12 @@
   "license": "ISC",
   "dependencies": {
     "@bitcoin-api.io/common-general": "^1.0.4",
+    "@bitcoin-api.io/redis-streams-utils": "^1.0.1",
     "aws-sdk": "^2.523.0",
+    "do-redis-request": "^1.0.5",
+    "drf": "^1.0.6",
     "drq": "^2.0.6",
+    "get-redis-client": "^1.0.4",
     "loglevels": "^8.0.1",
     "orgasm": "^1.0.4",
     "redis": "^2.8.0",
