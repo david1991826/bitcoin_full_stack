@@ -6,15 +6,15 @@ const {
             isProductionMode
         }
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const f = Object.freeze;
 
 const tableNames = isProductionMode ? f({
 
-    exchangeUsers: 'exchangeUsersv1',
-    loginTokens: 'loginTokensv1',
-    transactions: 'transactionsv1',
+    exchangeUsers: 'bitcoin_api_exchangeUsers',
+    loginTokens: 'bitcoin_api_loginTokens',
+    transactions: 'bitcoin_api_transactions',
 
 }) : f({
 

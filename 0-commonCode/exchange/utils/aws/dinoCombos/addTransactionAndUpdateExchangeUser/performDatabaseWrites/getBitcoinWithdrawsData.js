@@ -1,11 +1,5 @@
 'use strict';
 
-// const {
-//     utils: {
-//         stringify
-//     },
-// } = require( '@npm.m.stecky.efantis/commonprivate' );
-
 const { formatting: { getAmountNumber } } = require( 'orgasm' );
 
 const {
