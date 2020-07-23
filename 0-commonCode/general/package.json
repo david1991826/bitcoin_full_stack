@@ -1,7 +1,7 @@
 {
-  "name": "@bitcoin-api.io/general-common",
+  "name": "@bitcoin-api.io/common-general",
   "version": "1.0.4",
-  "description": "",
+  "description": "General common code for https://github.com/bitcoin-api/bitcoin-api-full-stack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
