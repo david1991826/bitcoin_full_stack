@@ -10,6 +10,7 @@
   "dependencies": {
     "@bitcoin-api.io/common-general": "^1.0.4",
     "aws-sdk": "^2.523.0",
+    "drq": "^2.0.6",
     "loglevels": "^8.0.1",
     "orgasm": "^1.0.4",
     "redis": "^2.8.0",
