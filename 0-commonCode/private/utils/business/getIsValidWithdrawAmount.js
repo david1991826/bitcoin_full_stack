@@ -9,7 +9,7 @@ const {
             }
         }
     },
-} = require( 'general-common' );
+} = require( '@bitcoin-api.io/common-general' );
 
 
 module.exports = Object.freeze( ({

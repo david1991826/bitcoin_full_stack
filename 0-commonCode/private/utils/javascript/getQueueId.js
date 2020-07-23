@@ -17,6 +17,6 @@ module.exports = Object.freeze(
 
         return (
             `queue${ queueIdSeparator }${ type }${ queueIdSeparator }${ id }`
-        )
+        );
     }
 );

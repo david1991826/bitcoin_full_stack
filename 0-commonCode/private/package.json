@@ -8,7 +8,7 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "general-common": "file:../general-common",
+    "@bitcoin-api.io/common-general": "^1.0.4",
     "aws-sdk": "^2.523.0",
     "loglevels": "^8.0.1",
     "orgasm": "^1.0.4",

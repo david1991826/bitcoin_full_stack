@@ -12,7 +12,7 @@ const {
 
 } = require( '../../../constants' );
 
-const stringify = require( '../../../utils/stringify' );
+const stringify = require( '../../stringify' );
 
 
 module.exports = Object.freeze( ({

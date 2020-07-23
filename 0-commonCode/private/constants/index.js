@@ -2,7 +2,7 @@
 
 const {
     constants: { withdraws }
-} = require( 'general-common' );
+} = require( '@bitcoin-api.io/common-general' );
 
 const staging = 'staging';
 const production = 'production';
@@ -32,21 +32,19 @@ console.log(
 
 const tableNames = isProductionMode ? Object.freeze({
 
-    users: 'usersv1',
-    addresses: 'addressesv1',
-    metadata: 'metadatav1',
-    withdraws: 'withdrawsv1',
-    balances: 'balancesv1',
-    unusedAddresses: 'unused_addressesv1',
+    users: 'bitcoin_api_users',
+    addresses: 'bitcoin_api_addresses',
+    metadata: 'bitcoin_api_metadata',
+    withdraws: 'bitcoin_api_withdraws',
+    balances: 'bitcoin_api_balances',
 
 }) : Object.freeze({
 
-    users: 'usersv1_staging',
-    addresses: 'addressesv1_staging',
-    metadata: 'metadatav1_staging',
-    withdraws: 'withdrawsv1_staging',
-    balances: 'balancesv1_staging',
-    unusedAddresses: 'unused_addressesv1_staging',
+    users: 'bitcoin_api_users_staging',
+    addresses: 'bitcoin_api_addresses_staging',
+    metadata: 'bitcoin_api_metadata_staging',
+    withdraws: 'bitcoin_api_withdraws_staging',
+    balances: 'bitcoin_api_balances_staging',
 });
 
 const f = Object.freeze;
@@ -61,7 +59,6 @@ module.exports = f({
                 METADATA: tableNames.metadata,
                 WITHDRAWS: tableNames.withdraws,
                 BALANCES: tableNames.balances,
-                UNUSED_ADDRESSES: tableNames.unusedAddresses,
             },
             tableNameToKey: {
                 [tableNames.users]: 'userId',
@@ -69,7 +66,6 @@ module.exports = f({
                 [tableNames.metadata]: 'key',
                 [tableNames.withdraws]: 'userId',
                 [tableNames.balances]: 'userId',
-                [tableNames.unusedAddresses]: 'creationDate'
             },
             tableNameToSortKey: {
                 [tableNames.addresses]: 'address',
@@ -149,7 +145,6 @@ module.exports = f({
             advancedCodeRateLimiterQueueId: 'advancedCodeRateLimiterQueueId',
             bankStatusQueueId: 'bankStatusQueueId',
             websiteIpAddressDatav1: 'websiteIpAddressDatav1',
-            giraffeToTreeDeploy: 'giraffeToTreeDeploy',
             zarbonDeploy: 'zarbonDeploy',
         },
         listIds: {
