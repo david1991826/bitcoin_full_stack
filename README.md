@@ -386,7 +386,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 | bitcoin_api_addresses | address-index | address (string) | - |
 | bitcoin_api_exchangeUsers | email-index | email (string) | - |
 | bitcoin_api_transactions | exchangeUserId-creationDate-index | exchangeUserId (string) | creationDate (number) |
-| bitcoin_api_withdraws | state-creationDate-index | state (number) | creationDate (number) |
+| bitcoin_api_withdraws | state-creationDate-index | state (string) | creationDate (number) |
 
 
 **c)** Set Up Backend .env Environment Variable Files
