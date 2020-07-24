@@ -5,8 +5,9 @@
     width="200"
 />
 
-Complete Code Base for Bitcoin-Api
+#### Complete Code Base for Bitcoin-Api
 
+<br>
 
 ## Video Demo of Exchange and Casino Technology
 
@@ -400,6 +401,19 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 | bitcoin_api_exchangeUsers | email-index | email (string) | - |
 | bitcoin_api_transactions | exchangeUserId-creationDate-index | exchangeUserId (string) | creationDate (number) |
 | bitcoin_api_withdraws | state-creationDate-index | state (string) | creationDate (number) |
+
+
+##### Backend S3 Storage Bucket
+
+This section goes over how to set up the required [AWS S3](https://aws.amazon.com/s3) production bucket for Bitcoin-Api. The staging bucket is the same except for `_staging` is appended onto the bucket name (recommended for simplicity, although it's not necessary and the S3 staging bucket can have a completely different name if wanted).
+
+[AWS S3 Management Console](https://console.aws.amazon.com/s3/home)
+
+**Steps to Set Up Bitcoin-Api S3 Bucket (Staging or Production)**
+
+1. Create a bucket in S3
+
+2. Create a folder on the root level of that bucket and call it `qr_codes`. This is the folder where the Bitcoin address QR code images are stored.
 
 
 **c)** Set Up Backend .env Environment Variable Files
