@@ -6,7 +6,7 @@ const {
         stringify,
     },
 
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const destroyLickFile = require( './destroyLickFile' );
 
@@ -47,7 +47,7 @@ module.exports = Object.freeze( async ({
 
                 resolve( lickFile );
             }
-        )
+        );
     });
 
     if( !lickFile ) {
@@ -87,7 +87,7 @@ module.exports = Object.freeze( async ({
             'lick_file with no deployId'
         );
 
-        return null
+        return null;
     }
     else if(
         !operationExpiry ||

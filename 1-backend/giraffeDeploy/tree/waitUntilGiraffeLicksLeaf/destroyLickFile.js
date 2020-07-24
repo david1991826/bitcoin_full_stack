@@ -37,7 +37,7 @@ module.exports = Object.freeze( async ({
 
                 resolve();
             }
-        )
+        );
     });
 
     console.log(
