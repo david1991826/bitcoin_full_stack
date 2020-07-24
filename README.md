@@ -1,12 +1,22 @@
 # bitcoin-api-full-stack
 
-<img src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/azubuike-bitcoin-api-full-stack.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="150" />
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/azubuike-bitcoin-api-full-stack.png"
+    width="200"
+/>
 
 Complete Code Base for Bitcoin-Api
 
 
 ## Video Demo of Exchange and Casino Technology
-[![Video Demo Video of Exchange and Casino Technology](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://youtu.be/EMAwIrHM2Qc)
+
+<a href="https://youtu.be/EMAwIrHM2Qc">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png"
+        width="85"
+    />
+</a>
+
 
 
 ## API, Exchange, and Casino Features
@@ -546,15 +556,24 @@ TODO:
 
 Here is an example video of a live staging deployment for the backend. This video shows the fee update worker being updated using the Giraffe Lick Leaf deployment tool. This deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server, the service doesn't need to be shut down or be interrupted:
 
-[![Instant Backend Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://www.youtube.com/watch?v=ZZ4zdq4AJY8)
-
+<a href="https://www.youtube.com/watch?v=ZZ4zdq4AJY8">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png"
+        width="85"
+    />
+</a>
 
 
 ### How to Deploy API
 
 Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
 
-[![🐑🐑Lamb Lamb Deployment](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://youtu.be/8FCWWAyXB8A)
+<a href="https://www.youtube.com/watch?v=8FCWWAyXB8A">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png"
+        width="85"
+    />
+</a>
 
 
 ### How to Deploy Frontend
