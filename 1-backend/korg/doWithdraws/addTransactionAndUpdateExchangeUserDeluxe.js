@@ -21,7 +21,7 @@ const {
             bitcoinWithdrawTypes
         }
     }
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const {
     utils: {
@@ -53,8 +53,7 @@ const {
             states
         }
     }
-
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 
 const addTransactionAndUpdateExchangeUserDeluxeCore = Object.freeze( async ({

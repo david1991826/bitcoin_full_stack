@@ -4,7 +4,7 @@ const bluebird = require( 'bluebird' );
 const { doBitcoinRequest } = require( 'common-utilities' );
 const {
     utils: { stringify }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const maxAllowedTriesToGetTheActualFee = 5;
 

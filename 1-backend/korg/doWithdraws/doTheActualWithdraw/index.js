@@ -7,7 +7,7 @@ const {
     utils: {
         doOperationInQueue
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const doTheActualWithdrawCore = require( './doTheActualWithdrawCore' );
 
