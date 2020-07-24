@@ -574,4 +574,4 @@ Sponsor this page and get priority support and other awesome benefits😁: [Bitc
 
 **Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/bitcoin-api) - contact for enterprise Bitcoin-Api Bitcoin and crypto integration services - add crypto to your business!
 
-**Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire
+**Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire for excellent quality design and art work
