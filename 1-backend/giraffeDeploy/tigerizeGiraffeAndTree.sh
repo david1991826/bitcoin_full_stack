@@ -23,15 +23,15 @@ elif [ "$she" = "e" ];
 then
 
     pushd ./giraffe
-    npm install @npm.m.stecky.efantis/commonprivate@latest --save
+    npm install @bitcoin-api.io/common-private@latest --save
     popd
 
     pushd ./tree
-    npm install @npm.m.stecky.efantis/commonprivate@latest --save
+    npm install @bitcoin-api.io/common-private@latest --save
     popd
 
     pushd ./commonUtilities
-    npm install @npm.m.stecky.efantis/commonprivate@latest --save
+    npm install @bitcoin-api.io/common-private@latest --save
     popd
 
 else

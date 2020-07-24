@@ -1,13 +1,5 @@
 'use strict';
 
-// const {
-
-//     utils: {
-//         stringify,
-//     },
-
-// } = require( '@npm.m.stecky.efantis/commonprivate' );
-
 const fs = require( 'fs' );
 
 
