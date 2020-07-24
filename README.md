@@ -464,7 +464,7 @@ In the `/1-backend` folder in your CLI, run:
 
 After the modules have been transported to your Linux server, it's time to start them up!
 
-**Here are the commands to run your NodeJS services:**
+#### Here's the commands to run your NodeJS services:
 
 **Calzone Sun (manually trigger)**
 
