@@ -481,8 +481,13 @@ node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=prod
 
 **Fee Fee (runs in infinite loop)**
 
-This NodeJS service updates the fee data. Start this command with pm2. In the `~/tigerScript/feeFee` path on your Linux server, run the following command:
+This NodeJS service updates the fee data. Start this command with pm2. In the `~/tigerScript/feeFee` path on your Linux server, first install the node modules:
 
+```
+npm install
+```
+
+then, run the following command to start up the NodeJS fee updating service:
 ```
 pm2 start UpdateFeeDataWorker
 ```
