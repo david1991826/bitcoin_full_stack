@@ -6,7 +6,7 @@ const {
         stringify,
     },
 
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const fs = require( 'fs' );
 
@@ -51,7 +51,7 @@ module.exports = Object.freeze( async ({
 
                 resolve();
             }
-        )
+        );
     });
 
     console.log(

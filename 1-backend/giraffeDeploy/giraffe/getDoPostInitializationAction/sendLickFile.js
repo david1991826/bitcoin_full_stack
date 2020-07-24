@@ -1,14 +1,5 @@
 'use strict';
 
-// const {
-    
-//     utils: {
-    
-//         stringify,
-//     },
-
-// } = require( '@npm.m.stecky.efantis/commonprivate' );
-
 const execa = require( 'execa' );
 
 const pemPath = process.env.PEM_PATH;
