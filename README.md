@@ -1,6 +1,9 @@
 # bitcoin-api-full-stack
 
+<img src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/azubuike-bitcoin-api-full-stack.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="150" />
+
 Complete Code Base for Bitcoin-Api
+
 
 ## Video Demo of Exchange and Casino Technology
 [![Video Demo Video of Exchange and Casino Technology](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png)](https://youtu.be/EMAwIrHM2Qc)
@@ -565,3 +568,10 @@ Notes:
 
 Sponsor this page and get priority support and other awesome benefits😁: [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api)
 
+
+
+### Credits:
+
+**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/bitcoin-api) - contact for enterprise Bitcoin-Api Bitcoin and crypto integration services - add crypto to your business!
+
+**Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire
