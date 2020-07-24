@@ -2,8 +2,6 @@
 
 const {
 
-    
-
     utils: {
         redis: {
             rhinoCombos: {
@@ -12,11 +10,7 @@ const {
             doRedisFunction,
             getClient,
             doRedisRequest,
-            streams: {
-                getKeyValues,
-                getOperationTime,
-                getIncrementedTimeKeyData
-            }
+            streams
         },
         javascript: {
             jsonEncoder
@@ -24,7 +18,7 @@ const {
         stringify
     },
 
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const getTimeInfo = require( './getTimeInfo' );
 
@@ -149,7 +143,7 @@ const listenForEventsAndExecuteActionsCore = Object.freeze( async ({
             stringify({
                 ['seconds until expiry']: timeUntilExpiry/1000,
                 ['listen start time']: (
-                    new Date( getOperationTime({
+                    new Date( streams.getOperationTime({
                         operationTimeKey: listenStartTimeKey,
                     }) )
                 ).toTimeString(),
@@ -234,7 +228,7 @@ const listenForEventsAndExecuteActionsCore = Object.freeze( async ({
 
             return {
                 timeKey: entry[0],
-                keyValues: getKeyValues({
+                keyValues: streams.getKeyValues({
                     keyValueList: entry[1],
                 }),
             };
@@ -402,7 +396,7 @@ const listenForEventsAndExecuteActionsCore = Object.freeze( async ({
         }
         else if( theFinalActionHasNotBeenPerformedYet ) {
 
-            listenStartTimeKey = getIncrementedTimeKeyData({
+            listenStartTimeKey = streams.getIncrementedTimeKeyData({
 
                 timeKey: deployEventData[
                     
