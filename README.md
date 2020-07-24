@@ -2,7 +2,7 @@
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/azubuike-bitcoin-api-full-stack-2.png"
-    width="280"
+    width="290"
 />
 
 #### Complete Code Base for Bitcoin-Api
