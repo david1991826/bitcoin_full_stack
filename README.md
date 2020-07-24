@@ -436,7 +436,66 @@ The following environment files need to be created and set up:
 .env Template: [Tree .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/tree.env)
 
 
-**d)** Transfer Tree Deploy🌲🌳 Code
+**d)** Send and Start Initial NodeJS Services Modules
+
+For this step, you will manually send and start up the NodeJS service modules (a.k.a. "The Tigers"). This is only necessary for the initial setup and after this the Giraffe Lick Leaf (GLL) deployment can be used for instant deploys with a single simple command.
+
+
+TODO:🚧👷‍♂️👷‍♀️🏗
+
+For this command you will need to create a `/1-backend/setUpTigers.sh` gitignored setup command file from the provided `/1-backend/setUpTigers.template.sh` file.
+
+A chart is provided showing how to replace the template placeholder values:
+
+
+TODO:🚧👷‍♂️👷‍♀️🏗
+
+| value to update  | meaning | example |
+|--|--|--|
+| \<temporary\>  | temporary | temporary |
+
+After the values have been replaced, run the `/1-backend/setUpTigers.sh` command to transport the NodeJS service modules from your home computer to your Linux server.
+
+In the `/1-backend` folder in your CLI, run:
+
+```
+./setUpTigers.sh
+```
+
+After the modules have been transported to your Linux server, it's time to start them up!
+
+**Here are the commands to run your NodeJS services:**
+
+**Calzone Sun (manually trigger)**
+
+Adds unused addresses to the system. Run the following command in the `~/tigerScript/calzoneSun` path on your Linux server:
+
+```
+node AddUnusedAddress.js [number of addresses to add, defaults to 1]
+```
+
+or in production:
+```
+node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=production
+```
+
+**Fee Fee (runs in infinite loop)**
+
+This NodeJS service updates the fee data. Start this command with pm2. In the `~/tigerScript/feeFee` path on your Linux server, run the following command:
+
+```
+pm2 start feeFee
+```
+
+or in production
+```
+pm2 start feeFee -- --mode=production
+```
+
+TODO:🚧👷‍♂️👷‍♀️🏗
+
+
+**e)** Transfer Tree Deploy🌲🌳 Code
 
 This step explains how to set up the tree deploy code.
 
@@ -450,6 +509,9 @@ A chart is provided showing how to replace the template placeholder values:
 | \<url\>  | your Linux server's address with your Linux server user's name prepended with an "@" | ec2-user@ec2-mega-monkey-server.mars-space-1.compute.amazonaws.com |
 |\<path\>| path on your Linux server to where the tree deploy files are sent, it needs to point to the `/treeDeploy/giraffeDeploy` folder you created in step **a)** | /home/ec2-user/treeDeploy/giraffeDeploy |
 |\<path-to-treenv\> | path to environment variables for the tree deploy code, it needs to point to the `/treeDeploy/stagingCredentials` folder or the `/treeDeploy/productionCredentials` folder created in step **a)** | /home/ec2-user/treeDeploy/stagingCredentials |
+
+
+
 
 --- TODO:🚧👷‍♂️👷‍♀️🏗 ---> transfer tree deploy files to Linux server and install node modules for tree deploy on Linux server
 
