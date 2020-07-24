@@ -4,7 +4,7 @@ const {
     utils: {
         delay
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const signalOnStatusToCommandCenter = require( './signalOnStatusToCommandCenter' );
 const runGiraffeEvolutionProcedure = require( './runGiraffeEvolutionProcedure' );

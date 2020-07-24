@@ -9,5 +9,5 @@ module.exports = Object.freeze({
     mongo: require( './mongo' ),
     runGiraffeEvolutionProcedure: require( './runGiraffeEvolutionProcedure' ),
     runSpiritual: require( './runSpiritual' ),
-    backgroundExecutor: require( './backgroundExecutor' ),
+    backgroundExecutor: require( 'bqe' ),
 });

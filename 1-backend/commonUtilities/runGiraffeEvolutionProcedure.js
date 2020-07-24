@@ -16,19 +16,14 @@ const {
             rhinoCombos: {
                 giraffeAndTreeStatusUpdate
             },
+            streams,
         },
         stringify,
-        redis: {
-            streams: {
-                getKeyValues,
-            },
-        },
         javascript: {
             jsonEncoder
         },
     }
-
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 
 const getGetIfTigerShouldHideResults = Object.freeze(({
@@ -115,7 +110,7 @@ const getIfTigerShouldHide = Object.freeze( async ({
         const theLastDeployEventData = {
 
             timeKey: theLastDeployEventRawData[0],
-            keyValues: getKeyValues({
+            keyValues: streams.getKeyValues({
                 keyValueList: theLastDeployEventRawData[1],
             }),
         };

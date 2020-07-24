@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@npm.m.stecky.efantis/commonprivate": "^25.2.0",
+    "@bitcoin-api.io/common-private": "^25.2.0",
+    "bqe": "^1.0.3",
     "execa": "^2.0.4",
     "mongodb": "^3.4.0"
   }

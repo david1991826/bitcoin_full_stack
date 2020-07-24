@@ -4,7 +4,7 @@ const {
     constants: {
         megaServerIdToMegaServerData
     }
-} = require( '@npm.m.stecky.efantis/commonprivate')
+} = require( '@bitcoin-api.io/common-private' );
 
 const megaServerId = process.env.ID_OF_CURRENT_MEGA_SERVER;
 
