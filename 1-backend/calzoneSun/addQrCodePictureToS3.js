@@ -8,12 +8,12 @@ const {
         
         aws: { storage: { classicalS3Storage } },
         
-        environment: {
-            isProductionMode
-        }
+        // environment: {
+        //     isProductionMode
+        // }
     }
 
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const fs = require( 'fs' );
 
@@ -39,13 +39,13 @@ AWS.config.update({
 
 const getPictureJuice = () => new Promise(
     
-    ( resolve, reject ) => {
+    ( resolve, reject ) => {
         
         fs.readFile( qrCodeFilePath, ( err, juice ) => {
 
             if( !!err ) {
 
-                console.log( 'error in getting picture jucie:', err );
+                console.log( 'error in getting picture juice:', err );
 
                 return reject( err );
             }
@@ -66,7 +66,7 @@ module.exports = async ({
 
     const juice = await getPictureJuice();
 
-    const bucket = isProductionMode ? 'bitcoin-api' : 'api-bitcoin';
+    const bucket = process.env.S3_BUCKET_FOR_QR_CODE_PICTURES;
     const key = `qr_codes/${ address }.jpg`;
 
     const params = {
@@ -85,7 +85,7 @@ module.exports = async ({
             params,
             ( err, data ) => {
                 
-                if( !!err ) {
+                if( !!err ) {
                     
                     console.log(
                         'an error occurred in putting to s3:',

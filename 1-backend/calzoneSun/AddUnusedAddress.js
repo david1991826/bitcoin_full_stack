@@ -21,7 +21,7 @@ const {
     constants: {
         megaServerId
     }
-} = require( '../commonUtilities' );
+} = require( 'common-utilities' );
 
 const {
     validation: {
@@ -48,7 +48,7 @@ const {
         },
     },
 
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const args = Object.freeze([ 'getnewaddress' ]);
 
