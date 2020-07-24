@@ -7,7 +7,8 @@ const {
     utils: {
         stringify,
     },
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+// } = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     utils: {
@@ -22,7 +23,7 @@ const {
             types
         }
     }
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const {
     mongo,

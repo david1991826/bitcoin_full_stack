@@ -19,7 +19,7 @@ const {
             }
         }
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 // idempotent
 module.exports = Object.freeze( async ({

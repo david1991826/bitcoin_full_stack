@@ -20,13 +20,10 @@ const {
             }
         }
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     mongo,
-} = require( 'common-utilities' );
-
-const {
     constants: {
         megaServerId
     },
