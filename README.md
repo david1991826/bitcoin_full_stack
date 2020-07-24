@@ -489,7 +489,7 @@ pm2 start UpdateFeeDataWorker
 
 or in production
 ```
-pm2 start feeFee -- --mode=production
+pm2 start UpdateFeeDataWorker -- --mode=production
 ```
 
 TODO:🚧👷‍♂️👷‍♀️🏗
