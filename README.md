@@ -484,7 +484,7 @@ node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=prod
 This NodeJS service updates the fee data. Start this command with pm2. In the `~/tigerScript/feeFee` path on your Linux server, run the following command:
 
 ```
-pm2 start feeFee
+pm2 start UpdateFeeDataWorker
 ```
 
 or in production
