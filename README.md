@@ -468,8 +468,15 @@ After the modules have been transported to your Linux server, it's time to start
 
 **Calzone Sun (manually trigger)**
 
-Adds unused addresses to the system. Run the following command in the `~/tigerScript/calzoneSun` path on your Linux server:
+Adds unused addresses to the system. Run the following commands in the `~/tigerScript/calzoneSun` path on your Linux server:
 
+
+First, if not already, install the node modules with:
+```
+npm install
+```
+
+Then, to add new addresses to your Bitcoin-Api system:
 ```
 node AddUnusedAddress.js [number of addresses to add, defaults to 1]
 ```
@@ -487,7 +494,7 @@ This NodeJS service updates the fee data. Start this command with pm2. In the `~
 npm install
 ```
 
-then, run the following command to start up the NodeJS fee updating service:
+Then, run the following command to start up the NodeJS fee updating service:
 ```
 pm2 start UpdateFeeDataWorker
 ```
