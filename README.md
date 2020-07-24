@@ -1,8 +1,8 @@
 # bitcoin-api-full-stack
 
 <img
-    src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/azubuike-bitcoin-api-full-stack.png"
-    width="200"
+    src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/azubuike-bitcoin-api-full-stack-2.png"
+    width="280"
 />
 
 #### Complete Code Base for Bitcoin-Api
