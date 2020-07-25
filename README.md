@@ -473,12 +473,12 @@ A chart is provided showing how to replace the template placeholder values in de
 
 | value to update  | meaning | example |
 |--|--|--|
+| mode | environment | either staging or production |
 | pemPath | path on your home computer to your Linux server's .pem access key file | /Users/user-name/user-files/super-secret-path/linux-server-access-file.pem |
+| sourceRepoPath | the path on your home computer to where your `bitcoin-api-full-stack` repo is located (this repo!😎) | /Users/user-name/my-code-folder/bitcoin-api-full-stack |
 | destinationUserName | the user name you use to access your Linux server | ec2-user |
 | destinationUrl | the URL of your Linux server | ec2-instance-name.ec2-instance-region.compute.amazonaws.com |
-| sourceRepoPath | the path on your home computer to where your `bitcoin-api-full-stack` repo is located (this repo!😎) | /Users/user-name/my-code-folder/bitcoin-api-full-stack |
 | destinationHomePath | the home path on your Linux server for your Linux user | /home/ec2-user |
-| mode | environment | either staging or production |
 
 After the values have been replaced, run the `/infrastructure/scripts/1-backend/setUpTigers.sh` command to transport the NodeJS service modules from your home computer to your Linux server.
 

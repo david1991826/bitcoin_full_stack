@@ -9,13 +9,14 @@ echo "👾👾👾👾👾👾👾👾👾👾"
 ######################################################
 # These values need to be customized for your computer and remote Linux server
 ######
+mode="staging" # OR "production"
+
 pemPath="/Users/user-name/user-files/super-secret-path/linux-server-access-file.pem"
+sourceRepoPath="/Users/user-name/my-code-folder/bitcoin-api-full-stack"
+
 destinationUserName="ec2-user"
 destinationUrl="ec2-instance-name.ec2-instance-region.compute.amazonaws.com"
-
-sourceRepoPath="/Users/user-name/my-code-folder/bitcoin-api-full-stack"
 destinationHomePath="/home/ec2-user"
-mode="staging" # OR "production"
 ######################################################
 ######################################################
 
