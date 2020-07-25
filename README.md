@@ -467,19 +467,22 @@ The following environment files need to be created and set up:
 
 For this step, you will manually send and start up the NodeJS service modules (a.k.a. "The Tigers"). This is only necessary for the initial setup and after this the Giraffe Lick Leaf (GLL) deployment can be used for instant deploys with a single simple command.
 
-For this command you will need to create a `/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/1-backend/setUpTigers.template.sh` template file](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/1-backend/setUpTigers.template.sh).
+For this command you will need to create a `/infrastructure/scripts/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/infrastructure/scripts/1-backend/setUpTigers.template.sh` template file](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/scripts/1-backend/setUpTigers.template.sh).
 
 A chart is provided showing how to replace the template placeholder values in detail:
 
-TODO:🚧👷‍♂️👷‍♀️🏗
-
 | value to update  | meaning | example |
 |--|--|--|
-| \<temporary\>  | temporary | temporary |
+| pemPath | path on your home computer to your Linux server's .pem access key file | /Users/user-name/user-files/super-secret-path/linux-server-access-file.pem |
+| destinationUserName | the user name you use to access your Linux server | ec2-user |
+| destinationUrl | the URL of your Linux server | ec2-instance-name.ec2-instance-region.compute.amazonaws.com |
+| sourceRepoPath | the path on your home computer to where your `bitcoin-api-full-stack` repo is located (this repo!😎) | /Users/user-name/my-code-folder/bitcoin-api-full-stack |
+| destinationHomePath | the home path on your Linux server for your Linux user | /home/ec2-user |
+| mode | environment | either staging or production |
 
-After the values have been replaced, run the `/1-backend/setUpTigers.sh` command to transport the NodeJS service modules from your home computer to your Linux server.
+After the values have been replaced, run the `/infrastructure/scripts/1-backend/setUpTigers.sh` command to transport the NodeJS service modules from your home computer to your Linux server.
 
-In the `/1-backend` folder in your CLI, run:
+In the `/infrastructure/scripts/1-backend` folder in your CLI, run:
 
 ```
 ./setUpTigers.sh
