@@ -513,7 +513,7 @@ or in production:
 node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=production
 ```
 
-**Fee Fee (runs in infinite loop)**
+**Fee Fee (runs in infinite loop)** TODO:🚧👷‍♂️👷‍♀️🏗
 
 This NodeJS service updates the fee data. Start this command with pm2. In the `~/tigerScript/feeFee` path on your Linux server, first install the node modules:
 
