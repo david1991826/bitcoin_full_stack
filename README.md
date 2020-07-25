@@ -492,7 +492,7 @@ In the `/infrastructure/scripts/1-backend` folder in your CLI, run:
 After the modules have been transported to your Linux server, it's time to start them up!
 
 
-#### Here's are the instructions to manually run your NodeJS services:
+#### Here's the instructions to manually run your NodeJS services:
 
 **Calzone Sun (manually triggered)**
 
