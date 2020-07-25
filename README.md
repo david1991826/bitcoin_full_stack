@@ -487,6 +487,7 @@ In the `/infrastructure/scripts/1-backend` folder in your CLI, run:
 ```
 ./setUpTigers.sh
 ```
+> note: you may need to run `chmod 777 ./setUpTigers.sh` first before running the set up script
 
 After the modules have been transported to your Linux server, it's time to start them up!
 
