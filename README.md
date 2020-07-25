@@ -467,7 +467,7 @@ The following environment files need to be created and set up:
 
 For this step, you will manually send and start up the NodeJS service modules (a.k.a. "The Tigers"). This is only necessary for the initial setup and after this the Giraffe Lick Leaf (GLL) deployment can be used for instant deploys with a single simple command.
 
-For this command you will need to create a `/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/1-backend/setUpTigers.template.sh` template file](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/setUpTigers.template.sh).
+For this command you will need to create a `/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/1-backend/setUpTigers.template.sh` template file](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/1-backend/setUpTigers.template.sh).
 
 A chart is provided showing how to replace the template placeholder values in detail:
 
