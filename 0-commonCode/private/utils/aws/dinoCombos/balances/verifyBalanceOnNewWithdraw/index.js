@@ -29,7 +29,7 @@ const {
             }
         }
     }
-} = require( 'general-common' );
+} = require( '@bitcoin-api.io/common-general' );
 
 
 const getVanguardValues = Object.freeze( ({
