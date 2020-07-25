@@ -6,6 +6,7 @@ echo "🐯🐅🐯🐅🐯🐅"
 echo "👾👾👾👾👾👾👾👾👾👾"
 
 ######################################################
+######################################################
 # These values need to be customized for your computer and remote Linux server
 ######
 pemPath="/Users/user-name/user-files/super-secret-path/linux-server-access-file.pem"
@@ -14,10 +15,7 @@ destinationUrl="ec2-instance-name.ec2-instance-region.compute.amazonaws.com"
 
 sourceRepoPath="/Users/user-name/my-code-folder/bitcoin-api-full-stack"
 destinationHomePath="/home/ec2-user"
-mode="staging"
-# mode="production" # alternate mode
-
-######################################################
+mode="staging" # OR "production"
 ######################################################
 ######################################################
 
