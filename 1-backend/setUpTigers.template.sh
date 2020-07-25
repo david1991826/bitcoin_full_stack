@@ -23,6 +23,8 @@ mode="staging"
 
 ### The code below is taken care of by Bitcoin-Api💕 ###
 
+## TODO: add code that removes node modules from tigers
+
 sourcePath = "${sourceRepoPath}/1-backend"
 destinationPath="${destinationHomePath}/tigerScript"
 
