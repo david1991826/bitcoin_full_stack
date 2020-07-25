@@ -491,19 +491,23 @@ In the `/infrastructure/scripts/1-backend` folder in your CLI, run:
 
 After the modules have been transported to your Linux server, it's time to start them up!
 
+
 #### Here's the commands to run your NodeJS services:
 
-**Calzone Sun (manually trigger)**
-
-Adds unused addresses to the system. Run the following commands in the `~/tigerScript/calzoneSun` path on your Linux server:
-
-
-First, if not already, install the node modules with:
+To manually run the NodeJS services, first, in the `/[Linux user home path]/tigerScript/commonUtilities` folder, install the node modules with:
 ```
 npm install
 ```
 
-Then, to add new addresses to your Bitcoin-Api system:
+**Calzone Sun (manually triggered)**
+This NodeJS service adds unused addresses to the system. Run the following commands in the `/[Linux user home path]/tigerScript/calzoneSun` path on your Linux server:
+
+If not already, install the Calzone Sun node modules with:
+```
+npm install
+```
+
+Then, to add new addresses to your Bitcoin-Api system, you can run the following command:
 ```
 node AddUnusedAddress.js [number of addresses to add, defaults to 1]
 ```
