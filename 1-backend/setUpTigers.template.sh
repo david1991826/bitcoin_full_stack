@@ -23,24 +23,41 @@ mode="staging"
 
 ### The code below is taken care of by Bitcoin-Api💕 ###
 
-## TODO: add code that removes node modules from tigers
-
-sourcePath = "${sourceRepoPath}/1-backend"
+sourcePath="${sourceRepoPath}/1-backend"
 destinationPath="${destinationHomePath}/tigerScript"
 
+calzoneSunPath="${sourcePath}/calzoneSun"
+commonUtilitiesPath="${sourcePath}/commonUtilities"
+feeFeePath="${sourcePath}/feeFee"
+korgPath="${sourcePath}/korg"
+credentialsPath="${sourcePath}/${mode}Credentials"
+theomegaPath="${sourcePath}/theomega"
+
+for tigerPath in \
+    $calzoneSunPath \
+    $commonUtilitiesPath \
+    $feeFeePath \
+    $korgPath \
+    $theomegaPath
+do
+    pushd $tigerPath
+    rm -rf ./node_modules
+    popd
+done
+
 scp \
-    -i "${pemPath}" \
+    -i $pemPath \
     -r \
-    "${sourcePath}/calzoneSun" \
-    "${sourcePath}/commonUtilities" \
-    "${sourcePath}/feeFee" \
-    "${sourcePath}/korg" \
-    "${sourcePath}/${mode}Credentials" \
-    "${sourcePath}/theomega" \
+    $calzoneSunPath \
+    $commonUtilitiesPath \
+    $feeFeePath \
+    $korgPath \
+    $credentialsPath \
+    $theomegaPath \
     "${destinationUserName}@${destinationUrl}:${destinationPath}"
 
 
 echo "👾👾👾👾👾👾👾👾👾👾"
 echo "🐯🐅🐯🐅🐯🐅"
 echo "👾👾👾👾👾👾👾👾👾👾"
-echo "****🐯🐅 The Set Up Tigers Set Up the Necessary Actions 🐅🐯****"
+echo "****🐯🐅 The Set Up Tigers Set Up the Necessary Circumstances 🐅🐯****"
