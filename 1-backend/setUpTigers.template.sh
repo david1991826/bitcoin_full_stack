@@ -33,7 +33,7 @@ scp \
     "${sourcePath}/commonUtilities" \
     "${sourcePath}/feeFee" \
     "${sourcePath}/korg" \
-    "${sourcePath}/${sourcePath}Credentials" \
+    "${sourcePath}/${mode}Credentials" \
     "${sourcePath}/theomega" \
     "${destinationUserName}@${destinationUrl}:${destinationPath}"
 
