@@ -526,7 +526,7 @@ Then, run the following command to start up the NodeJS fee data service:
 pm2 start UpdateFeeDataWorker.js
 ```
 
-or in production
+or in production:
 ```
 pm2 start UpdateFeeDataWorker.js -- --mode=production
 ```
