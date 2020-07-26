@@ -556,7 +556,7 @@ to view the fee data worker logs in realtime. You can also subscribe to their we
 
 > **Errors:** If the service stops working or if you see any errors, particularly right when you first run the service, it can be possible that the error is due to a misconfiguration. It's also possible it can be a network, a blockchain, or a cloud service provider error.
 
-This updates the [AWS DynamoDB](https://aws.amazon.com/dynamodb) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow:
+This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow:
 ```
 Values stored in the DynamoDB database entry:
 amount,
