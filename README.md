@@ -531,7 +531,7 @@ or in production
 pm2 start UpdateFeeDataWorker.js -- --mode=production
 ```
 
-The main function starts again after 10 seconds every time it finishes to keep the fee up to date in the Bitcoin-Api system.
+The main function starts again after 10 seconds every time it finishes to keep the fee up to date in your Bitcoin-Api system.
 
 When the main function has finished, it should look like this:
 
