@@ -561,7 +561,7 @@ Next, to view the fee data worker logs in realtime, run:
 ```
 pm2 logs [the number of your NodeJS service's process]
 ```
-You can optionally sign up and login to pm2's web services and see your NodeJS service's logs in your browser, in realtime, using the [pm2 webapp](https://app.pm2.io/).
+You can optionally sign up and log in to pm2's web services and see your NodeJS service's logs in your browser, in realtime, using the [pm2 webapp](https://app.pm2.io/).
 
 This pm2 command can also be used to monitor your fee data service and all your other pm2 services:
 ```
