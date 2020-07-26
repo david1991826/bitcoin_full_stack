@@ -557,11 +557,11 @@ pm2 list
 
 and see which is the number associated with the `UpdateFeeDataWorker.js` process in this case. Running this command also provides other useful data associated with your pm2 processes.
 
-Next, run:
+Next, to view the fee data worker logs in realtime, run:
 ```
 pm2 logs [the number of your service]
 ```
-to view the fee data worker logs in realtime. You can also log in to pm2's web services and see your NodeJS service's logs in your browser, in realtime, using the [pm2 webapp](https://app.pm2.io/).
+You can also log in to pm2's web services and see your NodeJS service's logs in your browser, in realtime, using the [pm2 webapp](https://app.pm2.io/).
 
 > **Important Note:** In the file `/1-backend/feeFee/updateFee.js`, you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
