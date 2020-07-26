@@ -550,18 +550,23 @@ When the main function has finished, it should look like this:
     width="800"
 />
 
-To check up on your service, you can use this pm2 command:
+To watch your service's logs, first use this pm2 command:
 ```
 pm2 list
 ```
 
-and see which is the number associated with the `UpdateFeeDataWorker.js` process in this case. Running this command also provides other useful data associated with your pm2 processes.
+and see which is the number associated with the `UpdateFeeDataWorker.js` process, in this case. Running this command also provides other useful data associated with your pm2 processes.
 
 Next, to view the fee data worker logs in realtime, run:
 ```
-pm2 logs [the number of your service]
+pm2 logs [the number of your NodeJS service's process]
 ```
 You can also log in to pm2's web services and see your NodeJS service's logs in your browser, in realtime, using the [pm2 webapp](https://app.pm2.io/).
+
+This command can also be used to monitor your fee data service and all your other pm2 services:
+```
+pm2 monit
+```
 
 > **Important Note:** In the file `/1-backend/feeFee/updateFee.js`, you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
