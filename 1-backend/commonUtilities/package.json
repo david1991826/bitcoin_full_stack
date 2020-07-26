@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api.io/common-private": "^26.0.0",
+    "@bitcoin-api.io/common-private": "^27.1.0",
     "bqe": "^1.0.3",
     "execa": "^2.0.4",
     "mongodb": "^3.4.0"

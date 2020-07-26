@@ -513,15 +513,15 @@ or in production:
 node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=production
 ```
 
-**Fee Fee (runs in infinite loop)** TODO:🚧👷‍♂️👷‍♀️🏗
+**Fee Fee (runs in infinite loop)**
 
-This NodeJS service updates the fee data. Start this command with pm2. In the `/[Linux user home path]/tigerScript/feeFee` path on your Linux server, first install the node modules:
+This NodeJS service updates the fee data which includes the fee itself in terms of how much the user pays on Bitcoin withdraw. This service is managed by pm2. To set up the NodeJS fee data service, in the `/[Linux user home path]/tigerScript/feeFee` path on your Linux server, first install the node modules:
 
 ```
 npm install
 ```
 
-Then, run the following command to start up the NodeJS fee updating service:
+Then, run the following command to start up the NodeJS fee data service:
 ```
 pm2 start UpdateFeeDataWorker.js
 ```
@@ -531,8 +531,51 @@ or in production
 pm2 start UpdateFeeDataWorker.js -- --mode=production
 ```
 
-TODO:🚧👷‍♂️👷‍♀️🏗
+The main function starts again after 10 seconds every time it finishes to keep the fee up to date in the Bitcoin-Api system.
 
+When the main function has finished, it should look like this:
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/fee-fee-successful-execution.png"
+    width="600"
+/>
+
+To check up on your service you can use the
+```
+pm2 list
+```
+command and see which is the number associated with the `UpdateFeeDataWorker.js` process in this case. Running this command also provides other useful data associated with your pm2 processes.
+Next, run:
+```
+pm2 logs [the number of your service]
+```
+to view the fee data worker logs in realtime. You can also subscribe to their web services and see your logs in the browser, in realtime, using the [pm2 webapp](https://app.pm2.io/).
+
+> **Important Note:** In the file `/1-backend/feeFee/updateFee.js`, you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
+
+> **Errors:** If the service stops working or if you see any errors, particularly right when you first run the service, it can be possible that the error is due to a misconfiguration. It's also possible it can be a network, a blockchain, or a cloud service provider error.
+
+This updates the [AWS DynamoDB](https://aws.amazon.com/dynamodb) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow:
+```
+Values stored in the DynamoDB database entry:
+amount,
+multiplier,
+blessing fee,
+trinity fee,
+sacrament fee
+
+Calculation:
+
+base fee = (amount x multiplier)
+holy fee = (blessing fee + trinity fee + sacrament fee)
+
+fee to pay = (base fee + holy fee)
+```
+
+It's recommended that you contribute some of the fee towards the environment, please!🌲🌳🌄
+😇
+
+**Korg (runs in infinite loop)** --> TODO:🚧👷‍♂️👷‍♀️🏗
 
 **e)** Transfer Tree Deploy🌲🌳 Code
 
