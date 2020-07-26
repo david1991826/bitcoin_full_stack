@@ -550,7 +550,7 @@ When the main function has finished, it should look like this:
     width="800"
 />
 
-To check up on your service you can use this pm2 command:
+To check up on your service, you can use this pm2 command:
 ```
 pm2 list
 ```
