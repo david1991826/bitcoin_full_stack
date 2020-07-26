@@ -565,7 +565,7 @@ You can also log in to pm2's web services and see your NodeJS service's logs in 
 
 > **Important Note:** In the file `/1-backend/feeFee/updateFee.js`, you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
-> **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error if it occurs. The logs will provide details about the cause of the error.
+> **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of the error, if an error occurs.
 
 This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow:
 ```
