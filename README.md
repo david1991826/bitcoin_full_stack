@@ -540,11 +540,12 @@ When the main function has finished, it should look like this:
     width="800"
 />
 
-To check up on your service you can use the
+To check up on your service you can use this pm2 command:
 ```
 pm2 list
 ```
-command and see which is the number associated with the `UpdateFeeDataWorker.js` process in this case. Running this command also provides other useful data associated with your pm2 processes.
+and see which is the number associated with the `UpdateFeeDataWorker.js` process in this case. Running this command also provides other useful data associated with your pm2 processes.
+
 Next, run:
 ```
 pm2 logs [the number of your service]
