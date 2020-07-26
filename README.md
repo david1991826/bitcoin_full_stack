@@ -533,12 +533,12 @@ pm2 start UpdateFeeDataWorker.js -- --mode=production
 
 You can also test the service without pm2 using:
 ```
-node UpdateFeeDataWorker.js
+node UpdateFeeDataWorker
 ```
 
 or:
 ```
-node UpdateFeeDataWorker.js --mode=production
+node UpdateFeeDataWorker --mode=production
 ```
 
 After the main function finishes, it starts again after 10 seconds to keep the fee up to date in your Bitcoin-Api system.
