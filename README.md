@@ -505,7 +505,7 @@ npm install
 
 Then, to add new addresses to your Bitcoin-Api system, you can run the following command:
 ```
-node AddUnusedAddress.js [number of addresses to add, defaults to 1]
+node AddUnusedAddress [number of addresses to add, defaults to 1]
 ```
 
 or in production:
@@ -515,7 +515,7 @@ node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=prod
 
 **Fee Fee (runs in infinite loop)** TODO:🚧👷‍♂️👷‍♀️🏗
 
-This NodeJS service updates the fee data. Start this command with pm2. In the `~/tigerScript/feeFee` path on your Linux server, first install the node modules:
+This NodeJS service updates the fee data. Start this command with pm2. In the `/[Linux user home path]/tigerScript/feeFee` path on your Linux server, first install the node modules:
 
 ```
 npm install
@@ -523,12 +523,12 @@ npm install
 
 Then, run the following command to start up the NodeJS fee updating service:
 ```
-pm2 start UpdateFeeDataWorker
+pm2 start UpdateFeeDataWorker.js
 ```
 
 or in production
 ```
-pm2 start UpdateFeeDataWorker -- --mode=production
+pm2 start UpdateFeeDataWorker.js -- --mode=production
 ```
 
 TODO:🚧👷‍♂️👷‍♀️🏗
