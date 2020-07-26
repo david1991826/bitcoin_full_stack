@@ -531,7 +531,17 @@ or in production:
 pm2 start UpdateFeeDataWorker.js -- --mode=production
 ```
 
-The main function starts again after 10 seconds every time it finishes to keep the fee up to date in your Bitcoin-Api system.
+You can also test the service without pm2 using:
+```
+node UpdateFeeDataWorker.js
+```
+
+or:
+```
+node UpdateFeeDataWorker.js --mode=production
+```
+
+After the main function finishes, it starts again after 10 seconds to keep the fee up to date in your Bitcoin-Api system.
 
 When the main function has finished, it should look like this:
 
@@ -544,6 +554,7 @@ To check up on your service you can use this pm2 command:
 ```
 pm2 list
 ```
+
 and see which is the number associated with the `UpdateFeeDataWorker.js` process in this case. Running this command also provides other useful data associated with your pm2 processes.
 
 Next, run:
@@ -554,7 +565,7 @@ to view the fee data worker logs in realtime. You can also subscribe to their we
 
 > **Important Note:** In the file `/1-backend/feeFee/updateFee.js`, you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
-> **Errors:** If the service stops working or if you see any errors, particularly right when you first run the service, it can be possible that there is a misconfiguration. It's also possible it can be a network, a blockchain, or a cloud service provider error.
+> **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it can be possible there's a misconfiguration. It's also possible it can be a network, a blockchain, or a cloud service provider error.
 
 This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow:
 ```
@@ -576,7 +587,12 @@ fee to pay = (base fee + holy fee)
 It's recommended that you contribute some of the fee towards the environment, please!🌲🌳🌄
 😇
 
+<br>
+
 **Korg (runs in infinite loop)** --> TODO:🚧👷‍♂️👷‍♀️🏗
+
+... TODO:🚧👷‍♂️👷‍♀️🏗
+<br>
 
 **e)** Transfer Tree Deploy🌲🌳 Code
 
