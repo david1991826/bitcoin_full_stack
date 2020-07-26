@@ -565,7 +565,7 @@ to view the fee data worker logs in realtime. You can also subscribe to their we
 
 > **Important Note:** In the file `/1-backend/feeFee/updateFee.js`, you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
-> **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it can be possible there's a misconfiguration. It's also possible it can be a network, a blockchain, or a cloud service provider error.
+> **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it can be possible there's a misconfiguration. It's also possible it can be a network, a blockchain, or a cloud service provider error. The logs will provide details into what was the cause of the error.
 
 This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow:
 ```
