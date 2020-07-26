@@ -589,7 +589,7 @@ holy fee = (blessing fee + trinity fee + sacrament fee)
 fee to pay = (base fee + holy fee)
 ```
 
-It's recommended that you contribute some of the fee you collect towards the environment, please!🌲🌳🌄
+Please consider contributing some of the fee you collect towards the environment, thank you very much!🌲🌳🌄
 😇
 
 <br>
