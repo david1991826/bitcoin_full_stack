@@ -537,7 +537,7 @@ When the main function has finished, it should look like this:
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/fee-fee-successful-execution.png"
-    width="600"
+    width="800"
 />
 
 To check up on your service you can use the
