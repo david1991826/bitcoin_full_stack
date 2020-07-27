@@ -601,7 +601,28 @@ This NodeJS service performs bitcoin withdraws. To set up this pm2 managed NodeJ
 npm install
 ```
 
-TODO:🚧👷‍♂️👷‍♀️🏗 --> instruction to run, -> next service instructions
+To run the withdraw Bitcoin worker input the following command:
+```
+pm2 start WithdrawMoneyDoer.js
+```
+
+or in production:
+```
+pm2 start WithdrawMoneyDoer.js -- --mode=production
+```
+
+You can also test the service without pm2 using:
+```
+node WithdrawMoneyDoer
+```
+
+or:
+```
+node WithdrawMoneyDoer --mode=production
+```
+<br>
+
+TODO:🚧👷‍♂️👷‍♀️🏗 --> next service instructions
 
 <br>
 
