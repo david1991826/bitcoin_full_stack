@@ -593,6 +593,43 @@ Please consider contributing a portion of the fee you collect towards the enviro
 
 <br>
 
+
+**The Omega (runs in infinite loop)**
+
+This NodeJS service updates Bitcoin addresses and user balances for Bitcoin deposits to Bitcoin-Api addresses. To set up this pm2 managed NodeJS Bitcoin deposit worker service, in the `/[Linux user home path]/tigerScript/theomega` path on your Linux server, first install the node modules:
+
+```
+npm install
+```
+
+To run the Bitcoin deposit worker, input the following command:
+```
+pm2 start UpdateDepositData.js
+```
+
+or in production:
+```
+pm2 start UpdateDepositData.js -- --mode=production
+```
+
+You can also test the service without pm2 using:
+```
+node UpdateDepositData
+```
+
+or:
+```
+node UpdateDepositData --mode=production
+```
+
+A successful iteration of the Bitcoin deposit worker should look like this:
+
+![Update Deposit Data Worker Successful Execution](https://bitcoin-api.s3.amazonaws.com/images/documentation/theomega-successful-execution.png)
+
+
+<br>
+
+
 **Korg (runs in infinite loop)**
 
 This NodeJS service performs Bitcoin withdraws. To set up this pm2 managed NodeJS withdraw Bitcoin worker service, in the `/[Linux user home path]/tigerScript/korg` path on your Linux server, first install the node modules:
@@ -620,13 +657,14 @@ or:
 ```
 node WithdrawMoneyDoer --mode=production
 ```
+
+When an iteration of the withdraw Bitcoin worker completes, it should look like this:
+
+![Withdraw Money Doer Successful Execution](https://bitcoin-api.s3.amazonaws.com/images/documentation/korg-successful-execution.png)
+
 <br>
 
-TODO:🚧👷‍♂️👷‍♀️🏗 --> next service instructions
-
-<br>
-
-**e)** Transfer Tree Deploy🌲🌳 Code
+**e)** Transfer Tree Deploy🌲🌳 Code --- TODO:🚧👷‍♂️👷‍♀️🏗
 
 This step explains how to set up the tree deploy code.
 
