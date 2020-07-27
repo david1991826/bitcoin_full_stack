@@ -593,7 +593,7 @@ Please consider contributing a portion of the fee you collect towards the enviro
 
 <br>
 
-**Korg (runs in infinite loop)** --> TODO:🚧👷‍♂️👷‍♀️🏗
+**Korg (runs in infinite loop)**
 
 This NodeJS service performs bitcoin withdraws. To set up this pm2 managed NodeJS withdraw Bitcoin worker service, in the `/[Linux user home path]/tigerScript/korg` path on your Linux server, first install the node modules:
 
