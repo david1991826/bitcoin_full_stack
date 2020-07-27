@@ -1,6 +1,6 @@
 {
   "name": "@bitcoin-api.io/common-private",
-  "version": "27.1.0",
+  "version": "28.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,12 +9,12 @@
   "license": "ISC",
   "dependencies": {
     "@bitcoin-api.io/common-general": "^1.0.4",
-    "@bitcoin-api.io/redis-streams-utils": "^1.0.1",
+    "@bitcoin-api.io/redis-streams-utils": "^1.0.3",
     "aws-sdk": "^2.523.0",
-    "do-redis-request": "^1.0.5",
-    "drf": "^1.0.6",
-    "drq": "^2.0.6",
-    "get-redis-client": "^1.0.4",
+    "do-redis-request": "^1.0.6",
+    "drf": "^1.0.8",
+    "drq": "^3.0.0",
+    "get-redis-client": "^1.0.5",
     "loglevels": "^8.0.1",
     "orgasm": "^1.0.4",
     "redis": "^2.8.0",

@@ -20,7 +20,7 @@ destinationHomePath="/home/ec2-user"
 ######################################################
 ######################################################
 
-### The code below is taken care of by Bitcoin-Api💕 ###
+### The code below is taken care of by Bitcoin-Api😁✌🕊💕🏛 ###
 
 sourcePath="${sourceRepoPath}/1-backend"
 destinationPath="${destinationHomePath}/tigerScript"
