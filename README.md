@@ -786,11 +786,11 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 **Custom AWS Policies to Set Up:**
 
-`bitcoin_api_user_deployFunctions`
+`bitcoin_api_user_deployApiFunctions`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployFunctions_staging.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployApiFunctions_staging.json)
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployFunctions.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployApiFunctions.json)
 
 
 `bitcoin_api_user_deployExchangeFunctions`
