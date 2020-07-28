@@ -5,8 +5,6 @@ module.exports = ({
     isProductionMode,
     environmentVariables: {
 
-        GOOGLE_CAPTCHA_SECRET,
-        PATCH_TOKENS_BYPASS_IS_HUMAN_TEST_SECRET,
         WALHALLA_ADDRESS_MODE_SECRET,
         EXCHANGE_TOKEN_USER_ID,
     },
@@ -30,21 +28,6 @@ module.exports = ({
 
             } : {}
         )
-    },
-
-    {
-        nickname: 'PATCH/tokens',
-        name: 'api_tokens_patch',
-        handler: 'routes/tokens/PATCH/index.handler',
-        pathsToInclude: [
-
-            './routes/tokens/PATCH'
-        ],
-        environmentVariables: {
-
-            GOOGLE_CAPTCHA_SECRET,
-            PATCH_TOKENS_BYPASS_IS_HUMAN_TEST_SECRET
-        },
     },
 
     {

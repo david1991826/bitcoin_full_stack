@@ -8,7 +8,6 @@
             "Resource": [
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_infrastructure_emptyLambda",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_post_staging",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_patch_staging",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_get_staging",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_put_staging",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_addresses_get_staging",
