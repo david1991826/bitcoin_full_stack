@@ -726,12 +726,22 @@ or in production:
 node WaterTree --mode=production
 ```
 
-This command will start up your tree code acceptor and installer.
+This command will start up your tree code acceptor and installer. 
 
-Now on your home computer in the `/infrastructure/scripts/1-backend/giraffeLickLeaf` folder in this repo, run:
+
+
+
+Now on your home computer in the `/infrastructure/scripts/1-backend/giraffeLickLeaf` folder in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
+
+##### Deply Fee Fee
 
 ```
 feeFee.sh
+```
+
+or in production: TODO: 🚧👷‍♂️👷‍♀️🏗 preview, production script is not ready yet
+```
+feeFee.sh --mode=production
 ```
 
 This will trigger a GLL deployment to update your Fee Fee NodeJS service, here's an example of what the deployment looks like:
@@ -743,7 +753,9 @@ This will trigger a GLL deployment to update your Fee Fee NodeJS service, here's
     />
 </a>
 
-GLL deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server, the overall Bitcoin-Api service doesn't need to be shut down or be interrupted.
+GLL deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server. The overall Bitcoin-Api service doesn't need to be shut down or be interrupted.
+
+After you've finished your deployments, you can shut down your Water Tree code acceptor and installer process in your Linux server. To do this simply input the keyboard keys `control` plus `c`.
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
