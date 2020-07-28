@@ -24,7 +24,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/users',
-            name: 'e_v3_lambda_users_post',
+            name: 'exchange_api_users_post',
             handler: 'routes/exchange/users/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/users/POST',
@@ -40,7 +40,7 @@ module.exports = ({
 
         {
             nickname: 'eGET/users/exchangeUserId',
-            name: 'e_v3_lambda_users_exchange_user_id_get',
+            name: 'exchange_api_users_exchangeUserId_get',
             handler: 'routes/exchange/users/exchangeUserId/GET/index.handler',
             pathsToInclude: [
                 './routes/exchange/users/exchangeUserId/GET',
@@ -54,7 +54,7 @@ module.exports = ({
 
         {
             nickname: 'eDELETE/users/exchangeUserId',
-            name: 'e_v3_lambda_users_exchange_user_id_delete',
+            name: 'exchange_api_users_exchangeUserId_delete',
             handler: 'routes/exchange/users/exchangeUserId/DELETE/index.handler',
             pathsToInclude: [
                 './routes/exchange/users/exchangeUserId/DELETE',
@@ -68,7 +68,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/verify_user',
-            name: 'e_v3_lambda_verify_user_post',
+            name: 'exchange_api_verifyUser_post',
             handler: 'routes/exchange/verify_user/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/verify_user/POST',
@@ -90,7 +90,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/login',
-            name: 'e_v3_lambda_login_post',
+            name: 'exchange_api_login_post',
             handler: 'routes/exchange/login/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/login/POST',
@@ -112,7 +112,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/withdraws',
-            name: 'e_v3_lambda_withdraws_post',
+            name: 'exchange_api_withdraws_post',
             handler: 'routes/exchange/withdraws/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/withdraws/POST',
@@ -130,7 +130,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/logout',
-            name: 'e_v3_lambda_logout_post',
+            name: 'exchange_api_logout_post',
             handler: 'routes/exchange/logout/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/logout/POST',
@@ -144,7 +144,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/exchanges',
-            name: 'e_v3_lambda_exchanges_post',
+            name: 'exchange_api_exchanges_post',
             handler: 'routes/exchange/exchanges/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/exchanges/POST',
@@ -158,7 +158,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/dreams',
-            name: 'e_v3_lambda_dreams_post',
+            name: 'exchange_api_dreams_post',
             handler: 'routes/exchange/dreams/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/dreams/POST',

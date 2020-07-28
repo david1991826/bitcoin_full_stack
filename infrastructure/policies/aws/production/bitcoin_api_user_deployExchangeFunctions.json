@@ -1,0 +1,42 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "iam:PassRole",
+            "Resource": [
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_users_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_users_exchangeUserId_get",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_users_exchangeUserId_delete",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_verifyUser_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_login_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_withdraws_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_logout_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_exchanges_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_exchange_api_dreams_post"
+            ]
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:GetFunction",
+                "lambda:CreateFunction",
+                "lambda:UpdateFunctionCode",
+                "lambda:UpdateFunctionConfiguration"
+            ],
+            "Resource": [
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_users_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_users_exchangeUserId_get",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_users_exchangeUserId_delete",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_verifyUser_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_login_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_withdraws_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_logout_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_exchanges_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_dreams_post"
+            ]
+        }
+    ]
+}

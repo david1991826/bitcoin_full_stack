@@ -9,7 +9,7 @@ if( !meta ) {
 
         core: require( './core' ),
         service: require( './service' ),
-        site: require( './site' ),
+        // site: require( './site' ),
         exchange: require( './exchange' ),
     });
 }
@@ -22,10 +22,10 @@ else {
         jamesBondFunctions.exchange = require( './exchange' );
     }
     
-    if( meta.includes( 's' ) ) {
+    // if( meta.includes( 's' ) ) {
     
-        jamesBondFunctions.site = require( './site' );
-    }
+    //     jamesBondFunctions.site = require( './site' );
+    // }
     
     if( meta.includes( 'v' ) ) {
     

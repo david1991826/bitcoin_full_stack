@@ -364,7 +364,7 @@ const getOrCreateFunction = async ({
                         Handler: "index.handler",
                         MemorySize: 128, 
                         Publish: true, 
-                        Role: `arn:aws:iam::${ AWS_ACCOUNT_NUMBER }:role/bitcoin_api_lambda_emptyLambda`,
+                        Role: `arn:aws:iam::${ AWS_ACCOUNT_NUMBER }:role/bitcoin_api_devOps_lambda_emptyLambda`,
                         Runtime: "nodejs12.x", 
                         Timeout: 30, 
                         VpcConfig: {}
