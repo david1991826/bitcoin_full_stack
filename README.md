@@ -801,7 +801,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 `bitcoin_api_role_lambda_api_tokens_post`
 
-* * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_tokens_post_staging.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_tokens_post_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_post.json)
 
