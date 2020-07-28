@@ -790,7 +790,6 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployFunctions_staging.json)
 
-
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployFunctions.json)
 
 
@@ -808,6 +807,18 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_post.json)
 
 
+`bitcoin_api_role_lambda_api_tokens_get`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_tokens_get_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_get.json)
+
+
+`bitcoin_api_role_lambda_api_tokens_put`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_tokens_put_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_put.json)
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
@@ -831,6 +842,20 @@ policies: `AWSLambdaBasicExecutionRole`
 name: `bitcoin_api_lambda_api_tokens_post`
 
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_post`
+
+
+**API: GET - /tokens**
+
+name: `bitcoin_api_lambda_api_tokens_get`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_get`
+
+
+**API: PUT - /tokens**
+
+name: `bitcoin_api_lambda_api_tokens_put`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_put`
 
 
 TODO:🚧👷‍♂️👷‍♀️🏗
