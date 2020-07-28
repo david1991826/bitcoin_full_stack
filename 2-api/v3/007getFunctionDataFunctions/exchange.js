@@ -23,8 +23,8 @@ module.exports = ({
     const rawFunctionData = [
 
         {
-            nickname: 'ePOST/users',
-            name: 'exchange_api_users_post',
+            nickname: 'ePOST/exchangeUsers',
+            name: 'exchange_api_exchangeUsers_post',
             handler: 'routes/exchange/users/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/users/POST',

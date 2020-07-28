@@ -856,6 +856,13 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_service_makeSureApiIsActive.json)
 
 
+`bitcoin_api_role_lambda_exchange_api_exchangeUsers_post`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_exchange_api_exchangeUsers_post_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_exchange_api_exchangeUsers_post.json)
+
+
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 
@@ -928,6 +935,21 @@ name: `bitcoin_api_lambda_service_makeSureApiIsActive`
 
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_service_makeSureApiIsActive`
 
+
+**API: POST - /withdraws**
+
+name: `bitcoin_api_lambda_api_withdraws_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_withdraws_post`
+
+
+**Exchange API: POST - /exchange-users**
+
+name: `bitcoin_api_lambda_exchange_api_exchangeUsers_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_exchange_api_exchangeUsers_post`
+
+exchangeUsers
 
 TODO:🚧👷‍♂️👷‍♀️🏗
 
