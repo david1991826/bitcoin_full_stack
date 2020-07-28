@@ -731,7 +731,7 @@ This command will start up your tree code acceptor and installer.
 
 Now, on your home computer in the `/infrastructure/scripts/1-backend/giraffeLickLeaf` folder in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
 
-##### Deply Fee Fee
+##### Deploy Fee Fee
 
 ```
 feeFee.sh
