@@ -820,6 +820,14 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_put.json)
 
+
+`bitcoin_api_role_lambda_api_addresses_post`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_addresses_post_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_addresses_post.json)
+
+
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 
@@ -856,6 +864,13 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_get`
 name: `bitcoin_api_lambda_api_tokens_put`
 
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_put`
+
+
+**API: POST - /addresses**
+
+name: `bitcoin_api_lambda_api_addresses_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_addresses_post`
 
 
 TODO:🚧👷‍♂️👷‍♀️🏗

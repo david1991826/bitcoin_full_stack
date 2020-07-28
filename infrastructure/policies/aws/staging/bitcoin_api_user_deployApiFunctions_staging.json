@@ -10,7 +10,7 @@
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_post_staging",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_get_staging",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_put_staging",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_addresses_get_staging",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_addresses_post_staging",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_feeData_get_staging",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_withdraws_post_staging",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_service_cacheOnAndOffStatus_staging",
@@ -32,9 +32,9 @@
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_patch_staging",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_get_staging",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_put_staging",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_addresses_get_staging",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_addresses_post_staging",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_feeData_get_staging",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_api_withdraws_post_staging",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_withdraws_post_staging",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_service_cacheOnAndOffStatus_staging",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_service_makeSureApiIsActive_staging"
             ]

@@ -10,7 +10,7 @@
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_post",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_get",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_tokens_put",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_addresses_get",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_addresses_post",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_feeData_get",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_api_withdraws_post",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_service_cacheOnAndOffStatus",
@@ -32,9 +32,9 @@
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_patch",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_get",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_put",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_addresses_get",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_addresses_post",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_feeData_get",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_api_withdraws_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_withdraws_post",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_service_cacheOnAndOffStatus",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_service_makeSureApiIsActive"
             ]
