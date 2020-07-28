@@ -729,20 +729,20 @@ node WaterTree --mode=production
 This command will start up your tree code acceptor and installer. 
 
 
-Now, on your home computer in the `/infrastructure/scripts/1-backend/giraffeLickLeaf` folder in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
+Now, on your home computer in one of the `/infrastructure/scripts/1-backend/giraffeLickLeaf/feeFee`, `/infrastructure/scripts/1-backend/giraffeLickLeaf/korg`, or `/infrastructure/scripts/1-backend/giraffeLickLeaf/theomega` folders in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
 
-##### Deploy Fee Fee
+##### Deploy Backend NodeJS Service with GLL
 
 ```
-./feeFee.sh
+./staging.sh
 ```
 
-in production: TODO: 🚧👷‍♂️👷‍♀️🏗 preview, production script is not ready yet
+in production:
 ```
-./feeFee.sh --mode=production
+./production.sh
 ```
 
-This will trigger a GLL deployment to update your Fee Fee NodeJS service, here's an example demo video of what the deployment looks like:
+This will trigger a GLL deployment to update your NodeJS service, here's an example demo video of what the deployment looks like:
 
 <a href="https://www.youtube.com/watch?v=ZZ4zdq4AJY8">
     <img
@@ -755,18 +755,11 @@ GLL deployment provides continuous integration for the backend NodeJS services t
 
 After you've finished your deployments, you can shut down your Water Tree code acceptor and installer process in your Linux server. To do this simply input the keyboard keys `control` plus `c`.
 
-TODO: 🚧👷‍♂️👷‍♀️🏗
-
----
-
-6. Deploy API
-
-7. --- TODO:🚧👷‍♂️👷‍♀️🏗
-
----
 
 
-### How to Deploy API
+### How to Deploy API -> TODO:🚧👷‍♂️👷‍♀️🏗
+
+#### Preview of: How to Deploy API
 
 Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
 
