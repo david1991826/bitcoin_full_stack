@@ -698,27 +698,43 @@ You can test that the transfer and set up of your tree deploy code went successf
 node WaterTree
 ```
 
+or in production:
+```
+node WaterTree --mode=production
+```
+
 It will look like this:
 ![Water Tree No-Op](https://bitcoin-api.s3.amazonaws.com/images/documentation/water-tree-no-op.png)
 
 
-And that's it, your backend Bitcoin-Api Bitcoin node server is now operational and is also ready for ultra-fast Giraffe Lick Leaf deployments! See more on this in the next step.
+And that's it, your Bitcoin-Api backend Bitcoin node server is now operational and is also ready for ultra-fast Giraffe Lick Leaf deployments! See more on this in the next step.
 
-----
 
-TODO: 🚧👷‍♂️👷‍♀️🏗
-
-5. Run Giraffe Lick Leaf deploy script
-
-6. Deploy API
-
-7. --- TODO:🚧👷‍♂️👷‍♀️🏗
-
----
+<br>
 
 ### How to Deploy Backend
 
-Here is an example video of a live staging deployment for the backend. This video shows the fee update worker being updated using the Giraffe Lick Leaf deployment tool. This deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server, the service doesn't need to be shut down or be interrupted:
+Now that we've got our Bitcoin-Api backend Bitcoin node server up and running, let's go over how to do a super fast Giraffe Lick Leaf (GLL) deployment to instantly update your backend NodeJS services!
+
+First in your Linux server at `/[Linux user home path]/treeDeploy/giraffeDeploy/tree`, run:
+```
+node WaterTree
+```
+
+or in production:
+```
+node WaterTree --mode=production
+```
+
+This command will start up your tree code acceptor and installer.
+
+Now on your home computer in the `/infrastructure/scripts/1-backend/giraffeLickLeaf` folder in this repo, run:
+
+```
+feeFee.sh
+```
+
+This will trigger a GLL deployment to update your Fee Fee NodeJS service, here's an example of what the deployment looks like:
 
 <a href="https://www.youtube.com/watch?v=ZZ4zdq4AJY8">
     <img
@@ -726,6 +742,18 @@ Here is an example video of a live staging deployment for the backend. This vide
         width="85"
     />
 </a>
+
+GLL deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server, the overall Bitcoin-Api service doesn't need to be shut down or be interrupted.
+
+TODO: 🚧👷‍♂️👷‍♀️🏗
+
+---
+
+6. Deploy API
+
+7. --- TODO:🚧👷‍♂️👷‍♀️🏗
+
+---
 
 
 ### How to Deploy API
