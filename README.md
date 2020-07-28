@@ -828,6 +828,20 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_addresses_post.json)
 
 
+`bitcoin_api_role_lambda_api_feeData_get`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_feeData_get_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_feeData_get.json)
+
+
+`bitcoin_api_role_lambda_api_withdraws_post`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_withdraws_post_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_withdraws_post.json)
+
+
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 
@@ -871,6 +885,20 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_put`
 name: `bitcoin_api_lambda_api_addresses_post`
 
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_addresses_post`
+
+
+**API: GET - /fee-data**
+
+name: `bitcoin_api_lambda_api_feeData_get`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_feeData_get`
+
+
+**API: POST - /withdraws**
+
+name: `bitcoin_api_lambda_api_withdraws_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_withdraws_post`
 
 
 TODO:🚧👷‍♂️👷‍♀️🏗
