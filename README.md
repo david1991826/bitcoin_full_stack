@@ -307,7 +307,7 @@ This section goes over the AWS resources that are needed to operate the backend.
 
 ##### Backend IAM Policies
 
-Here are the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-Api's backend. The naming for the staging IAM policies are the same except for `_staging` is appended to the policy name.
+Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-Api's backend. The naming for the staging IAM policies is the same except for `_staging` is appended to the policy name.
 
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
@@ -345,7 +345,7 @@ Here are the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide
 
 ##### Backend IAM Users
 
-Next, the [AWS IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) for Bitcoin-Api's backend need to be set up. The naming for the staging IAM users are the same except for `_staging` is appended to the user name.
+Next, the [AWS IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) for Bitcoin-Api's backend need to be set up. The naming for the staging IAM users is the same except for `_staging` is appended to the user name.
 
 [AWS IAM User Management Console](https://console.aws.amazon.com/iam/home#/users)
 
@@ -379,7 +379,7 @@ policies: `bitcoin_api_user_theomega`, `bitcoin_api_function_addTransactionAndUp
 
 ##### Backend DynamoDB Tables
 
-This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables are the same except for `_staging` is appended on the table name.
+This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables is the same except for `_staging` is appended on the table name.
 
 [AWS DynamoDB Management Console](https://console.aws.amazon.com/dynamodb/home)
 
@@ -774,7 +774,7 @@ This section goes over the [AWS](https://aws.amazon.com) resources that necessar
 
 ##### API IAM Policies
 
-Here are the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-Api's API. The naming for the staging IAM policies are the same except for `_staging` is appended to the policy name.
+Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-Api's API. The naming for the staging IAM policies is the same except for `_staging` is appended to the policy name.
 
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
@@ -792,6 +792,13 @@ Here are the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployExchangeFunctions_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployExchangeFunctions.json)
+
+
+
+##### API IAM Roles
+
+The following [AWS IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) need to be created and set up. The naming for the staging IAM roles is the same except for `_staging` is appended to the policy name.
+
 
 TODO:🚧👷‍♂️👷‍♀️🏗
 
