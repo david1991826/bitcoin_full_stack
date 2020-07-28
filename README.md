@@ -737,7 +737,7 @@ Now, on your home computer in the `/infrastructure/scripts/1-backend/giraffeLick
 feeFee.sh
 ```
 
-or in production: TODO: 🚧👷‍♂️👷‍♀️🏗 preview, production script is not ready yet
+in production: TODO: 🚧👷‍♂️👷‍♀️🏗 preview, production script is not ready yet
 ```
 feeFee.sh --mode=production
 ```
