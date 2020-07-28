@@ -742,7 +742,7 @@ in production: TODO: 🚧👷‍♂️👷‍♀️🏗 preview, production scri
 feeFee.sh --mode=production
 ```
 
-This will trigger a GLL deployment to update your Fee Fee NodeJS service, here's an example of what the deployment looks like:
+This will trigger a GLL deployment to update your Fee Fee NodeJS service, here's an example video demo of what the deployment looks like:
 
 <a href="https://www.youtube.com/watch?v=ZZ4zdq4AJY8">
     <img
