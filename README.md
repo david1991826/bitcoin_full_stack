@@ -767,7 +767,7 @@ The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) funct
 Use the [API Environment Variable Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/v3/credentials/beautifulRiver3/staging/.env` in staging, and add it to `/2-api/v3/credentials/beautifulRiver3/production/.env` in production.
 
 
-**b)** Set Up AWS API Resources
+**b)** Set Up AWS API Resources --> TODO: 🚧👷‍♂️👷‍♀️🏗
 
 This section goes over the [AWS](https://aws.amazon.com) resources that necessary to set up and run the Bitcoin-Api API.
 
@@ -792,7 +792,6 @@ Here are the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployExchangeFunctions_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployExchangeFunctions.json)
-
 
 
 

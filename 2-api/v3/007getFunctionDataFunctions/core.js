@@ -15,7 +15,7 @@ module.exports = ({
 
     {
         nickname: 'POST/tokens',
-        name: 'b_v3_lambda_tokens_post',
+        name: 'tokens_post',
         handler: 'routes/tokens/POST/index.handler',
         pathsToInclude: [
 
@@ -34,7 +34,7 @@ module.exports = ({
 
     {
         nickname: 'PATCH/tokens',
-        name: 'b_v3_lambda_tokens_patch',
+        name: 'tokens_patch',
         handler: 'routes/tokens/PATCH/index.handler',
         pathsToInclude: [
 
@@ -49,7 +49,7 @@ module.exports = ({
 
     {
         nickname: 'GET/tokens',
-        name: 'b_v3_lambda_tokens_get',
+        name: 'tokens_get',
         handler: 'routes/tokens/GET/index.handler',
         pathsToInclude: [
 
@@ -60,7 +60,7 @@ module.exports = ({
 
     {
         nickname: 'PUT/tokens',
-        name: 'b_v3_lambda_tokens_put',
+        name: 'tokens_put',
         handler: 'routes/tokens/PUT/index.handler',
         pathsToInclude: [
             './routes/tokens/PUT'
@@ -70,7 +70,7 @@ module.exports = ({
 
     {
         nickname: 'POST/addresses',
-        name: 'b_v3_lambda_addresses_get',
+        name: 'addresses_get',
         handler: 'routes/addresses/POST/index.handler',
         pathsToInclude: [
 
@@ -85,7 +85,7 @@ module.exports = ({
 
     {
         nickname: 'GET/fee-data',
-        name: 'b_v3_lambda_fee_data_get',
+        name: 'fee_data_get',
         handler: 'routes/fee_data/GET/index.handler',
         pathsToInclude: [
 
@@ -96,7 +96,7 @@ module.exports = ({
 
     {
         nickname: 'POST/withdraws',
-        name: 'b_v3_lambda_withdraws_post',
+        name: 'withdraws_post',
         handler: 'routes/withdraws/POST/index.handler',
         pathsToInclude: [
 

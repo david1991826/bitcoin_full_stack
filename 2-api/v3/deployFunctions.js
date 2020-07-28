@@ -113,12 +113,12 @@ for( const rawFunctionDatum of rawFunctionData ) {
             {},
             rawFunctionDatum,
             {
-                name: `${ rawFunctionDatum.name }_staging`,
+                name: `bitcoin_api_${ rawFunctionDatum.name }_staging`,
                 role: (
                     'arn:aws:iam::' +
                     `${ AWS_ACCOUNT_NUMBER }:role/` +
-                    `${ rawFunctionDatum.name }_staging`
-                )
+                    `bitcoin_api_lambda_${ rawFunctionDatum.name }_staging`
+                ),
             }
         );
 
@@ -131,11 +131,12 @@ for( const rawFunctionDatum of rawFunctionData ) {
             {},
             rawFunctionDatum,
             {
+                name: `bitcoin_api_${ rawFunctionDatum.name }`,
                 role: (
                     'arn:aws:iam::' +
                     `${ AWS_ACCOUNT_NUMBER }:role/` +
-                    rawFunctionDatum.name
-                )
+                    `bitcoin_api_lambda_${ rawFunctionDatum.name }`
+                ),
             }
         );
 
@@ -335,7 +336,7 @@ const getOrCreateFunction = async ({
 
                         fs.readFile(
 
-                            `${ __dirname }/scripts/emptyLambda.js.zip`,    
+                            `${ __dirname }/emptyLambda.js.zip`,    
                             ( err, zipFile ) => {
                 
                                 if( !!err ) {
@@ -363,7 +364,7 @@ const getOrCreateFunction = async ({
                         Handler: "index.handler",
                         MemorySize: 128, 
                         Publish: true, 
-                        Role: "arn:aws:iam::164872287968:role/basic_lambda_role",
+                        Role: `arn:aws:iam::${ AWS_ACCOUNT_NUMBER }:role/bitcoin_api_lambda_emptyLambda`,
                         Runtime: "nodejs12.x", 
                         Timeout: 30, 
                         VpcConfig: {}
