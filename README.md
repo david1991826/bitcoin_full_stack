@@ -779,6 +779,11 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
 
+**Built-In AWS Policies Used:**
+
+* `AWSLambdaBasicExecutionRole`
+
+
 `bitcoin_api_user_deployFunctions`
 
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployFunctions_staging.json)
@@ -792,6 +797,14 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployExchangeFunctions_staging.json)
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployExchangeFunctions.json)
+
+
+`bitcoin_api_role_lambda_api_tokens_post`
+
+* * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_tokens_post_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_post.json)
+
 
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
