@@ -716,7 +716,7 @@ And that's it, your Bitcoin-Api backend Bitcoin node server is now operational a
 
 Now that we've got our Bitcoin-Api backend Bitcoin node server up and running, let's go over how to do a super fast Giraffe Lick Leaf (GLL) deployment to instantly update your backend NodeJS services!
 
-First in your Linux server at `/[Linux user home path]/treeDeploy/giraffeDeploy/tree`, run:
+First, in your Linux server at `/[Linux user home path]/treeDeploy/giraffeDeploy/tree`, run:
 ```
 node WaterTree
 ```
