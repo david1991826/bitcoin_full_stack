@@ -518,6 +518,9 @@ or in production:
 node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=production
 ```
 
+Adding an address to your Bitcoin-Api system will look like this:
+![Calzone Sun Creating New Bitcoin Address](https://bitcoin-api.s3.amazonaws.com/images/documentation/calzone-sun-successfully-added-address.png)
+
 <br>
 
 **Fee Fee (runs in infinite loop)**
