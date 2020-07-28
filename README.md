@@ -842,6 +842,20 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_withdraws_post.json)
 
 
+`bitcoin_api_role_lambda_service_cacheOnAndOffStatus`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_service_cacheOnAndOffStatus_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
+
+
+`bitcoin_api_role_lambda_service_makeSureApiIsActive`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_service_makeSureApiIsActive_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_service_makeSureApiIsActive.json)
+
+
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 
@@ -899,6 +913,20 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_feeData_get`
 name: `bitcoin_api_lambda_api_withdraws_post`
 
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_withdraws_post`
+
+
+**Service - Cache On and Off Status**
+
+name: `bitcoin_api_lambda_service_cacheOnAndOffStatus`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_service_cacheOnAndOffStatus`
+
+
+**Service - Make Sure API is Active**
+
+name: `bitcoin_api_lambda_service_makeSureApiIsActive`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_service_makeSureApiIsActive`
 
 
 TODO:🚧👷‍♂️👷‍♀️🏗
