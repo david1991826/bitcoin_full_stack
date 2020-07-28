@@ -784,6 +784,8 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * `AWSLambdaBasicExecutionRole`
 
 
+**Custom AWS Policies to Set Up:**
+
 `bitcoin_api_user_deployFunctions`
 
 * [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployFunctions_staging.json)
