@@ -764,7 +764,7 @@ The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) funct
 
 **a)** Set Up Environment Variables
 
-Use the [Staging API Environment Variable Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/v3/credentials/beautifulRiver3/staging/.env` for staging, and add it to `/2-api/v3/credentials/beautifulRiver3/production/.env` for production.
+Use the [Staging API Environment Variable Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/v3/credentials/beautifulRiver3/staging/.env` in staging, and add it to `/2-api/v3/credentials/beautifulRiver3/production/.env` in production.
 
 
 TODO:🚧👷‍♂️👷‍♀️🏗
