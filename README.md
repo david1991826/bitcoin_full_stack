@@ -949,7 +949,6 @@ name: `bitcoin_api_lambda_exchange_api_exchangeUsers_post`
 
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_exchange_api_exchangeUsers_post`
 
-exchangeUsers
 
 TODO:🚧👷‍♂️👷‍♀️🏗
 
