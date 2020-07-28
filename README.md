@@ -291,12 +291,14 @@ mkdir treeDeploy/giraffeDeploy
 and in staging:
 ```
 mkdir treeDeploy/stagingCredentials
+mkdir treeDeploy/stagingCredentials/tree
 ```
 OR
 
 in production:
 ```
 mkdir treeDeploy/productionCredentials
+mkdir treeDeploy/productionCredentials/tree
 ```
 
 **b)** Set Up AWS Resources
@@ -470,6 +472,9 @@ For this step, you will manually send and start up the NodeJS service modules (a
 For this command you will need to create a `/infrastructure/scripts/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/infrastructure/scripts/1-backend/setUpTigers.template.sh` template file](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/scripts/1-backend/setUpTigers.template.sh).
 
 A chart is provided showing how to replace the template placeholder values in detail:
+
+
+#### Set Up Tigers Configuration Chart
 
 | value to update  | meaning | example |
 |--|--|--|
@@ -666,29 +671,39 @@ When an iteration of the withdraw Bitcoin worker completes, it should look like 
 
 <br>
 
-**e)** Transfer Tree Deploy🌲🌳 Code --- TODO:🚧👷‍♂️👷‍♀️🏗
+**e)** Transfer Tree Deploy🌲🌳 Code
 
 This step explains how to set up the tree deploy code.
 
-To transfer the tree deploy code first you must create a `/1-backend/giraffeDeploy/plantTree.sh` file (gitignored). A template is provided at `/1-backend/giraffeDeploy/plantTree.template.sh`.
+To transfer the tree deploy code first you must create a `/infrastructure/scripts/1-backend/plantTree.sh` file (pre-gitignored). A template is provided at `/infrastructure/scripts/1-backend/plantTree.template.sh`.
 
-A chart is provided showing how to replace the template placeholder values:
+Refer to the [Set Up Tigers Configuration Chart](#set-up-tigers-configuration-chart) for details on how to configure the required values which are the same for `plantTree.sh`.
 
-| value to update  | meaning | example |
-|--|--|--|
-| \<path-to-pem\>  | path on your home computer to your Linux server's .pem access key file | /Users/mega-monkey/cool_documents/secret_pem_files/mega-monkey-linux.pem |
-| \<url\>  | your Linux server's address with your Linux server user's name prepended with an "@" | ec2-user@ec2-mega-monkey-server.mars-space-1.compute.amazonaws.com |
-|\<path\>| path on your Linux server to where the tree deploy files are sent, it needs to point to the `/treeDeploy/giraffeDeploy` folder you created in step **a)** | /home/ec2-user/treeDeploy/giraffeDeploy |
-|\<path-to-treenv\> | path to environment variables for the tree deploy code, it needs to point to the `/treeDeploy/stagingCredentials` folder or the `/treeDeploy/productionCredentials` folder created in step **a)** | /home/ec2-user/treeDeploy/stagingCredentials |
+After you've set up your `plantTree.sh` file, transfer your tree deploy files to your Linux server by running the following command in the `/infrastructure/scripts/1-backend` folder:
+```
+./plantTree.sh
+```
+> note: you may need to run `chmod 777 ./plantTree.sh` first before running the plant tree script
+
+Now, in your Linux server, go to the `/[Linux user home path]/treeDeploy/giraffeDeploy/tree` folder and install the node modules for your tree deployment code with:
+```
+npm install
+```
+
+You can test that the transfer and set up of your tree deploy code went successfully by running the following command:
+```
+node WaterTree
+```
+
+It will look like this:
+![Water Tree No-Op](https://bitcoin-api.s3.amazonaws.com/images/documentation/water-tree-no-op.png)
 
 
-
-
---- TODO:🚧👷‍♂️👷‍♀️🏗 ---> transfer tree deploy files to Linux server and install node modules for tree deploy on Linux server
+And that's it, your backend Bitcoin-Api Bitcoin node server is now operational and is also ready for ultra-fast Giraffe Lick Leaf deployments! See more on this in the next step.
 
 ----
 
-TODO: 
+TODO: 🚧👷‍♂️👷‍♀️🏗
 
 5. Run Giraffe Lick Leaf deploy script
 
