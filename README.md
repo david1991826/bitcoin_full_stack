@@ -734,12 +734,12 @@ Now, on your home computer in the `/infrastructure/scripts/1-backend/giraffeLick
 ##### Deploy Fee Fee
 
 ```
-feeFee.sh
+./feeFee.sh
 ```
 
 in production: TODO: 🚧👷‍♂️👷‍♀️🏗 preview, production script is not ready yet
 ```
-feeFee.sh --mode=production
+./feeFee.sh --mode=production
 ```
 
 This will trigger a GLL deployment to update your Fee Fee NodeJS service, here's an example demo video of what the deployment looks like:
