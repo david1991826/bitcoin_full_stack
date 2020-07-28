@@ -757,7 +757,17 @@ After you've finished your deployments, you can shut down your Water Tree code a
 
 
 
-### How to Deploy API -> TODO:🚧👷‍♂️👷‍♀️🏗
+### How to Deploy API
+
+The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) functions which are accessed through [API Gateway](https://aws.amazon.com/api-gateway). This section goes over how to set the API up.
+
+
+**a)** Set Up Environment Variables
+
+Use the [Staging API Environment Variable Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/v3/credentials/beautifulRiver3/staging/.env` for staging, and add it to `/2-api/v3/credentials/beautifulRiver3/production/.env` for production.
+
+
+TODO:🚧👷‍♂️👷‍♀️🏗
 
 #### Preview of: How to Deploy API
 
