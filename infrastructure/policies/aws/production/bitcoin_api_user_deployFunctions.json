@@ -6,7 +6,7 @@
             "Effect": "Allow",
             "Action": "iam:PassRole",
             "Resource": [
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_devOps_lambda_emptyLambda",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_infrastructure_lambda_emptyLambda",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_api_tokens_post",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_api_tokens_patch",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_api_tokens_get",
@@ -28,7 +28,7 @@
                 "lambda:UpdateFunctionConfiguration"
             ],
             "Resource": [
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_devOps_lambda_emptyLambda",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_infrastructure_lambda_emptyLambda",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_post",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_patch",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_api_tokens_get",
