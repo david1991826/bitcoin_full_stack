@@ -793,12 +793,6 @@ Here are the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide
 
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployExchangeFunctions.json)
 
-
-`bitcoin_api_infrastructure_lambda_emptyLambda_staging`
-
-* [Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_infrastructure_lambda_emptyLambda.json)
-
-
 TODO:🚧👷‍♂️👷‍♀️🏗
 
 #### Preview of: How to Deploy API
