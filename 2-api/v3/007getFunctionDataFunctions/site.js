@@ -24,7 +24,6 @@ module.exports = ({
             nickname: 'GET/',
             name: 'b_v3_lambda_get',
             handler: 'routes/GET/index.handler',
-            role: 'arn:aws:iam::164872287968:role/b_v3_lambda_get',
             pathsToInclude: [
 
                 './routes/GET',
@@ -40,7 +39,6 @@ module.exports = ({
             nickname: 'GET/token_activator',
             name: 'b_v3_lambda_token_activator_get',
             handler: 'routes/token_activator/GET/index.handler',
-            role: 'arn:aws:iam::164872287968:role/b_v3_lambda_token_activator_get',
             pathsToInclude: [
 
                 './routes/token_activator/GET',
@@ -56,7 +54,6 @@ module.exports = ({
             nickname: 'GET/privacy_policy',
             name: 'b_v3_lambda_privacy_policy_get',
             handler: 'routes/privacy_policy/GET/index.handler',
-            role: 'arn:aws:iam::164872287968:role/b_v3_lambda_privacy_policy_get',
             pathsToInclude: [
 
                 './routes/privacy_policy/GET',
@@ -72,7 +69,6 @@ module.exports = ({
             nickname: 'GET/terms_of_service',
             name: 'b_v3_lambda_terms_of_service_get',
             handler: 'routes/terms_of_service/GET/index.handler',
-            role: 'arn:aws:iam::164872287968:role/b_v3_lambda_terms_of_service_get',
             pathsToInclude: [
 
                 './routes/terms_of_service/GET',
@@ -88,7 +84,6 @@ module.exports = ({
             nickname: 'GET/documentation/api',
             name: 'b_v3_lambda_documentation_api_get',
             handler: 'routes/documentation/api/GET/index.handler',
-            role: 'arn:aws:iam::164872287968:role/b_v3_lambda_documentation_api_get',
             pathsToInclude: [
 
                 './routes/documentation/api/GET',
@@ -104,7 +99,6 @@ module.exports = ({
             nickname: 'GET/articles/article_id',
             name: 'b_v3_lambda_articles_article_id_get',
             handler: 'routes/articles/article_id/GET/index.handler',
-            role: 'arn:aws:iam::164872287968:role/b_v3_lambda_articles_article_id_get',
             pathsToInclude: [
 
                 './routes/articles/article_id/GET',

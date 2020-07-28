@@ -18,7 +18,6 @@ module.exports = ({
             nickname: 'service:cacheOnAndOffStatus',
             name: 'b_v3_lambda_service_cache_on_and_off_status',
             handler: 'routes/ultraServices/cacheOnAndOffStatus/index.handler',
-            role: 'arn:aws:iam::164872287968:role/b_v3_lambda_cache_on_or_off_status',
             pathsToInclude: [
                 './routes/ultraServices/cacheOnAndOffStatus',
             ],
@@ -29,7 +28,6 @@ module.exports = ({
             nickname: 'service:makeSureApiIsActive',
             name: 'b_v3_lambda_service_make_sure_api_is_active',
             handler: 'routes/ultraServices/makeSureApiIsActive/index.handler',
-            role: 'arn:aws:iam::164872287968:role/b_v3_lambda_service_make_sure_api_is_active',
             pathsToInclude: [
                 './routes/ultraServices/makeSureApiIsActive',
             ],

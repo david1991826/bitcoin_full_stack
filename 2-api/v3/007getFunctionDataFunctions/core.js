@@ -15,9 +15,8 @@ module.exports = ({
 
     {
         nickname: 'POST/tokens',
-        name: 'b_v3_lambda_tokens_get',
+        name: 'b_v3_lambda_tokens_post',
         handler: 'routes/tokens/POST/index.handler',
-        role: 'arn:aws:iam::164872287968:role/b_v3_lambda_tokens_get',
         pathsToInclude: [
 
             './routes/tokens/POST'
@@ -37,7 +36,6 @@ module.exports = ({
         nickname: 'PATCH/tokens',
         name: 'b_v3_lambda_tokens_patch',
         handler: 'routes/tokens/PATCH/index.handler',
-        role: 'arn:aws:iam::164872287968:role/b_v3_lambda_tokens_patch',
         pathsToInclude: [
 
             './routes/tokens/PATCH'
@@ -51,9 +49,8 @@ module.exports = ({
 
     {
         nickname: 'GET/tokens',
-        name: 'b_v3_lambda_users_get',
+        name: 'b_v3_lambda_tokens_get',
         handler: 'routes/tokens/GET/index.handler',
-        role: 'arn:aws:iam::164872287968:role/b_v3_lambda_users_get',
         pathsToInclude: [
 
             './routes/tokens/GET'
@@ -65,7 +62,6 @@ module.exports = ({
         nickname: 'PUT/tokens',
         name: 'b_v3_lambda_tokens_put',
         handler: 'routes/tokens/PUT/index.handler',
-        role: 'arn:aws:iam::164872287968:role/b_v3_lambda_tokens_put',
         pathsToInclude: [
             './routes/tokens/PUT'
         ],
@@ -76,7 +72,6 @@ module.exports = ({
         nickname: 'POST/addresses',
         name: 'b_v3_lambda_addresses_get',
         handler: 'routes/addresses/POST/index.handler',
-        role: 'arn:aws:iam::164872287968:role/b_v3_lambda_addresses_get',
         pathsToInclude: [
 
             './routes/addresses/POST',
@@ -92,7 +87,6 @@ module.exports = ({
         nickname: 'GET/fee-data',
         name: 'b_v3_lambda_fee_data_get',
         handler: 'routes/fee_data/GET/index.handler',
-        role: 'arn:aws:iam::164872287968:role/b_v3_lambda_fee_data_get',
         pathsToInclude: [
 
             './routes/fee_data/GET'
@@ -104,7 +98,6 @@ module.exports = ({
         nickname: 'POST/withdraws',
         name: 'b_v3_lambda_withdraws_post',
         handler: 'routes/withdraws/POST/index.handler',
-        role: 'arn:aws:iam::164872287968:role/b_v3_lambda_withdraws_post',
         pathsToInclude: [
 
             './routes/withdraws/POST'

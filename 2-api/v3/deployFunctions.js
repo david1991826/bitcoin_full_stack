@@ -34,9 +34,10 @@ const environmentVariables = Object.assign( {}, process.env );
 const {
 
     // AWS
-    AWS_ACCESS_KEY_ID_DELPOY_FUNCTIONS_SCRIPT,
-    AWS_SECRET_ACCESS_KEY_DELPOY_FUNCTIONS_SCRIPT,
-    AWS_REGION_DELPOY_FUNCTIONS_SCRIPT,
+    AWS_ACCESS_KEY_ID,
+    AWS_SECRET_ACCESS_KEY,
+    AWS_REGION,
+    AWS_ACCOUNT_NUMBER,
 
     // Redis
     REDIS_URL,
@@ -113,7 +114,11 @@ for( const rawFunctionDatum of rawFunctionData ) {
             rawFunctionDatum,
             {
                 name: `${ rawFunctionDatum.name }_staging`,
-                role: `${ rawFunctionDatum.role  }_staging`,
+                role: (
+                    'arn:aws:iam::' +
+                    `${ process.env.AWS_ACCOUNT_NUMBER }:role/` +
+                    `${ rawFunctionDatum.name }_staging`
+                )
             }
         );
 
@@ -121,7 +126,20 @@ for( const rawFunctionDatum of rawFunctionData ) {
     }
     else {
 
-        functionData.push( rawFunctionDatum );
+        const functionDatum = Object.assign(
+
+            {},
+            rawFunctionDatum,
+            {
+                role: (
+                    'arn:aws:iam::' +
+                    `${ process.env.AWS_ACCOUNT_NUMBER }:role/` +
+                    rawFunctionDatum.name
+                )
+            }
+        );
+
+        functionData.push( functionDatum );
     }
 }
 
@@ -161,9 +179,9 @@ const fs = require( 'fs' );
 
 AWS.config.update({
 
-    accessKeyId: AWS_ACCESS_KEY_ID_DELPOY_FUNCTIONS_SCRIPT,
-    secretAccessKey: AWS_SECRET_ACCESS_KEY_DELPOY_FUNCTIONS_SCRIPT,
-    region: AWS_REGION_DELPOY_FUNCTIONS_SCRIPT
+    accessKeyId: AWS_ACCESS_KEY_ID,
+    secretAccessKey: AWS_SECRET_ACCESS_KEY,
+    region: AWS_REGION,
 });
 
 
