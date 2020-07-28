@@ -675,7 +675,7 @@ When an iteration of the withdraw Bitcoin worker completes, it should look like 
 
 This step explains how to set up the tree deploy code.
 
-To transfer the tree deploy code first you must create a `/infrastructure/scripts/1-backend/plantTree.sh` file (pre-gitignored). A template is provided at `/infrastructure/scripts/1-backend/plantTree.template.sh`.
+To transfer the tree deploy code first you must create a `/infrastructure/scripts/1-backend/plantTree.sh` file (pre-gitignored). A template file is provided at [`/infrastructure/scripts/1-backend/plantTree.template.sh`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/scripts/1-backend/plantTree.template.sh).
 
 Refer to the [Set Up Tigers Configuration Chart](#set-up-tigers-configuration-chart) for details on how to configure the required values which are the same for `plantTree.sh`.
 
