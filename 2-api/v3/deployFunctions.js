@@ -116,7 +116,7 @@ for( const rawFunctionDatum of rawFunctionData ) {
                 name: `${ rawFunctionDatum.name }_staging`,
                 role: (
                     'arn:aws:iam::' +
-                    `${ process.env.AWS_ACCOUNT_NUMBER }:role/` +
+                    `${ AWS_ACCOUNT_NUMBER }:role/` +
                     `${ rawFunctionDatum.name }_staging`
                 )
             }
@@ -133,7 +133,7 @@ for( const rawFunctionDatum of rawFunctionData ) {
             {
                 role: (
                     'arn:aws:iam::' +
-                    `${ process.env.AWS_ACCOUNT_NUMBER }:role/` +
+                    `${ AWS_ACCOUNT_NUMBER }:role/` +
                     rawFunctionDatum.name
                 )
             }

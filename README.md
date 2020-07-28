@@ -734,12 +734,12 @@ Now, on your home computer in one of the `/infrastructure/scripts/1-backend/gira
 ##### Deploy Backend NodeJS Service with GLL
 
 ```
-./staging.sh
+./deployStaging.sh
 ```
 
-in production:
+or in production:
 ```
-./production.sh
+./deployProduction.sh
 ```
 
 This will trigger a GLL deployment to update your NodeJS service, here's an example demo video of what the deployment looks like:
