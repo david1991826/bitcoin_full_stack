@@ -818,119 +818,119 @@ policies: `AWSLambdaBasicExecutionRole`
 
 name: `bitcoin_api_lambda_api_tokens_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_api_tokens_post`
 
 
 **API: GET - /tokens**
 
 name: `bitcoin_api_lambda_api_tokens_get`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_get`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_api_tokens_get`
 
 
 **API: PUT - /tokens**
 
 name: `bitcoin_api_lambda_api_tokens_put`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_tokens_put`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_api_tokens_put`
 
 
 **API: POST - /addresses**
 
 name: `bitcoin_api_lambda_api_addresses_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_addresses_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_api_addresses_post`
 
 
 **API: GET - /fee-data**
 
 name: `bitcoin_api_lambda_api_feeData_get`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_feeData_get`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_api_feeData_get`
 
 
 **Service - Cache On and Off Status**
 
 name: `bitcoin_api_lambda_service_cacheOnAndOffStatus`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_service_cacheOnAndOffStatus`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_service_cacheOnAndOffStatus`
 
 
 **Service - Make Sure API is Active**
 
 name: `bitcoin_api_lambda_service_makeSureApiIsActive`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_service_makeSureApiIsActive`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_service_makeSureApiIsActive`
 
 
 **API: POST - /withdraws**
 
 name: `bitcoin_api_lambda_api_withdraws_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_withdraws_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_api_withdraws_post`
 
 
 **Exchange API: POST - /exchange-users**
 
 name: `bitcoin_api_lambda_eApi_eUsers_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_eUsers_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_eUsers_post`
 
 
 **Exchange API: GET - /exchange-users/:exchange-user-id**
 
 name: `bitcoin_api_lambda_eApi_eUsers_eUserId_get`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_mongolian, bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolian`, `bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
 
 
 **Exchange API: DELETE - /exchange-users/:exchange-user-id**
 
 name: `bitcoin_api_lambda_eApi_eUsers_eUserId_delete`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_mongolian, bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolian`, `bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`
 
 
 **Exchange API: POST - /verify-user**
 
 name: `bitcoin_api_lambda_eApi_verifyUser_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_login_post, bitcoin_api_role_lambda_eApi_verifyUser_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_login_post`, `bitcoin_api_role_lambda_eApi_verifyUser_post`
 
 
 **Exchange API: POST - /login**
 
 name: `bitcoin_api_lambda_eApi_login_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_login_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_login_post`
 
 
 **Exchange API: POST - /withdraws**
 
 name: `bitcoin_api_lambda_eApi_withdraws_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser, bitcoin_api_eFunction_mongolian`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolian`
 
 
 **Exchange API: POST - /logout**
 
 name: `bitcoin_api_lambda_eApi_logout_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_mongolian, bitcoin_api_role_lambda_eApi_logout_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolian`, `bitcoin_api_role_lambda_eApi_logout_post`
 
 
 **Exchange API: POST - /exchanges**
 
 name: `bitcoin_api_lambda_eApi_exchanges_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser, bitcoin_api_eFunction_mongolian`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolian`
 
 
 **Exchange API: POST - /dreams**
 
 name: `bitcoin_api_lambda_eApi_dreams_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser, bitcoin_api_eFunction_mongolian`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolian`
 
 
 ##### API IAM Users
@@ -958,7 +958,7 @@ Here are the command options:
 | name  | meaning | possible values |
 |--|--|--|
 | mode |  Bitcoin-Api environment | `staging` or `production` |
-| functions |  filter functions by nickname  | any Lambda function nickname (e.g. `GET/tokens`) |
+| functions |  filter functions by nickname, function names separated by commas  | any Lambda function nickname (e.g. `POST/tokens,GET/tokens`) |
 | meta | service (s), exchange (e), or API (a)  | `s`, `e`, or `a`, or any combination of those letters  |
 
 
