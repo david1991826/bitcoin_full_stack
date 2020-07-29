@@ -800,9 +800,6 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [`bitcoin_api_role_lambda_eApi_logout_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
 
 
-TODO: 🚧👷‍♂️👷‍♀️🏗
-
-
 ##### API IAM Roles
 
 The following [AWS IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) need to be created and set up. The naming for the staging IAM roles is the same except for `_staging` is appended to the policy name.
