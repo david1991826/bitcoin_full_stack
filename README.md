@@ -765,6 +765,8 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 **Custom AWS Policies to Set Up:**
 
+* [`bitcoin_api_eFunction_mongolian`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolian.json)
+
 * [`bitcoin_api_user_deployApiFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployApiFunctions.json)
 
 * [`bitcoin_api_user_deployExchangeFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
@@ -795,8 +797,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_role_lambda_eApi_login_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_login_post.json)
 
-* [`bitcoin_api_eFunction_mongolian`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolian.json)
-
+* [`bitcoin_api_role_lambda_eApi_logout_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 
