@@ -891,7 +891,14 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_login_post.json)
 
 
+`bitcoin_api_eFunction_mongolian`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_eFunction_mongolian_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_eFunction_mongolian.json)
+
 TODO: 🚧👷‍♂️👷‍♀️🏗
+
 
 ##### API IAM Roles
 
