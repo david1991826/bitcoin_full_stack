@@ -746,7 +746,7 @@ The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) funct
 Use the [API Environment Variable Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/credentials/beautifulRiver3/staging/.env` in staging, and add it to `/2-api/credentials/beautifulRiver3/production/.env` in production.
 
 
-**b)** Set Up AWS API Resources --> TODO: 🚧👷‍♂️👷‍♀️🏗
+**b)** Set Up AWS API Resources
 
 This section goes over the [AWS](https://aws.amazon.com) resources that necessary to set up and run the Bitcoin-Api API.
 
@@ -950,20 +950,57 @@ policies: `bitcoin_api_user_deployApiFunctions`, `bitcoin_api_user_deployExchang
 
 To deploy the [AWS Lambda](https://aws.amazon.com/lambda) functions required for the Bitcoin-Api API, in the `/infrastructure/scripts/2-api` path in this repo, run the following script:
 ```
-./deploy.sh
+./deploy.sh --meta="sa"
 ```
 
-Here are the command options:
+For reference here are the API deploy command options:
 
 | command name  | meaning | possible values |
 |--|--|--|
-| mode |  Bitcoin-Api environment | `staging` or `production` |
+| mode |  Bitcoin-Api environment | `staging` or `production`, defaults to `staging` |
 | functions |  filter functions by nickname, function names separated by commas  | any Lambda function nickname (e.g. `POST/tokens,GET/tokens`) |
-| meta | service(s), exchange(e), or API(a)  | `s`, `e`, or `a`, or any combination of these letters  |
+| meta | service(s), exchange(e), or API(a)  | `s`, `e`, or `a`, or any combination of these letters, defaults to `sea` (deploy all functions)  |
+
+This will set up the Lambda functions associated with the core API part of your Bitcoin-Api. You next have to set up the [HTTP API Gateway API](https://aws.amazon.com/api-gateway) for your core API. How this works is you create an HTTP API with API Gateway and you attach your deployed Lambda functions to the HTTP API Gateway. After you set up the core API, you will be able to set up the exchange API.
+
+#### Core API HTTP API Gateway Set Up 
+
+First go to the [AWS API Gateway Console](https://console.aws.amazon.com/apigateway/main/apis) and press "Create API".
+
+For the "Choose an API type" section, choose "Build" for the "HTTP API" type API.
+
+You will next be prompted to input a name for your API. Input the following API name `bitcoin_api_core_api_staging` or `bitcoin_api_core_api` and press "Next".
+
+Next you will be prompted to "Configure routes". Press "Next".
+
+You will then be prompted to "Review and create". Pres "Create".
 
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 --> further instructions
+Next, create six Lambda integrations, and attach them to the appropriate routes:
 
+* `bitcoin_api_api_tokens_post_staging`
+
+* `bitcoin_api_api_tokens_get_staging`
+
+* `bitcoin_api_api_tokens_put_staging`
+
+* `bitcoin_api_api_addresses_post_staging`
+
+* `bitcoin_api_api_feeData_get_staging`
+
+* `bitcoin_api_api_withdraws_post_staging`
+
+Next, now that your core Bitcoin-Api API is active, you can configure the rest of your environment variables and deploy your Lambda functions.
+
+Add the following Lambda functions to [run periodically using CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#rules).
+
+* `bitcoin_api_lambda_service_cacheOnAndOffStatus` - every 1 minute
+
+* `bitcoin_api_role_lambda_service_makeSureApiIsActive` - every three minutes - you can put a [Cloud Watch Alarm](https://console.aws.amazon.com/cloudwatch/home#alarmsV2:!alarmStateFilter=OK) to send you an email or a text if the API fails.
+
+For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API, name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
+
+And there go your very own Bitcoin-Api API, exchange, and casino.😃🤠🧐😎👁🎉🎊🥳
 
 #### Deploy API Demo Video
 
@@ -982,11 +1019,14 @@ Here is an example video of a live production API deployment. The website conten
 The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for the webapp in the [exchange and casino video demo](https://youtu.be/EMAwIrHM2Qc) is [AWS Amplify](https://aws.amazon.com/amplify) using its monorepo functionality.
 
 
-Notes:
-* This repo itself is a work in progress with the aim of generalizing, speeding up, and simplifying setting up Bitcoin-Api instances (which includes the API, exchange, and casino).
-* PRs and collaborative efforts welcome.👏
+----
 
-Sponsor this page and get priority support and other awesome benefits😁: [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api)
+
+### Bitcoin-Api by Bitcoin-Api.io
+
+PRs and collaborative efforts welcome.👏
+
+Sponsor this page and get priority support and other awesome benefits😁 - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
 
 
 
