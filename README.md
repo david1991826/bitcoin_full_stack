@@ -1004,13 +1004,14 @@ Next, now that your core Bitcoin-Api API is almost active, add the following Lam
 
 * `bitcoin_api_lambda_service_cacheOnAndOffStatus` - every one minute
 
-Now your Bitcoin-Api core API is active. To finish the rest of the set up which includes setting up the exchange. Create two tokens using the `POST - /tokens` endpoint on your newly created API. Only one token is needed although two are needed for the full functionality including the optional `bitcoin_api_role_lambda_service_makeSureApiIsActive` Lambda, see below. These tokens and the userIds associated with these tokens are used to configure the rest of your environment variables. You can also now add your Bitcoin-Api API URL in the environment variables now.
+Now, your Bitcoin-Api core API is active. To finish the rest of the set up which includes setting up the exchange. Create a token using the `POST - /tokens` endpoint on your newly created API. The token and the userId associated with this token need to be added for your API environment variables `EXCHANGE_BITCOIN_API_TESTNET_TOKEN` and `EXCHANGE_TOKEN_USER_ID`. After you update your environment variables, redeploy your Lambda functions for them to be set for your API.
 
-You can optionally add the following Lambda function to also run periodically using CloudWatch:
+For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
+
+You can add the Lambda function below to run periodically using CloudWatch to provide alerts if the API fails. This requires creating another token using the `POST - /tokens` endpoint and adding it to your environment variables `BITCOIN_API_TOKEN_FOR_MONITORING_TESTS`. This also requires setting the environment varibale `BITCOIN_API_BASE_URL` using the URL of your `bitcoin_api_core_api` API:
 
 * `bitcoin_api_role_lambda_service_makeSureApiIsActive` - every three minutes (or your choice) - you can put an [AWS Cloud Watch Alarm](https://console.aws.amazon.com/cloudwatch/home#alarmsV2:!alarmStateFilter=OK) combined with [AWS SNS](https://aws.amazon.com/sns/) to send you an email and/or a text if the API fails, and when it starts up again if it fails. This function uses the Bitcoin-Api token you created and put in the environment variable to make requests to the Bitcoin-Api
 
-For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
 
 And there go!! Your very own Bitcoin-Api API, exchange, and casino!!!😃🤠🧐😎👁🎉🎊🥳
 
