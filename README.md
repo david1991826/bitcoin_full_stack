@@ -856,11 +856,19 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_service_makeSureApiIsActive.json)
 
 
-`bitcoin_api_role_lambda_exchange_api_exchangeUsers_post`
+`bitcoin_api_role_lambda_eApi_eUsers_post`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_exchange_api_exchangeUsers_post_staging.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_eUsers_post_staging.json)
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_exchange_api_exchangeUsers_post.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_post.json)
+
+
+`bitcoin_api_role_lambda_eApi_eUsers_get`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_eUsers_get_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_get.json)
+
 
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
@@ -945,9 +953,16 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_withdraws_po
 
 **Exchange API: POST - /exchange-users**
 
-name: `bitcoin_api_lambda_exchange_api_exchangeUsers_post`
+name: `bitcoin_api_lambda_eApi_eUsers_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_exchange_api_exchangeUsers_post`
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_eUsers_post`
+
+
+**Exchange API: GET - /exchange-users/:exchange-user-id**
+
+name: `bitcoin_api_lambda_eApi_eUsers_eUserId_get`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
 
 
 TODO:🚧👷‍♂️👷‍♀️🏗

@@ -6,15 +6,15 @@
             "Effect": "Allow",
             "Action": "iam:PassRole",
             "Resource": [
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_users_post",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_users_exchangeUserId_get",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_users_exchangeUserId_delete",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_verifyUser_post",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_login_post",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_withdraws_post",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_logout_post",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_exchanges_post",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_exchange_api_dreams_post"
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_eUsers_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_eUsers_eUserId_get",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_eUsers_eUserId_delete",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_verifyUser_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_login_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_withdraws_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_logout_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_exchanges_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_dreams_post"
             ]
         },
         {
@@ -27,15 +27,15 @@
                 "lambda:UpdateFunctionConfiguration"
             ],
             "Resource": [
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_users_post",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_users_exchangeUserId_get",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_users_exchangeUserId_delete",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_verifyUser_post",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_login_post",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_withdraws_post",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_logout_post",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_exchanges_post",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_exchange_api_dreams_post"
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_eUsers_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_eUsers_eUserId_get",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_eUsers_eUserId_delete",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_verifyUser_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_login_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_withdraws_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_logout_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_exchanges_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_dreams_post"
             ]
         }
     ]
