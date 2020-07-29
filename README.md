@@ -358,7 +358,7 @@ policies: `bitcoin_api_user_theomega`, `bitcoin_api_eFunction_addTransactionAndU
 
 ##### Backend DynamoDB Tables
 
-This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables is the same except for `_staging` is appended on the table name.
+This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables are the same except for `_staging` is appended on the table name.
 
 [AWS DynamoDB Management Console](https://console.aws.amazon.com/dynamodb/home)
 
