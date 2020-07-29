@@ -994,7 +994,7 @@ Next, now that your core Bitcoin-Api API is active, you can configure the rest o
 
 Add the following Lambda functions to [run periodically using CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#rules).
 
-* `bitcoin_api_lambda_service_cacheOnAndOffStatus` - every 1 minute
+* `bitcoin_api_lambda_service_cacheOnAndOffStatus` - every one minute
 
 * `bitcoin_api_role_lambda_service_makeSureApiIsActive` - every three minutes - you can put a [Cloud Watch Alarm](https://console.aws.amazon.com/cloudwatch/home#alarmsV2:!alarmStateFilter=OK) to send you an email or a text if the API fails.
 
