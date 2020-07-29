@@ -1,6 +1,8 @@
 #!/bin/sh
 
-pushd ../../../2-api
+pushd ../../../2-api/v3
+
+# TODO: move remove v3 folder
 
 
 npm install
