@@ -963,7 +963,7 @@ For reference here are the API deploy command options:
 
 This will set up the Lambda functions associated with the core API part of your Bitcoin-Api. You next have to set up the [HTTP API Gateway API](https://aws.amazon.com/api-gateway) for your core API. How this works is you create an HTTP API with API Gateway and you attach your deployed Lambda functions to the HTTP API Gateway. After you set up the core API, you will be able to set up the exchange API.
 
-#### Core API HTTP API Gateway Set Up 
+#### API Gateway Set Up 
 
 First go to the [AWS API Gateway Console](https://console.aws.amazon.com/apigateway/main/apis) and press "Create API".
 
