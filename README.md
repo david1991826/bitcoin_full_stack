@@ -998,7 +998,7 @@ Add the following Lambda functions to [run periodically using CloudWatch](https:
 
 * `bitcoin_api_role_lambda_service_makeSureApiIsActive` - every three minutes - you can put a [Cloud Watch Alarm](https://console.aws.amazon.com/cloudwatch/home#alarmsV2:!alarmStateFilter=OK) to send you an email or a text if the API fails.
 
-For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API, name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
+For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions, name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
 
 And there go your very own Bitcoin-Api API, exchange, and casino.😃🤠🧐😎👁🎉🎊🥳
 
