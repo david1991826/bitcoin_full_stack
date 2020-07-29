@@ -312,11 +312,11 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
 
-`bitcoin_api_function_addTransactionAndUpdateExchangeUser`
+`bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_function_addTransactionAndUpdateExchangeUser_staging.json)
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser_staging.json)
 
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_function_addTransactionAndUpdateExchangeUser.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
 
 `bitcoin_api_user_calzoneSun`
 
@@ -367,14 +367,14 @@ policies: `bitcoin_api_user_feeFee`
 
 user name: `bitcoin_api_korg`
 
-policies: `bitcoin_api_user_korg`, `bitcoin_api_function_addTransactionAndUpdateExchangeUser`
+policies: `bitcoin_api_user_korg`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
 
 
 **TheOmega User**
 
 user name: `bitcoin_api_theomega`
 
-policies: `bitcoin_api_user_theomega`, `bitcoin_api_function_addTransactionAndUpdateExchangeUser`
+policies: `bitcoin_api_user_theomega`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
 
 
 ##### Backend DynamoDB Tables
@@ -870,6 +870,13 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
 
 
+`bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
+
+
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 
@@ -961,14 +968,14 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_eUsers_post
 
 name: `bitcoin_api_lambda_eApi_eUsers_eUserId_get`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_mongolian, bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
 
 
-**Exchange API: POST - /exchange-users**
+**Exchange API: DELETE - /exchange-users/:exchange-user-id**
 
-name: `bitcoin_api_lambda_eApi_eUsers_post`
+name: `bitcoin_api_lambda_eApi_eUsers_eUserId_delete`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_eUsers_post`
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_mongolian, bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`
 
 
 **Exchange API: POST - /verify-user**
@@ -989,7 +996,7 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_login_post`
 
 name: `bitcoin_api_lambda_eApi_withdraws_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_function_addTransactionAndUpdateExchangeUser, bitcoin_api_function_mongolian`
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser, bitcoin_api_eFunction_mongolian`
 
 
 **Exchange API: POST - /logout**
