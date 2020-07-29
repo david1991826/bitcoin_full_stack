@@ -937,7 +937,7 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndU
 
 To deploy the API, the following [AWS IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) needs to be created and set up. The naming for the staging IAM user is the same except for `_staging` is appended to the user name.
 
-[AWS IAM Role Management Console](https://console.aws.amazon.com/iam/home#/users)
+[AWS IAM User Management Console](https://console.aws.amazon.com/iam/home#/users)
 
 **Deploy API User**
 
