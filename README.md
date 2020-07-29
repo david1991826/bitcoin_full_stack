@@ -849,13 +849,6 @@ name: `bitcoin_api_lambda_api_feeData_get`
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_feeData_get`
 
 
-**API: POST - /withdraws**
-
-name: `bitcoin_api_lambda_api_withdraws_post`
-
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_api_withdraws_post`
-
-
 **Service - Cache On and Off Status**
 
 name: `bitcoin_api_lambda_service_cacheOnAndOffStatus`
@@ -940,7 +933,36 @@ name: `bitcoin_api_lambda_eApi_dreams_post`
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser, bitcoin_api_eFunction_mongolian`
 
 
-TODO: 🚧👷‍♂️👷‍♀️🏗
+##### API IAM Users
+
+To deploy the API, the following [AWS IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) needs to be created and set up. The naming for the staging IAM user is the same except for `_staging` is appended to the user name.
+
+[AWS IAM Role Management Console](https://console.aws.amazon.com/iam/home#/users)
+
+**Deploy API User**
+
+user name: `bitcoin_api_deployApi`
+
+policies: `bitcoin_api_user_deployApiFunctions, bitcoin_api_user_deployExchangeFunctions`
+
+
+#### Deploy API
+
+To deploy the Bitcoin-API API, in the `/infrastructure/scripts/2-api` path in this repo, run the following script:
+```
+./deploy.sh
+```
+
+Here are the command options:
+
+| name  | meaning | possible values |
+|--|--|--|
+| mode |  Bitcoin-Api environment | `staging` or `production` |
+| functions |  filter functions by nickname  | any Lambda function nickname (e.g. `GET/tokens`) |
+| meta | service (s), exchange (e), or API (a)  | `s`, `e`, or `a`, or any combination of those letters  |
+
+
+TODO: 🚧👷‍♂️👷‍♀️🏗 --> further instructions
 
 
 #### Preview of: How to Deploy API

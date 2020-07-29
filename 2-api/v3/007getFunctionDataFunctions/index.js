@@ -27,12 +27,12 @@ else {
     //     jamesBondFunctions.site = require( './site' );
     // }
     
-    if( meta.includes( 'v' ) ) {
+    if( meta.includes( 's' ) ) {
     
         jamesBondFunctions.service = require( './service' );
     }
 
-    if( meta.includes( 'c' ) ) {
+    if( meta.includes( 'a' ) ) {
     
         jamesBondFunctions.core = require( './core' );
     }
