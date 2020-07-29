@@ -926,21 +926,21 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndU
 
 name: `bitcoin_api_lambda_eApi_logout_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_logout_post`
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_mongolian, bitcoin_api_role_lambda_eApi_logout_post`
 
 
 **Exchange API: POST - /exchanges**
 
 name: `bitcoin_api_lambda_eApi_exchanges_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_exchanges_post`
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser, bitcoin_api_eFunction_mongolian`
 
 
 **Exchange API: POST - /dreams**
 
 name: `bitcoin_api_lambda_eApi_dreams_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_dreams_post`
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser, bitcoin_api_eFunction_mongolian`
 
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
