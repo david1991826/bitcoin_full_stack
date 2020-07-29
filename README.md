@@ -948,7 +948,7 @@ policies: `bitcoin_api_user_deployApiFunctions`, `bitcoin_api_user_deployExchang
 
 #### Deploy API
 
-To deploy the Bitcoin-API API, in the `/infrastructure/scripts/2-api` path in this repo, run the following script:
+To deploy the [AWS Lambda](https://aws.amazon.com/lambda) functions required for the Bitcoin-Api API, in the `/infrastructure/scripts/2-api` path in this repo, run the following script:
 ```
 ./deploy.sh
 ```
