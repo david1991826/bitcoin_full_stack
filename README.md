@@ -943,7 +943,7 @@ To deploy the API, the following [AWS IAM User](https://docs.aws.amazon.com/IAM/
 
 user name: `bitcoin_api_deployApi`
 
-policies: `bitcoin_api_user_deployApiFunctions, bitcoin_api_user_deployExchangeFunctions`
+policies: `bitcoin_api_user_deployApiFunctions`, `bitcoin_api_user_deployExchangeFunctions`
 
 
 #### Deploy API
