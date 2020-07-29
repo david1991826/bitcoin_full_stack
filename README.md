@@ -955,7 +955,7 @@ To deploy the [AWS Lambda](https://aws.amazon.com/lambda) functions required for
 
 Here are the command options:
 
-| name  | meaning | possible values |
+| command name  | meaning | possible values |
 |--|--|--|
 | mode |  Bitcoin-Api environment | `staging` or `production` |
 | functions |  filter functions by nickname, function names separated by commas  | any Lambda function nickname (e.g. `POST/tokens,GET/tokens`) |
