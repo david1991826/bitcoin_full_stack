@@ -311,8 +311,6 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
-* [`bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
-
 * [`bitcoin_api_user_calzoneSun`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_calzoneSun.json)
 
 * [`bitcoin_api_user_feeFee`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_feeFee.json)
@@ -320,6 +318,8 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [`bitcoin_api_user_korg`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_korg.json)
 
 * [`bitcoin_api_user_theomega`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_theomega.json)
+
+* [`bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
 
 
 ##### Backend IAM Users
@@ -765,11 +765,11 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 **Custom AWS Policies to Set Up:**
 
-* [`bitcoin_api_eFunction_mongolian`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolian.json)
-
 * [`bitcoin_api_user_deployApiFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployApiFunctions.json)
 
 * [`bitcoin_api_user_deployExchangeFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
+
+* [`bitcoin_api_eFunction_mongolian`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolian.json)
 
 * [`bitcoin_api_role_lambda_api_tokens_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_post.json)
 
