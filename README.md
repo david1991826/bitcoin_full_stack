@@ -877,8 +877,21 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
 
 
-TODO: 🚧👷‍♂️👷‍♀️🏗
+`bitcoin_api_role_lambda_eApi_verifyUser_post`
 
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_verifyUser_post_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_verifyUser_post.json)
+
+
+`bitcoin_api_role_lambda_eApi_login_post`
+
+* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_login_post_staging.json)
+
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_login_post.json)
+
+
+TODO: 🚧👷‍♂️👷‍♀️🏗
 
 ##### API IAM Roles
 
@@ -982,7 +995,7 @@ policies: `AWSLambdaBasicExecutionRole, bitcoin_api_eFunction_mongolian, bitcoin
 
 name: `bitcoin_api_lambda_eApi_verifyUser_post`
 
-policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_verifyUser_post`
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_login_post, bitcoin_api_role_lambda_eApi_verifyUser_post`
 
 
 **Exchange API: POST - /login**
