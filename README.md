@@ -314,33 +314,23 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
 
 `bitcoin_api_user_calzoneSun`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_calzoneSun_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_calzoneSun.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_calzoneSun.json)
 
 `bitcoin_api_user_feeFee`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_feeFee_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_feeFee.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_feeFee.json)
 
 `bitcoin_api_user_korg`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_korg_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_korg.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_korg.json)
 
 `bitcoin_api_user_theomega`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_theomega_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_theomega.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_theomega.json)
 
 
 ##### Backend IAM Users
@@ -788,114 +778,82 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 `bitcoin_api_user_deployApiFunctions`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployApiFunctions_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployApiFunctions.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployApiFunctions.json)
 
 
 `bitcoin_api_user_deployExchangeFunctions`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_user_deployExchangeFunctions_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_user_deployExchangeFunctions.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
 
 
 `bitcoin_api_role_lambda_api_tokens_post`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_tokens_post_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_post.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_post.json)
 
 
 `bitcoin_api_role_lambda_api_tokens_get`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_tokens_get_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_get.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_get.json)
 
 
 `bitcoin_api_role_lambda_api_tokens_put`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_tokens_put_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_tokens_put.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_put.json)
 
 
 `bitcoin_api_role_lambda_api_addresses_post`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_addresses_post_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_addresses_post.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_addresses_post.json)
 
 
 `bitcoin_api_role_lambda_api_feeData_get`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_feeData_get_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_feeData_get.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_feeData_get.json)
 
 
 `bitcoin_api_role_lambda_api_withdraws_post`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_api_withdraws_post_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_api_withdraws_post.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_withdraws_post.json)
 
 
 `bitcoin_api_role_lambda_service_cacheOnAndOffStatus`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_service_cacheOnAndOffStatus_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
 
 
 `bitcoin_api_role_lambda_service_makeSureApiIsActive`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_service_makeSureApiIsActive_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_service_makeSureApiIsActive.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_service_makeSureApiIsActive.json)
 
 
 `bitcoin_api_role_lambda_eApi_eUsers_post`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_eUsers_post_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_post.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_post.json)
 
 
 `bitcoin_api_role_lambda_eApi_eUsers_get`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
 
 
 `bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
 
 
 `bitcoin_api_role_lambda_eApi_verifyUser_post`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_verifyUser_post_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_verifyUser_post.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_verifyUser_post.json)
 
 
 `bitcoin_api_role_lambda_eApi_login_post`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_role_lambda_eApi_login_post_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_login_post.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_login_post.json)
 
 
 `bitcoin_api_eFunction_mongolian`
 
-* [Staging Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/staging/bitcoin_api_eFunction_mongolian_staging.json)
-
-* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_eFunction_mongolian.json)
+* [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolian.json)
 
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
