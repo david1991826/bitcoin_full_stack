@@ -959,7 +959,7 @@ Here are the command options:
 |--|--|--|
 | mode |  Bitcoin-Api environment | `staging` or `production` |
 | functions |  filter functions by nickname, function names separated by commas  | any Lambda function nickname (e.g. `POST/tokens,GET/tokens`) |
-| meta | service(s), exchange(e), or API(a)  | `s`, `e`, or `a`, or any combination of those letters  |
+| meta | service(s), exchange(e), or API(a)  | `s`, `e`, or `a`, or any combination of these letters  |
 
 
 TODO: 🚧👷‍♂️👷‍♀️🏗 --> further instructions
