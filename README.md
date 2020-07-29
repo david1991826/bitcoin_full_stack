@@ -965,7 +965,7 @@ Here are the command options:
 TODO: 🚧👷‍♂️👷‍♀️🏗 --> further instructions
 
 
-#### Preview of: How to Deploy API
+#### Deploy API Demo Video
 
 Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
 
