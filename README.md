@@ -870,7 +870,6 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 * [Production Policy](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/production/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
 
 
-
 TODO: 🚧👷‍♂️👷‍♀️🏗
 
 
@@ -965,7 +964,57 @@ name: `bitcoin_api_lambda_eApi_eUsers_eUserId_get`
 policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
 
 
-TODO:🚧👷‍♂️👷‍♀️🏗
+**Exchange API: POST - /exchange-users**
+
+name: `bitcoin_api_lambda_eApi_eUsers_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_eUsers_post`
+
+
+**Exchange API: POST - /verify-user**
+
+name: `bitcoin_api_lambda_eApi_verifyUser_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_verifyUser_post`
+
+
+**Exchange API: POST - /login**
+
+name: `bitcoin_api_lambda_eApi_login_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_login_post`
+
+
+**Exchange API: POST - /withdraws**
+
+name: `bitcoin_api_lambda_eApi_withdraws_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_function_addTransactionAndUpdateExchangeUser, bitcoin_api_function_mongolian`
+
+
+**Exchange API: POST - /logout**
+
+name: `bitcoin_api_lambda_eApi_logout_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_logout_post`
+
+
+**Exchange API: POST - /exchanges**
+
+name: `bitcoin_api_lambda_eApi_exchanges_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_exchanges_post`
+
+
+**Exchange API: POST - /dreams**
+
+name: `bitcoin_api_lambda_eApi_dreams_post`
+
+policies: `AWSLambdaBasicExecutionRole, bitcoin_api_role_lambda_eApi_dreams_post`
+
+
+TODO: 🚧👷‍♂️👷‍♀️🏗
+
 
 #### Preview of: How to Deploy API
 
