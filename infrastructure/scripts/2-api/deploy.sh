@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pushd ../../../2-api/v3
+pushd ../../../2-api/
 
 # TODO: move remove v3 folder
 

@@ -7,7 +7,7 @@ if( !meta ) {
 
     module.exports = Object.freeze({
 
-        core: require( './core' ),
+        core: require( './api' ),
         service: require( './service' ),
         // site: require( './site' ),
         exchange: require( './exchange' ),
@@ -34,7 +34,7 @@ else {
 
     if( meta.includes( 'a' ) ) {
     
-        jamesBondFunctions.core = require( './core' );
+        jamesBondFunctions.core = require( './api' );
     }
     
     module.exports = Object.freeze( jamesBondFunctions );
