@@ -996,11 +996,26 @@ Next, create six Lambda integrations, and attach them to the appropriate routes:
 | Access-Control-Expose-Headers | * |
 | Access-Control-Max-Age | 0 Seconds |
 
-Next, now that your core Bitcoin-Api API is almost active, add the following Lambda function to [run periodically using CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#rules):
+Next, now your core Bitcoin-Api API is almost active, only a couple more steps!
+
+First add the following database entry to the `bitcoin_api_metadata` or the `bitcoin_api_metadata_staging` DynamoDB table:
+```.json
+{
+  "key": "onAndOffSwitch",
+  "bitcoinApiIsOn": true,
+  "bitcoinApiIsOffReason": "This Bitcoin-Api instance if off because I'm out having fun with my lover!!!💘️"
+}
+```
+You can use this database object to control if the whole API is off or on. Simply set 
+`bitcoinApiIsOn` to `false` to turn the API off.
+
+Now, add the following Lambda function to [run periodically using CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#rules):
 
 * `bitcoin_api_lambda_service_cacheOnAndOffStatus` - every one minute
 
-Now, your Bitcoin-Api core API is active. To finish the rest of the set up which includes setting up the exchange. Create a token using the `POST - /tokens` endpoint on your newly created API. The token and the userId associated with this token both need to be added for your API environment variables `EXCHANGE_BITCOIN_API_TESTNET_TOKEN` and `EXCHANGE_TOKEN_USER_ID`. After you update your environment variables, you can deploy your exchange API Lambda functions for them to be set for your exchange API API. Deploy your Bitcoin-Api exchange API functions with the following command in the `/infrastructure/scripts/2-api` path in this repo:
+And now, your Bitcoin-Api core API is active!
+
+To finish the rest of the set up which includes setting up the exchange. Create a token using the `POST - /tokens` endpoint on your newly created API. The token and the userId associated with this token both need to be added for your API environment variables `EXCHANGE_BITCOIN_API_TESTNET_TOKEN` and `EXCHANGE_TOKEN_USER_ID`. After you update your environment variables, you can deploy your exchange API Lambda functions for them to be set for your exchange API API. Deploy your Bitcoin-Api exchange API functions with the following command in the `/infrastructure/scripts/2-api` path in this repo:
 
 ```
 ./deployStaging --meta="e"
