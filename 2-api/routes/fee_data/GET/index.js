@@ -1,7 +1,12 @@
 'use strict';
 
 const {
-    getResponse, handleError, beginningDragonProtection
+    
+    getFormattedEvent,
+    getResponse,
+    handleError,
+    beginningDragonProtection,
+    
 } = require( '../../../utils' );
 
 const getFeeData = require( './getFeeData' );
@@ -9,11 +14,17 @@ const getFeeData = require( './getFeeData' );
 const fiveMiniutes = 5 * 60 * 1000;
 
 
-exports.handler = Object.freeze( async event => {
+exports.handler = Object.freeze( async rawEvent => {
     
     console.log( 'running the /fee_data - GET function' );
 
     try {
+
+        const event = getFormattedEvent({
+
+            rawEvent
+        });
+
         await beginningDragonProtection({
 
             queueName: 'getFeeData',

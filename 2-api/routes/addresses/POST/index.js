@@ -2,10 +2,11 @@
 
 const getOrAssignAddressData = require( './getOrAssignAddressDatum' );
 
-const runWalhallaAddressMode = require( './runWalhallaAddressMode' );
+// const runWalhallaAddressMode = require( './runWalhallaAddressMode' );
 
 const {
     
+    getFormattedEvent,
     beginningDragonProtection,
     getResponse,
     handleError,
@@ -16,11 +17,17 @@ const {
 const fiveMiniutes = 5 * 60 * 1000;
 
 
-exports.handler = Object.freeze( async event => {
+exports.handler = Object.freeze( async rawEvent => {
     
     console.log( 'running /addresses - POST function' );
 
     try {
+
+        const event = getFormattedEvent({
+
+            rawEvent,
+            shouldGetBodyFromEvent: true,
+        });
 
         const isWalhallaAddressMode = (
 
@@ -43,15 +50,15 @@ exports.handler = Object.freeze( async event => {
                 '/addresses - POST function running Walhalla Address Mode🏛'
             );
 
-            const walhallaAddressModeResults = await runWalhallaAddressMode({
+            // const walhallaAddressModeResults = await runWalhallaAddressMode({
 
-                event,
-            });
+            //     event,
+            // });
 
             const results = Object.assign(
 
                 {},
-                walhallaAddressModeResults || {}
+                // walhallaAddressModeResults || {}
             );
 
             const response = getResponse({ body: results });
