@@ -23,21 +23,6 @@ module.exports = ({
             ],
             environmentVariables: {}
         },
-
-        {
-            nickname: 'service:makeSureApiIsActive',
-            name: 'service_makeSureApiIsActive',
-            handler: 'routes/ultraServices/makeSureApiIsActive/index.handler',
-            pathsToInclude: [
-                './routes/ultraServices/makeSureApiIsActive',
-            ],
-            environmentVariables: {
-                BITCOIN_API_TOKEN_FOR_MONITORING_TESTS,
-                WEBSITE_DO_NOT_GATHER_DATA_KEY,
-                WEBSITE_DO_NOT_GATHER_DATA_SECRET,
-            },
-            timeout: 60
-        },
     ];
 
     return rawFunctionData;

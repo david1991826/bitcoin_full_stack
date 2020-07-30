@@ -786,8 +786,6 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_role_lambda_service_cacheOnAndOffStatus`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
 
-* [`bitcoin_api_role_lambda_service_makeSureApiIsActive`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_service_makeSureApiIsActive.json)
-
 * [`bitcoin_api_role_lambda_eApi_eUsers_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_post.json)
 
 * [`bitcoin_api_role_lambda_eApi_eUsers_get`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
@@ -855,13 +853,6 @@ policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_api_feeData_ge
 name: `bitcoin_api_lambda_service_cacheOnAndOffStatus`
 
 policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_service_cacheOnAndOffStatus`
-
-
-**Service - Make Sure API is Active**
-
-name: `bitcoin_api_lambda_service_makeSureApiIsActive`
-
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_service_makeSureApiIsActive`
 
 
 **API: POST - /withdraws**
@@ -1021,11 +1012,6 @@ or in production:
 
 
 For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
-
-You can add the Lambda function below to run periodically using CloudWatch to provide alerts if the API fails. This requires creating another token using the `POST - /tokens` endpoint and adding it to your environment variables `BITCOIN_API_TOKEN_FOR_MONITORING_TESTS`. This also requires setting the environment varibale `BITCOIN_API_BASE_URL` using the URL of your `bitcoin_api_core_api` API:
-
-* `bitcoin_api_role_lambda_service_makeSureApiIsActive` - every three minutes (or your choice) - you can put an [AWS Cloud Watch Alarm](https://console.aws.amazon.com/cloudwatch/home#alarmsV2:!alarmStateFilter=OK) combined with [AWS SNS](https://aws.amazon.com/sns/) to send you an email and/or a text if the API fails, and when it starts up again if it fails. This function uses the Bitcoin-Api token you created and put in the environment variable to make requests to the Bitcoin-Api
-
 
 And there go!! Your very own Bitcoin-Api API, exchange, and casino!!!😃🤠🧐😎👁🎉🎊🥳
 
