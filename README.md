@@ -1006,7 +1006,7 @@ First, add the following database entry to the `bitcoin_api_metadata` or the `bi
   "bitcoinApiIsOffReason": "This Bitcoin-Api instance if off because I'm out having fun with my lover!!!💘️"
 }
 ```
-You can use this database object to control if the whole API is off or on. Simply set 
+You can use this database object to control whether the whole API is off or on. Simply set 
 `bitcoinApiIsOn` to `false` to turn the API off.
 
 Now, add the following Lambda function to [run periodically using CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#rules):
