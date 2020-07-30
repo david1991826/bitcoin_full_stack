@@ -1,5 +1,6 @@
 'use strict';
 
+
 module.exports = ({
 
     isProductionMode,
@@ -53,7 +54,7 @@ module.exports = ({
 
     {
         nickname: 'POST/addresses',
-        name: 'api_addresses_get',
+        name: 'api_addresses_post',
         handler: 'routes/addresses/POST/index.handler',
         pathsToInclude: [
 
