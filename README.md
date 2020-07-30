@@ -770,7 +770,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_user_deployExchangeFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
 
-* [`bitcoin_api_eFunction_mongolian`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolian.json)
+* [`bitcoin_api_eFunction_mongolianBeginningDragonProtection`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolianBeginningDragonProtection.json)
 
 * [`bitcoin_api_role_lambda_api_tokens_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_post.json)
 
@@ -873,14 +873,14 @@ policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_eUsers_po
 
 name: `bitcoin_api_lambda_eApi_eUsers_eUserId_get`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolian`, `bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
 
 
 **Exchange API: DELETE - /exchange-users/:exchange-user-id**
 
 name: `bitcoin_api_lambda_eApi_eUsers_eUserId_delete`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolian`, `bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`
 
 
 **Exchange API: POST - /verify-user**
@@ -901,28 +901,28 @@ policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_login_pos
 
 name: `bitcoin_api_lambda_eApi_withdraws_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolian`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
 **Exchange API: POST - /logout**
 
 name: `bitcoin_api_lambda_eApi_logout_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolian`, `bitcoin_api_role_lambda_eApi_logout_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eApi_logout_post`
 
 
 **Exchange API: POST - /exchanges**
 
 name: `bitcoin_api_lambda_eApi_exchanges_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolian`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
 **Exchange API: POST - /dreams**
 
 name: `bitcoin_api_lambda_eApi_dreams_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolian`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
 ##### API IAM Users
