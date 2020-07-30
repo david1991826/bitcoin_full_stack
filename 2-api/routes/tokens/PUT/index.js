@@ -10,6 +10,7 @@ const updateTokenValue = require( './updateTokenValue' );
 
 const {
     
+    getFormattedEvent,
     getResponse,
     handleError,
     beginningDragonProtection,
@@ -17,11 +18,16 @@ const {
 } = require( '../../../utils' );
 
 
-exports.handler = Object.freeze( async event => {
+exports.handler = Object.freeze( async rawEvent => {
     
     console.log( 'running the /tokens - PUT function' );
 
     try {
+
+        const event = getFormattedEvent({
+
+            rawEvent,
+        });
 
         const {
             
