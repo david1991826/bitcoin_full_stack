@@ -3,7 +3,10 @@
 const {
     beginningDragonProtection,
     handleError,
-    getResponse
+    getResponse,
+    javascript: {
+        getFormattedEvent,
+    },
 } = require( '../../../utils' );
 
 const doLogin = require( './doLogin' );
@@ -11,18 +14,24 @@ const doLogin = require( './doLogin' );
 const twoHours = 2 * 60 * 60 * 1000;
 
 
-exports.handler = Object.freeze( async event => {
+exports.handler = Object.freeze( async rawEvent => {
     
     console.log( 'running /tokens - POST function' );
 
     try {
+
+        const event = getFormattedEvent({
+
+            rawEvent,
+        });
 
         const {
             
             ipAddress
             
         } = await beginningDragonProtection({
-            queueName: 'login',
+
+            queueName: 'post_tokens',
             
             event,
             ipAddressMaxRate: 2,

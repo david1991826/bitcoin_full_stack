@@ -12,7 +12,7 @@ module.exports = (
     const rawFunctionData = [
 
         {
-            nickname: 'service:cacheOnAndOffStatus',
+            nickname: 'service/cacheOnAndOffStatus',
             name: 'service_cacheOnAndOffStatus',
             handler: 'routes/ultraServices/cacheOnAndOffStatus/index.handler',
             pathsToInclude: [
