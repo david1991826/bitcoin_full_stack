@@ -110,3 +110,6 @@ infrastructure/scripts/1-backend/setUpTigers.sh
 infrastructure/scripts/1-backend/plantTree.sh
 
 infrastructure/policies/awsTemporary
+
+
+lick_file.json
