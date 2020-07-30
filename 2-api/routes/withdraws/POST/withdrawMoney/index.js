@@ -9,7 +9,7 @@ const {
     constants: {
         aws: { database: { tableNames: { BALANCES, WITHDRAWS } } }
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const getFeeData = require( './getFeeData' );
 const doWithdrawMoney = require( './doWithdrawMoney' );

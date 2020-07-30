@@ -4,6 +4,7 @@ const withdrawMoney = require( './withdrawMoney' );
 
 const {
     
+    getFormattedEvent,
     beginningDragonProtection,
     getResponse,
     handleError,
@@ -14,11 +15,18 @@ const {
 const fiveMinutes = 5 * 60 * 1000;
 
 
-exports.handler = Object.freeze( async event => {
+exports.handler = Object.freeze( async rawEvent => {
     
     console.log( 'running /withdraws - POST function' );
 
     try {
+
+        const event = getFormattedEvent({
+
+            rawEvent,
+            shouldGetBodyFromEvent: true,
+        });
+
         const { user } = await beginningDragonProtection({
             
             queueName: 'withdrawMoney',
