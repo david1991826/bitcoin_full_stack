@@ -18,6 +18,7 @@
     />
 </a>
 
+# This public repo version is still under construction 🚧👷‍♂️👷‍♀️🏗
 
 
 ## API, Exchange, and Casino Features
@@ -1004,7 +1005,7 @@ Next, create six Lambda integrations, and attach them to the appropriate routes:
 | Access-Control-Expose-Headers | * |
 | Access-Control-Max-Age | 0 Seconds |
 
-Next, now that your core Bitcoin-Api API is almost active, add the following Lambda function to [run periodically using CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#rules).
+Next, now that your core Bitcoin-Api API is almost active, add the following Lambda function to [run periodically using CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#rules):
 
 * `bitcoin_api_lambda_service_cacheOnAndOffStatus` - every one minute
 
