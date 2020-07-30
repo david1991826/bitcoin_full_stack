@@ -2,20 +2,13 @@
 
 const {
 
+    getFormattedEvent,
     getResponse,
     handleError,
     beginningDragonProtection,
     stringify,
 
 } = require( '../../../../utils' );
-
-const {
-    aws: {
-        lambda: {
-            getExchangeEvent
-        }
-    }
-} = require( '../../../../exchangeUtils' );
 
 const addNewUser = require( './addNewUser' );
 
@@ -26,7 +19,7 @@ exports.handler = Object.freeze( async rawEvent => {
 
         console.log( 'running the exchange /users - POST function' );
 
-        const event = getExchangeEvent({
+        const event = getFormattedEvent({
 
             rawEvent,
             shouldGetBodyFromEvent: true,

@@ -4,7 +4,7 @@ const {
     constants: {
         exchanges
     }
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const oneDay = 24 * 60 * 60 * 1000;
 
