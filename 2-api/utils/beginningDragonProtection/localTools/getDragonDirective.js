@@ -4,7 +4,7 @@ const {
     utils: {
         stringify
     },
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 
 const getDragonDirective = Object.freeze( ({
@@ -62,7 +62,7 @@ module.exports = Object.freeze( ({
         `user ${ user.userId } - ` +
         `this user has 🎇🐉🐲dragon directive🐲🐉🎇 ` +
         `${ dragonDirective }.`
-    )
+    );
 
     return dragonDirective;
 });

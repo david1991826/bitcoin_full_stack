@@ -1,7 +1,5 @@
 'use strict';
 
-const { IS_EXCHANGE } = process.env;
-
 
 module.exports = Object.freeze(({
 
@@ -10,18 +8,9 @@ module.exports = Object.freeze(({
 
 }) => {
 
-    if( !!IS_EXCHANGE ) {
-
-        return {
-
-            statusCode,
-            body: JSON.stringify( body ),
-        };
-    }
-
     return {
 
         statusCode,
-        body
+        body: JSON.stringify( body ),
     };
 });

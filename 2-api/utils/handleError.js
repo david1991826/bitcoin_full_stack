@@ -15,7 +15,7 @@ const getErrorObject = Object.freeze(({
 
 }) => {
 
-    if( IS_EXCHANGE ) {
+    // if( IS_EXCHANGE ) {
 
         return {
 
@@ -26,15 +26,15 @@ const getErrorObject = Object.freeze(({
                 message,
             })
         };
-    }
+    // }
 
-    return {
+    // return {
 
-        isError: true,
-        // name,
-        statusCode,
-        message,
-    };
+    //     isError: true,
+    //     // name,
+    //     statusCode,
+    //     message,
+    // };
 });
 
 

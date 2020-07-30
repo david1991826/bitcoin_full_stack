@@ -8,7 +8,7 @@ const {
     withdraws,
     urls
 
-} = require( '@npm.m.stecky.efantis/commonprivate' ).constants;
+} = require( '@bitcoin-api.io/common-private' ).constants;
 
 module.exports = Object.freeze({
 

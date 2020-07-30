@@ -39,7 +39,24 @@ module.exports = Object.freeze( async ({
 
             experientialIdentifier: 3.01,
             initialIpAddress: ipAddress,
-            creationDate: Date.now()
+            creationDate: Date.now(),
+
+            // bypassed activation
+            isHumanInformation: {
+                humanIpAddress: 'Ip Man (Donnie Yen)',
+                humanScore: 420,
+                isHuman: true,
+            },
+            privacyPolicy: {
+                agrees: true,
+                ipAddressOfAgreement: 'drIp (Wunna Gunna)',
+                timeOfAgreement: 'The Power of Now'
+            },
+            tos: {
+                agrees: true,
+                ipAddressOfAgreement: '69',
+                timeOfAgreement: 'Protoss'
+            },
         },
         encryptionId,
     });

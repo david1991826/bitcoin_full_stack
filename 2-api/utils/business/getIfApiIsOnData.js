@@ -18,7 +18,7 @@ const {
             } 
         }
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const timeUntilRhinoPondBecomesMurky = 5 * 60 * 1000;
 

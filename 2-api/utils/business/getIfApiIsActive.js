@@ -29,7 +29,7 @@ const {
             decodeServiceNameStreamKey
         }
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const f = Object.freeze;
 
