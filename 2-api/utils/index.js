@@ -16,4 +16,5 @@ module.exports = Object.freeze({
     business: require( './business' ),
     beginningDragonProtection: require( './beginningDragonProtection' ),
     theKeys: require( './theKeys' ),
+    getFormattedEvent: require( './getFormattedEvent' ),
 });

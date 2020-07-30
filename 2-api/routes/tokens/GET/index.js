@@ -10,7 +10,7 @@ const {
             }
         }
     },    
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     constants: {
@@ -21,10 +21,11 @@ const {
             }
         }
     }
-} = require( '@npm.m.stecky.efantis/commonpublic' );
+} = require( '@bitcoin-api.io/common-general' );
 
 const {
     
+    getFormattedEvent,
     getResponse,
     handleError,
     stringify,
@@ -33,11 +34,16 @@ const {
 } = require( '../../../utils' );
 
 
-exports.handler = Object.freeze( async event => {
+exports.handler = Object.freeze( async rawEvent => {
     
     console.log( 'running the /tokens - GET function' );
 
     try {
+
+        const event = getFormattedEvent({
+
+            rawEvent,
+        });
 
         const {
             

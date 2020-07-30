@@ -1,12 +1,10 @@
 'use strict';
 
 const {
+    getFormattedEvent,
     beginningDragonProtection,
     handleError,
     getResponse,
-    javascript: {
-        getFormattedEvent,
-    },
 } = require( '../../../utils' );
 
 const doLogin = require( './doLogin' );

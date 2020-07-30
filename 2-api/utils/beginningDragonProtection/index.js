@@ -83,9 +83,9 @@ module.exports = f( async ({
         (maintenanceModeCode !== 'off') &&
         !(
             !!event &&
-            !!event.header &&
+            !!event.headers &&
             (
-                event.header.bulltruea6f77ec7df97454f8cd8ea897d7b1182 ===
+                event.headers.bulltruea6f77ec7df97454f8cd8ea897d7b1182 ===
                 maintenanceModeCode
             )
         )
@@ -131,8 +131,8 @@ module.exports = f( async ({
     dragonFindings.ipAddress = ipAddress;
 
     const eventHeader = (
-        !!event.header &&
-        event.header
+        !!event.headers &&
+        event.headers
     ) || {};
 
     const megaCode = (

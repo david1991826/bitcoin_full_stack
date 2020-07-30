@@ -46,6 +46,7 @@ module.exports = Object.freeze( async ({
                 humanIpAddress: 'Ip Man (Donnie Yen)',
                 humanScore: 420,
                 isHuman: true,
+                timeOfHumanProof: 'Right now baby!!!',
             },
             privacyPolicy: {
                 agrees: true,
