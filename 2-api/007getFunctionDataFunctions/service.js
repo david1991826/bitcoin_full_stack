@@ -1,16 +1,13 @@
 'use strict';
 
-module.exports = ({
-
-    // isProductionMode,
-    environmentVariables: {
-
-        WEBSITE_DO_NOT_GATHER_DATA_KEY,
-        WEBSITE_DO_NOT_GATHER_DATA_SECRET,
-        BITCOIN_API_TOKEN_FOR_MONITORING_TESTS,
-    },
-
-}) => { 
+module.exports = (
+// {
+//     {
+//          isProductionMode,
+//          environmentVariables: {
+//     },
+// }
+) => { 
     
     const rawFunctionData = [
 
