@@ -996,7 +996,7 @@ Next, create six Lambda integrations, and attach them to the appropriate routes:
 | Access-Control-Expose-Headers | * |
 | Access-Control-Max-Age | 0 Seconds |
 
-Next, now your core Bitcoin-Api API is almost active, only a couple more steps!
+Next, now your core Bitcoin-Api API is almost active, only a couple more steps.
 
 First, add the following database entry to the `bitcoin_api_metadata` or the `bitcoin_api_metadata_staging` DynamoDB table:
 ```.json
