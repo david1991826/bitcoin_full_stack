@@ -20,7 +20,7 @@
 
 #### This public repo version is still under construction 🚧👷‍♂️👷‍♀️🏗
 
-* the core API is ready although the exchange API configuration instructions and code still needs to be updated
+* the core API documentation and code is ready although the exchange API documentation and code still needs to be updated
 
 
 ## API, Exchange, and Casino Features
