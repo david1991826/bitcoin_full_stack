@@ -19,6 +19,13 @@ const {
     }
 } = require( '../../../../../../exchangeUtils' );
 
+const {
+    validation: {
+        getIfEmailIsValid
+    }
+} = require( '../../../../../../utils' );
+
+
 const getEmailHtml = require( './getEmailHtml' );
 
 
@@ -73,6 +80,20 @@ module.exports = Object.freeze( async ({
         `Account Verification Link is ${ verificationLink }`
     );
 
+    const fromEmailAddress = isProbablyCrypto ? (
+        'support@probablycrypto.com'
+    ) : process.env.EXCHANGE_SUPPORT_EMAIL;
+
+    if( !getIfEmailIsValid({ email: fromEmailAddress }) ) {
+
+        throw new Error(
+            
+            'set up error: missing environment variable ' +
+            '"EXCHANGE_SUPPORT_EMAIL". This error was thrown in ' +
+            `"${ __dirname }".`
+        );
+    }
+
     await sendEmail({
 
         subject: 'Account Verification Code',
@@ -80,9 +101,7 @@ module.exports = Object.freeze( async ({
         text,
         toEmailAddress: email,
         // fromEmailAddress: email,
-        fromEmailAddress: isProbablyCrypto ? (
-            'support@probablycrypto.com'
-        ) : process.env.EXCHANGE_SUPPORT_EMAIL,
+        fromEmailAddress,
     });
 
     console.log(

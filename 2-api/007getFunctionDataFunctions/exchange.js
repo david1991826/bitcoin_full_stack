@@ -16,6 +16,7 @@ module.exports = ({
         EXCHANGE_TOKEN_USER_ID,
         EXCHANGE_SIGN_UP_GOOGLE_CAPTCHA_SECRET,
         EXCHANGE_URL,
+        EXCHANGE_SUPPORT_EMAIL
     },
 
 }) => { 
@@ -49,6 +50,7 @@ module.exports = ({
             environmentVariables: {
                 EXCHANGE_XOOVO_ENCRYPTION_ID,
                 EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
+                EXCHANGE_SUPPORT_EMAIL,
             }
         },
 
