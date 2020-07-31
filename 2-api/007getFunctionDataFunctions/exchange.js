@@ -42,10 +42,10 @@ module.exports = ({
 
         {
             nickname: 'eGET/eUsers/eUserId',
-            name: 'exchange_api_eUsers_eUserId_get',
-            handler: 'routes/exchange/users/exchangeUserId/GET/index.handler',
+            name: 'eApi_eUsers_eUserId_get',
+            handler: 'routes/exchange/eUsers/eUserId/GET/index.handler',
             pathsToInclude: [
-                './routes/exchange/users/exchangeUserId/GET',
+                './routes/exchange/eUsers/eUserId/GET',
                 './sacredElementals/crypto/xoOvoDecrypt'
             ],
             environmentVariables: {
