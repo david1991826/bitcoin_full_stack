@@ -69,8 +69,8 @@ module.exports = ({
         },
 
         {
-            nickname: 'ePOST/verify_user',
-            name: 'exchange_api_verifyUser_post',
+            nickname: 'ePOST/verifyUser',
+            name: 'eApi_verifyUser_post',
             handler: 'routes/exchange/verify_user/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/verify_user/POST',

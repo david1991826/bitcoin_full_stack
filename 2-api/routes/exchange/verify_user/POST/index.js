@@ -2,20 +2,13 @@
 
 const {
 
+    getFormattedEvent,
     getResponse,
     handleError,
     beginningDragonProtection,
     stringify,
 
 } = require( '../../../../utils' );
-
-const {
-    aws: {
-        lambda: {
-            getExchangeEvent
-        }
-    }
-} = require( '../../../../exchangeUtils' );
 
 const verifyUser = require( './verifyUser' );
 
@@ -26,7 +19,7 @@ exports.handler = Object.freeze( async rawEvent => {
 
         console.log( 'running the exchange /verify-user - POST function' );
 
-        const event = getExchangeEvent({
+        const event = getFormattedEvent({
 
             rawEvent,
             shouldGetBodyFromEvent: true,
