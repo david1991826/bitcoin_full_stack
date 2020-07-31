@@ -368,6 +368,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 | Table Name | Partition Key (type) | Sort Key (type ) | 
 |--|--|--|
 | bitcoin_api_addresses | userId (string) | address (string) | 
+| bitcoin_api_auxiliaryEmailCases | email (string) | caseId (string) |
 | bitcoin_api_balances | userId (string) | - | 
 | bitcoin_api_exchangeUsers | userId (string) | - | 
 | bitcoin_api_loginTokens | exchangeUserId (string) | expiryTime (number) | 
@@ -800,6 +801,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_role_lambda_eApi_logout_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
 
+* [`bitcoin_api_role_lambda_eService_handleAuxiliaryEmailCase`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleAuxiliaryEmailCase.json)
 
 ##### API IAM Roles
 
@@ -927,6 +929,13 @@ name: `bitcoin_api_lambda_eApi_dreams_post`
 policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
+**Exchange Service - Handle Auxiliary Email Case**
+
+name: `bitcoin_api_lambda_eService_handleAuxiliaryEmailCase`
+
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eService_handleAuxiliaryEmailCase`
+
+
 ##### API IAM Users
 
 To deploy the API, the following [AWS IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) needs to be created and set up. The naming for the staging IAM user is the same except for `_staging` is appended to the user name.
@@ -957,7 +966,7 @@ For reference here are the API deploy command options:
 | command name  | meaning | possible values |
 |--|--|--|
 | functions |  filter functions by nickname, function names separated by commas  | any Lambda function nickname (e.g. `POST/tokens,GET/tokens`) |
-| meta | service(s), exchange(e), or API(a)  | `s`, `e`, or `a`, or any combination of these letters, defaults to `sea` (deploy all functions)  |
+| meta | API(a) or exchange(e) | `a`, `e`, or `ae` (deploy all functions, defaults to `ae`)  |
 
 This will set up the Lambda functions associated with the core API part of your Bitcoin-Api. You next have to set up the [HTTP API Gateway API](https://aws.amazon.com/api-gateway) for your core API. How this works is you create an HTTP API with API Gateway and you attach your deployed Lambda functions to the HTTP API Gateway. After you set up the core API, you will be able to set up the exchange API.
 

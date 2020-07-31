@@ -88,4 +88,14 @@ module.exports = ({
         ],
         environmentVariables: {}
     },
+
+    {
+        nickname: 'service/cacheOnAndOffStatus',
+        name: 'service_cacheOnAndOffStatus',
+        handler: 'routes/ultraServices/cacheOnAndOffStatus/index.handler',
+        pathsToInclude: [
+            './routes/ultraServices/cacheOnAndOffStatus',
+        ],
+        environmentVariables: {}
+    },
 ];

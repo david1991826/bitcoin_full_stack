@@ -14,7 +14,8 @@
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_withdraws_post",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_logout_post",
                 "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_exchanges_post",
-                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_dreams_post"
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eApi_dreams_post",
+                "arn:aws:iam::aws_account_number:role/bitcoin_api_lambda_eService_handleAuxiliaryEmailCase"
             ]
         },
         {
@@ -35,7 +36,8 @@
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_withdraws_post",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_logout_post",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_exchanges_post",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_dreams_post"
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_dreams_post",
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eService_handleAuxiliaryEmailCase"
             ]
         }
     ]

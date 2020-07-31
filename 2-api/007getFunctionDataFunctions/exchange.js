@@ -171,6 +171,16 @@ module.exports = ({
                 EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
             },
         },
+
+        {
+            nickname: 'eService/handleAuxiliaryEmailCase',
+            name: 'eService_handleAuxiliaryEmailCase',
+            handler: 'routes/exchange/ultraServices/handleAuxiliaryEmailCase/index.handler',
+            pathsToInclude: [
+                './routes/exchange/ultraServices/handleAuxiliaryEmailCase',
+            ],
+            environmentVariables: {}
+        },
     ];
 
     for( const rawFunctionDatum of rawFunctionData ) {
