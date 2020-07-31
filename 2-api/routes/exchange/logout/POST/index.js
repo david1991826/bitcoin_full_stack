@@ -2,6 +2,7 @@
 
 const {
 
+    getFormattedEvent,
     getResponse,
     handleError,
     stringify,
@@ -9,11 +10,6 @@ const {
 } = require( '../../../../utils' );
 
 const {
-    aws: {
-        lambda: {
-            getExchangeEvent
-        }
-    },
     loginTokens: {
         mongolianBeginningDragonProtection
     },
@@ -28,7 +24,7 @@ exports.handler = Object.freeze( async rawEvent => {
 
         console.log( 'running the exchange /logout - POST function' );
 
-        const event = getExchangeEvent({
+        const event = getFormattedEvent({
 
             rawEvent,
             shouldGetBodyFromEvent: false,

@@ -132,7 +132,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/logout',
-            name: 'exchange_api_logout_post',
+            name: 'eApi_logout_post',
             handler: 'routes/exchange/logout/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/logout/POST',
