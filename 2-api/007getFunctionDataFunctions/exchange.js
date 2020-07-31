@@ -36,6 +36,7 @@ module.exports = ({
                 EXCHANGE_FLAMINGO_ENCRYPTION_PASSWORD,
                 EXCHANGE_SIGN_UP_GOOGLE_CAPTCHA_SECRET,
                 EXCHANGE_URL,
+                EXCHANGE_SUPPORT_EMAIL,
             }
         },
 
@@ -50,7 +51,6 @@ module.exports = ({
             environmentVariables: {
                 EXCHANGE_XOOVO_ENCRYPTION_ID,
                 EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
-                EXCHANGE_SUPPORT_EMAIL,
             }
         },
 
