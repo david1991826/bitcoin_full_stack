@@ -94,7 +94,8 @@ module.exports = Object.freeze( async ({
         (exchangeUser.moneyData.bitcoin.length > 0)
     );
 
-    if( userDoesNotHaveABitcoinAddressAlready ) {
+    // NOTE: temporary
+    if( false && userDoesNotHaveABitcoinAddressAlready ) {
 
         console.log(
 
@@ -122,8 +123,6 @@ module.exports = Object.freeze( async ({
             );
         }
     }
-
-    // TODO: add add main "Crypto" wallet address
 
     const {
 

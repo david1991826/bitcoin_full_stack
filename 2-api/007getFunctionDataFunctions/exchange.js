@@ -92,7 +92,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/login',
-            name: 'exchange_api_login_post',
+            name: 'eApi_login_post',
             handler: 'routes/exchange/login/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/login/POST',
