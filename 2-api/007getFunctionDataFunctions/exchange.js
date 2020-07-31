@@ -27,7 +27,7 @@ module.exports = ({
             name: 'eApi_eUsers_post',
             handler: 'routes/exchange/eUsers/POST/index.handler',
             pathsToInclude: [
-                './routes/exchange/users/POST',
+                './routes/exchange/eUsers/POST',
                 './sacredElementals/crypto/flamingoCrescent',
             ],
             environmentVariables: {
