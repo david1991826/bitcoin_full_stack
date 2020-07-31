@@ -19,6 +19,8 @@ module.exports = Object.freeze( ({
     <style>
       /* -------------------------------------
           GLOBAL RESETS
+
+          email template source: https://github.com/leemunroe/responsive-html-email-template
       ------------------------------------- */
       
       /*All the styling goes here*/
