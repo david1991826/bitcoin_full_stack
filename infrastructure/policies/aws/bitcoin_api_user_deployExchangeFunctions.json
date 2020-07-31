@@ -37,7 +37,7 @@
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_logout_post",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_exchanges_post",
                 "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_dreams_post",
-                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eApi_eService_handleAuxiliaryEmailCase"
+                "arn:aws:lambda:aws_region:aws_account_number:function:bitcoin_api_eService_handleAuxiliaryEmailCase"
             ]
         }
     ]
