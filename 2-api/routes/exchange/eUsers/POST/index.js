@@ -17,7 +17,7 @@ exports.handler = Object.freeze( async rawEvent => {
     
     try {
 
-        console.log( 'running the exchange /users - POST function' );
+        console.log( 'running the exchange /exchange-users - POST function' );
 
         const event = getFormattedEvent({
 
@@ -57,7 +57,8 @@ exports.handler = Object.freeze( async rawEvent => {
 
         console.log(
             
-            'the exchange /users - POST function executed successfully: ' +
+            'the exchange /exchange-users - ' +
+            'POST function executed successfully: ' +
             stringify({ responseData })
         );
 
@@ -68,7 +69,10 @@ exports.handler = Object.freeze( async rawEvent => {
     }
     catch( err ) {
 
-        console.log( `error in exchange /users - POST function: ${ err }` );
+        console.log(
+            'error in exchange /exchange-users - ' +
+            `POST function: ${ err }`
+        );
 
         return handleError( err );
     }
