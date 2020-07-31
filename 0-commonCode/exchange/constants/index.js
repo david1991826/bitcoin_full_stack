@@ -18,9 +18,9 @@ const tableNames = isProductionMode ? f({
 
 }) : f({
 
-    exchangeUsers: 'exchangeUsersv1_staging',
-    loginTokens: 'loginTokensv1_staging',
-    transactions: 'transactionsv1_staging',
+    exchangeUsers: 'bitcoin_api_exchangeUsers_staging',
+    loginTokens: 'bitcoin_api_loginTokens_staging',
+    transactions: 'bitcoin_api_transactions_staging',
 });
 
 

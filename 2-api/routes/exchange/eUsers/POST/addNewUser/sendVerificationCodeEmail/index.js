@@ -4,7 +4,7 @@ const {
     utils: {
         stringify
     },
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     aws: {
@@ -82,7 +82,7 @@ module.exports = Object.freeze( async ({
         // fromEmailAddress: email,
         fromEmailAddress: isProbablyCrypto ? (
             'support@probablycrypto.com'
-        ) : 'support@atexchange.io',
+        ) : process.env.EXCHANGE_SUPPORT_EMAIL,
     });
 
     console.log(
