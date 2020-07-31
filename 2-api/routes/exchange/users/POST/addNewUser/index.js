@@ -37,7 +37,7 @@ module.exports = Object.freeze( async ({
 
         email,
         password,
-        isHumanScore,
+        // isHumanScore,
 
     } = await validateAndGetValues({
 
@@ -62,7 +62,7 @@ module.exports = Object.freeze( async ({
         email,
         password,
         ipAddress,
-        isHumanScore
+        // isHumanScore
     });
 
     await sendVerificationCodeEmail({

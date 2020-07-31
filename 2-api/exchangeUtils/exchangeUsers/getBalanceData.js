@@ -2,7 +2,7 @@
 
 const {
     utils: { stringify },
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
 
@@ -14,7 +14,7 @@ const {
         }
     }
 
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const {
     formatting: { getAmountNumber }

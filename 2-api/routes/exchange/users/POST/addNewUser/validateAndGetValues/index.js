@@ -18,7 +18,7 @@ const {
     }
 } = require( '../../../../../../exchangeUtils' );
 
-const verifyGoogleCode = require( './verifyGoogleCode' ); 
+// const verifyGoogleCode = require( './verifyGoogleCode' ); 
 
 
 module.exports = Object.freeze( async ({
@@ -67,20 +67,20 @@ module.exports = Object.freeze( async ({
         throw err;
     }
 
-    const {
+    // const {
         
-        isHumanScore,
+    //     isHumanScore,
 
-    } = await verifyGoogleCode({
+    // } = await verifyGoogleCode({
 
-        rawGoogleCode,
-        ipAddress
-    });
+    //     rawGoogleCode,
+    //     ipAddress
+    // });
 
     const validValues = {
         email: rawEmail.toLowerCase(),
         password: rawPassword,
-        isHumanScore,
+        // isHumanScore,
     };
 
     console.log(

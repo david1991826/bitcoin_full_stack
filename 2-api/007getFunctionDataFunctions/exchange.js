@@ -23,8 +23,8 @@ module.exports = ({
     const rawFunctionData = [
 
         {
-            nickname: 'ePOST/exchangeUsers',
-            name: 'exchange_api_exchangeUsers_post',
+            nickname: 'ePOST/eUsers',
+            name: 'eApi_eUsers_post',
             handler: 'routes/exchange/users/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/users/POST',
@@ -39,8 +39,8 @@ module.exports = ({
         },
 
         {
-            nickname: 'eGET/users/exchangeUserId',
-            name: 'exchange_api_users_exchangeUserId_get',
+            nickname: 'eGET/eUsers/eUserId',
+            name: 'exchange_api_eUsers_eUserId_get',
             handler: 'routes/exchange/users/exchangeUserId/GET/index.handler',
             pathsToInclude: [
                 './routes/exchange/users/exchangeUserId/GET',
@@ -53,8 +53,8 @@ module.exports = ({
         },
 
         {
-            nickname: 'eDELETE/users/exchangeUserId',
-            name: 'exchange_api_users_exchangeUserId_delete',
+            nickname: 'eDELETE/users/eUserId',
+            name: 'exchange_api_eUsers_eUserId_delete',
             handler: 'routes/exchange/users/exchangeUserId/DELETE/index.handler',
             pathsToInclude: [
                 './routes/exchange/users/exchangeUserId/DELETE',

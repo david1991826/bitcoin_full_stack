@@ -9,7 +9,7 @@ const {
         },
         stringify
     },
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     constants: {
@@ -21,7 +21,7 @@ const {
             }
         }
     }
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const flamingoCrescent = require( '../../../../../sacredElementals/crypto/flamingoCrescent/index' );
 
@@ -43,7 +43,7 @@ module.exports = Object.freeze( async ({
     email,
     password,
     ipAddress,
-    isHumanScore,
+    // isHumanScore,
     
 }) => {
 
@@ -53,7 +53,7 @@ module.exports = Object.freeze( async ({
                 stringify({
                     email,
                     password,
-                    isHumanScore,
+                    // isHumanScore,
                 })
         }`
     );
@@ -90,7 +90,7 @@ module.exports = Object.freeze( async ({
             creation: {
                 date: Date.now(),
                 ipAddress,
-                isHumanScore,
+                // isHumanScore,
             }
         }
     };

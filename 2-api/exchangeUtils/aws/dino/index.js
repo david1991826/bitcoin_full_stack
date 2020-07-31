@@ -8,7 +8,7 @@ const {
             } 
         }
     }
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 
 module.exports = Object.freeze({

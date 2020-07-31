@@ -3,6 +3,6 @@
 
 module.exports = require(
     
-    '@npm.m.stecky.efantis/common-exchange'
+    '@bitcoin-api.io/common-exchange'
 
 ).utils.crypto.getCryptoAmountNumber;
