@@ -1020,7 +1020,7 @@ And now, your Bitcoin-Api core API is active!
 
 #### Deploy The Exchange API
 
-(🚧👷‍♂️👷‍♀️🏗 the code for this is still needs to be updated!)
+(🚧👷‍♀️👷‍♂️🏗 the code for this section still needs to be updated)
 
 To finish the rest of the set up which includes setting up the exchange, there's a few more steps.
 
