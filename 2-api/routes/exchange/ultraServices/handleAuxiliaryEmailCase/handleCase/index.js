@@ -8,11 +8,20 @@ const {
 
 } = require( '@bitcoin-api.io/common-private' );
 
-// TODO: add to common exchange constants
-const Bounce = 'Bounce';
-const Complaint = 'Complaint';
-const block = 'block';
-const review = 'review';
+const {
+    constants: {
+        auxiliaryEmailCases: {
+            snsNotificationTypes: {
+                Bounce,
+                Complaint,
+            },
+            types: {
+                block,
+                review,
+            },
+        }
+    }
+} = require( '../../../../../exchangeUtils' );
 
 const addAuxiliaryEmailCaseToDatabase = require( './addAuxiliaryEmailCaseToDatabase' );
 

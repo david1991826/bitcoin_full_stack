@@ -16,7 +16,7 @@ module.exports = ({
         EXCHANGE_TOKEN_USER_ID,
         EXCHANGE_SIGN_UP_GOOGLE_CAPTCHA_SECRET,
         EXCHANGE_URL,
-        EXCHANGE_SUPPORT_EMAIL,
+        EXCHANGE_MANAGEMENT_EMAIL,
     },
 
 }) => { 
@@ -36,7 +36,7 @@ module.exports = ({
                 EXCHANGE_FLAMINGO_ENCRYPTION_PASSWORD,
                 EXCHANGE_SIGN_UP_GOOGLE_CAPTCHA_SECRET,
                 EXCHANGE_URL,
-                EXCHANGE_SUPPORT_EMAIL,
+                EXCHANGE_MANAGEMENT_EMAIL,
             }
         },
 

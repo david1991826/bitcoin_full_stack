@@ -8,6 +8,7 @@ const {
 
 const validateAndGetValues = require( './validateAndGetValues' );
 const ensureUserDoesNotExist = require( './ensureUserDoesNotExist' );
+const ensureEmailIsNotBlocked = require( './ensureEmailIsNotBlocked' );
 const addNewUserToDatabase = require( './addNewUserToDatabase' );
 const sendVerificationCodeEmail = require( './sendVerificationCodeEmail' );
 
@@ -47,12 +48,15 @@ module.exports = Object.freeze( async ({
         ipAddress,
     });
 
+    await ensureEmailIsNotBlocked({
+
+        email,
+    });
+
     await ensureUserDoesNotExist({
 
         email
     });
-
-    // TODO: ensure user is not blocked in the auxiliaryEmailCases table
 
     const {
         

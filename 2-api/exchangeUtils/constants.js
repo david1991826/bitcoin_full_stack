@@ -34,4 +34,18 @@ module.exports = Object.freeze({
     },
 
     exchanges,
+
+    auxiliaryEmailCases: {
+
+        snsNotificationTypes: {
+
+            Bounce: 'Bounce',
+            Complaint: 'Complaint',
+        },
+
+        types: {
+            block: 'block',
+            review: 'review',
+        },
+    },
 });

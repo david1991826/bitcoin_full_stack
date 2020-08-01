@@ -82,15 +82,14 @@ module.exports = Object.freeze( async ({
 
     const fromEmailAddress = isProbablyCrypto ? (
         'support@probablycrypto.com'
-    ) : process.env.EXCHANGE_SUPPORT_EMAIL;
-    // TODO: update to EXCHANGE_MANAGEMENT_EMAIL
+    ) : process.env.EXCHANGE_MANAGEMENT_EMAIL;
 
     if( !getIfEmailIsValid({ email: fromEmailAddress }) ) {
 
         throw new Error(
             
             'set up error: missing environment variable ' +
-            '"EXCHANGE_SUPPORT_EMAIL". This error was thrown in ' +
+            '"EXCHANGE_MANAGEMENT_EMAIL". This error was thrown in ' +
             `"${ __dirname }".`
         );
     }

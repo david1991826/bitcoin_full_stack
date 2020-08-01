@@ -8,6 +8,12 @@
             "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/bitcoin_api_exchangeUsers/index/email-index"
         },
         {
+            "Sid": "VisualEditorYYZ",
+            "Effect": "Allow",
+            "Action": "dynamodb:Query",
+            "Resource": "arn:aws:dynamodb:aws_region:aws_account_number:table/bitcoin_api_auxiliaryEmailCases"
+        },
+        {
             "Sid": "VisualEditor1",
             "Effect": "Allow",
             "Action": "dynamodb:PutItem",
