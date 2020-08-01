@@ -1,5 +1,7 @@
 'use strict';
 
+const handleCase = require( './handleCase' );
+
 
 exports.handler = Object.freeze( async event => {
 
@@ -7,17 +9,10 @@ exports.handler = Object.freeze( async event => {
 
     try {
 
-        console.log(`
-        
-        
-            TEMPORARY LOG: ${ JSON.stringify( {
+        await handleCase({
 
-                event
-
-            }, null, 4 ) }
-        
-        
-        `);
+            event
+        });
         
         console.log(            
             '💌☢️🐑handleAuxiliaryEmailCase executed successfully'
