@@ -15,7 +15,7 @@ Bitcoin-Api-Full-Stack a NodeJS/Javascript full stack Bitcoin API (see below for
 
 **About APIs**
 
-APIs allow developers to build technology that connects across the internet in a systematic way using URLs and internet requests from computers to those URLs. An example of this is sending a Tweet on Twitter from your phone (which is the computer in this case). Your phone makes an internet request to the Twitter API URL which is then responsible for creating Tweets.
+APIs allow developers to build technology that connects across the internet in a systematic way using URLs and internet requests from computers to those URLs. An example of this is sending a Tweet on Twitter from your phone, which is the computer in this case. Your phone makes an internet request to the Twitter API URL which is then responsible for creating Tweets.
 
 What this Bitcoin API allows you to do is to easily send and receive Bitcoin using simple URLs. This lets developers program Bitcoin functionality into whatever technology they want, such as exchanges, wallet apps, IoT devices, or anything connected to the internet.
 
