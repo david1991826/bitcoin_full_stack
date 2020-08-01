@@ -31,7 +31,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 1. They have very high quality competitively priced cloud services
 2. You have full responsibility for and ownership of your data 💯🤠
 
-Additional Cloud Credits:
+☁️Additional cloud credits☁️
 * **Satoshi Nakamoto** for Bitcoin
 * **Google** for email services, Youtube, and other Google services
 * **Linus Torvalds** for Linux
