@@ -83,6 +83,7 @@ module.exports = Object.freeze( async ({
     const fromEmailAddress = isProbablyCrypto ? (
         'support@probablycrypto.com'
     ) : process.env.EXCHANGE_SUPPORT_EMAIL;
+    // TODO: update to EXCHANGE_MANAGEMENT_EMAIL
 
     if( !getIfEmailIsValid({ email: fromEmailAddress }) ) {
 

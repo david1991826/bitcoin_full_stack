@@ -1062,6 +1062,8 @@ For the SNS topic you just created, attach your `bitcoin_api_eService_handleAuxi
 Now, back in your [AWS SES browser console](https://console.aws.amazon.com/ses/home), go to your email's or your domain's settings.  In the settings, go to the notifications section and click "Edit configuration". In the "SNS Topic Configuration" settings, for `Bounces` and `Complaints`, choose `bitcoin_api_auxiliaryEmailCaseEventForwarder_staging` or `bitcoin_api_auxiliaryEmailCaseEventForwarder`. Leave the `	
 Include original headers` checkbox unchecked. Press "Save Config" after.
 
+In your API's .env file, your `EXCHANGE_MANAGEMENT_EMAIL` environment variable must be set to your verified SES's email used to send emails for your exchange.
+
 **Set Up API Gateway HTTP API**
 
 For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
