@@ -23,7 +23,7 @@ In this Bitcoin-Api system, the Bitcoin itself is stored on a Bitcoin node (Bitc
 
 The Bitcoin node and the API are considered the "back end" of the "stack" in the "full stack" concept.
 
-The "front end" webapp code and instructions for an exchange and casino that connects to your built Bitcoin-Api back end is provided.
+The "front end" webapp set up instructions and code for an exchange and casino that connects to your built Bitcoin-Api back end are provided.
 
 ## Video Demo of Exchange and Casino Technology
 
