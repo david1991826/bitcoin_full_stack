@@ -31,6 +31,20 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 1. They have very high quality competitively priced cloud services
 2. You have full responsibility for and ownership of your data 💯🤠
 
+Additional Cloud Credits:
+* **Satoshi Nakamoto** for Bitcoin
+* **Google** for email services, Youtube, and other Google services
+* **Linus Torvalds** for Linux
+* **RedisLabs** for Redis database
+* **pm2** for NodeJS process management 
+* **Apple** for MacOS and iOS
+* **MongoDB** for MongoDB database
+* **Facebook** for React and social media services
+* **Twitter** for social media services
+* **Xapo** for Bitcoin exchange services
+* **Mircosoft** for Github, NPM, and Microsoft Windows 95
+* **Open Source Developers** you are the best!!🤗💜
+
 ## Video Demo of Exchange and Casino Technology
 
 <a href="https://youtu.be/EMAwIrHM2Qc">
