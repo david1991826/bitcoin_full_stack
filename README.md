@@ -23,7 +23,7 @@ In this Bitcoin-Api system, the Bitcoin itself is stored on a Bitcoin node (Bitc
 
 The Bitcoin node and the API are considered to be the "backend" of the "stack" in the "full stack" concept. The backend code and the data associated with the code is on your computer servers and is not publicly accessible by users.
 
-The "frontend" webapp set up instructions and code for an exchange and casino that connects to your built Bitcoin-Api backend are provided. The webapp is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve data (such as Bitcoin balance data) from the backend API that they're authorized to access.
+The "frontend" webapp set up instructions and code for an exchange and casino that connects to your built Bitcoin-Api backend are provided. The webapp is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve data (such as Bitcoin balance data) from the backend that they're authorized to access.
 
 ## Video Demo of Exchange and Casino Technology
 
