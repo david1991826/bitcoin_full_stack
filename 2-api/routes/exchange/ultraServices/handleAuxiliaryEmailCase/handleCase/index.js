@@ -28,51 +28,56 @@ module.exports = Object.freeze( async ({
         'running handleCase - here is the event: ' +
         stringify( event )
     );
+
+    const records = event.Records;
+
+    for( const record of records ) {
+
+        const snsMessageObject = JSON.parse( record.Sns.Message );
+
+        const {
     
-    const snsMessageObject = JSON.parse( event.Records.Sns.Message );
-
-    const {
-
-        notificationType
-        
-    } = snsMessageObject;
-
-    if( notificationType === Bounce ) {
-
-        const bouncedEmailAddresses = (
-            snsMessageObject.bounce.bouncedRecipients.map(
-                ({ emailAddress }) => emailAddress
-            )
-        );
-
-        await addAuxiliaryEmailCaseToDatabase({
-
-            emails: bouncedEmailAddresses,
-            type: block,
-            metaData: {
-
-                snsMessageObject,
-            }
-        });
-    }
-    else if( notificationType === Complaint ) {
-
-        const usersWithComplaints = (
-            snsMessageObject.complaint.complainedRecipients.map(
-                ({ emailAddress }) => emailAddress
-            )
-        );
-
-        await addAuxiliaryEmailCaseToDatabase({
-
-            emails: usersWithComplaints,
-            type: review,
-            metaData: {
-                
-                snsMessageObject,
-            }
-        });
-    }
+            notificationType
+            
+        } = snsMessageObject;
+    
+        if( notificationType === Bounce ) {
+    
+            const bouncedEmailAddresses = (
+                snsMessageObject.bounce.bouncedRecipients.map(
+                    ({ emailAddress }) => emailAddress
+                )
+            );
+    
+            await addAuxiliaryEmailCaseToDatabase({
+    
+                emails: bouncedEmailAddresses,
+                type: block,
+                metaData: {
+    
+                    snsMessageObject,
+                }
+            });
+        }
+        else if( notificationType === Complaint ) {
+    
+            const usersWithComplaints = (
+                snsMessageObject.complaint.complainedRecipients.map(
+                    ({ emailAddress }) => emailAddress
+                )
+            );
+    
+            await addAuxiliaryEmailCaseToDatabase({
+    
+                emails: usersWithComplaints,
+                type: review,
+                metaData: {
+                    
+                    snsMessageObject,
+                }
+            });
+        }
+    }    
 
     console.log( 'handleCase executed successfully👩🏿‍💻👨🏻‍💻👩🏼‍💻👨🏾‍💻👏🏿👏🏽👏' );
 });
