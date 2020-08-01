@@ -75,4 +75,4 @@ module.exports = Object.freeze( async ({
     }
 
     console.log( 'handleCase executed successfully👩🏿‍💻👨🏻‍💻👩🏼‍💻👨🏾‍💻👏🏿👏🏽👏' );
-})();
+});
