@@ -52,6 +52,8 @@ module.exports = Object.freeze( async ({
         email
     });
 
+    // TODO: ensure user is not blocked in the auxiliaryEmailCases table
+
     const {
         
         userObject,
