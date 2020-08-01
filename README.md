@@ -1053,7 +1053,7 @@ or in production:
 
 Set up your [AWS SES](https://aws.amazon.com/ses/) email. SES is used to send emails for setting up exchange accounts.
 
-First, verify the email that you're going to be using to send the exchange emails from. You can also verify the entire domain of the email that you're sending from. Verifying your email can be done on [this page in the AWS SES browser console](https://console.aws.amazon.com/ses/home#verified-senders-domain:).
+First, verify the email that you're going to be using to send the exchange emails from, this can be your exchange's support email. You can also verify the entire domain of the email that you're sending from. Verifying your email can be done on [this page in the AWS SES browser console](https://console.aws.amazon.com/ses/home#verified-senders-domain:).
 
 Next, create an [AWS SNS](https://aws.amazon.com/sns) topic to forward email events to an AWS Lambda function. Call this topic `bitcoin_api_auxiliaryEmailCaseEventForwarder_staging` or `bitcoin_api_auxiliaryEmailCaseEventForwarder`. On creation, give it a nickname `s_ba_email` or `p_ba_email` (this is optional, you can give it another nickname if you want😃🤠). You can create and configure your SNS topics in the [AWS SNS browser console](https://console.aws.amazon.com/sns/v3/home#/dashboard).
 
