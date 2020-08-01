@@ -13,7 +13,7 @@
 
 This code repository, Bitcoin-Api-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and casino (the exchange and the casino still under construction). The term "full stack" in the title means all the components and all the instructions are there so you can make it from scratch and you can make every aspect of it. It's for people who want to have their own versions of APIs and exchanges instead of having to use companies', if they are okay with holding custody of their own Bitcoin. It's also designed in way so that even individuals can have control of these financial technologies instead of having to need a big team or a company.
 
-**About APIs**
+**About APIs and Bitcoin APIs**
 
 APIs allow developers to build technology that connects across the internet in a systematic way using URLs and internet requests from computers to those URLs. An example of this is sending a Tweet on Twitter from your phone, which is the computer in this case. Your phone makes an internet request to the Twitter API URL which is then responsible for creating Tweets.
 
