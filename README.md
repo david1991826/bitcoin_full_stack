@@ -9,6 +9,16 @@
 
 <br>
 
+## Introduction:
+
+Bitcoin-Api-Full-Stack a NodeJS/Javascript full stack ("full stack" meaning all the components and instructions are there so you can make it from scratch and you can make every aspect of it) Bitcoin API, exchange, and casino (exchange and casino still under construction). It's for people who want to have their own versions of APIs and exchanges instead of having to use companies', if they are okay with holding custody of their own Bitcoin. It's also meant to be so that even individuals can have control of these technologies instead of having to need a big team or a company.
+
+**About APIs**
+
+APIs allow developers to build technology in a systematic way that connects across the internet using URLs and internet requests from computers to those URLs (an example of this is loading your Google home page on your browser). What this Bitcoin API allows you to do is to easily send and receive Bitcoin using simple URLs. This lets developers program Bitcoin functionality into whatever technology they want, such as exchanges, wallet apps, IoT devices, or anything connected to the internet.
+
+The Bitcoin itself is stored on a Bitcoin node (Bitcoin node set up instructions provided) and the API connects to the Bitcoin node. Overall, your apps and your tech connect to the API, and then the API connects to the Bitcoin node which is on your computer server.
+
 ## Video Demo of Exchange and Casino Technology
 
 <a href="https://youtu.be/EMAwIrHM2Qc">

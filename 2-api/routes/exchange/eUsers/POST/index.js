@@ -14,6 +14,8 @@ const addNewUser = require( './addNewUser' );
 
 
 exports.handler = Object.freeze( async rawEvent => {
+
+    // TODO: on new user add email message id on database user
     
     try {
 
