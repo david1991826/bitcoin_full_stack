@@ -1059,8 +1059,7 @@ Next, create an [AWS SNS](https://aws.amazon.com/sns) topic to forward email eve
 
 For the SNS topic you've just created, attach your `bitcoin_api_eService_handleAuxiliaryEmailCase_staging` or  `bitcoin_api_eService_handleAuxiliaryEmailCase` Lambda function as a subscriber.
 
-Now, back in your [AWS SES browser console](https://console.aws.amazon.com/ses/home), go to your email's or your domain's settings.  In the settings, go to the notifications section and click "Edit configuration". In the "SNS Topic Configuration" settings, for `Bounces` and `Complaints`, choose `bitcoin_api_auxiliaryEmailCaseEventForwarder_staging` or `bitcoin_api_auxiliaryEmailCaseEventForwarder`. Leave the `	
-Include original headers` checkbox unchecked. Press "Save Config" after.
+Now, back in your [AWS SES browser console](https://console.aws.amazon.com/ses/home), go to your email's or your domain's settings.  In the settings, go to the notifications section and click "Edit configuration". In the "SNS Topic Configuration" settings, for `Bounces` and `Complaints`, choose `bitcoin_api_auxiliaryEmailCaseEventForwarder_staging` or `bitcoin_api_auxiliaryEmailCaseEventForwarder`. Leave the "Include original headers" checkbox unchecked. Press "Save Config" after.
 
 In your API's .env file, your `EXCHANGE_MANAGEMENT_EMAIL` environment variable must be set to your verified SES's email used to send emails for your exchange.
 
