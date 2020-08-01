@@ -968,7 +968,7 @@ For reference here are the API deploy command options:
 | functions |  filter functions by nickname, function names separated by commas  | any Lambda function nickname (e.g. `POST/tokens,GET/tokens`) |
 | meta | API(a) or exchange(e) | `a`, `e`, or `ae` (deploy all functions, defaults to `ae`)  |
 
-This will set up the Lambda functions associated with the core API part of your Bitcoin-Api. You next have to set up the [HTTP API Gateway API](https://aws.amazon.com/api-gateway) for your core API. How this works is you create an HTTP API with API Gateway and you attach your deployed Lambda functions to the HTTP API Gateway. After you set up the core API, you will be able to set up the exchange API.
+This will set up the Lambda functions associated with the core API part of your Bitcoin-Api. Next, set up for the [AWS API Gateway](https://aws.amazon.com/api-gateway) API used as your core API will be explained in detail. How this works is you create an HTTP API with API Gateway and you attach your deployed Lambda functions to the HTTP API Gateway. After you set up the core API, you will be able to set up the exchange API.
 
 #### API Gateway Set Up 
 
