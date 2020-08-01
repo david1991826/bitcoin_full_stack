@@ -23,7 +23,7 @@ In this Bitcoin-Api system, the Bitcoin itself is stored on a Bitcoin node (Bitc
 
 The Bitcoin node and the API are considered the "back end" of the "stack" in the "full stack" concept. The back end code is on your computer servers and is not publicly accessible by users.
 
-The "front end" webapp set up instructions and code for an exchange and casino that connects to your built Bitcoin-Api back end is provided. The front end code is sent to users' devices and a formatted version of it is publicly accessible.
+The "front end" webapp set up instructions and code for an exchange and casino that connects to your built Bitcoin-Api back end is provided. The front end code is sent to users' devices and a processed version of the front end code is publicly accessible.
 
 ## Video Demo of Exchange and Casino Technology
 
