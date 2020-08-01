@@ -21,9 +21,9 @@ What this Bitcoin API allows you to do is to easily send and receive Bitcoin usi
 
 In this Bitcoin-Api system, the Bitcoin itself is stored on a Bitcoin node (Bitcoin node set up instructions provided) and the API connects to the Bitcoin node. Overall, your apps and your tech connect to the API and then the API connects to the Bitcoin node which is on your computer server.
 
-The Bitcoin node and the API are considered the "back end" of the "stack" in the "full stack" concept.
+The Bitcoin node and the API are considered the "back end" of the "stack" in the "full stack" concept. The back end code is on your computer servers and is not publicly accessible by users.
 
-The "front end" webapp set up instructions and code for an exchange and casino that connects to your built Bitcoin-Api back end is provided.
+The "front end" webapp set up instructions and code for an exchange and casino that connects to your built Bitcoin-Api back end is provided. The front end code is sent to users' devices and a formatted version of it is publicly accessible.
 
 ## Video Demo of Exchange and Casino Technology
 
