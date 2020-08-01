@@ -43,7 +43,7 @@ Additional Cloud Credits:
 * **Twitter** for social media services
 * **Xapo** for Bitcoin exchange services
 * **Mircosoft** for Github, NPM, and Microsoft Windows 95
-* **Open Source Developers** you are the best!!🤗💜
+* **Open Source Developers** you're the best!!🤗💜
 
 ## Video Demo of Exchange and Casino Technology
 
