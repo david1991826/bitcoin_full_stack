@@ -1033,7 +1033,13 @@ And now, your Bitcoin-Api core API is active!
 
 To finish the rest of the set up which includes setting up the exchange, there's a few more steps.
 
-Create a token using the `POST - /tokens` endpoint on your newly created API. The token and the userId associated with this token both need to be added for your API environment variables `EXCHANGE_BITCOIN_API_TESTNET_TOKEN` and `EXCHANGE_TOKEN_USER_ID`. After you update your environment variables, you can deploy your exchange API Lambda functions for them to be set for your exchange API API. Deploy your Bitcoin-Api exchange API functions with the following command in the `/infrastructure/scripts/2-api` path in this repo:
+**Set Up Exchange Bitcoin-Api Token**
+
+Create a token using the `POST - /tokens` endpoint on your newly created API. The token and the userId associated with this token both need to be added for your API environment variables `EXCHANGE_BITCOIN_API_TESTNET_TOKEN` and `EXCHANGE_TOKEN_USER_ID`. 
+
+**Deploy Exchange API Lambda Function**
+
+Deploy your Bitcoin-Api exchange API functions with the following command in the `/infrastructure/scripts/2-api` path in this repo:
 
 ```
 ./deployStaging --meta="e"
@@ -1043,6 +1049,20 @@ or in production:
 ./deployProduction --meta="e"
 ```
 
+**Set Up AWS SES**
+
+Set up your [AWS SES](https://aws.amazon.com/ses/) email. SES is used to send emails for setting up exchange accounts.
+
+First, verify the email that you're going to be using to send the exchange emails from. You can also verify the entire domain of the email that you're sending from. Verifying your email can be done on [this page in the AWS SES browser console](https://console.aws.amazon.com/ses/home#verified-senders-domain:).
+
+Next, create an [AWS SNS](https://aws.amazon.com/sns) topic to forward email events to an AWS Lambda function. Call this topic `bitcoin_api_auxiliaryEmailCaseEventForwarder_staging` or `bitcoin_api_auxiliaryEmailCaseEventForwarder`. On creation, give it a nickname `S_ba_Email` or `P_ba_Email` (this is optional, you can give it another nickname if you want😃🤠). You can create and configure your SNS topics in the [AWS SNS browser console](https://console.aws.amazon.com/sns/v3/home#/dashboard).
+
+For the SNS topic you just created, attach your `bitcoin_api_eService_handleAuxiliaryEmailCase` Lambda function as a subscriber.
+
+Now, back in your [AWS SES browser console](https://console.aws.amazon.com/ses/home), go to your email's or your domain's settings.  In the sections, go to the notifications section and click "Edit configuration". In the "SNS Topic Configuration" settings, for `Bounces` and `Complaints`, choose `bitcoin_api_auxiliaryEmailCaseEventForwarder_staging` or `bitcoin_api_auxiliaryEmailCaseEventForwarder`. Leave the `	
+Include original headers` checkbox unchecked. Press "Save Config" after.
+
+**Set Up API Gateway HTTP API**
 
 For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
 
