@@ -25,7 +25,11 @@ The Bitcoin node and the API are considered to be the "backend" of the "stack" i
 
 The "frontend" exchange and casino webapp set up instructions and code are provided. The webapp connects to your built Bitcoin-Api backend. The webapp code is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve data that they're authorized to access, such as their Bitcoin balance data, from the backend.
 
-Note that even though the entire code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
+It's important to note that even though the all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
+
+The Bitcoin-Api system currently uses a large amount cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored in any way by AWS although AWS is good because:
+1. They have very high quality cloud services
+2. You have full ownership of and responsibility for your data.💯🤠
 
 ## Video Demo of Exchange and Casino Technology
 
