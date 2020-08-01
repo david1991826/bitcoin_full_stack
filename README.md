@@ -29,7 +29,7 @@ It's important to note that even though the all the code in this repository is p
 
 The Bitcoin-Api system uses a large amount cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
 1. They have very high quality cloud services
-2. You have full ownership of and responsibility for your data.💯🤠
+2. You have full ownership of and responsibility for your data 💯🤠
 
 ## Video Demo of Exchange and Casino Technology
 
