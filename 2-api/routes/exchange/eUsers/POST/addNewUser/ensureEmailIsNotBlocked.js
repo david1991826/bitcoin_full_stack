@@ -133,6 +133,12 @@ module.exports = Object.freeze( async ({
 
         if( auxiliaryEmailCases.length > 0 ) {
 
+            console.log(
+
+                'ensureEmailIsNotBlocked error: ' +
+                `the email "${ email }" has been blocked`
+            );
+
             const error = new Error(
 
                 `email address "${ email }" has been blocked`
@@ -154,8 +160,6 @@ module.exports = Object.freeze( async ({
     } while( !!paginationValueToUse );
 
     console.log(
-
-        'ensureEmailIsNotBlocked executed successfully, ' +
-        `user with email ${ email } does not already exist🖖🐸`
+        'ensureEmailIsNotBlocked executed successfully'
     );
 });
