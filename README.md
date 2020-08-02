@@ -406,7 +406,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 | Table Name | Partition Key (type) | Sort Key (type ) | 
 |--|--|--|
 | bitcoin_api_addresses | userId (string) | address (string) | 
-| bitcoin_api_auxiliaryEmailCases | email (string) | caseId (string) |
+| bitcoin_api_emailDeliveryResults TODO: 🚧👷‍♂️👷‍♀️🏗 update documentation | email (string) | caseId (string) | 
 | bitcoin_api_balances | userId (string) | - | 
 | bitcoin_api_exchangeUsers | userId (string) | - | 
 | bitcoin_api_loginTokens | exchangeUserId (string) | expiryTime (number) | 
@@ -424,6 +424,73 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 | bitcoin_api_exchangeUsers | email-index | email (string) | - |
 | bitcoin_api_transactions | exchangeUserId-creationDate-index | exchangeUserId (string) | creationDate (number) |
 | bitcoin_api_withdraws | state-creationDate-index | state (string) | creationDate (number) |
+
+
+#### Database Info
+
+TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section
+
+In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent any conflicting updates.
+
+#### 👨🏿‍🔬Database Dr. Q Q-Locks:
+
+**👨🏿‍🔬Q-Lock - withdraws:user_id**
+
+* korg, do withdraw
+* korg, real deal the withdraw
+* korg, verify withdraw
+* POST/withdraws doWithdraw
+
+**Addresses**
+
+**👨🏿‍🔬Q-Lock - addresses:user_id**
+
+* POST/addresses - get or assign fresh address (implies assign first address) PA
+
+**Balances**
+
+**👨🏿‍🔬Q-Lock - balances:user_id**
+
+* theomega, update balance
+* POST/withdraws doWithdraw
+* korg verify withdraw
+
+**Users**
+
+**👨🏿‍🔬Q-Lock - users:user_id**
+
+* POST/addresses - assign first address
+* PUT/tokens - update token value
+
+**👨🏿‍🔬Exchange Q-Locks**
+
+**👨🏿‍🔬Q-Lock - exchangeUsers:email**
+* POST/verify-user - on verify email
+
+**👨🏿‍🔬Q-Lock - exchangeUsers:exchangeUserId**
+* POST/verify-user - on verify email
+* POST/login - assign bitcoin address
+* DELETE/users/exchangeUserId - delete user
+* theomega - update Bitcoin deposit info [add exchange transaction]
+* POST/withdraws - withdraw part 1 of 2 [add exchange transaction]
+* korg - withdraw part 2 of 2 [ad exchange transaction]
+
+**👨🏿‍🔬Q-Lock - vanguard_withdraws:exchangeUserId**
+* korg, do withdraw
+* korg, real deal the withdraw
+* korg, verify withdraw
+
+
+#### Redis Streams
+
+TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section
+
+* all Dr. Q. operations - 300000
+* rate limit by ip address (per endpoint per ip address) - 200000
+* rate limit by advanced code (per endpoint per advancedCode) - 200000
+* on/off state check queue - 2000
+* zarbonDeploy - Giraffe Lick Leaf (GLL) deploy queue - 1000
+
 
 
 ##### Backend S3 Storage Bucket
