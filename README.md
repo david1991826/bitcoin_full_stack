@@ -445,7 +445,7 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 
 **👨🏿‍🔬Q-Lock - addresses:user_id**
 
-* POST/addresses - get or assign fresh address (implies assign first address) PA
+* POST/addresses - get or assign fresh address (includes assign first address)
 
 **Balances**
 
