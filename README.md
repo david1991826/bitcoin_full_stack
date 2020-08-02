@@ -432,7 +432,7 @@ TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this sectio
 
 In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent any conflicting updates.
 
-#### Database Dr. Q Q-Locks:
+#### Database Dr. Q👨🏿‍🔬 Q-Locks:
 
 **👨🏿‍🔬Q-Lock - withdraws:user_id**
 
