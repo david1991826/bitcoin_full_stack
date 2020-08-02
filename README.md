@@ -439,41 +439,41 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 * korg, do withdraw
 * korg, real deal the withdraw
 * korg, verify withdraw
-* POST/withdraws doWithdraw
+* POST/withdraws, do withdraw
 
 **Addresses**
 
 **👨🏿‍🔬Q-Lock - addresses:user_id**
 
-* POST/addresses - get or assign fresh address (includes assign first address)
+* POST/addresses, get or assign fresh address (includes assign first address)
 
 **Balances**
 
 **👨🏿‍🔬Q-Lock - balances:user_id**
 
 * theomega, update balance
-* POST/withdraws doWithdraw
-* korg verify withdraw
+* POST/withdraws, do withdraw
+* korg, verify withdraw
 
 **Users**
 
 **👨🏿‍🔬Q-Lock - users:user_id**
 
-* POST/addresses - assign first address
-* PUT/tokens - update token value
+* POST/addresses, assign first address
+* PUT/tokens, update token value
 
 **👨🏿‍🔬Exchange Q-Locks**
 
 **👨🏿‍🔬Q-Lock - exchangeUsers:email**
-* POST/verify-user - on verify email
+* POST/verify-user, on verify email
 
 **👨🏿‍🔬Q-Lock - exchangeUsers:exchangeUserId**
-* POST/verify-user - on verify email
-* POST/login - assign bitcoin address
-* DELETE/users/exchangeUserId - delete user
-* theomega - update Bitcoin deposit info [add exchange transaction]
-* POST/withdraws - withdraw part 1 of 2 [add exchange transaction]
-* korg - withdraw part 2 of 2 [ad exchange transaction]
+* POST/verify-user, on verify email
+* POST/login, assign bitcoin address
+* DELETE/users/exchangeUserId, delete user
+* theomega, update Bitcoin deposit info [add exchange transaction]
+* POST/withdraws, withdraw part 1 of 2 [add exchange transaction]
+* korg, withdraw part 2 of 2 [ad exchange transaction]
 
 **👨🏿‍🔬Q-Lock - vanguard_withdraws:exchangeUserId**
 * korg, do withdraw
