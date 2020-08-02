@@ -428,7 +428,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 #### Database Info
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section
+TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section - use tables
 
 In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent any conflicting updates.
 
@@ -483,7 +483,7 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 
 #### Redis Keys
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section
+TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section - use tables
 
 * `Q` - stream - all Dr. Q. operations - max length 300000
 * `ipAddressRateLimiterQueueId` - stream - rate limit by ip address (per endpoint per ip address) - max length 200000
