@@ -430,7 +430,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section - use tables
 
-In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent any conflicting updates. For simplicity, the locks will be called *Q-Locks* in this documentation.
+In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For simplicity, the locks will be called *Q-Locks* in this documentation.
 
 #### Database Dr. Q👨🏿‍🔬 Q-Locks:
 
