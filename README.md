@@ -406,7 +406,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 | Table Name | Partition Key (type) | Sort Key (type ) | 
 |--|--|--|
 | bitcoin_api_addresses | userId (string) | address (string) | 
-| bitcoin_api_emailDeliveryResults TODO: 🚧👷‍♂️👷‍♀️🏗 update documentation | email (string) | caseId (string) | 
+| bitcoin_api_exchangeEmailDeliveryResults TODO: 🚧👷‍♂️👷‍♀️🏗 update documentation - is for exchange only | email (string) | caseId (string) | 
 | bitcoin_api_balances | userId (string) | - | 
 | bitcoin_api_exchangeUsers | userId (string) | - | 
 | bitcoin_api_loginTokens | exchangeUserId (string) | expiryTime (number) | 
