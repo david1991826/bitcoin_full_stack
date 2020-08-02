@@ -471,7 +471,7 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 **👨🏿‍🔬Q-Lock - exchangeUsers:exchangeUserId**
 * POST/verify-user, on verify email
 * POST/login, assign bitcoin address
-* DELETE/users/exchangeUserId, delete user
+* DELETE/exchange-users/exchangeUserId, delete user
 * theomega, update Bitcoin deposit info [add exchange transaction]
 * POST/withdraws, withdraw part 1 of 2 [add exchange transaction]
 * korg, withdraw part 2 of 2 [ad exchange transaction]
