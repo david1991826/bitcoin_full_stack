@@ -481,7 +481,7 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 * korg, verify withdraw
 
 
-#### Redis Key
+#### Redis Keys
 
 TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section
 
