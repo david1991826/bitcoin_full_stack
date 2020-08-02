@@ -437,7 +437,7 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 **👨🏿‍🔬Q-Lock - withdraws:user_id**
 
 * korg, do withdraw
-* korg, real deal the withdraw
+* korg, real deal the withdraw (refund the unused Blockchain fee if the fee estimate was higher than than the actual fee)
 * korg, verify withdraw
 * POST/withdraws, do withdraw
 
@@ -477,7 +477,7 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 
 **👨🏿‍🔬Q-Lock - vanguard_withdraws:exchangeUserId**
 * korg, do withdraw
-* korg, real deal the withdraw
+* korg, real deal the withdraw (refund the unused Blockchain fee if the fee estimate was higher than than the actual fee)
 * korg, verify withdraw
 
 
