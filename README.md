@@ -487,8 +487,8 @@ TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this sectio
 
 * `Q` - stream - all Dr. Q. operations - max length 300000
 * `ipAddressRateLimiterQueueId` - stream - rate limit by ip address (per endpoint per ip address) - max length 200000
-* `advancedCodeRateLimiterQueueId` - stream - rate limit by advanced code (per endpoint per advancedCode) - max length 200000
-* `bankStatusQueueId` - stream - the NodeJS services periodically send requests to this queue to indicate that they are active, this is used by the API to determine if it's active or not - max length 2000
+* `advancedCodeRateLimiterQueueId` - stream - rate limit by advanced code (per endpoint per advanced code) - max length 200000
+* `bankStatusQueueId` - stream - the NodeJS services periodically send requests to this queue to indicate that they're active, this is used by the API to determine if it's active or not - max length 2000
 * `cacheOnAndOffStatus` - stream - on/off state check queue - 2000
 * `zarbonDeploy` - stream - Giraffe Lick Leaf (GLL) deploy queue - 1000
 * `unusedAddressData` - list - contains unused address data, this data including the address itself is assigned to users (equivalently Bitcoin-Api tokens) when they make requests to the `POST - /addresses` endpoint
