@@ -462,7 +462,8 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 * POST/addresses, assign first address
 * PUT/tokens, update token value
 
-**👨🏿‍🔬Exchange Q-Locks**
+
+**Exchange Dr. Q👨🏿‍🔬 Q-Locks**
 
 **👨🏿‍🔬Q-Lock - exchangeUsers:email**
 * POST/verify-user, on verify email
