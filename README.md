@@ -42,7 +42,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Facebook** for React and social media services
 * **Twitter** for social media services
 * **Reddit** for social media services
-* **Xapo** for Bitcoin exchange services
+* **Xapo** for Bitcoin money services
 * **Mircosoft** for Github, NPM, LinkedIn, and Microsoft Windows 95
 * **Open Source Developers** - you're the best!!!🤗💜
 
