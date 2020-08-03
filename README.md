@@ -56,7 +56,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
     width="320"
 />
 
-**Classic Tee** -> 0.005 BTC - shipping included
+**Classic Tee** -> 0.005 BTC - shipping included - contact support@bitcoin-api.io to purchase
 
 
 ## Video Demo of Exchange and Casino Technology
