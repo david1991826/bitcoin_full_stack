@@ -475,15 +475,6 @@ Below lists in detail which operations specifically are in Q-Locks.
       </td>
     </tr>
     <tr>
-      <td>addresses:user_id</td>
-      <td align="center">POST/addresses</td>
-      <td>
-        <ul>
-          <li>get or assign fresh address, includes assign first address</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
       <td>balances:user_id</td>
       <td align="center">POST/withdraws</td>
       <td>
@@ -498,6 +489,15 @@ Below lists in detail which operations specifically are in Q-Locks.
       <td>
         <ul>
           <li>verify withdraw (withdraw part 4/4)</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td>addresses:user_id</td>
+      <td align="center">POST/addresses</td>
+      <td>
+        <ul>
+          <li>get or assign fresh address, includes assign first address</li>
         </ul>
       </td>
     </tr>
