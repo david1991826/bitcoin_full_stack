@@ -427,7 +427,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 | bitcoin_api_withdraws | state-creationDate-index | state (string) | creationDate (number) |
 
 
-#### Database Info
+#### About the Database
 
 In the Bitcoin-Api system, some DynamoDB database operations are queued with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For simplicity, the locking queues will be called *Q-Locks* in this documentation.
 
