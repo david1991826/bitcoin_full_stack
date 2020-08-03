@@ -431,13 +431,13 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 In the Bitcoin-Api system, some DynamoDB database operations are queued with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For simplicity, the locking queues will be called *Q-Locks* in this documentation.
 
-#### About Dr. Q's Q-Locks👨🏿‍🔬:
+#### About Dr. Q's Q-Locks👨🏿‍🔬
 
-Q-Locks run the operations their locking in series as opposed to running them concurrently in parallel. If an operation is in a Q-Lock and another operation with the same Q-Lock attempts to be performed, the second operation will have to wait until the first operation has finished in its own Q-Lock. A Q-Lock is identified in Bitcoin-Api using a string with the following format `{type}:{id}`. An example of this would be the Q-Lock used in the `POST /withdraws` endpoint whose identifier is `withdraws:user_id`. This endpoint starts the withdraw process for a user attempting to make a withdraw. What having the Q-Lock on this withdraw operation means is that for an individual user, a second withdraw operation can only occur after the first withdraw has finished, this prevents double spends.👨🏿‍🔬
+Q-Locks run the operations their locking in series as opposed to running them concurrently in parallel. If an operation is in a Q-Lock and another operation with the same Q-Lock attempts to be performed, the second operation will have to wait until the first operation has finished in its own Q-Lock. A Q-Lock is identified in Bitcoin-Api using a string with the following format `{type}:{id}`. An example of this would be the Q-Lock used in the `POST /withdraws` endpoint whose identifier is `withdraws:user_id`. This endpoint starts the withdraw process for a user attempting to make a withdraw. What having the Q-Lock on this withdraw operation means is that for an individual user, a second withdraw operation can only occur after the first withdraw operation has finished, this prevents double spends.👨🏿‍🔬
 
 Below lists in detail which operations specifically are in Q-Locks.
 
-#### Database Dr. Q's Q-Locks👨🏿‍🔬:
+#### Database API Dr. Q's Q-Locks👨🏿‍🔬
 
 > Terminology:
 >
@@ -527,12 +527,30 @@ Below lists in detail which operations specifically are in Q-Locks.
   </tbody>
 </table>
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 update documentation
 
-**Exchange Dr. Q👨🏿‍🔬 Q-Locks**
+#### Database Exchange Dr. Q's Q-Locks👨🏿‍🔬
 
-**👨🏿‍🔬Q-Lock - exchangeUsers:email**
-* POST/verify-user, on verify email
+<table>
+  <tbody>
+    <tr>
+      <th>👨🏿‍🔬Q-Lock</th>
+      <th>Component</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>exchangeUsers:email</td>
+      <td align="center">POST/verify-user</td>
+      <td>
+        <ul>
+          <li>verify email</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+TODO: 🚧👷‍♂️👷‍♀️🏗 -> update documentation
+
 
 **👨🏿‍🔬Q-Lock - exchangeUsers:exchangeUserId**
 * POST/verify-user, on verify email
