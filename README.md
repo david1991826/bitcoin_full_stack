@@ -51,12 +51,14 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 ## Merch
 
+Join the Api Swarm by showing your support for Bitcoin-Api to the world!!!😍❤️
+
 <img
-    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt.jpg"
+    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt2.png"
     width="320"
 />
 
-**Classic Tee** -> 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
+**Limited Edition Classic Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
 
 
 ## Video Demo of Exchange and Casino Technology
