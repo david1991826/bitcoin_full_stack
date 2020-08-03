@@ -468,8 +468,6 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 </table>
 
 
-
-
 TODO: 🚧👷‍♀️👷‍♂️🏗 update section documentation
 
 **Addresses**
