@@ -433,6 +433,10 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 
 #### Database Dr. Q👨🏿‍🔬 Q-Locks:
 
+> Terminology:
+>
+> `real deal the withdraw` - refunds the unused Blockchain withdraw fee if the fee estimate is higher than than the actual fee
+
 <table>
   <tbody>
     <tr>
@@ -464,9 +468,7 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
 </table>
 
 
-Terminology:
 
-* `real deal the withdraw` - refunds the unused Blockchain withdraw fee if the fee estimate is higher than than the actual fee
 
 TODO: 🚧👷‍♀️👷‍♂️🏗 update section documentation
 
