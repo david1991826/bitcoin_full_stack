@@ -630,8 +630,6 @@ Below lists in detail which operations specifically are in Q-Locks.
 
 #### Redis Keys and Values
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section - use tables
-
 | Key | Type | Value
 |--|--|--|
 | Q | stream - max length 300000 | all Dr. Q👨🏿‍🔬 operations |
