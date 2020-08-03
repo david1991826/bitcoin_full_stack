@@ -11,7 +11,7 @@
 
 ## Introduction:
 
-This code repository, Bitcoin-Api-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and casino (the exchange and the casino are still under construction). The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-Api system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of APIs, exchanges, and casinos instead of just having to use other companies', if they're okay with holding custody of their own Bitcoin. It's also designed in way so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
+This code repository, Bitcoin-Api-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and gaming platform (the exchange and the gaming platform are still under construction). The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-Api system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of APIs, exchanges, and gaming platforms instead of just having to use other companies', if they're okay with holding custody of their own Bitcoin. It's also designed in way so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
 
 **About APIs and Bitcoin APIs**
 
@@ -23,7 +23,7 @@ In this Bitcoin-Api system, the Bitcoin itself is stored on a Bitcoin node (Bitc
 
 The Bitcoin node and the API are considered to be the "backend" of the "stack" in the "full stack" concept. When implemented, the backend code and the associated data is on your computer servers and is not publicly accessible by users.
 
-The "frontend" exchange and casino webapp set up instructions and code are provided. The webapp connects to your built Bitcoin-Api backend. The webapp code is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve data that they're authorized to access, such as their Bitcoin balance data, from the backend.
+The "frontend" exchange and gaming webapp set up instructions and code are provided. The webapp connects to your built Bitcoin-Api backend. The webapp code is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve data that they're authorized to access, such as their Bitcoin balance data, from the backend.
 
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
@@ -64,7 +64,7 @@ Join the Api Swarm by showing your support for Bitcoin-Api to the world!!! 😍�
 **Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
 
 
-## Video Demo of Exchange and Casino Technology
+## Video Demo of Exchange and Gaming Technology
 
 <a href="https://youtu.be/EMAwIrHM2Qc">
     <img
@@ -78,7 +78,7 @@ Join the Api Swarm by showing your support for Bitcoin-Api to the world!!! 😍�
 * the core API documentation and code is ready to be used although the exchange API documentation and code still needs to be updated
 
 
-## API, Exchange, and Casino Features
+## API, Exchange, and Gaming Features
 
 * Can configure the lowest possible fees (blockchain fee only on withdraw)
 * Quick to set up
@@ -101,7 +101,7 @@ Join the Api Swarm by showing your support for Bitcoin-Api to the world!!! 😍�
 The repo `bitcoin-api-full-stack` is a repo for anybody, even an individual,
 to have their own Bitcoin management technology. Instead of needing an
 entire group of individuals or a company to manage a Bitcoin wallet app,
-exchange or casino, this repo aims to give the user complete individual control over
+exchange or gaming platform, this repo aims to give the user complete individual control over
 these powerful financial technologies.
 
 Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated, thank you very much!😁✌️
@@ -1337,7 +1337,7 @@ In your API's .env file, your `EXCHANGE_MANAGEMENT_EMAIL` environment variable m
 
 For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
 
-And there go!! Your very own Bitcoin-Api API, exchange, and casino!!!😃🤠🧐😎👁🎉🎊🥳
+And there go!! Your very own Bitcoin-Api API, exchange, and gaming platform!!!😃🤠🧐😎👁🎉🎊🥳
 
 #### Deploy API Demo Video
 
