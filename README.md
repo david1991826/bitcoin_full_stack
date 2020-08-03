@@ -446,7 +446,7 @@ Below lists in detail which operations specifically are in Q-Locks.
 <table>
   <tbody>
     <tr>
-      <th>👨🏿‍🔬Q-Lock</th>
+      <th>Q-Lock👨🏿‍🔬</th>
       <th>Component</th>
       <th>Actions</th>
     </tr>
@@ -533,7 +533,7 @@ Below lists in detail which operations specifically are in Q-Locks.
 <table>
   <tbody>
     <tr>
-      <th>👨🏿‍🔬Q-Lock</th>
+      <th>Q-Lock👨🏿‍🔬</th>
       <th>Component</th>
       <th>Actions</th>
     </tr>
