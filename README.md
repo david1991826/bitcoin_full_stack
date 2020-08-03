@@ -48,6 +48,17 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Mircosoft** for Github, NPM, LinkedIn, and Microsoft Windows 95
 * **Open Source Developers** - you're the best!!!🤗💜
 
+
+## Merch
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt.jpg"
+    width="320"
+/>
+
+**Classic Tee** -> 0.005 BTC - shipping included
+
+
 ## Video Demo of Exchange and Casino Technology
 
 <a href="https://youtu.be/EMAwIrHM2Qc">
@@ -1055,7 +1066,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_role_lambda_eApi_logout_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
 
-* [`bitcoin_api_role_lambda_eService_handleAuxiliaryEmailCase`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleAuxiliaryEmailCase.json)
+* [`bitcoin_api_role_lambda_eService_handleExchangeEmailDeliveryResults`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleExchangeEmailDeliveryResults.json)
 
 ##### API IAM Roles
 
@@ -1183,11 +1194,11 @@ name: `bitcoin_api_lambda_eApi_dreams_post`
 policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
-**Exchange Service - Handle Auxiliary Email Case**
+**Exchange Service - Handle Exchange Email Delivery Results**
 
-name: `bitcoin_api_lambda_eService_handleAuxiliaryEmailCase`
+name: `bitcoin_api_lambda_eService_handleExchangeEmailDeliveryResults`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eService_handleAuxiliaryEmailCase`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eService_handleExchangeEmailDeliveryResults`
 
 
 ##### API IAM Users
@@ -1309,11 +1320,11 @@ Set up your [AWS SES](https://aws.amazon.com/ses/) email. SES is used to send em
 
 First, verify the email that you're going to be using to send the exchange emails from, this can be your exchange's support email. You can also verify the entire domain of the email that you're sending from. Verifying your email can be done on [this page in the AWS SES browser console](https://console.aws.amazon.com/ses/home#verified-senders-domain:).
 
-Next, create an [AWS SNS](https://aws.amazon.com/sns) topic to forward email events to an AWS Lambda function. Call this topic `bitcoin_api_auxiliaryEmailCaseEventForwarder_staging` or `bitcoin_api_auxiliaryEmailCaseEventForwarder`. On creation, give it a nickname `s_ba_email` or `p_ba_email` (this is optional, you can give it another nickname if you want😃🤠). You can create and configure your SNS topics in the [AWS SNS browser console](https://console.aws.amazon.com/sns/v3/home#/dashboard).
+Next, create an [AWS SNS](https://aws.amazon.com/sns) topic to forward email events to an AWS Lambda function. Call this topic `bitcoin_api_exchangeEmailDeliveryResultsForwarder_staging` or `bitcoin_api_exchangeEmailDeliveryResultsForwarder`. On creation, give it a nickname `s_ba_email` or `p_ba_email` (this is optional, you can give it another nickname if you want😃🤠). You can create and configure your SNS topics in the [AWS SNS browser console](https://console.aws.amazon.com/sns/v3/home#/dashboard).
 
-For the SNS topic you've just created, attach your `bitcoin_api_eService_handleAuxiliaryEmailCase_staging` or  `bitcoin_api_eService_handleAuxiliaryEmailCase` Lambda function as a subscriber.
+For the SNS topic you've just created, attach your `bitcoin_api_lambda_eService_handleExchangeEmailDeliveryResults_staging` or  `bitcoin_api_lambda_eService_handleExchangeEmailDeliveryResults` Lambda function as a subscriber.
 
-Now, back in your [AWS SES browser console](https://console.aws.amazon.com/ses/home), go to your email's or your domain's settings.  In the settings, go to the notifications section and click "Edit configuration". In the "SNS Topic Configuration" settings, for `Bounces`, `Complaints`, and `Deliveries` choose `bitcoin_api_auxiliaryEmailCaseEventForwarder_staging` or `bitcoin_api_auxiliaryEmailCaseEventForwarder`. Leave the "Include original headers" checkbox unchecked. Press "Save Config" after.
+Now, back in your [AWS SES browser console](https://console.aws.amazon.com/ses/home), go to your email's or your domain's settings.  In the settings, go to the notifications section and click "Edit configuration". In the "SNS Topic Configuration" settings, for `Bounces`, `Complaints`, and `Deliveries` choose `bitcoin_api_exchangeEmailDeliveryResultsForwarder_staging` or `bitcoin_api_exchangeEmailDeliveryResultsForwarder`. Leave the "Include original headers" checkbox unchecked. Press "Save Config" after.
 
 In your API's .env file, your `EXCHANGE_MANAGEMENT_EMAIL` environment variable must be set to your verified SES's email used to send emails for your exchange.
 
