@@ -441,9 +441,9 @@ Below lists in detail which operations specifically are in Q-Locks.
 
 > Terminology:
 >
-> `add exchange transaction` - adds an exchange transaction entry to the append only DynamoDB table "bitcoin_api_transactions". The balance information  for a user is calculated by reviewing and processing all of the entries added for that user.
+> `add exchange transaction` - Adds an exchange transaction entry to the append only DynamoDB table "bitcoin_api_transactions". The balance information  for a user is calculated by reviewing and processing all of the entries added for that user.
 >
-> `real deal the withdraw` - refunds the unused Blockchain withdraw fee if the fee estimate is higher than the actual fee.
+> `real deal the withdraw` - Refunds the unused Blockchain withdraw fee if the fee estimate is higher than the actual fee.
 
 
 <table>
@@ -632,14 +632,17 @@ Below lists in detail which operations specifically are in Q-Locks.
 
 TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section - use tables
 
-* `Q` - stream - all Dr. Q. operations - max length 300000
-* `ipAddressRateLimiterQueueId` - stream - rate limit by ip address (per endpoint per ip address) - max length 200000
-* `advancedCodeRateLimiterQueueId` - stream - rate limit by advanced code (per endpoint per advanced code) - max length 200000
-* `bankStatusQueueId` - stream - The NodeJS services periodically send requests to this queue to indicate whether they're active or not. This is used by the API to determine if the entire Bitcoin-Api system is active or not. If the system is not active, all the API endpoints will respond with an error indicating the service is currently unavailable. - max length 2000
-* `cacheOnAndOffStatus` - stream - on/off state check queue - max length 2000
-* `zarbonDeploy` - stream - Giraffe Lick Leaf (GLL) deploy queue - max length 1000
-* `unusedAddressData` - list - contains unused address data, this data including the address itself is assigned to users (equivalently Bitcoin-Api tokens) when they make requests to the `POST - /addresses` endpoint
+| Key | Type | Value
+|--|--|--|
+| Q | stream - max length 300000 | all Dr. Q👨🏿‍🔬 operations |
+| ipAddressRateLimiterQueueId | stream - max length 200000 | rate limit by ip address (per endpoint per ip address) |
+| advancedCodeRateLimiterQueueId | stream - max length 200000 | rate limit by advanced code (per endpoint per advanced code) |
+| bankStatusQueueId | stream - max length 2000 | The NodeJS services periodically send requests to this queue to indicate whether they're active or not. This is used by the API to determine if the entire Bitcoin-Api system is active or not. If the system is not active, all the API endpoints will respond with an error indicating the service is currently unavailable. |
+| cacheOnAndOffStatus | stream - max length 1000 | cache for on and off status of API, you can edit a database value to switch the entire API off or back on |
+| zarbonDeploy | stream - max length 1000 | Giraffe Lick Leaf (GLL) deploy queue |
+| unusedAddressData | list of encoded JSON objects | contains unused address data, this data including the address itself is assigned to users (equivalently Bitcoin-Api tokens) when they make requests to the `POST - /addresses` endpoint |
 
+* `unusedAddressData` - list - contains unused address data, this data including the address itself is assigned to users when they make requests to the `POST - /addresses` endpoint
 
 
 ##### Backend S3 Storage Bucket
