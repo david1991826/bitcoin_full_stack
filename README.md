@@ -441,7 +441,9 @@ Below lists in detail which operations specifically are in Q-Locks.
 
 > Terminology:
 >
-> `real deal the withdraw` - refunds the unused Blockchain withdraw fee if the fee estimate is higher than than the actual fee
+> `real deal the withdraw` - refunds the unused Blockchain withdraw fee if the fee estimate is higher than the actual fee.
+>
+> `add exchange transaction` - adds a transaction entry to the append only DynamoDB table `bitcoin_api_transactions`. The balance information  for a user is calculated by reviewing and processing all of the entries added for that user.
 
 <table>
   <tbody>
@@ -546,6 +548,51 @@ Below lists in detail which operations specifically are in Q-Locks.
         </ul>
       </td>
     </tr>
+    <tr>
+      <td>exchangeUsers:exchangeUserId</td>
+      <td align="center">POST/login</td>
+      <td>
+        <ul>
+          <li>assign bitcoin address</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>exchangeUsers:exchangeUserId</td>
+      <td align="center">DELETE/exchange-users/:exchangeUserId</td>
+      <td>
+        <ul>
+          <li>delete user</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>exchangeUsers:exchangeUserId</td>
+      <td align="center">theomega</td>
+      <td>
+        <ul>
+          <li>update Bitcoin deposit info [add exchange transaction]</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>exchangeUsers:exchangeUserId</td>
+      <td align="center">POST/withdraws</td>
+      <td>
+        <ul>
+          <li>confirm exchange (exchange withdraw part 1/5) [add exchange transaction]</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>exchangeUsers:exchangeUserId</td>
+      <td align="center">POST/withdraws</td>
+      <td>
+        <ul>
+          <li>(exchange withdraw part 5/5) [add exchange transaction]</li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -553,11 +600,6 @@ TODO: 🚧👷‍♂️👷‍♀️🏗 -> update documentation
 
 
 **👨🏿‍🔬Q-Lock - exchangeUsers:exchangeUserId**
-* POST/verify-user, on verify email
-* POST/login, assign bitcoin address
-* DELETE/exchange-users/:exchangeUserId, delete user
-* theomega, update Bitcoin deposit info [add exchange transaction]
-* POST/withdraws, withdraw part 1 of 2 [add exchange transaction]
 * korg, withdraw part 2 of 2 [add exchange transaction]
 
 **👨🏿‍🔬Q-Lock - vanguard_withdraws:exchangeUserId**
