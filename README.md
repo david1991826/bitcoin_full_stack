@@ -58,7 +58,7 @@ Join the Api Swarm by showing your support for Bitcoin-Api to the world!!!ðŸ˜â
     width="320"
 />
 
-**Limited Edition Classic Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
+**Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
 
 
 ## Video Demo of Exchange and Casino Technology
