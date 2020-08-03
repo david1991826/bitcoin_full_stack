@@ -437,7 +437,8 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
   <tbody>
     <tr>
       <th>👨🏿‍🔬Q-Lock</th>
-      <th>Components and Actions</th>
+      <th>Components</th>
+      <th>Actions</th>
     </tr>
     <tr>
       <td>withdraws:user_id</td>
