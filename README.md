@@ -38,7 +38,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Linus Torvalds** for Linux
 * **RedisLabs** for Redis database
 * **pm2** for NodeJS process management 
-* **Stack Overflow** for tech information
+* **Stack Overflow** for tech guidance and ideas
 * **Apple** for MacOS, iOS, and their devices
 * **MongoDB** for MongoDB database
 * **Facebook** for React and social media services
