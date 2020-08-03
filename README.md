@@ -38,6 +38,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Linus Torvalds** for Linux
 * **RedisLabs** for Redis database
 * **pm2** for NodeJS process management 
+* **Stack Overflow** for tech information
 * **Apple** for MacOS, iOS, and their devices
 * **MongoDB** for MongoDB database
 * **Facebook** for React and social media services
@@ -428,18 +429,45 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 #### Database Info
 
-TODO: 🚧👷‍♂️👷‍♀️🏗 -> improve documentation in this section - use tables
-
 In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For simplicity, the locks will be called *Q-Locks* in this documentation.
 
 #### Database Dr. Q👨🏿‍🔬 Q-Locks:
 
-**👨🏿‍🔬Q-Lock - withdraws:user_id**
+<table>
+  <tbody>
+    <tr>
+      <th>👨🏿‍🔬Q-Lock</th>
+      <th>Components and Actions</th>
+    </tr>
+    <tr>
+      <td>withdraws:user_id</td>
+      <td align="center">POST/withdraws</td>
+      <td>
+        <ul>
+          <li>invoke withdraw (withdraw part 1/4)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>withdraws:user_id</td>
+      <td align="center">korg</td>
+      <td>
+        <ul>
+          <li>do withdraw from Bitcoin node (withdraw part 2/4)</li>
+          <li>real deal the withdraw (withdraw part 3/4 - skip on Bitcoin node withdraw error)</li>
+          <li>verify withdraw (withdraw part 4/4)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-* korg, do withdraw
-* korg, real deal the withdraw (refund the unused Blockchain fee if the fee estimate is higher than than the actual fee)
-* korg, verify withdraw
-* POST/withdraws, do withdraw
+
+Terminology:
+
+* `real deal the withdraw` - refunds the unused Blockchain withdraw fee if the fee estimate is higher than than the actual fee
+
+TODO: 🚧👷‍♀️👷‍♂️🏗 update section documentation
 
 **Addresses**
 
