@@ -53,8 +53,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 
 🐝🐝🐝🐝🐝🐝  
-Join the Api Swarm by showing your support for Bitcoin-Api to the world!!!  
-😍❤️  
+Join the Api Swarm by showing your support for Bitcoin-Api to the world!!! 😍❤️  
 💐🌻🌺🌷🌸🌹  
 
 <img
