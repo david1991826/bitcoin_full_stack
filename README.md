@@ -437,7 +437,8 @@ Q-Locks run the operations their locking in series as opposed to running them co
 
 Below lists in detail which operations specifically are in Q-Locks.
 
-#### Database API Dr. Q's Q-Locks👨🏿‍🔬
+
+#### Dr. Q's DynamoDB Database API Q-Locks👨🏿‍🔬
 
 > Terminology:
 >
@@ -531,7 +532,7 @@ Below lists in detail which operations specifically are in Q-Locks.
 </table>
 
 
-#### Database Exchange Dr. Q's Q-Locks👨🏿‍🔬
+#### Dr. Q's DynamoDB Database Exchange Q-Locks👨🏿‍🔬
 
 <table>
   <tbody>
