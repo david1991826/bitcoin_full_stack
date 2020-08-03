@@ -443,7 +443,7 @@ Below lists in detail which operations specifically are in Q-Locks.
 >
 > `real deal the withdraw` - refunds the unused Blockchain withdraw fee if the fee estimate is higher than the actual fee.
 >
-> `add exchange transaction` - adds a transaction entry to the append only DynamoDB table `bitcoin_api_transactions`. The balance information  for a user is calculated by reviewing and processing all of the entries added for that user.
+> `add exchange transaction` - adds a transaction entry to the append only DynamoDB table "bitcoin_api_transactions". The balance information  for a user is calculated by reviewing and processing all of the entries added for that user.
 
 <table>
   <tbody>
