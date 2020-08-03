@@ -57,7 +57,7 @@ Join the Api Swarm by showing your support for Bitcoin-Api to the world!!! 😍�
 💐🌻🌺🌷🌸🌹  
 
 <img
-    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt3.jpg"
+    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
     width="320"
 />
 
