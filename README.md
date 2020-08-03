@@ -641,8 +641,6 @@ Below lists in detail which operations specifically are in Q-Locks.
 | zarbonDeploy | stream - max length 1000 | Giraffe Lick Leaf (GLL) deploy queue |
 | unusedAddressData | list of encoded JSON objects | contains unused address data, this data including the address itself is assigned to users (equivalently Bitcoin-Api tokens) when they make requests to the `POST - /addresses` endpoint |
 
-* `unusedAddressData` - list - contains unused address data, this data including the address itself is assigned to users when they make requests to the `POST - /addresses` endpoint
-
 
 ##### Backend S3 Storage Bucket
 
