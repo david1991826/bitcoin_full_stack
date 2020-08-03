@@ -51,11 +51,10 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 ## Merch
 
-💐🌻🌺🌷🌸🌹
-
-Join the Api Swarm by showing your support for Bitcoin-Api to the world!!!
-
-😍❤️🐝🐝🐝🐝🐝🐝
+💐🌻🌺🌷🌸🌹  
+Join the Api Swarm by showing your support for Bitcoin-Api to the world!!!  
+😍❤️  
+🐝🐝🐝🐝🐝🐝
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt3.jpg"
