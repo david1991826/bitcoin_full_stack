@@ -633,7 +633,7 @@ Below lists in detail which operations specifically are in Q-Locks.
 
 | Key | Type | Value
 |--|--|--|
-| Q | stream - max length 300000 | all Dr. Q👨🏿‍🔬 operations |
+| Q | stream - max length 300000 | all [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) operations |
 | ipAddressRateLimiterQueueId | stream - max length 200000 | rate limit by ip address (per endpoint per ip address) |
 | advancedCodeRateLimiterQueueId | stream - max length 200000 | rate limit by advanced code (per endpoint per advanced code) |
 | bankStatusQueueId | stream - max length 2000 | The NodeJS services periodically send requests to this queue to indicate whether they're active or not. This is used by the API to determine if the entire Bitcoin-Api system is active or not. If the system is not active, all the API endpoints will respond with an error indicating the service is currently unavailable. |
