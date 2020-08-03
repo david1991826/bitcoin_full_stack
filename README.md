@@ -580,32 +580,51 @@ Below lists in detail which operations specifically are in Q-Locks.
       <td align="center">POST/withdraws</td>
       <td>
         <ul>
-          <li>confirm exchange (exchange withdraw part 1/5) [add exchange transaction]</li>
+          <li>start withdraw (exchange withdraw part 1/5) [add exchange transaction]</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>exchangeUsers:exchangeUserId</td>
-      <td align="center">POST/withdraws</td>
+      <td align="center">korg</td>
       <td>
         <ul>
-          <li>(exchange withdraw part 5/5) [add exchange transaction]</li>
+          <li>finalize withdraw (exchange withdraw part 5/5) [add exchange transaction]</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>exchangeUsers:exchangeUserId</td>
+      <td align="center">POST/exchanges</td>
+      <td>
+        <ul>
+          <li>do exchange [add exchange transaction]</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>exchangeUsers:exchangeUserId</td>
+      <td align="center">POST/dreams</td>
+      <td>
+        <ul>
+          <li>enchanted luck function ✨🧞‍♀️✨ [add exchange transaction]</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>vanguard_withdraws:exchangeUserId</td>
+      <td align="center">korg</td>
+      <td>
+        <ul>
+            <li>withdraw from Bitcoin node (exchange withdraw 
+          part 2/5) </li>
+            <li>real deal the withdraw (exchange withdraw part 3/5) </li>
+            <li>verify withdraw (exchange withdraw part 4/5) </li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
-TODO: 🚧👷‍♂️👷‍♀️🏗 -> update documentation
-
-
-**👨🏿‍🔬Q-Lock - exchangeUsers:exchangeUserId**
-* korg, withdraw part 2 of 2 [add exchange transaction]
-
-**👨🏿‍🔬Q-Lock - vanguard_withdraws:exchangeUserId**
-* korg, do withdraw
-* korg, real deal the withdraw (refund the unused Blockchain fee if the fee estimate is higher than than the actual fee)
-* korg, verify withdraw
 
 
 #### Redis Keys and Values
