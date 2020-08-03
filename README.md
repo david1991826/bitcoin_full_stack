@@ -459,38 +459,69 @@ In the Bitcoin-Api system, some DynamoDB database operations are locked with [Dr
       <td>
         <ul>
           <li>do withdraw from Bitcoin node (withdraw part 2/4)</li>
-          <li>real deal the withdraw (withdraw part 3/4 - skip on Bitcoin node withdraw error)</li>
+          <li>real deal the withdraw (withdraw part 3/4 - skip if error in part 2/4)</li>
           <li>verify withdraw (withdraw part 4/4)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>addresses:user_id</td>
+      <td align="center">POST/addresses</td>
+      <td>
+        <ul>
+          <li>get or assign fresh address, includes assign first address</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>balances:user_id</td>
+      <td align="center">POST/withdraws</td>
+      <td>
+        <ul>
+          <li>do withdraw (withdraw part 1/4)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>balances:user_id</td>
+      <td align="center">korg</td>
+      <td>
+        <ul>
+          <li>verify withdraw (withdraw part 4/4)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>balances:user_id</td>
+      <td align="center">theomega</td>
+      <td>
+        <ul>
+          <li>update balance</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>users:user_id</td>
+      <td align="center">POST/addresses</td>
+      <td>
+        <ul>
+          <li>assign first address</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>users:user_id</td>
+      <td align="center">PUT/tokens</td>
+      <td>
+        <ul>
+          <li>update token value</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-
-TODO: 🚧👷‍♀️👷‍♂️🏗 update section documentation
-
-**Addresses**
-
-**👨🏿‍🔬Q-Lock - addresses:user_id**
-
-* POST/addresses, get or assign fresh address (includes assign first address)
-
-**Balances**
-
-**👨🏿‍🔬Q-Lock - balances:user_id**
-
-* theomega, update balance
-* POST/withdraws, do withdraw
-* korg, verify withdraw
-
-**Users**
-
-**👨🏿‍🔬Q-Lock - users:user_id**
-
-* POST/addresses, assign first address
-* PUT/tokens, update token value
-
+TODO: 🚧👷‍♂️👷‍♀️🏗 update documentation
 
 **Exchange Dr. Q👨🏿‍🔬 Q-Locks**
 
