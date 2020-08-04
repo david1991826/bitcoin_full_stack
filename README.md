@@ -66,9 +66,9 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 * API component naming updates: updating names of the backend NodeJS modules (calzoneSun, feeFee, korg, and the omega), choosing more descriptive names
 
-* fee data naming updates: updating fee data keys and calculations, choosing more descriptive fee data key names and more configurable fee calculations
+* API fee data naming updates: updating fee data keys and calculations, choosing more descriptive fee data key names and more configurable fee calculations
 
-* exchange code updates: getting exchange code ready for production, cleaning up code and adding necessary features like improved email handling logic including handling bounces and complaints
+* Exchange code updates: getting exchange code ready for production, cleaning up code and adding necessary features like improved email handling logic including handling bounces and complaints
 
 
 ## API, Exchange, and Gaming Features
