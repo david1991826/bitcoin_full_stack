@@ -70,6 +70,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 * API component naming updates: updating names of the backend NodeJS modules (calzoneSun, feeFee, korg, and the omega), choosing more descriptive names
 
+Visit the [Development branch  on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with Bitcoin-Api-Full-Stack🚧👷‍♀️👷‍♂️🏗😃!
 
 ## API, Exchange, and Gaming Features
 
@@ -438,7 +439,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 #### About the Database
 
-In the Bitcoin-Api system, some DynamoDB database operations are queued with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For simplicity, the locking queues will be called *Q-Locks* in this documentation.
+In the Bitcoin-Api system, some DynamoDB database operations are queued with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For preciseness, the locking queues will be called *Q-Locks* in this documentation.
 
 #### About Dr. Q's Q-Locks👨🏿‍🔬
 
@@ -1359,14 +1360,12 @@ The frontend code modules are [React](https://reactjs.org) webapps made with [Cr
 
 PRs and collaborative efforts welcome.👏
 
-Sponsor this page and get priority support and other awesome benefits😁 - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
+Sponsor this page and get support, marketing, and other benefits and services - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
 
 
 ## Merch
 
-🐝🐝🐝🐝🐝🐝  
-Show your support for Bitcoin-Api to the world and be part of the Api Swarm!!! 😍❤️  
-💐🌻🌺🌷🌸🌹  
+Show your support for Bitcoin-Api to the world and be part of the development of new Bitcoin technologies.  
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
