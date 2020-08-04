@@ -62,7 +62,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 * the core API documentation and code is ready to be used although the exchange API documentation and code still needs to be updated
 
-#### Upcoming Updates 🚧👷‍♀️👷‍♂️🏗
+#### Upcoming updates 🚧👷‍♀️👷‍♂️🏗
 
 * API component naming updates: updating names of the backend NodeJS modules (calzoneSun, feeFee, korg, and the omega), choosing more descriptive names
 
