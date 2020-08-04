@@ -70,7 +70,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 * API component naming updates: updating names of the backend NodeJS modules (calzoneSun, feeFee, korg, and the omega), choosing more descriptive names
 
-Visit the [Development branch  on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep track of the most recent updates🚧👷‍♀️👷‍♂️🏗😃!
+Visit the [Development branch  on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with Bitcoin-Api-Full-Stack🚧👷‍♀️👷‍♂️🏗😃!
 
 ## API, Exchange, and Gaming Features
 
