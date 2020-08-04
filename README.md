@@ -833,16 +833,19 @@ This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `b
 Values stored in the DynamoDB database entry:
 amount,
 multiplier,
-blessing fee,
-trinity fee,
-sacrament fee
+business fee Object of the form:
+{
+    [customFeeKey]: {
+        amount: r
+    }
+}
 
 Calculation:
 
 base fee = (amount x multiplier)
-holy fee = (blessing fee + trinity fee + sacrament fee)
+business fee = sum of the "businessFees" object's fee amounts
 
-fee to pay = (base fee + holy fee)
+fee to pay = (base fee + business fee)
 ```
 
 Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄😇
