@@ -833,9 +833,9 @@ This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `b
 Values stored in the DynamoDB database entry:
 amount,
 multiplier,
-business fee Object of the form:
+business fee object of the form:
 {
-    [customFeeKey]: {
+    [custom fee key]: {
         amount: r
     }
 }
