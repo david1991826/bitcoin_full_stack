@@ -49,21 +49,6 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Open Source Developers** - you're the best!!!🤗💜
 
 
-## Merch
-
-
-🐝🐝🐝🐝🐝🐝  
-Join the Api Swarm by showing your support for Bitcoin-Api to the world!!! 😍❤️  
-💐🌻🌺🌷🌸🌹  
-
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
-    width="320"
-/>
-
-**Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
-
-
 ## Video Demo of Exchange and Gaming Technology
 
 <a href="https://youtu.be/EMAwIrHM2Qc">
@@ -1365,6 +1350,20 @@ PRs and collaborative efforts welcome.👏
 
 Sponsor this page and get priority support and other awesome benefits😁 - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
 
+
+## Merch
+
+
+🐝🐝🐝🐝🐝🐝  
+Join the Api Swarm by showing your support for Bitcoin-Api to the world!!! 😍❤️  
+💐🌻🌺🌷🌸🌹  
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
+    width="320"
+/>
+
+**Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
 
 
 ### Credits:
