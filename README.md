@@ -1357,16 +1357,12 @@ The frontend code modules are [React](https://reactjs.org) webapps made with [Cr
 
 PRs and collaborative efforts welcome.👏
 
-**Be an Api Swarmling! 🐝🐝🐝🐝🐝🐝💞**  
-
-Join the Api Swarm and sponsor this page to get priority support and other awesome benefits😁 - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
+Sponsor this page and get premium support and other awesome benefits - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
 
 
 ## Merch
 
-🐝🐝🐝🐝🐝🐝  
-Show your support for Bitcoin-Api to the world and be part of the Api Swarm!!! 😍❤️  
-💐🌻🌺🌷🌸🌹  
+Show your support for Bitcoin-Api to the world and be part of the development of new Bitcoin technologies.  
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
