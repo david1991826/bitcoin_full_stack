@@ -1353,9 +1353,8 @@ Sponsor this page and get priority support and other awesome benefits😁 - [Bit
 
 ## Merch
 
-
 🐝🐝🐝🐝🐝🐝  
-Join the Api Swarm by showing your support for Bitcoin-Api to the world!!! 😍❤️  
+Show your support for Bitcoin-Api to the world and be part of the Api Swarm!!! 😍❤️  
 💐🌻🌺🌷🌸🌹  
 
 <img
