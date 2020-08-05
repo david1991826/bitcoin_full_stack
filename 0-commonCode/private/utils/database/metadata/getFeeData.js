@@ -1,6 +1,16 @@
 'use strict';
 
 const {
+    constants: {
+        withdraws: {
+            limits: {
+                maximumWithdrawAmount,
+            }
+        }
+    }
+} = require( '@bitcoin-api.io/common-general' );
+
+const {
 
     aws: {
         database: {
@@ -14,14 +24,65 @@ const {
 
 const stringify = require( '../../stringify' );
 
+const validateBusinessFeeData = Object.freeze( ({
+
+    businessFeeData,
+
+}) => {
+
+    if(
+        !businessFeeData ||
+        (typeof businessFeeData !== 'object') ||
+        Array.isArray( businessFeeData )
+    ) {
+
+        throw new Error(
+            
+            'validateBusinessFee: invalid business fee - ' +
+            'business fee does not exist or is not an object'
+        );
+    }
+
+    const businessKeys = Object.keys( businessFeeData );
+    
+    for( const businessKey of businessKeys ) {
+
+        const businessValue = businessFeeData[ businessKey ];
+
+        if(
+            !businessValue ||
+            (typeof businessValue !== 'object') ||
+            Array.isArray( businessValue )
+        ) {
+    
+            throw new Error(
+                
+                'validateBusinessFee: invalid business fee value ' +
+                `associated with business key: "${ businessKey }"`
+            );
+        }
+
+        if(
+            (typeof businessValue.amount !== 'number') ||
+            (businessValue.amount < 0) ||
+            (businessValue.amount > maximumWithdrawAmount)
+        ) {
+
+            throw new Error(
+                
+                'validateBusinessFee: invalid business fee amount ' +
+                `associated with business key: "${ businessKey }"`
+            );
+        }
+    }
+});
+
 
 module.exports = Object.freeze( ({
 
     fee,
     feeMultiplier,
-    blessingFee = 0,
-    trinityFee = 0,
-    sacramentFee = 0,
+    businessFeeData = {},
     megaServerId,
 
     noKeyProperty = false,
@@ -29,6 +90,11 @@ module.exports = Object.freeze( ({
 }) => {
 
     console.log( 'running getFeeData' );
+
+    validateBusinessFeeData({
+
+        businessFeeData,
+    });
     
     const tableName = METADATA;
 
@@ -37,9 +103,7 @@ module.exports = Object.freeze( ({
         amount: fee,
         multiplier: feeMultiplier,
         bitcoinNodeUrl: megaServerId,
-        blessingFee,
-        trinityFee,
-        sacramentFee,
+        businessFeeData,
     };
 
     const shouldAddKeyProperty = !noKeyProperty;

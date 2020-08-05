@@ -27,7 +27,8 @@ const getMetaFeeToPay = Object.freeze( (
         );
 
         const {
-
+            
+            // TODO: update
             holyFee
 
         } = getFeeToPayFromFeeData( ...modifiedGetFeeToPayFromFeeDataArgs );

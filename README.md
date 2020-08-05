@@ -834,20 +834,24 @@ This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `b
 Values stored in the DynamoDB database entry:
 amount,
 multiplier,
-business fee object of the form:
+business fee data object of the form:
 {
     [custom fee key]: {
         amount: r
     }
 }
+where 0 <= r, r is a real number
 
 Calculation:
 
-base fee = (amount x multiplier)
-business fee = sum of the "businessFees" object's fee amounts
+blockchain fee estimate = (amount x multiplier)
+business fee = sum of the "businessFeeData" object's fee amounts
 
-fee to pay = (base fee + business fee)
+fee estimate to pay = (blockchain fee estimate + business fee)
 ```
+This is a fee estimate because if the actual blockchain fee needed and used is less than the blockchain fee estimate, any unused blockchain fee from the estimate in the actual Bitcoin node withdraw will get refunded to the user after the Bitcoin Node withdraw has finished.
+
+For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC is needed for the Bitcoin node withdraw blockchain fee, then 0.00007 BTC will be refunded to the user.
 
 Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄😇
 
