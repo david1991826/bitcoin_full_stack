@@ -829,7 +829,7 @@ pm2 monit
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
-TODO: update the code and documentation related to the fee data 🚧👷‍♀️👷‍♂️🏗
+TODO: update the code and the documentation related to the fee data 🚧👷‍♀️👷‍♂️🏗
 
 This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow (below is the new fee specification - currently in development🚧👷‍♀️👷‍♂️🏗):
 ```
