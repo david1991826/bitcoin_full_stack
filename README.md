@@ -829,22 +829,29 @@ pm2 monit
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
-This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow:
+This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow (new fee specification - currently in development):
 ```
 Values stored in the DynamoDB database entry:
 amount,
 multiplier,
-blessing fee,
-trinity fee,
-sacrament fee
+business fee data object of the form:
+{
+    [custom fee key]: {
+        amount: r
+    }
+}
+where 0 <= r, r is a real number
 
 Calculation:
 
-base fee = (amount x multiplier)
-holy fee = (blessing fee + trinity fee + sacrament fee)
+blockchain fee estimate = (amount x multiplier)
+business fee = sum of the "businessFeeData" object's fee amounts
 
-fee to pay = (base fee + holy fee)
+fee estimate to pay = (blockchain fee estimate + business fee)
 ```
+This is a fee estimate because if the actual blockchain fee needed and used is less than the blockchain fee estimate, any unused blockchain fee from the estimate in the actual Bitcoin node withdraw will get refunded to the user after the Bitcoin Node withdraw has finished.
+
+For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC is needed for the Bitcoin node withdraw blockchain fee, then 0.00007 BTC will be refunded to the user.
 
 Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄😇
 
