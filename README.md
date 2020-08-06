@@ -858,7 +858,7 @@ business fee = sum of the "businessFeeData" object's fee amounts
 
 fee estimate to pay = (blockchain fee estimate + business fee)
 ```
-This is a fee estimate because if the actual blockchain fee needed and used is less than the blockchain fee estimate, any unused blockchain fee from the estimate in the actual Bitcoin node withdraw will get refunded to the user after the Bitcoin Node withdraw has finished.
+This is a fee estimate because if the actual blockchain fee needed and used is less than the blockchain fee estimate, any unused blockchain fee from the estimate in the actual Bitcoin node withdraw will get refunded to the user after the Bitcoin node withdraw has finished.
 
 For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC is needed for the Bitcoin node withdraw blockchain fee, then 0.00007 BTC will be refunded to the user.
 
