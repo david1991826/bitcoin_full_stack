@@ -68,26 +68,12 @@ module.exports = Object.freeze( () => {
 
         const tableName = METADATA;
 
-        // const key = tableNameToKey[tableName];
-
-        // const entry = {
-
-        //     [key]: feeData,
-        //     amount: fee,
-        //     multiplier: feeMultiplier,
-        //     bitcoinNodeUrl: megaServerId,
-        //     blessingFee,
-        //     trinityFee,
-        //     sacramentFee,
-        // };
-
         const entry = getFeeData({
 
             fee,
             feeMultiplier,
-            // blessingFee,
-            // trinityFee,
-            // sacramentFee,
+            // businessFeeData,
+
             megaServerId
         });
 
