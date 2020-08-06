@@ -838,7 +838,14 @@ amount,
 multiplier,
 business fee data object of the form:
 {
-    [custom fee key]: {
+    [custom fee key 1]: {
+        amount: r
+    },
+    [custom fee key 2]: {
+        amount: r
+    },
+    ...
+    [custom fee key n]: {
         amount: r
     }
 }
