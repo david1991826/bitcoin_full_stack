@@ -803,7 +803,7 @@ After the main function finishes, it starts again after 10 seconds to keep the f
 When the main function has finished, it should look like this:
 
 <img
-    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/fee-fee-successful-execution.png"
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/fee-fee-successful-execution-2.png"
     width="800"
 />
 
