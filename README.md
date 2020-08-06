@@ -849,7 +849,7 @@ business fee data object of the form:
         amount: z
     }
 }
-where 0 <= x,y,z and x,y,z are a real number
+where 0 <= x,y,z and x,y,z are a real numbers
 
 Calculation:
 
