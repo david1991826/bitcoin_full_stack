@@ -69,9 +69,9 @@ module.exports = Object.freeze(
                 const businessValue = businessFeeData[ businessKey ];
 
                 return businessValue.amount;
-            }
-            
-        ).reduce( feeSumReducer, 0 ) );
+                
+            } ).reduce( feeSumReducer, 0 )
+        );
 
         const feeToPay = getAmountNumber( baseFee + businessFee );
 

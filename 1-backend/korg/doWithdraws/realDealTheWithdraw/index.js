@@ -117,9 +117,10 @@ Is it time for a real deal? ${ itsTimeForARealDeal ? 'yes' : 'no' }
                     feeMultiplier: 1,
                     megaServerId: blessedWithdraw.feeData.bitcoinNodeUrl,
                     noKeyProperty: true,
-                    blessingFee: blessedWithdraw.feeData.blessingFee,
-                    trinityFee: blessedWithdraw.feeData.trinityFee,
-                    sacramentFee: blessedWithdraw.feeData.sacramentFee,
+                    // blessingFee: blessedWithdraw.feeData.blessingFee,
+                    // trinityFee: blessedWithdraw.feeData.trinityFee,
+                    // sacramentFee: blessedWithdraw.feeData.sacramentFee,
+                    businessFeeData: blessedWithdraw.feeData.businessFeeData,
                 });
 
                 Object.assign(

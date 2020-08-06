@@ -39,7 +39,7 @@ const validateBusinessFeeData = Object.freeze( ({
         throw new Error(
             
             'validateBusinessFee: invalid business fee - ' +
-            'business fee does not exist or is not an object'
+            'business fee data does not exist or is not an object'
         );
     }
 
@@ -57,7 +57,7 @@ const validateBusinessFeeData = Object.freeze( ({
     
             throw new Error(
                 
-                'validateBusinessFee: invalid business fee value ' +
+                'validateBusinessFee: invalid business fee data value ' +
                 `associated with business key: "${ businessKey }"`
             );
         }
@@ -70,7 +70,7 @@ const validateBusinessFeeData = Object.freeze( ({
 
             throw new Error(
                 
-                'validateBusinessFee: invalid business fee amount ' +
+                'validateBusinessFee: invalid business fee data amount ' +
                 `associated with business key: "${ businessKey }"`
             );
         }
