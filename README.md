@@ -855,7 +855,7 @@ This is a fee estimate because if the actual blockchain fee needed and used is l
 
 For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC is needed for the Bitcoin node withdraw blockchain fee, then 0.00007 BTC will be refunded to the user.
 
-Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄😇
+Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄
 
 <br>
 
