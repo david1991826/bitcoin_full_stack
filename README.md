@@ -49,33 +49,9 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Open Source Developers** - you're the best!!!🤗💜
 
 
-## Sponsors
+## Sponsored Material
 
-Promote your material on this `README.md` file using:
-* [GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
-* [Patreon](https://www.patreon.com/bitcoinapi)
-
-#### Readme Advertisement Example
-
-This is the advertisement, it contains text and it [also contains a link](#). (100 characters max including text-embedded link)
-
-
-#### Readme Image Advertisement Example
-
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
-/>
-
-This is the image advertisement, there's an image above (50px by 50px) and it [also contains a link](#). (100 characters max including text-embedded link)
-
-
-#### Readme Large Image Advertisement Example
-
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
-/>
-
-This is the image advertisement, there's a large image  (100px by 100px) above and it [also contains a link](#) (100 characters max including text-embedded link)
+Promote your material right here on this `README.md` file. More info in the [Sponsored Material Info](#sponsored-material-info) section below.
 
 
 ## Video Demo of Exchange and Game Technology
@@ -1413,6 +1389,39 @@ Show your support for Bitcoin-Api to the world and be part of the development of
 />
 
 **Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
+
+
+## Sponsored Material Info
+
+To add your sponsored material to this `README.md` file in the [Sponsored Material](#sponsored-material) section above, use one of the following sponsorship websites: 
+
+* [GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
+* [Patreon](https://www.patreon.com/bitcoinapi)
+
+
+Here are the available sponsorship materials types you can add to this `README.md` file:
+
+#### Readme Sponsored Material Example
+
+This is the advertisement, it contains text and it [also contains a link](#). (100 characters max including text-embedded link)
+
+
+#### Readme Image Sponsored Material Example
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
+/>
+
+This is the image advertisement, there's an image above (50px by 50px) and it [also contains a link](#). (100 characters max including text-embedded link)
+
+
+#### Readme Large Image Sponsored Material Example
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
+/>
+
+This is the image advertisement, there's a large image  (100px by 100px) above and it [also contains a link](#) (100 characters max including text-embedded link)
 
 
 ### Credits:
