@@ -62,21 +62,18 @@ This is the advertisement, it contains text and it [also contains a link](#). (1
 
 #### Readme Image Advertisement Example
 
-<a href="https://youtu.be/EMAwIrHM2Qc">
-    <img
-        src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement.png"
-    />
-</a>
+  <img
+      src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement.png"
+  />
 
 This is the image advertisement, there's an image above (50px by 50px) and it [also contains a link](#). (100 regular text chars max + link)
 
 
 #### Readme Large Image Advertisement Example
 
-<div style='background-color:green;width:100px;height:100px;'>
-  <div style='background-color:green;width:100px;height:100px;'>
-  </div>
-</div>
+  <img
+      src="https://bitcoin-api.s3.amazonaws.com/images/documentation/large-advertisement.png"
+  />
 
 This is the image advertisement, there's a large image  (100px by 100px) above and it [also contains a link](#) (100 regular text chars max + link)
 
