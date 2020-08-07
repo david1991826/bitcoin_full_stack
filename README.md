@@ -49,9 +49,9 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Open Source Developers** - you're the best!!!🤗💜
 
 
-## Sponsored Material
+## Sponsored Materials
 
-Promote your material right here in this "Sponsored Material" section in this `README.md` file. More info on this in the [Sponsored Material Info](#sponsored-material-info) section below.
+Promote your material right here in this "Sponsored Materials" section in this `README.md` file. More info on this in the [Sponsored Materials Info](#sponsored-materials-info) section below.
 
 
 ## Video Demo of Exchange and Game Technology
@@ -1391,15 +1391,15 @@ Show your support for Bitcoin-Api to the world and be part of the development of
 **Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
 
 
-## Sponsored Material Info
+## Sponsored Materials Info
 
-To add your sponsored material to this `README.md` file in the [Sponsored Material](#sponsored-material) section above, use one of the following sponsorship websites: 
+To add your sponsored material to this `README.md` file in the [Sponsored Materials](#sponsored-materials) section above, use one of the following sponsorship websites: 
 
 * [GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
 * [Patreon](https://www.patreon.com/bitcoinapi)
 
 
-Here's the available sponsorship materials types you can add to this `README.md` file:
+Here's the available sponsorship material types you can add to this `README.md` file:
 
 #### Readme Sponsored Material Example
 
