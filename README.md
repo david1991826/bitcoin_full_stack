@@ -51,7 +51,7 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 ## Sponsored Material
 
-Promote your material right here on this `README.md` file. More info on this in the [Sponsored Material Info](#sponsored-material-info) section below.
+Promote your material right here in this "Sponsored Material" section in this `README.md` file. More info on this in the [Sponsored Material Info](#sponsored-material-info) section below.
 
 
 ## Video Demo of Exchange and Game Technology
