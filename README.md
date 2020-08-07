@@ -1395,8 +1395,8 @@ Show your support for Bitcoin-Api to the world and be part of the development of
 
 To add your sponsored material to this `README.md` file in the [Sponsored Materials](#sponsored-materials) section above, use one of the following sponsorship websites: 
 
-* [GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
-* [Patreon](https://www.patreon.com/bitcoinapi)
+* [Bitcoin-Api on GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
+* [Bitcoin-Api on Patreon](https://www.patreon.com/bitcoinapi)
 
 
 Here's the available sponsorship material types you can add to this `README.md` file:
