@@ -1399,7 +1399,7 @@ To add your sponsored material to this `README.md` file in the [Sponsored Materi
 * [Patreon](https://www.patreon.com/bitcoinapi)
 
 
-Here are the available sponsorship materials types you can add to this `README.md` file:
+Here's the available sponsorship materials types you can add to this `README.md` file:
 
 #### Readme Sponsored Material Example
 
