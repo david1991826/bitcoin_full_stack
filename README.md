@@ -63,7 +63,7 @@ This is the advertisement, it contains text and it [also contains a link](#). (1
 #### Readme Image Advertisement Example
 
 <img
-    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement.png"
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
 />
 
 This is the image advertisement, there's an image above (50px by 50px) and it [also contains a link](#). (100 regular text characters max + link)
@@ -72,7 +72,7 @@ This is the image advertisement, there's an image above (50px by 50px) and it [a
 #### Readme Large Image Advertisement Example
 
 <img
-    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/large-advertisement.png"
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
 />
 
 This is the image advertisement, there's a large image  (100px by 100px) above and it [also contains a link](#) (100 regular text characters max + link)
