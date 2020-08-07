@@ -1403,7 +1403,7 @@ Here's the available sponsorship material types you can add to this `README.md` 
 
 #### Readme Sponsored Material Example
 
-This is the advertisement, it contains text and it [also contains a link](#readme-sponsored-material-example). (100 characters max including text-embedded link)
+This is the sponsored material, it contains text and it [also contains a link](#readme-sponsored-material-example). (100 characters max including text-embedded link)
 
 
 #### Readme Image Sponsored Material Example
@@ -1412,7 +1412,7 @@ This is the advertisement, it contains text and it [also contains a link](#readm
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
 />
 
-This is the image advertisement, there's an image above (50px by 50px) and it [also contains a link](#readme-image-sponsored-material-example). (100 characters max including text-embedded link)
+This is the image sponsored material, there's an image above (50px by 50px) and it [also contains a link](#readme-image-sponsored-material-example). (100 characters max including text-embedded link)
 
 
 #### Readme Large Image Sponsored Material Example
@@ -1421,7 +1421,7 @@ This is the image advertisement, there's an image above (50px by 50px) and it [a
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
 />
 
-This is the image advertisement, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-material-example) (100 characters max including text-embedded link)
+This is the large image sponsored material, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-material-example) (100 characters max including text-embedded link)
 
 ---
 
