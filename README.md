@@ -28,7 +28,7 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
 The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
-1. They have very high quality competitively priced cloud services
+1. They have very high quality and competitively priced cloud services
 2. You have full responsibility for and ownership of your data 💯🤠
 
 ☁️Additional cloud credits☁️
@@ -49,9 +49,9 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Open Source Developers** - you're the best!!!🤗💜
 
 
-## Sponsored Materials
+## Sponsored Content
 
-Promote your material right here in this "Sponsored Materials" section in this `README.md` file. More info on this in the [Sponsored Materials Info](#sponsored-materials-info) section below.
+Promote your material right here in this "Sponsored Content" section in this `README.md` file. More info on this in the [Sponsored Content Info](#sponsored-content-info) section below.
 
 
 ## Video Demo of Exchange and Game Technology
@@ -1391,9 +1391,9 @@ Show your support for Bitcoin-Api to the world and be part of the development of
 **Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
 
 
-## Sponsored Materials Info
+## Sponsored Content Info
 
-To add your sponsored material to this `README.md` file in the [Sponsored Materials](#sponsored-materials) section above, use one of the following sponsorship websites: 
+To add your sponsored content to this `README.md` file in the [Sponsored Content](#sponsored-content) section above, use one of the following sponsorship websites: 
 
 * [Bitcoin-Api on GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
 * [Bitcoin-Api on Patreon](https://www.patreon.com/bitcoinapi)
@@ -1401,27 +1401,27 @@ To add your sponsored material to this `README.md` file in the [Sponsored Materi
 
 Here's the available sponsorship material types you can add to this `README.md` file:
 
-#### Readme Sponsored Material Example
+#### Readme Sponsored Content Example
 
-This is the sponsored material, it contains text and it [also contains a link](#readme-sponsored-material-example). (100 characters max including text-embedded link)
+This is the sponsored content, it contains text and it [also contains a link](#readme-sponsored-content-example). (100 characters max including text-embedded link)
 
 
-#### Readme Image Sponsored Material Example
+#### Readme Image Sponsored Content Example
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
 />
 
-This is the image sponsored material, there's an image above (50px by 50px) and it [also contains a link](#readme-image-sponsored-material-example). (100 characters max including text-embedded link)
+This is the image sponsored content, there's an image above (50px by 50px) and it [also contains a link](#readme-image-sponsored-content-example). (100 characters max including text-embedded link)
 
 
-#### Readme Large Image Sponsored Material Example
+#### Readme Large Image Sponsored Content Example
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
 />
 
-This is the large image sponsored material, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-material-example). (100 characters max including text-embedded link)
+This is the large image sponsored content, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-content-example). (100 characters max including text-embedded link)
 
 ---
 
