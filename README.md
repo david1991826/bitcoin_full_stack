@@ -1423,6 +1423,8 @@ This is the image advertisement, there's an image above (50px by 50px) and it [a
 
 This is the image advertisement, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-material-example) (100 characters max including text-embedded link)
 
+---
+
 
 ### Credits:
 
