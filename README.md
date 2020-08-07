@@ -49,6 +49,34 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Open Source Developers** - you're the best!!!🤗💜
 
 
+## Sponsors
+
+Promote your material on this `README.md` file using:
+* [GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
+* [Patreon](https://www.patreon.com/bitcoinapi)
+
+#### Readme Advertisement Example
+
+This is the advertisement, it contains text and it [also contains a link](#). (100 regular text characters max + link)
+
+
+#### Readme Image Advertisement Example
+
+<div style='background-color:green;width:50px;height:50px;'></div>
+
+This is the image advertisement, there's an image above (50px by 50px) and it [also contains a link](#). (100 regular text chars max + link)
+
+
+#### Readme Large Image Advertisement Example
+
+<div style='background-color:green;width:100px;height:100px;'>
+  <div style='background-color:green;width:100px;height:100px;'>
+  </div>
+</div>
+
+This is the image advertisement, there's a large image  (100px by 100px) above and it [also contains a link](#) (100 regular text chars max + link)
+
+
 ## Video Demo of Exchange and Game Technology
 
 <a href="https://youtu.be/EMAwIrHM2Qc">
@@ -67,8 +95,6 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * API fee data naming updates: updating fee data keys and calculations, choosing more descriptive fee data key names, and more configurable fee calculations
 
 * Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
-
-* API component naming updates: updating names of the backend NodeJS modules (calzoneSun, feeFee, korg, and the omega), choosing more descriptive names
 
 Visit the [Development branch  on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with Bitcoin-Api-Full-Stack🚧👷‍♀️👷‍♂️🏗😃!
 
