@@ -1421,7 +1421,7 @@ This is the image sponsored material, there's an image above (50px by 50px) and 
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
 />
 
-This is the large image sponsored material, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-material-example) (100 characters max including text-embedded link)
+This is the large image sponsored material, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-material-example). (100 characters max including text-embedded link)
 
 ---
 
