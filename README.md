@@ -62,7 +62,11 @@ This is the advertisement, it contains text and it [also contains a link](#). (1
 
 #### Readme Image Advertisement Example
 
-<div style='background-color:green;width:50px;height:50px;'></div>
+<a href="https://youtu.be/EMAwIrHM2Qc">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement.png"
+    />
+</a>
 
 This is the image advertisement, there's an image above (50px by 50px) and it [also contains a link](#). (100 regular text chars max + link)
 
