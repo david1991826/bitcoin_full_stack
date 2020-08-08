@@ -1381,7 +1381,7 @@ Sponsor this page and get sought after marketing towards developers or simply ge
 
 ## Merch
 
-Show your support for Bitcoin-Api to the world and be part of the development of new Bitcoin technologies.  
+Show your support for Bitcoin-Api to the world and be part of the development of new open source technologies.  
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
