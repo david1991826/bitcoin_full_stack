@@ -9,7 +9,7 @@
 
 <br>
 
-## Introduction:
+## Introduction
 
 This code repository, Bitcoin-Api-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and game platform (the exchange and game platform are still under construction). The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-Api system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of APIs, exchanges, and game platforms instead of just having to use other companies', if they're okay with holding custody of their own Bitcoin. It's also designed in way so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
 
@@ -28,13 +28,13 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
 The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
-1. They have very high quality competitively priced cloud services
+1. They have very high quality and competitively priced cloud services
 2. You have full responsibility for and ownership of your data 💯🤠
 
 ☁️Additional cloud credits☁️
 * **Satoshi Nakamoto** for Bitcoin
 * **Bitcoin.org** for Bitcoin Core
-* **Google** for email services, Youtube, and other Google services
+* **Google** for email services, YouTube, and other Google services
 * **Linus Torvalds** for Linux
 * **RedisLabs** for Redis database
 * **pm2** for NodeJS process management 
@@ -49,7 +49,12 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 * **Open Source Developers** - you're the best!!!🤗💜
 
 
-## Video Demo of Exchange and Gaming Technology
+## Sponsored Content
+
+Promote your material right here in this "Sponsored Content" section in this `README.md` file. More info on this in the [Sponsored Content Info](#sponsored-content-info) section below.
+
+
+## Video Demo of Exchange and Game Technology
 
 <a href="https://youtu.be/EMAwIrHM2Qc">
     <img
@@ -68,11 +73,9 @@ The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon
 
 * Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
 
-* API component naming updates: updating names of the backend NodeJS modules (calzoneSun, feeFee, korg, and the omega), choosing more descriptive names
-
 Visit the [Development branch  on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with Bitcoin-Api-Full-Stack🚧👷‍♀️👷‍♂️🏗😃!
 
-## API, Exchange, and Gaming Features
+## API, Exchange, and Game Features
 
 * Can configure the lowest possible fees (blockchain fee only on withdraw)
 * Quick to set up
@@ -439,7 +442,7 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 #### About the Database
 
-In the Bitcoin-Api system, some DynamoDB database operations are queued with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For preciseness, the locking queues will be called *Q-Locks* in this documentation.
+In the Bitcoin-Api system, some DynamoDB database operations are queued with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For preciseness, the locking queues will be called *Q-Locks👨🏿‍🔬* in this documentation.
 
 #### About Dr. Q's Q-Locks👨🏿‍🔬
 
@@ -803,7 +806,7 @@ After the main function finishes, it starts again after 10 seconds to keep the f
 When the main function has finished, it should look like this:
 
 <img
-    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/fee-fee-successful-execution.png"
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/fee-fee-successful-execution-2.png"
     width="800"
 />
 
@@ -829,18 +832,27 @@ pm2 monit
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
-This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow:
+TODO: update the code and the documentation related to the fee data 🚧👷‍♀️👷‍♂️🏗
+
+This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow (below is the new fee specification - currently in development🚧👷‍♀️👷‍♂️🏗):
 ```
 Values stored in the DynamoDB database entry:
 amount,
 multiplier,
 business fee data object of the form:
 {
-    [custom fee key]: {
-        amount: r
+    [custom fee key 1]: {
+        amount: x
+    },
+    [custom fee key 2]: {
+        amount: y
+    },
+    ...
+    [custom fee key n]: {
+        amount: z
     }
 }
-where 0 <= r, r is a real number
+where 0 <= x,y,z and x,y,z are real numbers
 
 Calculation:
 
@@ -849,11 +861,12 @@ business fee = sum of the "businessFeeData" object's fee amounts
 
 fee estimate to pay = (blockchain fee estimate + business fee)
 ```
-This is a fee estimate because if the actual blockchain fee needed and used is less than the blockchain fee estimate, any unused blockchain fee from the estimate in the actual Bitcoin node withdraw will get refunded to the user after the Bitcoin Node withdraw has finished.
+
+This is a fee estimate because if the actual blockchain fee needed and used is less than the blockchain fee estimate, any unused blockchain fee from the estimate in the actual Bitcoin node withdraw will get refunded to the user after the Bitcoin node withdraw has finished.
 
 For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC is needed for the Bitcoin node withdraw blockchain fee, then 0.00007 BTC will be refunded to the user.
 
-Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄😇
+Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄
 
 <br>
 
@@ -1379,8 +1392,43 @@ Show your support for Bitcoin-Api to the world and be part of the development of
 **Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
 
 
+## Sponsored Content Info
+
+To add your sponsored content to this `README.md` file in the [Sponsored Content](#sponsored-content) section above, use one of the following sponsorship websites: 
+
+* [Bitcoin-Api on GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
+* [Bitcoin-Api on Patreon](https://www.patreon.com/bitcoinapi)
+
+
+Here's the available sponsorship material types you can add to this `README.md` file:
+
+#### Readme Sponsored Content Example
+
+This is the sponsored content, it contains text and it [also contains a link](#readme-sponsored-content-example). (100 characters max including text-embedded link)
+
+
+#### Readme Image Sponsored Content Example
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
+/>
+
+This is the image sponsored content, there's an image above (50px by 50px) and it [also contains a link](#readme-image-sponsored-content-example). (100 characters max including text-embedded link)
+
+
+#### Readme Large Image Sponsored Content Example
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
+/>
+
+This is the large image sponsored content, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-content-example). (100 characters max including text-embedded link)
+
+---
+
+
 ### Credits:
 
-**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/bitcoin-api) - contact for enterprise Bitcoin-Api Bitcoin and crypto services - add crypto to your business!
+**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/michael-se) - contact for enterprise Bitcoin-Api Bitcoin and crypto services - add crypto to your business!
 
 **Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire for excellent quality design and art work
