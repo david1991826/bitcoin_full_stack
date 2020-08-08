@@ -148,7 +148,7 @@ module.exports = Object.freeze( async ({
         '-i',
         pemPath,
         '-r',
-        commonUtilitiesFolder,
+        // commonUtilitiesFolder,
         tigerSpot,
         fullDestinationUrl
     ];

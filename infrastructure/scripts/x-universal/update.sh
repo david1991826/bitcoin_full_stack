@@ -53,6 +53,7 @@ popd
 pushd ../../../1-backend/feeFee
 
 npm install @bitcoin-api.io/common-private@latest --save
+npm install @bitcoin-api.io/backend-common-utilities@latest --save
 npm install
 
 popd
