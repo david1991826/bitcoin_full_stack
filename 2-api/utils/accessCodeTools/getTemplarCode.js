@@ -15,14 +15,14 @@ module.exports = Object.freeze( ({
     // const turtleMegaCode = megaCode.substring( 5, 8 );
     // const lizardMegaCode = megaCode.substring( 8, 10 );
     // const coyoteMegaCode = megaCode.substring( 10 );
-    const trinityCoyoteMegaCode = megaCode.substring( 5 );
+    const ultraCoyoteMegaCode = megaCode.substring( 5 );
 
     const experienceMegaCode = (
 
         // turtleMegaCode +
         // lizardMegaCode +
         // coyoteMegaCode +
-        trinityCoyoteMegaCode +
+        ultraCoyoteMegaCode +
         rhinoMegaCode
     );
 

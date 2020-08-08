@@ -27,12 +27,12 @@ const getMetaFeeToPay = Object.freeze( (
         );
 
         const {
-
-            holyFee
+            
+            businessFee,
 
         } = getFeeToPayFromFeeData( ...modifiedGetFeeToPayFromFeeDataArgs );
 
-        return holyFee;
+        return businessFee;
     }
 
     return getFeeToPayFromFeeData( ...getFeeToPayFromFeeDataArgs );
