@@ -9,6 +9,6 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "orgasm": "^1.0.3"
+    "orgasm": "^1.0.4"
   }
 }
