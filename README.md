@@ -1379,18 +1379,6 @@ PRs and collaborative efforts welcome.👏
 Sponsor this page and get sought after marketing towards developers or simply get recognition in the Contributors document - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
 
 
-## Merch
-
-Show your support for Bitcoin-Api to the world and be part of the development of new open source technologies.  
-
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
-    width="320"
-/>
-
-**Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
-
-
 ## Sponsored Content Info
 
 To add your sponsored content to this `README.md` file in the [Sponsored Content](#sponsored-content) section above, use one of the following sponsorship websites: 
@@ -1422,6 +1410,19 @@ This is the image sponsored content, there's an image above (50px by 50px) and i
 />
 
 This is the large image sponsored content, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-content-example). (100 characters max including text-embedded link)
+
+
+## Merch
+
+Show your support for Bitcoin-Api to the world and be part of the development of new open source technologies.  
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
+    width="320"
+/>
+
+**Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
+
 
 ---
 
