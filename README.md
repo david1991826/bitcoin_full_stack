@@ -1376,7 +1376,7 @@ The frontend code modules are [React](https://reactjs.org) webapps made with [Cr
 
 PRs and collaborative efforts welcome.👏
 
-Sponsor this page and get support, marketing, and other benefits and services - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
+Sponsor this page and get sought after marketing towards developers or simply get recognition in the Contributions document - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
 
 
 ## Merch
