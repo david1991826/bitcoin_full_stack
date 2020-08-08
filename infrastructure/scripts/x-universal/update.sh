@@ -109,5 +109,6 @@ npm install @bitcoin-api.io/common-private@latest --save
 npm install @bitcoin-api.io/common-exchange@latest --save
 npm install orgasm@latest --save
 npm install
+npm fund
 
 popd
