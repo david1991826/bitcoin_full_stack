@@ -13,15 +13,6 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api.io/common-exchange": "^4.2.2",
-    "@bitcoin-api.io/common-private": "^29.0.0",
-    "aws-sdk": "^2.395.0",
-    "bluebird": "^3.5.3",
-    "common-utilities": "file:../commonUtilities",
-    "dotenv": "^6.2.0",
-    "execa": "^1.0.0",
-    "loglevels": "^7.0.9",
-    "orgasm": "^1.0.4",
-    "yargs": "^15.0.2"
+    "common-utilities": "file:../commonUtilities"
   }
 }
