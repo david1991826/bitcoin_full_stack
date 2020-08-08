@@ -36,7 +36,7 @@ module.exports = Object.freeze( async () => {
         feeData
     });
 
-    const theFeeDataInQuotes = {
+    const feeDataToReturn = {
         fee,
         // time: feeData.lastUpdated
     };
@@ -44,8 +44,8 @@ module.exports = Object.freeze( async () => {
     console.log(
         
         'getFeeData executed successfully ' +
-        `returning values: ${ stringify( theFeeDataInQuotes ) }`
+        `returning values: ${ stringify( feeDataToReturn ) }`
     );
 
-    return theFeeDataInQuotes;
+    return feeDataToReturn;
 });
