@@ -31,7 +31,7 @@ const {
     constants: {
         megaServerId
     }
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const feeMultiplier = isProductionMode ? 0.1 : 1;
 // const feeMultiplier = isProductionMode ? 0.008 : 1;
