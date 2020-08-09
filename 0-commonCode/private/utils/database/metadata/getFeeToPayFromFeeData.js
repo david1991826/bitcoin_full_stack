@@ -115,7 +115,7 @@ module.exports = Object.freeze(
             console.log(`
             
                     Fee to Pay = A) Base Fee + B) Business Fee
-                        => ${ feeToPay } BTC = ${ baseFee } BTC + ${ businessFeeStringPart2 } BTC
+                        => ${ feeToPay } BTC = ${ baseFee } (blockchain fee) BTC + ${ businessFeeStringPart2 } BTC
             `);
         }
 
