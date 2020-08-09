@@ -72,7 +72,24 @@ module.exports = Object.freeze( () => {
 
             fee,
             feeMultiplier,
-            // businessFeeData,
+            businessFeeData: {
+
+                // can customize fee values here
+                payroll: {
+                    
+                    amount: 0.00001,
+                },
+
+                insurance: {
+                    
+                    amount: 0.00002,
+                },
+
+                commission: {
+                    
+                    amount: 0.00003,
+                },
+            },
 
             megaServerId
         });

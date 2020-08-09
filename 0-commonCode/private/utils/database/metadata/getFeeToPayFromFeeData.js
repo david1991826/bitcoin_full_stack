@@ -9,7 +9,7 @@ const feeSumReducer = Object.freeze(
     ( accumulator, currentValue ) => accumulator + currentValue
 );
 
-const getBusinessFeeString = Object.freeze( ({
+const getBusinessFeeStringComponents = Object.freeze( ({
 
     businessFeeData,
     businessKeys,
@@ -17,11 +17,12 @@ const getBusinessFeeString = Object.freeze( ({
 
 }) => {
 
-    let businessFeeString = `${ businessFee } BTC = `;
+    const businessFeeStringPart1 = `${ businessFee } BTC = `;
+    let businessFeeStringPart2 = '';
 
     if( businessKeys.length === 0 ) {
 
-        businessFeeString += `no business fee data specified`;
+        businessFeeStringPart2 += `no business fee data specified`;
     }
     else {
 
@@ -29,17 +30,21 @@ const getBusinessFeeString = Object.freeze( ({
 
             const businessValue = businessFeeData[ businessKey ];
 
-            businessFeeString += `${ businessValue.amount } BTC (${ businessKey } fee) + `;
+            businessFeeStringPart2 += `${ businessValue.amount } BTC (${ businessKey } fee) + `;
         }
 
-        businessFeeString = businessFeeString.substring(
+        businessFeeStringPart2 = businessFeeStringPart2.substring(
 
             0,
-            businessFeeString.length - 3
+            businessFeeStringPart2.length - 3
         );
     }
 
-    return businessFeeString;
+    return {
+        
+        businessFeeStringPart1,
+        businessFeeStringPart2,
+    };
 });
 
 
@@ -85,23 +90,32 @@ module.exports = Object.freeze(
                         => ${ baseFee } BTC = ${ amount } BTC x ${ multiplier }
             `);
 
-            const businessFeeString = getBusinessFeeString({
+            const {
+        
+                businessFeeStringPart1,
+                businessFeeStringPart2,
+
+            } = getBusinessFeeStringComponents({
 
                 businessFeeData,
                 businessKeys,
                 businessFee
             });
 
+            const fullBusinessFeeString = (
+                businessFeeStringPart1 + businessFeeStringPart2
+            );
+
             console.log( `
 
                     B) Business Fee = sum of business fee data amounts
-                        => ${ businessFeeString }
+                        => ${ fullBusinessFeeString }
             `);
 
             console.log(`
             
                     Fee to Pay = A) Base Fee + B) Business Fee
-                        => ${ feeToPay } BTC = ${ baseFee } BTC + ${ businessFeeString } BTC
+                        => ${ feeToPay } BTC = ${ baseFee } BTC + ${ businessFeeStringPart2 } BTC
             `);
         }
 
