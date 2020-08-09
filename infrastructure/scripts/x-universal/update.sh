@@ -44,6 +44,7 @@ popd
 pushd ../../../1-backend/calzoneSun
 
 npm install @bitcoin-api.io/common-private@latest --save
+npm install @bitcoin-api.io/backend-common-utilities@latest --save
 npm install orgasm@latest --save
 npm install
 
@@ -87,6 +88,7 @@ pushd ../../../1-backend/korg
 
 npm install @bitcoin-api.io/common-private@latest --save
 npm install @bitcoin-api.io/common-exchange@latest --save
+npm install @bitcoin-api.io/backend-common-utilities@latest --save
 npm install
 
 popd
@@ -96,6 +98,7 @@ pushd ../../../1-backend/theomega
 
 npm install @bitcoin-api.io/common-private@latest --save
 npm install @bitcoin-api.io/common-exchange@latest --save
+npm install @bitcoin-api.io/backend-common-utilities@latest --save
 npm install orgasm@latest --save
 npm install
 

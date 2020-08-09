@@ -34,7 +34,7 @@ const {
 const {
     doBitcoinRequest,
     constants
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const {
     

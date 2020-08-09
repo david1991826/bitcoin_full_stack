@@ -27,7 +27,7 @@ const {
 const {
     mongo,
     backgroundExecutor,
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 
 const getAddressCacheObject = Object.freeze( ({

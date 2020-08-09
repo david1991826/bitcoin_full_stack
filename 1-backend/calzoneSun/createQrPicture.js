@@ -29,7 +29,7 @@ const getDataUrl = ({
 
             resolve( dataUrl );
         }
-    )
+    );
 });
 
 

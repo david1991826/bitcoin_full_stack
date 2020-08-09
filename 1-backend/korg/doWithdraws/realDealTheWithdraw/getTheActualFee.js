@@ -1,7 +1,7 @@
 'use strict';
 
 const bluebird = require( 'bluebird' );
-const { doBitcoinRequest } = require( 'common-utilities' );
+const { doBitcoinRequest } = require( '@bitcoin-api.io/backend-common-utilities' );
 const {
     utils: { stringify }
 } = require( '@bitcoin-api.io/common-private' );

@@ -13,10 +13,10 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
+    "@bitcoin-api.io/backend-common-utilities": "^1.0.0",
     "@bitcoin-api.io/common-exchange": "^4.2.2",
     "@bitcoin-api.io/common-private": "^29.0.0",
     "bluebird": "^3.7.1",
-    "common-utilities": "file:../commonUtilities",
     "dotenv": "^8.2.0",
     "yargs": "^15.0.2"
   }

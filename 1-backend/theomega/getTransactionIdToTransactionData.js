@@ -6,7 +6,7 @@ const {
 
     doBitcoinRequest
 
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const DELAY_BETWEEN_GETS_IN_MS = 0.2;
 

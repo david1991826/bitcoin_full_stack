@@ -4,7 +4,7 @@ const {
 
     runSpiritual
 
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const {
     constants: {
