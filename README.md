@@ -120,11 +120,11 @@ Briefly put: The NodeJS services interact with the Bitcoin node which in turn in
 
 #### Requirements:
 
-1. Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)). The Linux server must meet [Bitcoin Core's computer requirements](https://bitcoin.org/en/bitcoin-core/features/requirements).
+* Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)). The Linux server must meet [Bitcoin Core's computer requirements](https://bitcoin.org/en/bitcoin-core/features/requirements). You need to have access to the server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
 
-2. Have access to that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
+* On the computer your working on (e.g. your home computer), clone or download this Bitcoin-Api-Full-Stack code repository. This repo is like the "command center" for your Bitcoin-Api instance. Set up, deployment, and other useful commands are performed using the files and scripts in this repo.
 
-3. Have a Redis service that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
+* Have a Redis service that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
 
 
 ### Set Up The Bitcoin Node Server(s)
