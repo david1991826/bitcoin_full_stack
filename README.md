@@ -27,7 +27,7 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
-The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
+The Bitcoin-Api system uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
 1. They have very high quality and competitively priced cloud services
 2. You have full responsibility for and ownership of your data 💯🤠
 
