@@ -1,0 +1,38 @@
+{
+  "name": "bitcoin-api-full-stack",
+  "version": "1.0.0",
+  "description": "Open source Bitcoin API, exchange, and game platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitcoin-api/bitcoin-api-full-stack.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "api",
+    "full",
+    "stack",
+    "exchange",
+    "game",
+    "platform"
+  ],
+  "author": "Michael Stecky-Efantis",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/bitcoin-api/bitcoin-api-full-stack/issues"
+  },
+  "homepage": "https://github.com/bitcoin-api/bitcoin-api-full-stack#readme",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/bitcoin-api"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/bitcoinapi"
+    }
+  ]
+}

@@ -73,6 +73,11 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 * Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
 
+* more descriptive folder names for the backend NodeJS modules Fee Fee, Korg, and The Omega
+
+* npx commands to help set up the local and remote files and folders necessary to run a Bitcoin-Api instance
+
+
 Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
 
 ## API, Exchange, and Game Features
@@ -1429,6 +1434,6 @@ Show your support for Bitcoin-Api to the world and be part of the development of
 
 ### Credits:
 
-**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/michael-se) - contact for enterprise Bitcoin-Api Bitcoin and crypto services - add crypto to your business!
+**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/michael-se) - contact for enterprise collaborations and sponsorships
 
 **Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire for excellent quality design and art work
