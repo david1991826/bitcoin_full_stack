@@ -11,7 +11,8 @@ module.exports = Object.freeze( ({
 
     feeData,
     enviroWithdrawAmount,
-    sacramentFeeToAdd = 0
+    // exchangeFeeToAdd
+    // sacramentFeeToAdd = 0
 
 }) => {
 
@@ -22,19 +23,24 @@ module.exports = Object.freeze( ({
 
             feeData,
             enviroWithdrawAmount,
-            sacramentFeeToAdd
+            // sacramentFeeToAdd
         })}`
     );
 
     const magnaFeeData = Object.assign(
 
         {},
-        feeData,
-        {
-            blessingFee: feeData.blessingFee + enviroWithdrawAmount,
-            sacramentFee: feeData.sacramentFee + sacramentFeeToAdd,
-        }
+        feeData
+        // {
+        //     blessingFee: feeData.blessingFee + enviroWithdrawAmount,
+        //     sacramentFee: feeData.sacramentFee + sacramentFeeToAdd,
+        // }
     );
+
+    magnaFeeData.businessFeeData.enviroWithdraw = {
+        
+        amount: enviroWithdrawAmount,
+    };
 
     console.log(
         

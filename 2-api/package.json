@@ -14,9 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "@bitcoin-api.io/common-bridge": "^1.0.1",
-    "@bitcoin-api.io/common-exchange": "^4.2.2",
+    "@bitcoin-api.io/common-exchange": "^5.0.1",
     "@bitcoin-api.io/common-general": "^1.0.4",
-    "@bitcoin-api.io/common-private": "^28.0.1",
+    "@bitcoin-api.io/common-private": "^29.0.3",
     "orgasm": "^1.0.4",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",

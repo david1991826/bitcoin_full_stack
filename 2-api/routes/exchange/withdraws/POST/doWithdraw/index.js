@@ -56,7 +56,7 @@ const getMagnaFeeData = require( '../../../../withdraws/POST/withdrawMoney/doWit
 const ensureExchangeUserHasEnoughMoney = require( './ensureExchangeUserHasEnoughMoney' );
 const putVanguardWithdraw = require( './putVanguardWithdraw' );
 
-const sacramentFeeToAdd = 0.000001;
+const exchangeFeeToAdd = 0.000001;
 
 
 const doWithdrawCore = Object.freeze( async ({
@@ -112,7 +112,7 @@ const doWithdrawCore = Object.freeze( async ({
 
             totalAmountUserHas -
             (
-                sacramentFeeToAdd +
+                exchangeFeeToAdd +
                 enviroWithdrawAmount
             )
         );
@@ -123,14 +123,14 @@ const doWithdrawCore = Object.freeze( async ({
             `for the user: ${
                 stringify({
                     totalAmountUserHas,
-                    sacramentFeeToAdd,
+                    exchangeFeeToAdd,
                     enviroWithdrawAmount,
                     ['the calculation']: (
                         `const totalWithdrawAmount = (
 
                             totalAmountUserHas -
                             (
-                                sacramentFeeToAdd +
+                                exchangeFeeToAdd +
                                 enviroWithdrawAmount
                             )
                         );`
@@ -159,7 +159,7 @@ const doWithdrawCore = Object.freeze( async ({
         
             feeData: await getFeeData(),
             enviroWithdrawAmount,
-            sacramentFeeToAdd,
+            exchangeFeeToAdd,
         });
 
         const metaFeeToPay = metaGetFeeToPayFromFeeData(
@@ -215,7 +215,7 @@ const doWithdrawCore = Object.freeze( async ({
         
         feeData: await getFeeData(),
         enviroWithdrawAmount,
-        sacramentFeeToAdd,
+        exchangeFeeToAdd,
     });
 
     const {

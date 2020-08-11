@@ -8,7 +8,7 @@ const {
             collectionNames
         }
     }
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const {
     constants: {
@@ -22,7 +22,7 @@ const {
 
     backgroundExecutor
 
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const getCanonicalAddressData = require( './getCanonicalAddressData' );
 const updateAddressData = require( './updateAddressData' );

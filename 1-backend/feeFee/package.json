@@ -13,9 +13,9 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api.io/common-private": "^28.0.1",
+    "@bitcoin-api.io/backend-common-utilities": "^1.0.0",
+    "@bitcoin-api.io/common-private": "^29.0.3",
     "aws-sdk": "^2.395.0",
-    "common-utilities": "file:../commonUtilities",
     "dotenv": "^6.2.0",
     "execa": "^1.0.0",
     "loglevels": "^7.0.9",

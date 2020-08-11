@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "korg": "node ./giraffe/PetGiraffe.js --command=monkeyPaw --mode=production",
+    "korgF": "node ./giraffe/PetGiraffe.js --command=monkeyPaw --mode=production --force=true",
     "korgS": "node ./giraffe/PetGiraffe.js --command=monkeyPaw",
     "korgSF": "node ./giraffe/PetGiraffe.js --command=monkeyPaw --force=true",
     "feeFee": "node ./giraffe/PetGiraffe.js --command=refreshingDrank --mode=production",
+    "feeFeeF": "node ./giraffe/PetGiraffe.js --command=refreshingDrank --mode=production --force=true",
     "feeFeeS": "node ./giraffe/PetGiraffe.js --command=refreshingDrank",
     "feeFeeSF": "node ./giraffe/PetGiraffe.js --command=refreshingDrank --force=true",
     "theomega": "node ./giraffe/PetGiraffe.js --command=juiceCamel --mode=production",
+    "theomegaF": "node ./giraffe/PetGiraffe.js --command=juiceCamel --mode=production --force=true",
     "theomegaS": "node ./giraffe/PetGiraffe.js --command=juiceCamel",
     "theomegaSF": "node ./giraffe/PetGiraffe.js --command=juiceCamel --force=true"
   },

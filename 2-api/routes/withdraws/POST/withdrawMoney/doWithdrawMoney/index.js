@@ -43,6 +43,19 @@ module.exports = Object.freeze( async ({
         })
     );
     
+    if( !user.hasGottenAddress ) {
+
+        console.log(
+            '/withdraws - POST function - user has not ' +
+            'even gotten an address yet and they are ' +
+            'trying to withdraw money... ☢️🐑GET THE DRAGONS!!! ' +
+            '... 🐲🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🔥🔥🔥🔥🔥🔥' +
+            '🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥'
+        );
+    
+        return throwNotEnoughBitcoinOnTokenError();
+    }
+
     const {
 
         withdrawAmount,
@@ -63,19 +76,6 @@ module.exports = Object.freeze( async ({
         feeData,
         enviroWithdrawAmount
     });
-
-    if( !user.hasGottenAddress ) {
-
-        console.log(
-            '/withdraws - POST function - user has not ' +
-            'even gotten an address yet and they are ' +
-            'trying to withdraw money... ☢️🐑GET THE DRAGONS!!! ' +
-            '... 🐲🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🐉🔥🔥🔥🔥🔥🔥' +
-            '🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥'
-        );
-    
-        return throwNotEnoughBitcoinOnTokenError();
-    }
 
     await ensureUserIsAllowedToMakeTheWithdraw({
         withdrawAmount,

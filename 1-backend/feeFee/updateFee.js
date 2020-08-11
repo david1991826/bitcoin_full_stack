@@ -31,7 +31,7 @@ const {
     constants: {
         megaServerId
     }
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const feeMultiplier = isProductionMode ? 0.1 : 1;
 // const feeMultiplier = isProductionMode ? 0.008 : 1;
@@ -68,26 +68,29 @@ module.exports = Object.freeze( () => {
 
         const tableName = METADATA;
 
-        // const key = tableNameToKey[tableName];
-
-        // const entry = {
-
-        //     [key]: feeData,
-        //     amount: fee,
-        //     multiplier: feeMultiplier,
-        //     bitcoinNodeUrl: megaServerId,
-        //     blessingFee,
-        //     trinityFee,
-        //     sacramentFee,
-        // };
-
         const entry = getFeeData({
 
             fee,
             feeMultiplier,
-            // blessingFee,
-            // trinityFee,
-            // sacramentFee,
+            businessFeeData: {
+
+                // can customize fee values here
+                payroll: {
+                    
+                    amount: 0.00001,
+                },
+
+                insurance: {
+                    
+                    amount: 0.00002,
+                },
+
+                commission: {
+                    
+                    amount: 0.00003,
+                },
+            },
+
             megaServerId
         });
 

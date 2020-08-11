@@ -20,7 +20,7 @@ const {
 
 const {
     doBitcoinRequest,
-} = require( 'common-utilities' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 
 const errorTypes = Object.freeze({

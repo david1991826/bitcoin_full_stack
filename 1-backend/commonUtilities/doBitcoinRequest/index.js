@@ -1,7 +1,5 @@
 'use strict';
 
-const execa = require( 'execa' );
-
 const {
     constants: {
         environment: {
@@ -10,6 +8,13 @@ const {
     }
 } = require( '@bitcoin-api.io/common-private' );
 
+if( isProductionMode ) {
+
+    process.env.BITCOIN_REQUEST_MODE = 'livenet';
+}
+
+const bitcoinRequest = require( './bitcoin-request' );
+
 
 module.exports = Object.freeze(({
 
@@ -17,48 +22,8 @@ module.exports = Object.freeze(({
 
 }) => {
 
-    const envObject = {};
+    return bitcoinRequest({
 
-    const formattedArgs = isProductionMode ? args : (
-
-        [ '-testnet' ].concat( args )
-    );
-
-    return execa(
-
-        'bitcoin-cli',
-        formattedArgs,
-        {
-            env: envObject,
-            // extendEnv: false
-            // cwd: BITCOIN_DAEMON_PATH
-        }
-
-    ).then( response => {
-
-        if(
-            !response ||
-            response.failed ||
-            response.timedOut ||
-            response.isCanceled ||
-            response.killed ||
-            (Number(response.exitCode) !== 0)
-        ) {
-
-            const errorMessage = (
-
-                'error in doBitcoinRequest, '+
-                'using the following args: ' +
-                JSON.stringify( formattedArgs ) +
-                ', error: ' +
-                JSON.stringify( response )
-            );
-
-            console.log( errorMessage );
-
-            throw response;
-        }
-
-        return response.stdout;
+        command: args,
     });
 });

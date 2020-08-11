@@ -69,8 +69,6 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 #### Upcoming updates 🚧👷‍♀️👷‍♂️🏗
 
-* API fee data naming updates: updating fee data keys and calculations, choosing more descriptive fee data key names, and more configurable fee calculations
-
 * Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
 
 * more descriptive folder names for the backend NodeJS modules Fee Fee, Korg, and The Omega
@@ -837,9 +835,7 @@ pm2 monit
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
-TODO: update the code and the documentation related to the fee data 🚧👷‍♀️👷‍♂️🏗
-
-This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow (below is the new fee specification - currently in development🚧👷‍♀️👷‍♂️🏗):
+This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follows:
 ```
 Values stored in the DynamoDB database entry:
 amount,
@@ -870,7 +866,23 @@ This is a fee estimate because if the actual blockchain fee needed and used is l
 
 For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC is needed for the Bitcoin node withdraw blockchain fee, then 0.00007 BTC will be refunded to the user.
 
-Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄
+
+#### EnviroWithdraws
+
+EnviroWithdraws are intended for collecting money for our environment. The `POST - /withdraws` endpoint has an optional request body bitcoin amount parameter `enviroWithdrawAmount`. The `enviroWithdrawAmount` parameter automatically adds this value to the `businessFeeData` object with the custom key `enviroWithdraw` whose corresponding object value contains the specified amount.
+
+Here's an example of the resulting `businessFeeData` with an `enviroWithdrawAmount` of 0.000001 BTC specified in the request body:
+```.json
+{
+    {...},
+    ...
+    enviroWithdraw: {
+        amount: 0.000001
+    }
+}
+```
+
+Please consider contributing a portion of the fee you collect towards the environment and thank you very much for considering our environment!🌲🌳🌄
 
 <br>
 

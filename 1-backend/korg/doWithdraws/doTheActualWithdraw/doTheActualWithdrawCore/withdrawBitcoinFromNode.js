@@ -11,7 +11,7 @@ const {
     },
 } = require( 'orgasm' );
 
-const { doBitcoinRequest } = require( 'common-utilities' );
+const { doBitcoinRequest } = require( '@bitcoin-api.io/backend-common-utilities' );
 
 
 const errorTypes = Object.freeze({

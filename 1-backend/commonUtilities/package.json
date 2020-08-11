@@ -1,6 +1,6 @@
 {
-  "name": "commonutilities",
-  "version": "1.0.2",
+  "name": "@bitcoin-api.io/backend-common-utilities",
+  "version": "1.0.0",
   "description": "Magna-Tiger🦁",
   "repository": {
     "type": "tiger",
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api.io/common-private": "^28.0.1",
+    "@bitcoin-api.io/common-private": "^29.0.3",
     "bqe": "^1.0.3",
     "execa": "^2.0.4",
     "mongodb": "^3.4.0"

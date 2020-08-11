@@ -74,29 +74,43 @@ module.exports = Object.freeze( async ({
 
     } = deployCommandToTigerSpotData[ deployCommand ];
 
-    const commonUtilitiesFolder = `${ treeTigerSpot }/commonUtilities`;
+    // const commonUtilitiesFolder = `${ treeTigerSpot }/commonUtilities`;
     const trueTigerPath = `${ treeTigerSpot }/${ tigerFolder }`;
 
     log( 'installing node modules:', stringify([
 
-        commonUtilitiesFolder,
+        // commonUtilitiesFolder,
         trueTigerPath,
     ]) );
 
-    await Promise.all([
+    // await Promise.all([
 
-        execa(
+        // execa(
 
-            'npm',
-            [
-                'install'
-            ],
-            {
-                cwd: commonUtilitiesFolder
-            }
-        ),
+        //     'npm',
+        //     [
+        //         'install'
+        //     ],
+        //     {
+        //         cwd: commonUtilitiesFolder
+        //     }
+        // ),
 
-        execa(
+        // execa(
+
+        //     'npm',
+        //     [
+        //         'install'
+        //     ],
+        //     {
+        //         cwd: trueTigerPath
+        //     }
+        // )
+    // ]);
+
+    try {
+
+        await execa(
 
             'npm',
             [
@@ -105,8 +119,14 @@ module.exports = Object.freeze( async ({
             {
                 cwd: trueTigerPath
             }
-        )
-    ]);
+        );
+    }
+    catch( err ) {
+
+        console.log( 'error in installing node modules:', err );
+
+        throw err;
+    }
 
     log(
         'successfully installed node_modules,👅👅 next - ' +
