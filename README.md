@@ -831,7 +831,7 @@ This pm2 command can also be used to monitor your fee data service and all your 
 pm2 monit
 ```
 
-> **Important Note:** In the file `/1-backend/feeFee/updateFee.js`, you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
+> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
