@@ -1,6 +1,6 @@
 {
   "name": "@bitcoin-api.io/common-exchange",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,7 +8,7 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api.io/common-private": "^29.0.2",
+    "@bitcoin-api.io/common-private": "^29.0.3",
     "orgasm": "^1.0.4"
   },
   "devDependencies": {},
