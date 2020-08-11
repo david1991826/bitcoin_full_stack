@@ -37,7 +37,7 @@ module.exports = Object.freeze( ({
         // }
     );
 
-    magnaFeeData.businessFeeData.enviroWithdrawAmount = {
+    magnaFeeData.businessFeeData.enviroWithdraw = {
         
         amount: enviroWithdrawAmount,
     };
