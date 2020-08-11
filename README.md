@@ -27,7 +27,7 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
-The Bitcoin-Api system uses a large amount of cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
+The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
 1. They have very high quality and competitively priced cloud services
 2. You have full responsibility for and ownership of your data 💯🤠
 
@@ -69,11 +69,14 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 #### Upcoming updates 🚧👷‍♀️👷‍♂️🏗
 
-* API fee data naming updates: updating fee data keys and calculations, choosing more descriptive fee data key names, and more configurable fee calculations
-
 * Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
 
-Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest documentation and code from Bitcoin-Api-Full-Stack🚧👷‍♀️👷‍♂️🏗😃!
+* more descriptive folder names for the backend NodeJS modules Fee Fee, Korg, and The Omega
+
+* npx commands to help set up the local and remote files and folders necessary to run a Bitcoin-Api instance
+
+
+Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
 
 ## API, Exchange, and Game Features
 
@@ -115,11 +118,11 @@ Briefly put: The NodeJS services interact with the Bitcoin node which in turn in
 
 #### Requirements:
 
-1. Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)). The Linux server must meet [Bitcoin Core's computer requirements](https://bitcoin.org/en/bitcoin-core/features/requirements).
+* Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)). The Linux server must meet [Bitcoin Core's computer requirements](https://bitcoin.org/en/bitcoin-core/features/requirements). You need to have access to the server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
 
-2. Have access to that server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
+* On the computer you're working on (e.g. your home computer), clone or download this Bitcoin-Api-Full-Stack code repository. This repo is like the "command center" for your Bitcoin-Api instance. Set up, deployment, and other useful commands are performed using the files and scripts in this repo.
 
-3. Have a Redis service that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
+* Have a Redis service that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
 
 
 ### Set Up The Bitcoin Node Server(s)
@@ -832,9 +835,7 @@ pm2 monit
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
-TODO: update the code and the documentation related to the fee data 🚧👷‍♀️👷‍♂️🏗
-
-This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follow (below is the new fee specification - currently in development🚧👷‍♀️👷‍♂️🏗):
+This updates the [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) `bitcoin_api_metadata_staging` or `bitcoin_api_metadata` table with the new fee data. The key associated with the fee data in the metadata table is `fee`. The actual fee the user pays is calculated as follows:
 ```
 Values stored in the DynamoDB database entry:
 amount,
@@ -861,12 +862,27 @@ business fee = sum of the "businessFeeData" object's fee amounts
 
 fee estimate to pay = (blockchain fee estimate + business fee)
 ```
-
 This is a fee estimate because if the actual blockchain fee needed and used is less than the blockchain fee estimate, any unused blockchain fee from the estimate in the actual Bitcoin node withdraw will get refunded to the user after the Bitcoin node withdraw has finished.
 
 For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC is needed for the Bitcoin node withdraw blockchain fee, then 0.00007 BTC will be refunded to the user.
 
-Please consider contributing a portion of the fee you collect towards the environment, thank you very much!🌲🌳🌄
+
+#### EnviroWithdraws
+
+EnviroWithdraws are intended for collecting money for our environment. The `POST - /withdraws` endpoint has an optional request body bitcoin amount parameter `enviroWithdrawAmount`. The `enviroWithdrawAmount` parameter automatically adds this value to the `businessFeeData` object with the custom key `enviroWithdraw` whose corresponding object value contains the specified amount.
+
+Here's an example of the resulting `businessFeeData` with an `enviroWithdrawAmount` of 0.000001 BTC specified in the request body:
+```.json
+{
+    {...},
+    ...
+    enviroWithdraw: {
+        amount: 0.000001
+    }
+}
+```
+
+Please consider contributing a portion of the fee you collect towards the environment and thank you very much for considering our environment!🌲🌳🌄
 
 <br>
 
@@ -1377,19 +1393,7 @@ The frontend code modules are [React](https://reactjs.org) webapps made with [Cr
 
 PRs and collaborative efforts welcome.👏
 
-Sponsor this page and get support, marketing, and other benefits and services - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
-
-
-## Merch
-
-Show your support for Bitcoin-Api to the world and be part of the development of new Bitcoin technologies.  
-
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
-    width="320"
-/>
-
-**Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
+Sponsor this page and get sought after marketing towards developers or you can simply get recognition in the Contributors document - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
 
 
 ## Sponsored Content Info
@@ -1424,11 +1428,24 @@ This is the image sponsored content, there's an image above (50px by 50px) and i
 
 This is the large image sponsored content, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-content-example). (100 characters max including text-embedded link)
 
+
+## Merch
+
+Show your support for Bitcoin-Api to the world and be part of the development of new open source technologies.  
+
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
+    width="320"
+/>
+
+**Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
+
+
 ---
 
 
 ### Credits:
 
-**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/michael-se) - contact for enterprise Bitcoin-Api Bitcoin and crypto services - add crypto to your business!
+**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/michael-se) - contact for enterprise collaborations and sponsorships
 
 **Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire for excellent quality design and art work
