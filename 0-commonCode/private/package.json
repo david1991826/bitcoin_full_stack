@@ -1,6 +1,6 @@
 {
   "name": "@bitcoin-api.io/common-private",
-  "version": "28.0.1",
+  "version": "28.0.2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,7 @@
     "aws-sdk": "^2.523.0",
     "do-redis-request": "^1.0.6",
     "drf": "^1.0.8",
-    "drq": "^4.0.1",
+    "drq": "^4.1.1",
     "get-redis-client": "^1.0.5",
     "loglevels": "^8.0.1",
     "orgasm": "^1.0.4",
