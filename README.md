@@ -882,7 +882,7 @@ Here's an example of the resulting `businessFeeData` with an `enviroWithdrawAmou
 }
 ```
 
-Please consider contributing a portion of the fee you collect towards the environment and thank you very much for considering our environment!🌲🌳🌄
+EnviroWithdraw or not, Bitcoin-Api suggests to please consider contributing a portion of the fees you collect towards the environment and thank you very much for considering our environment!🌲🌳🌄
 
 <br>
 
