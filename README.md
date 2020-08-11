@@ -872,7 +872,7 @@ For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC i
 EnviroWithdraws are intended for collecting money for our environment. The `POST - /withdraws` endpoint has an optional request body Bitcoin amount parameter `enviroWithdrawAmount`. The `enviroWithdrawAmount` parameter automatically adds this value to the `businessFeeData` object with the custom key `enviroWithdraw` whose corresponding object value contains the specified amount.
 
 Here's an example of the resulting `businessFeeData` with an `enviroWithdrawAmount` of 0.000001 BTC specified in the request body:
-```.json
+```.js
 {
     {...},
     ...
