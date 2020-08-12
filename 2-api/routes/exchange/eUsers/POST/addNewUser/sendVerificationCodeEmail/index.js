@@ -25,7 +25,6 @@ const {
     }
 } = require( '../../../../../../utils' );
 
-
 const getEmailHtml = require( './getEmailHtml' );
 
 
@@ -94,7 +93,11 @@ module.exports = Object.freeze( async ({
         );
     }
 
-    await sendEmail({
+    const {
+        
+        emailMessageId,
+
+    } = await sendEmail({
 
         subject: 'Account Verification Code',
         html,
@@ -104,7 +107,17 @@ module.exports = Object.freeze( async ({
         fromEmailAddress,
     });
 
+    const sendVerificationCodeEmailResults = {
+
+        emailMessageId,
+    };
+
     console.log(
-        'sendVerificationCodeEmail executed successfully'
+        'sendVerificationCodeEmail executed successfully - ' +
+        `returning results: ${    
+            stringify( sendVerificationCodeEmailResults )
+        }`
     );
+
+    return sendVerificationCodeEmailResults;
 });

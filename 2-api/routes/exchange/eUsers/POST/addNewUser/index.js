@@ -22,7 +22,7 @@ module.exports = Object.freeze( async ({
 
     const rawEmail = event.body.email;
     const rawPassword = event.body.password;
-    const rawGoogleCode = event.body.googleCode;
+    // const rawGoogleCode = event.body.googleCode;
 
     console.log(
         
@@ -30,7 +30,7 @@ module.exports = Object.freeze( async ({
 
             email: rawEmail,
             password: rawPassword,
-            googleCode: rawGoogleCode,
+            // googleCode: rawGoogleCode,
         }) }`
     );
 
@@ -44,7 +44,7 @@ module.exports = Object.freeze( async ({
 
         rawEmail,
         rawPassword,
-        rawGoogleCode,
+        // rawGoogleCode,
         ipAddress,
     });
 
@@ -60,21 +60,26 @@ module.exports = Object.freeze( async ({
 
     const {
         
-        userObject,
-        verifyEmailCode,
+        emailMessageId,
 
-     } = await addNewUserToDatabase({
+    } = await sendVerificationCodeEmail({
+        email,
+        // verifyEmailCode,
+        isProbablyCrypto: event.isProbablyCrypto,
+    });
+
+    const {
+        
+        userObject,
+        // verifyEmailCode,
+
+    } = await addNewUserToDatabase({
 
         email,
         password,
         ipAddress,
+        emailMessageId,
         // isHumanScore
-    });
-
-    await sendVerificationCodeEmail({
-        email,
-        verifyEmailCode,
-        isProbablyCrypto: event.isProbablyCrypto,
     });
 
     const addNewUserResponse = Object.assign(

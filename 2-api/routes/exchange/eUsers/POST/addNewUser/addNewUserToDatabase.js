@@ -43,6 +43,7 @@ module.exports = Object.freeze( async ({
     email,
     password,
     ipAddress,
+    emailMessageId,
     // isHumanScore,
     
 }) => {
@@ -53,6 +54,7 @@ module.exports = Object.freeze( async ({
                 stringify({
                     email,
                     password,
+                    emailMessageId,
                     // isHumanScore,
                 })
         }`
@@ -86,6 +88,7 @@ module.exports = Object.freeze( async ({
         emailToVerify: email,
         hashedPassword: flamingoHashedPassword,
         verifyEmailCode,
+        emailMessageId,
         metadata: {
             creation: {
                 date: Date.now(),
@@ -107,7 +110,6 @@ module.exports = Object.freeze( async ({
 
     return {
         
-        userObject,
-        verifyEmailCode
+        userObject
     };
 });
