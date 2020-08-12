@@ -831,7 +831,7 @@ This pm2 command can also be used to monitor your fee data service and all your 
 pm2 monit
 ```
 
-> **Important Note:** In the file `/1-backend/feeFee/updateFee.js`, you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
+> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
@@ -869,10 +869,10 @@ For example, if the blockchain fee estimate is 0.0001 BTC and only 0.00003 BTC i
 
 #### EnviroWithdraws
 
-EnviroWithdraws are intended for collecting money for our environment. The `POST - /withdraws` endpoint has an optional request body Bitcoin amount parameter `enviroWithdrawAmount`. The `enviroWithdrawAmount` parameter automatically adds this value to the `businessFeeData` object with the custom key `enviroWithdraw` whose corresponding object value contains the specified amount.
+EnviroWithdraws are intended for collecting money for our environment. The `POST - /withdraws` endpoint has an optional request body Bitcoin amount parameter `enviroWithdrawAmount`. The `enviroWithdrawAmount` parameter automatically adds its value to the `businessFeeData` object with the custom key `enviroWithdraw` whose corresponding object value contains the specified `enviroWithdrawAmount`.
 
 Here's an example of the resulting `businessFeeData` with an `enviroWithdrawAmount` of 0.000001 BTC specified in the request body:
-```.json
+```.js
 {
     {...},
     ...
@@ -882,7 +882,7 @@ Here's an example of the resulting `businessFeeData` with an `enviroWithdrawAmou
 }
 ```
 
-Please consider contributing a portion of the fee you collect towards the environment and thank you very much for considering our environment!🌲🌳🌄
+EnviroWithdraw or not, Bitcoin-Api suggests to please consider contributing a portion of the fees you collect towards the environment and thank you very much for considering our environment!🌲🌳🌄
 
 <br>
 
