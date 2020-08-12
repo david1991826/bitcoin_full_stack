@@ -71,10 +71,9 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 * Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
 
-* more descriptive folder names for the backend NodeJS modules Fee Fee, Korg, and The Omega
+* More descriptive folder names for the backend NodeJS modules Fee Fee, Korg, and The Omega. More descriptive names for other folders and modules.
 
 * npx commands to help set up the local and remote files and folders necessary to run a Bitcoin-Api instance
-
 
 Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
 
