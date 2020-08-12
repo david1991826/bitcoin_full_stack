@@ -1,6 +1,6 @@
 {
   "name": "@bitcoin-api.io/common-exchange",
-  "version": "5.0.1",
+  "version": "6.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

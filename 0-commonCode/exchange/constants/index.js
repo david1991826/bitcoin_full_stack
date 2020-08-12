@@ -15,14 +15,14 @@ const tableNames = isProductionMode ? f({
     exchangeUsers: 'bitcoin_api_exchangeUsers',
     loginTokens: 'bitcoin_api_loginTokens',
     transactions: 'bitcoin_api_transactions',
-    auxiliaryEmailCases: 'bitcoin_api_auxiliaryEmailCases',
+    exchangeEmailDeliveryResults: 'bitcoin_api_exchangeEmailDeliveryResults',
 
 }) : f({
 
     exchangeUsers: 'bitcoin_api_exchangeUsers_staging',
     loginTokens: 'bitcoin_api_loginTokens_staging',
     transactions: 'bitcoin_api_transactions_staging',
-    auxiliaryEmailCases: 'bitcoin_api_auxiliaryEmailCases_staging',
+    exchangeEmailDeliveryResults: 'bitcoin_api_exchangeEmailDeliveryResults_staging',
 });
 
 
@@ -33,18 +33,18 @@ module.exports = f({
                 EXCHANGE_USERS: tableNames.exchangeUsers,
                 LOGIN_TOKENS: tableNames.loginTokens,
                 TRANSACTIONS: tableNames.transactions,
-                AUXILIARY_EMAIL_CASES: tableNames.auxiliaryEmailCases,
+                EXCHANGE_EMAIL_DELIVERY_RESULTS: tableNames.exchangeEmailDeliveryResults,
             },
             tableNameToKey: {
                 [tableNames.exchangeUsers]: 'exchangeUserId',
                 [tableNames.loginTokens]: 'exchangeUserId',
                 [tableNames.transactions]: 'exchangeUserId',
-                [tableNames.auxiliaryEmailCases]: 'email',
+                [tableNames.exchangeEmailDeliveryResults]: 'email',
             },
             tableNameToSortKey: {
                 [tableNames.loginTokens]: 'expiryTime',
                 [tableNames.transactions]: 'transactionId',
-                [tableNames.auxiliaryEmailCases]: 'caseId',
+                [tableNames.exchangeEmailDeliveryResults]: 'creationDate',
             },
             secondaryIndices: {
                 emailIndex: 'email-index',
