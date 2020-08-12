@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@bitcoin-api.io/backend-common-utilities": "^1.0.0",
-    "@bitcoin-api.io/common-exchange": "^5.0.1",
+    "@bitcoin-api.io/common-exchange": "^6.0.0",
     "@bitcoin-api.io/common-private": "^29.0.3",
     "bluebird": "^3.7.1",
     "dotenv": "^8.2.0",

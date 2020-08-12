@@ -1,6 +1,10 @@
 #!/bin/sh
 
 
+####
+####  Common Code
+####
+
 pushd ../../../0-commonCode/general
 
 npm install orgasm@latest --save
@@ -32,10 +36,16 @@ npm install
 popd
 
 
+####
+####  Backend
+####
+
+
 pushd ../../../1-backend/commonUtilities
 
 npm install @bitcoin-api.io/common-private@latest --save
 npm install bqe@latest --save
+npm install bitcoin-request@latest --save
 npm install
 
 popd
@@ -58,6 +68,32 @@ npm install @bitcoin-api.io/backend-common-utilities@latest --save
 npm install
 
 popd
+
+
+pushd ../../../1-backend/korg
+
+npm install @bitcoin-api.io/common-private@latest --save
+npm install @bitcoin-api.io/common-exchange@latest --save
+npm install @bitcoin-api.io/backend-common-utilities@latest --save
+npm install
+
+popd
+
+
+pushd ../../../1-backend/theomega
+
+npm install @bitcoin-api.io/common-private@latest --save
+npm install @bitcoin-api.io/common-exchange@latest --save
+npm install @bitcoin-api.io/backend-common-utilities@latest --save
+npm install orgasm@latest --save
+npm install
+
+popd
+
+
+####
+####  Backend Giraffe Lick Leaf
+####
 
 
 pushd ../../../1-backend/giraffeDeploy/commonUtilities
@@ -84,25 +120,9 @@ npm install
 popd
 
 
-pushd ../../../1-backend/korg
-
-npm install @bitcoin-api.io/common-private@latest --save
-npm install @bitcoin-api.io/common-exchange@latest --save
-npm install @bitcoin-api.io/backend-common-utilities@latest --save
-npm install
-
-popd
-
-
-pushd ../../../1-backend/theomega
-
-npm install @bitcoin-api.io/common-private@latest --save
-npm install @bitcoin-api.io/common-exchange@latest --save
-npm install @bitcoin-api.io/backend-common-utilities@latest --save
-npm install orgasm@latest --save
-npm install
-
-popd
+####
+####  API
+####
 
 
 pushd ../../../2-api

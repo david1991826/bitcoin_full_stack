@@ -14,8 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "@bitcoin-api.io/common-private": "^29.0.3",
+    "bitcoin-request": "^1.0.2",
     "bqe": "^1.0.3",
-    "execa": "^2.0.4",
     "mongodb": "^3.4.0"
   }
 }
