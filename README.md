@@ -1431,7 +1431,7 @@ This is the image sponsored content text, it contains info and a [text-embedded 
 **Features:**
 
 * a title above in **bold text**
-* a 50 pixel by 50 pixel large image
+* a 50 pixel by 50 pixel image
 * the regular main text which can also contain a  [text-embedded link](#readme-image-sponsored-content-example)
 
 
