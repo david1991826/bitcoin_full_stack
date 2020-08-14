@@ -1437,7 +1437,7 @@ This is the image sponsored content text, it contains info and a [text-embedded 
 
 ### Readme Large Image Sponsored Content Example
 
-**Sponsor Title In Bold Letters**
+**Sponsor Title in Bold Letters**
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
