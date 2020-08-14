@@ -1405,7 +1405,7 @@ To add your sponsored content to this `README.md` file in the [Sponsored Content
 
 Here's the available sponsored content types you can have on this `README.md` file:
 
-#### Readme Sponsored Content Example
+### Readme Sponsored Content Example
 
 **Sponsor Title in Bold Letters**
 
@@ -1417,7 +1417,7 @@ This is the sponsored content text, it contains info and a [text-embedded link](
 * a title above in **bold text**
 * the regular main text which can also contain a  [text-embedded link](#readme-sponsored-content-example).
 
-#### Readme Image Sponsored Content Example
+### Readme Image Sponsored Content Example
 
 **Sponsor Title in Bold Letters**
 
@@ -1435,7 +1435,7 @@ This is the image sponsored content text, it contains info and a [text-embedded 
 * the regular main text which can also contain a  [text-embedded link](#readme-image-sponsored-content-example).
 
 
-#### Readme Large Image Sponsored Content Example
+### Readme Large Image Sponsored Content Example
 
 **Sponsor Title In Bold Letters**
 
