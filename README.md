@@ -1449,11 +1449,11 @@ This is the large image sponsored content text, it contains info and a [text-emb
 **Features:**
 
 * a title above in **bold text**
-* a 100 pixel by 100 pixel large image
+* a large 100 pixel by 100 pixel image
 * the regular main text which can also contain a  [text-embedded link](#readme-large-image-sponsored-content-example)
 
 
-#### Sponsored Content Attributes
+### Sponsored Content Attributes
 
 * for all sponsor titles: 50 characters max
 * for all main text sections: 100 characters max including the text-embedded link, the text of the text-embedded link can be up to 50 characters max
