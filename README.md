@@ -1392,10 +1392,10 @@ The frontend code modules are [React](https://reactjs.org) webapps made with [Cr
 
 PRs and collaborative efforts welcome.👏
 
+Sponsor this page and get sought after marketing towards developers or you can simply get recognition in the Contributors document - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
+
 
 ## Sponsored Content Info
-
-You can sponsor this page and get sought after marketing towards developers or you can simply get recognition in the Contributors document - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
 
 To add your sponsored content to this `README.md` file in the [Sponsored Content](#sponsored-content) section above, use one of the following sponsorship websites: 
 
@@ -1412,31 +1412,21 @@ This is the sponsored content, it contains text and it [also contains a link](#r
 
 #### Readme Image Sponsored Content Example
 
-<div style="display:flex;justify-content:flex-start;width:100%;margin-bottom:15px;">
-  <div style="height:50px;width:50px;">
-    <div
-      style="background:url(https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png) no-repeat scroll center top transparent;width:50px;height:50px;"
-    ></div>
-  </div>
-  <div style="margin-left:10px;">
-  This is the image sponsored content, there's an image above (50px by 50px) and it <a href="#readme-image-sponsored-content-example">also contains a link</a>. (100 characters max including text-embedded link)
-  </div>
-</div>
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
+/>
+
+This is the image sponsored content, there's an image above (50px by 50px) and it [also contains a link](#readme-image-sponsored-content-example). (100 characters max including text-embedded link)
+
 
 #### Readme Large Image Sponsored Content Example
 
-<div style="display:flex;justify-content:flex-start;width:100%;margin-bottom:15px;">
-  <div style="height:100px;width:100px;">
-    <div
-      style="background:url(https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png) no-repeat scroll center top transparent;width:100px;height:100px;"
-    ></div>
-  </div>
-  <div style="margin-left:10px;">
-  This is the large image sponsored content, there's a large image  (100px by 100px) to the left and it <a href="#readme-large-image-sponsored-content-example">also contains a link</a>. (100 characters max including text-embedded link)
-  </div>
-</div>
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
+/>
 
-There's a limit of 10 sponsored content items on this `README.md` file, reserve your Bitcoin-Api-Full-Stack marketing now! 
+This is the large image sponsored content, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-content-example). (100 characters max including text-embedded link)
+
 
 ## Merch
 
