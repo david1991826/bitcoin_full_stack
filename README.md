@@ -1415,7 +1415,7 @@ This is the sponsored content text, it contains info and a [text-embedded link](
 **Features:**
 
 * a title above in **bold text**
-* the regular main text which can also contain a  [text-embedded link](#readme-sponsored-content-example).
+* the regular main text which can also contain a  [text-embedded link](#readme-sponsored-content-example)
 
 ### Readme Image Sponsored Content Example
 
@@ -1432,7 +1432,7 @@ This is the image sponsored content text, it contains info and a [text-embedded 
 
 * a title above in **bold text**
 * a 50 pixel by 50 pixel large image
-* the regular main text which can also contain a  [text-embedded link](#readme-image-sponsored-content-example).
+* the regular main text which can also contain a  [text-embedded link](#readme-image-sponsored-content-example)
 
 
 ### Readme Large Image Sponsored Content Example
@@ -1450,8 +1450,7 @@ This is the large image sponsored content text, it contains info and a [text-emb
 
 * a title above in **bold text**
 * a 100 pixel by 100 pixel large image
-* the regular main text which can also contain a  [text-embedded link](#readme-large-image-sponsored-content-example).
-
+* the regular main text which can also contain a  [text-embedded link](#readme-large-image-sponsored-content-example)
 
 
 #### Sponsored Content Attributes
