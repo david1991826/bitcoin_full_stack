@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@bitcoin-api.io/backend-common-utilities": "^1.0.0",
-    "@bitcoin-api.io/common-private": "^29.0.3",
+    "@bitcoin-api.io/common-private": "^29.0.4",
     "aws-sdk": "^2.501.0",
     "dotenv": "^8.1.0",
     "orgasm": "^1.0.4",
