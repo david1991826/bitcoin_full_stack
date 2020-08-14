@@ -1403,7 +1403,7 @@ To add your sponsored content to this `README.md` file in the [Sponsored Content
 * [Bitcoin-Api on Patreon](https://www.patreon.com/bitcoinapi)
 
 
-Here's the available sponsored content types you can have on this `README.md` file:
+Here are examples of the available sponsored content types you can have on this `README.md` file:
 
 ### Readme Sponsored Content Example
 
@@ -1414,8 +1414,8 @@ This is the sponsored content text, it contains info and a [text-embedded link](
 
 **Features:**
 
-* a title above in **bold text**
-* the regular main text which can also contain a  [text-embedded link](#readme-sponsored-content-example)
+* a title above in a **bold text font**
+* regular font main text which can also contain a  [text-embedded link](#readme-sponsored-content-example)
 
 ### Readme Image Sponsored Content Example
 
@@ -1430,9 +1430,9 @@ This is the image sponsored content text, it contains info and a [text-embedded 
 
 **Features:**
 
-* a title above in **bold text**
+* a title above in a **bold text font**
 * a 50 pixel by 50 pixel image
-* the regular main text which can also contain a  [text-embedded link](#readme-image-sponsored-content-example)
+* regular font main text which can also contain a  [text-embedded link](#readme-image-sponsored-content-example)
 
 
 ### Readme Large Image Sponsored Content Example
@@ -1448,9 +1448,9 @@ This is the large image sponsored content text, it contains info and a [text-emb
 
 **Features:**
 
-* a title above in **bold text**
+* a title above in a **bold text font**
 * a large 100 pixel by 100 pixel image
-* the regular main text which can also contain a  [text-embedded link](#readme-large-image-sponsored-content-example)
+* regular font main text which can also contain a  [text-embedded link](#readme-large-image-sponsored-content-example)
 
 
 ### Sponsored Content Attributes
@@ -1459,7 +1459,7 @@ This is the large image sponsored content text, it contains info and a [text-emb
 * for all main text sections: 100 characters max including the text-embedded link, the text of the text-embedded link can be up to 50 characters max
 
 
-There's a limit of 10 sponsored content items on this `README.md` file in the [Sponsored Content](#sponsored-content) section above. Reserve your Bitcoin-Api-Full-Stack marketing now using [GitHub Sponsors for Bitcoin-Api](https://github.com/sponsors/bitcoin-api)! 
+There's a **limit of 10 sponsored content items** on this `README.md` file in the [Sponsored Content](#sponsored-content) section above. Reserve your Bitcoin-Api-Full-Stack marketing now using the [GitHub Sponsors page for Bitcoin-Api](https://github.com/sponsors/bitcoin-api)! 
 
 ## Merch
 
