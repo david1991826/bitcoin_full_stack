@@ -1392,10 +1392,10 @@ The frontend code modules are [React](https://reactjs.org) webapps made with [Cr
 
 PRs and collaborative efforts welcome.👏
 
-Sponsor this page and get sought after marketing towards developers or you can simply get recognition in the Contributors document - [Bitcoin-Api GitHub Sponsor Page](https://github.com/sponsors/bitcoin-api).
-
 
 ## Sponsored Content Info
+
+You can sponsor Bitcoin-Api to get sought after marketing towards developers or you can simply get recognition in the [`Contributors.txt`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/Contributors.txt) document.  
 
 To add your sponsored content to this `README.md` file in the [Sponsored Content](#sponsored-content) section above, use one of the following sponsorship websites: 
 
@@ -1403,30 +1403,64 @@ To add your sponsored content to this `README.md` file in the [Sponsored Content
 * [Bitcoin-Api on Patreon](https://www.patreon.com/bitcoinapi)
 
 
-Here's the available sponsorship material types you can add to this `README.md` file:
+Here's the available sponsored content types you can have on this `README.md` file:
 
 #### Readme Sponsored Content Example
 
-This is the sponsored content, it contains text and it [also contains a link](#readme-sponsored-content-example). (100 characters max including text-embedded link)
+**Sponsor Title in Bold Letters**
 
+This is the sponsored content text, it contains info and a [text-embedded link](#readme-sponsored-content-example).
+
+
+**Features:**
+
+* a title above in **bold text**
+* the regular main text which can also contain a  [text-embedded link](#readme-sponsored-content-example).
 
 #### Readme Image Sponsored Content Example
+
+**Sponsor Title in Bold Letters**
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
 />
 
-This is the image sponsored content, there's an image above (50px by 50px) and it [also contains a link](#readme-image-sponsored-content-example). (100 characters max including text-embedded link)
+This is the image sponsored content text, it contains info and a [text-embedded link](#readme-image-sponsored-content-example).
+
+
+**Features:**
+
+* a title above in **bold text**
+* a 50 pixel by 50 pixel large image
+* the regular main text which can also contain a  [text-embedded link](#readme-image-sponsored-content-example).
 
 
 #### Readme Large Image Sponsored Content Example
+
+**Sponsor Title In Bold Letters**
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
 />
 
-This is the large image sponsored content, there's a large image  (100px by 100px) above and it [also contains a link](#readme-large-image-sponsored-content-example). (100 characters max including text-embedded link)
+This is the large image sponsored content text, it contains info and a [text-embedded link](#readme-large-image-sponsored-content-example).
 
+
+**Features:**
+
+* a title above in **bold text**
+* a 100 pixel by 100 pixel large image
+* the regular main text which can also contain a  [text-embedded link](#readme-large-image-sponsored-content-example).
+
+
+
+#### Sponsored Content Attributes
+
+* for all sponsor titles: 50 characters max
+* for all main text sections: 100 characters max including the text-embedded link, the text of the text-embedded link can be up to 50 characters max
+
+
+There's a limit of 10 sponsored content items on this `README.md` file in the [Sponsored Content](#sponsored-content) section. Reserve your Bitcoin-Api-Full-Stack marketing now! 
 
 ## Merch
 
