@@ -42,6 +42,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Apple** for MacOS, iOS, and their devices
 * **MongoDB** for MongoDB database
 * **BitPay** for Copay app
+* **Postman** for API testing
 * **SoSplush** for logo design
 * **Facebook** for React and social media services
 * **Twitter** for social media services
