@@ -41,6 +41,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Stack Overflow** for tech guidance and ideas
 * **Apple** for MacOS, iOS, and their devices
 * **MongoDB** for MongoDB database
+* **BitPay** for Copay app
 * **Facebook** for React and social media services
 * **Twitter** for social media services
 * **Reddit** for social media services
