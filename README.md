@@ -1403,7 +1403,7 @@ To add your sponsored content to this `README.md` file in the [Sponsored Content
 * [Bitcoin-Api on Patreon](https://www.patreon.com/bitcoinapi)
 
 
-Here are examples of the available sponsored content types you can have on this `README.md` file:
+Here's examples of the available sponsored content types you can have on this `README.md` file:
 
 ### Readme Sponsored Content Example
 
