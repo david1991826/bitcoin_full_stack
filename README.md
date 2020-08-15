@@ -1463,7 +1463,7 @@ This is the large image sponsored content text, it contains info and a [text-emb
 * for all main text sections: 100 characters max including the text-embedded link, the text of the text-embedded link can be up to 50 characters max
 
 
-There's a **limit of 10 sponsored content items** on this `README.md` file in the [Sponsored Content](#sponsored-content) section above. Reserve your Bitcoin-Api-Full-Stack marketing now using the [GitHub Sponsors page for Bitcoin-Api](https://github.com/sponsors/bitcoin-api)! 
+There's a **limit of 12 sponsored content items** on this `README.md` file in the [Sponsored Content](#sponsored-content) section above. Reserve your Bitcoin-Api-Full-Stack marketing now using the [GitHub Sponsors page for Bitcoin-Api](https://github.com/sponsors/bitcoin-api)! 
 
 ## Merch
 
