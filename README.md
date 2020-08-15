@@ -43,7 +43,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **MongoDB** for MongoDB database
 * **BitPay** for Copay app
 * **Postman** for API testing
-* **SoSplush** for logo design
+* **TJ Holowaychuk** for open source code, cloud tools, and inspiration
+* **SoSplush** for art design
 * **Facebook** for React and social media services
 * **Twitter** for social media services
 * **Reddit** for social media services
