@@ -44,6 +44,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **BitPay** for Copay app
 * **Postman** for API testing
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
+* **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin
 * **SoSplush** for art design
 * **Facebook** for React and social media services
 * **Twitter** for social media services
