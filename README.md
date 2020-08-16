@@ -34,6 +34,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 ☁️Additional cloud credits☁️
 * **Satoshi Nakamoto** for Bitcoin
 * **Bitcoin.org** for Bitcoin Core
+* **Xapo** for Bitcoin and fiat money services, and for promoting and developing Bitcoin
 * **Google** for email services, YouTube, and other Google services
 * **Linus Torvalds** for Linux
 * **RedisLabs** for Redis database
@@ -50,7 +51,6 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Facebook** for React and social media services
 * **Twitter** for social media services
 * **Reddit** for social media services
-* **Xapo** for Bitcoin and fiat money services, and for promoting and developing Bitcoin
 * **Mircosoft** for Github, NPM, LinkedIn, and Microsoft Windows 95
 * **Open Source Developers** - you're the best!!!🤗💜
 
