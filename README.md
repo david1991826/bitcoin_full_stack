@@ -1,4 +1,4 @@
-# bitcoin-api-full-stack
+# Bitcoin-Api-Full-Stack
 
 <img
     src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner.png"
