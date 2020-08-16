@@ -38,17 +38,17 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Linus Torvalds** for Linux
 * **RedisLabs** for Redis database
 * **pm2** for NodeJS process management 
-* **Stack Overflow** for tech guidance and ideas
 * **MongoDB** for MongoDB database
+* **Stack Overflow** for tech guidance and ideas
 * **BitPay** for Copay app
 * **Postman** for API testing
 * **NDAX** for Canadian Bitcoin and fiat money services
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
 * **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin
 * **SoSplush** for art design
+* **Reddit** for social media services
 * **Facebook** for React and social media services
 * **Twitter** for social media services
-* **Reddit** for social media services
 * **Google** for email services, YouTube, and other Google services
 * **Apple** for MacOS, iOS, and their devices
 * **Microsoft** for Github, NPM, LinkedIn, and Microsoft Windows 95
