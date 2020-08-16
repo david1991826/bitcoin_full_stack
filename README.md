@@ -1,7 +1,7 @@
 # bitcoin-api-full-stack
 
 <img
-    src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/bee-and-lamby-full-stack-banner.png"
+    src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner.png"
     width="900"
 />
 
