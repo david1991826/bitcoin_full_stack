@@ -374,15 +374,15 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
-* [`bitcoin_api_user_calzoneSun`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_calzoneSun.json)
+* [`bitcoin_api_user_calzoneSun`](infrastructure/policies/aws/bitcoin_api_user_calzoneSun.json)
 
-* [`bitcoin_api_user_feeFee`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_feeFee.json)
+* [`bitcoin_api_user_feeFee`](infrastructure/policies/aws/bitcoin_api_user_feeFee.json)
 
-* [`bitcoin_api_user_korg`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_korg.json)
+* [`bitcoin_api_user_korg`](infrastructure/policies/aws/bitcoin_api_user_korg.json)
 
-* [`bitcoin_api_user_theomega`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_theomega.json)
+* [`bitcoin_api_user_theomega`](infrastructure/policies/aws/bitcoin_api_user_theomega.json)
 
-* [`bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
+* [`bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`](infrastructure/policies/aws/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
 
 
 ##### Backend IAM Users
@@ -685,35 +685,35 @@ The following environment files need to be created and set up:
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/calzoneSun/.env`
 
-.env Template: [Calzone Sun .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/calzoneSun.env)
+.env Template: [Calzone Sun .env Template File](infrastructure/environment/dotenv-templates/1-backend/calzoneSun.env)
 
 
 **Fee Fee**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/FeeFee/.env`
 
-.env Template: [Fee Fee .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/feeFee.env)
+.env Template: [Fee Fee .env Template File](infrastructure/environment/dotenv-templates/1-backend/feeFee.env)
 
 
 **Giraffe**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/giraffe/.env`
 
-.env Template: [Giraffe .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/giraffe.env)
+.env Template: [Giraffe .env Template File](infrastructure/environment/dotenv-templates/1-backend/giraffe.env)
 
 
 **Korg**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/korg/.env`
 
-.env Template: [Korg .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/korg.env)
+.env Template: [Korg .env Template File](infrastructure/environment/dotenv-templates/1-backend/korg.env)
 
 
 **The Omega**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/theomega/.env`
 
-.env Template: [The Omega .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/theomega.env)
+.env Template: [The Omega .env Template File](infrastructure/environment/dotenv-templates/1-backend/theomega.env)
 
 
 **Tree**
