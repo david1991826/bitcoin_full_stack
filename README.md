@@ -720,14 +720,14 @@ The following environment files need to be created and set up:
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/tree/.env`
 
-.env Template: [Tree .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/tree.env)
+.env Template: [Tree .env Template File](infrastructure/environment/dotenv-templates/1-backend/tree.env)
 
 
 **d)** Send and Start Initial NodeJS Services Modules
 
 For this step, you will manually send and start up the NodeJS service modules (a.k.a. "The Tigers"). This is only necessary for the initial setup and after this the Giraffe Lick Leaf (GLL) deployment can be used for instant deploys with a single simple command.
 
-For this command you will need to create a `/infrastructure/scripts/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/infrastructure/scripts/1-backend/setUpTigers.template.sh` template file](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/scripts/1-backend/setUpTigers.template.sh).
+For this command you will need to create a `/infrastructure/scripts/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/infrastructure/scripts/1-backend/setUpTigers.template.sh` template file](infrastructure/scripts/1-backend/setUpTigers.template.sh).
 
 A chart is provided showing how to replace the template placeholder values in detail:
 
@@ -836,7 +836,7 @@ This pm2 command can also be used to monitor your fee data service and all your 
 pm2 monit
 ```
 
-> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
+> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
@@ -966,7 +966,7 @@ When an iteration of the withdraw Bitcoin worker completes, it should look like 
 
 This step explains how to set up the tree deploy code.
 
-To transfer the tree deploy code first you must create a `/infrastructure/scripts/1-backend/plantTree.sh` file (pre-gitignored). A template file is provided at [`/infrastructure/scripts/1-backend/plantTree.template.sh`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/scripts/1-backend/plantTree.template.sh).
+To transfer the tree deploy code first you must create a `/infrastructure/scripts/1-backend/plantTree.sh` file (pre-gitignored). A template file is provided at [`/infrastructure/scripts/1-backend/plantTree.template.sh`](infrastructure/scripts/1-backend/plantTree.template.sh).
 
 Refer to the [Set Up Tigers Configuration Chart](#set-up-tigers-configuration-chart) for details on how to configure the required values which are the same for `plantTree.sh`.
 
@@ -1052,7 +1052,7 @@ The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) funct
 
 **a)** Set Up Environment Variables
 
-Use the [API Environment Variable Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/credentials/beautifulRiver3/staging/.env` in staging, and add it to `/2-api/credentials/beautifulRiver3/production/.env` in production.
+Use the [API Environment Variable Template File](infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/credentials/beautifulRiver3/staging/.env` in staging, and add it to `/2-api/credentials/beautifulRiver3/production/.env` in production.
 
 
 **b)** Set Up AWS API Resources
