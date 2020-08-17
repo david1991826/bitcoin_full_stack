@@ -1052,7 +1052,7 @@ The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) funct
 
 **a)** Set Up Environment Variables
 
-Use the [API Environment Variable Template File](infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/credentials/beautifulRiver3/staging/.env` in staging, and add it to `/2-api/credentials/beautifulRiver3/production/.env` in production.
+Use the [API Environment Variable Template File](infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/stagingCredentials/.env` in staging, and add it to `/2-api/productionCredentials/.env` in production.
 
 
 **b)** Set Up AWS API Resources
