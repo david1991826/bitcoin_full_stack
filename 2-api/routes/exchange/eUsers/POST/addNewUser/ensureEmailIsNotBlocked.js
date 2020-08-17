@@ -16,7 +16,7 @@ const {
         aws: {
             database: {
                 tableNames: {
-                    AUXILIARY_EMAIL_CASES
+                    EXCHANGE_EMAIL_DELIVERY_RESULTS
                 },
             }
         },
@@ -42,14 +42,14 @@ const attributes = f({
     nameKeys: f({
      
         email: '#email',
-        caseId: '#caseId',
+        creationDate: '#creationDate',
         type: '#type',
     }),
 
     nameValues: f({
      
         email: 'email',
-        caseId: 'caseId',
+        creationDate: 'creationDate',
         type: 'type',
     }),
 
@@ -80,8 +80,6 @@ module.exports = Object.freeze( async ({
                 })
         }`
     );
-
-    let paginationValueToUse = null;
     
     const {
 
@@ -92,14 +90,16 @@ module.exports = Object.freeze( async ({
 
     } = attributes;
 
+    let paginationValueToUse = null;
+
     do {
 
         const searchParams = {
-            TableName: AUXILIARY_EMAIL_CASES,
+            TableName: EXCHANGE_EMAIL_DELIVERY_RESULTS,
             Limit: searchLimit,
             ScanIndexForward: true,
             ProjectionExpression: [
-                nameKeys.caseId,
+                nameKeys.creationDate,
             ].join( ', ' ),
             KeyConditionExpression: (
                 `${ nameKeys.email } = ${ valueKeys.email }`
@@ -109,7 +109,7 @@ module.exports = Object.freeze( async ({
             ),
             ExpressionAttributeNames: {
                 [nameKeys.email]: nameValues.email,
-                [nameKeys.caseId]: nameValues.caseId,
+                [nameKeys.creationDate]: nameValues.creationDate,
                 [nameKeys.type]: nameValues.type,
             },
             ExpressionAttributeValues: {
@@ -129,9 +129,11 @@ module.exports = Object.freeze( async ({
             searchParams
         });
 
-        const auxiliaryEmailCases = ultimateResults;
+        const exchangeEmailDeliveryBlockResults = ultimateResults;
+        // const auxiliaryEmailCases = ultimateResults;
+        // EXCHANGE_EMAIL_DELIVERY_RESULTS
 
-        if( auxiliaryEmailCases.length > 0 ) {
+        if( exchangeEmailDeliveryBlockResults.length > 0 ) {
 
             console.log(
 

@@ -173,11 +173,11 @@ module.exports = ({
         },
 
         {
-            nickname: 'eService/handleAuxiliaryEmailCase',
-            name: 'eService_handleAuxiliaryEmailCase',
-            handler: 'routes/exchange/ultraServices/handleAuxiliaryEmailCase/index.handler',
+            nickname: 'eService/handleEEDRs',
+            name: 'eService_handleEEDRs',
+            handler: 'routes/exchange/ultraServices/handleEEDRs/index.handler',
             pathsToInclude: [
-                './routes/exchange/ultraServices/handleAuxiliaryEmailCase',
+                './routes/exchange/ultraServices/handleEEDRs',
             ],
             environmentVariables: {}
         },

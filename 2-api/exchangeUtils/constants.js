@@ -39,11 +39,13 @@ module.exports = Object.freeze({
 
         snsNotificationTypes: {
 
+            // TODO: GET SUCCESS
             Bounce: 'Bounce',
             Complaint: 'Complaint',
         },
 
         types: {
+            success: 'success',
             block: 'block',
             review: 'review',
         },
