@@ -1074,39 +1074,39 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 **Custom AWS Policies to Set Up:**
 
-* [`bitcoin_api_user_deployApiFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployApiFunctions.json)
+* [`bitcoin_api_user_deployApiFunctions`](infrastructure/policies/aws/bitcoin_api_user_deployApiFunctions.json)
 
-* [`bitcoin_api_user_deployExchangeFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
+* [`bitcoin_api_user_deployExchangeFunctions`](infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
 
-* [`bitcoin_api_eFunction_mongolianBeginningDragonProtection`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolianBeginningDragonProtection.json)
+* [`bitcoin_api_eFunction_mongolianBeginningDragonProtection`](infrastructure/policies/aws/bitcoin_api_eFunction_mongolianBeginningDragonProtection.json)
 
-* [`bitcoin_api_role_lambda_api_tokens_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_post.json)
+* [`bitcoin_api_role_lambda_api_tokens_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_post.json)
 
-* [`bitcoin_api_role_lambda_api_tokens_get`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_get.json)
+* [`bitcoin_api_role_lambda_api_tokens_get`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_get.json)
 
-* [`bitcoin_api_role_lambda_api_tokens_put`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_put.json)
+* [`bitcoin_api_role_lambda_api_tokens_put`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_put.json)
 
-* [`bitcoin_api_role_lambda_api_addresses_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_addresses_post.json)
+* [`bitcoin_api_role_lambda_api_addresses_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_addresses_post.json)
 
-* [`bitcoin_api_role_lambda_api_feeData_get`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_feeData_get.json)
+* [`bitcoin_api_role_lambda_api_feeData_get`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_feeData_get.json)
 
-* [`bitcoin_api_role_lambda_api_withdraws_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_withdraws_post.json)
+* [`bitcoin_api_role_lambda_api_withdraws_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_withdraws_post.json)
 
-* [`bitcoin_api_role_lambda_service_cacheOnAndOffStatus`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
+* [`bitcoin_api_role_lambda_service_cacheOnAndOffStatus`](infrastructure/policies/aws/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_post.json)
+* [`bitcoin_api_role_lambda_eApi_eUsers_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_get`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
+* [`bitcoin_api_role_lambda_eApi_eUsers_get`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
+* [`bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
 
-* [`bitcoin_api_role_lambda_eApi_verifyUser_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_verifyUser_post.json)
+* [`bitcoin_api_role_lambda_eApi_verifyUser_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_verifyUser_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_login_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_login_post.json)
+* [`bitcoin_api_role_lambda_eApi_login_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_login_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_logout_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
+* [`bitcoin_api_role_lambda_eApi_logout_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
 
-* [`bitcoin_api_role_lambda_eService_handleEEDRs`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleEEDRs.json)
+* [`bitcoin_api_role_lambda_eService_handleEEDRs`](infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleEEDRs.json)
 
 ##### API IAM Roles
 
