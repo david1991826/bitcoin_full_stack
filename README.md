@@ -1231,7 +1231,7 @@ name: `bitcoin_api_lambda_eApi_dreams_post`
 policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
-**Exchange Service - Handle Exchange Email Delivery Results (EEDR)**
+**Exchange Service - Handle Exchange Email Delivery Results (EEDRs)**
 
 name: `bitcoin_api_lambda_eService_handleEEDRs`
 
