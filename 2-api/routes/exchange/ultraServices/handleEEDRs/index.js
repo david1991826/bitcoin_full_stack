@@ -5,21 +5,21 @@ const handleCase = require( './handleCase' );
 
 exports.handler = Object.freeze( async event => {
 
-    console.log( '📩Running handleAuxiliaryEmailCase' );
+    console.log( '📩Running handleEEDRs' );
 
     try {
 
         await handleCase({
 
-            event
+            event,
         });
         
         console.log(            
-            '💌☢️🐑handleAuxiliaryEmailCase executed successfully'
+            '💌☢️🐑handleEEDRs executed successfully'
         );
     }
     catch( err ) {
 
-        console.log( '📧🦌error in handleAuxiliaryEmailCase:', err );
+        console.log( '📧🦌error in handleEEDRs:', err );
     }
 });

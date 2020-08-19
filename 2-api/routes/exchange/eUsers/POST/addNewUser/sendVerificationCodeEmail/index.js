@@ -16,7 +16,14 @@ const {
         urls: {
             exchangeUrl,
         }
-    }
+    },
+    javascript: {
+        getExchangeUserIdData,
+        verificationCodeTools: {
+            getVerificationCode
+        }
+    },
+    
 } = require( '../../../../../../exchangeUtils' );
 
 const {
@@ -31,7 +38,6 @@ const getEmailHtml = require( './getEmailHtml' );
 module.exports = Object.freeze( async ({
 
     email,
-    verifyEmailCode,
     isProbablyCrypto,
     
 }) => {
@@ -41,7 +47,6 @@ module.exports = Object.freeze( async ({
             with the following values - ${
                 stringify({
                     email,
-                    verifyEmailCode,
                     isProbablyCrypto,
                 })
         }`
@@ -52,6 +57,18 @@ module.exports = Object.freeze( async ({
         'https://probablycrypto.com'
 
     ) : exchangeUrl;
+
+    const {
+        
+        exchangeUserId,
+        baseId
+
+    } = getExchangeUserIdData();
+
+    const verifyEmailCode = getVerificationCode({
+
+        baseId,
+    });
 
     const verificationLink = (
      
@@ -75,8 +92,8 @@ module.exports = Object.freeze( async ({
 
     const text = (
 
-        `Your ` +
-        `Account Verification Link is ${ verificationLink }`
+        'Your ' +
+        `account verification link is "${ verificationLink }".`
     );
 
     const fromEmailAddress = isProbablyCrypto ? (
@@ -99,7 +116,7 @@ module.exports = Object.freeze( async ({
 
     } = await sendEmail({
 
-        subject: 'Account Verification Code',
+        subject: 'Account Verification Link',
         html,
         text,
         toEmailAddress: email,
@@ -109,7 +126,9 @@ module.exports = Object.freeze( async ({
 
     const sendVerificationCodeEmailResults = {
 
+        exchangeUserId,
         emailMessageId,
+        verifyEmailCode,
     };
 
     console.log(

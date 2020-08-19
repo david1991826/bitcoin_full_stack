@@ -29,10 +29,10 @@ const {
 
     javascript: {
         getHashedPassword,
-        getExchangeUserIdData,
-        verificationCodeTools: {
-            getVerificationCode
-        }
+        // getExchangeUserIdData,
+        // verificationCodeTools: {
+        //     getVerificationCode
+        // }
     },
 
 } = require( '../../../../../exchangeUtils' );
@@ -43,7 +43,9 @@ module.exports = Object.freeze( async ({
     email,
     password,
     ipAddress,
+    exchangeUserId,
     emailMessageId,
+    verifyEmailCode,
     // isHumanScore,
     
 }) => {
@@ -54,18 +56,20 @@ module.exports = Object.freeze( async ({
                 stringify({
                     email,
                     password,
+                    exchangeUserId,
                     emailMessageId,
+                    verifyEmailCode,
                     // isHumanScore,
                 })
         }`
     );
 
-    const {
+    // const {
         
-        exchangeUserId,
-        baseId
+    //     exchangeUserId,
+    //     baseId
 
-    } = getExchangeUserIdData();
+    // } = getExchangeUserIdData();
 
     const hashedPassword = getHashedPassword({
 
@@ -77,18 +81,18 @@ module.exports = Object.freeze( async ({
         text: hashedPassword
     });
 
-    const verifyEmailCode = getVerificationCode({
+    // const verifyEmailCode = getVerificationCode({
 
-        baseId,
-    });
+    //     baseId,
+    // });
 
     const userObject = {
 
         exchangeUserId,
+        emailMessageId,
+        verifyEmailCode,
         emailToVerify: email,
         hashedPassword: flamingoHashedPassword,
-        verifyEmailCode,
-        emailMessageId,
         metadata: {
             creation: {
                 date: Date.now(),
@@ -104,12 +108,13 @@ module.exports = Object.freeze( async ({
         entry: userObject,
     });
 
+    const responseObject = {};
+
     console.log(
-        'addNewUserToDatabase executed successfully'
+
+        'addNewUserToDatabase executed successfully - ' +
+        `returning values: ${ stringify( responseObject ) }`
     );
 
-    return {
-        
-        userObject
-    };
+    return responseObject;
 });

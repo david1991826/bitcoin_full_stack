@@ -60,7 +60,9 @@ module.exports = Object.freeze( async ({
 
     const {
         
+        exchangeUserId,
         emailMessageId,
+        verifyEmailCode,
 
     } = await sendVerificationCodeEmail({
         email,
@@ -68,24 +70,22 @@ module.exports = Object.freeze( async ({
         isProbablyCrypto: event.isProbablyCrypto,
     });
 
-    const {
-        
-        userObject,
-        // verifyEmailCode,
-
-    } = await addNewUserToDatabase({
+    await addNewUserToDatabase({
 
         email,
         password,
         ipAddress,
+        exchangeUserId,
         emailMessageId,
+        verifyEmailCode,
         // isHumanScore
     });
 
-    const addNewUserResponse = Object.assign(
-        {},
-        userObject
-    );
+    const addNewUserResponse = {};
+    // Object.assign(
+    //     {},
+    //     {}
+    // );
 
     console.log(
         
