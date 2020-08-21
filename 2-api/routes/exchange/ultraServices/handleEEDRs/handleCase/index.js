@@ -12,10 +12,12 @@ const {
     constants: {
         auxiliaryEmailCases: {
             snsNotificationTypes: {
+                Delivery,
                 Bounce,
                 Complaint,
             },
             types: {
+                success,
                 block,
                 review,
             },
@@ -23,7 +25,7 @@ const {
     }
 } = require( '../../../../../exchangeUtils' );
 
-const addAuxiliaryEmailCaseToDatabase = require( './addAuxiliaryEmailCaseToDatabase' );
+const addEEDRToDatabase = require( './addEEDRToDatabase' );
 
 
 module.exports = Object.freeze( async ({
@@ -50,41 +52,95 @@ module.exports = Object.freeze( async ({
             
         } = snsMessageObject;
     
+        // TODO: check type
+        if( notificationType === Delivery ) {
+
+            const emailAddresses = (
+                // TODO:
+                snsMessageObject.delivery.deliveryRecipients.map(
+                    ({ emailAddress }) => emailAddress
+                )
+            );
+
+            const mainData = {
+
+                // TODO: check is getting appropriate values
+                messageId:  snsMessageObject.mail.messageId,
+                sourceArn: snsMessageObject.mail.sourceArn,
+                timestamp: snsMessageObject.mail.timestamp,             
+            };
+
+            await addEEDRToDatabase({
+
+                emailAddresses,
+                type: success,
+                mainData,
+            });
+        }
         if( notificationType === Bounce ) {
     
-            const bouncedEmailAddresses = (
+            const emailAddresses = (
                 snsMessageObject.bounce.bouncedRecipients.map(
                     ({ emailAddress }) => emailAddress
                 )
             );
-    
-            await addAuxiliaryEmailCaseToDatabase({
-    
-                emails: bouncedEmailAddresses,
+
+            const mainData = {
+
+                messageId:  snsMessageObject.mail.messageId,
+                sourceArn: snsMessageObject.mail.sourceArn,
+                timestamp: snsMessageObject.mail.timestamp,             
+            };
+
+            await addEEDRToDatabase({
+
+                emailAddresses,
                 type: block,
-                metaData: {
-    
-                    snsMessageObject,
-                }
+                mainData,
             });
+
+            // await addAuxiliaryEmailCaseToDatabase({
+    
+            //     emails: bouncedEmailAddresses,
+            //     type: block,
+            //     metaData: {
+    
+            //         snsMessageObject,
+            //     }
+            // });
         }
         else if( notificationType === Complaint ) {
     
-            const usersWithComplaints = (
+            const emailAddresses = (
                 snsMessageObject.complaint.complainedRecipients.map(
                     ({ emailAddress }) => emailAddress
                 )
             );
-    
-            await addAuxiliaryEmailCaseToDatabase({
-    
-                emails: usersWithComplaints,
+
+            const mainData = {
+
+                // TODO: check is getting appropriate values
+                messageId:  snsMessageObject.mail.messageId,
+                sourceArn: snsMessageObject.mail.sourceArn,
+                timestamp: snsMessageObject.mail.timestamp,             
+            };
+
+            await addEEDRToDatabase({
+
+                emailAddresses,
                 type: review,
-                metaData: {
-                    
-                    snsMessageObject,
-                }
+                mainData,
             });
+
+            // await addAuxiliaryEmailCaseToDatabase({
+    
+            //     emails: usersWithComplaints,
+            //     type: review,
+            //     metaData: {
+                    
+            //         snsMessageObject,
+            //     }
+            // });
         }
     }    
 

@@ -16,53 +16,55 @@ const {
         aws: {
             database: {
                 tableNames: {
-                    AUXILIARY_EMAIL_CASES
+                    EXCHANGE_EMAIL_DELIVERY_RESULTS
                 }
             }
         }
     },
 } = require( '@bitcoin-api.io/common-exchange' );
 
-const getUuid = require( 'uuid' ).v4;
+// const getUuid = require( 'uuid' ).v4;
 
 
 module.exports = Object.freeze( async ({
 
     emails,
     type,
-    metaData,
+    mainData,
 
 }) => {
 
     console.log(
 
-        'running addAuxiliaryEmailCaseToDatabase with the following ' +
+        'running addEEDRToDatabase with the following ' +
         'values: ' + 
         stringify({
             emails,
             type,
+            mainData,
         })
     );
 
     for( const email of emails ) {
 
-        const auxiliaryEmailCase = {
+        const eedr = {
 
-            caseId: getUuid(),
             email,
             type,
             creationDate: Date.now(),
-            metaData,
+            mainData,
         };
+
+        // email  - creation date - type - mainData - lastUpdated
     
         await updateDatabaseEntry({
 
-            tableName: AUXILIARY_EMAIL_CASES,
-            entry: auxiliaryEmailCase,
+            tableName: EXCHANGE_EMAIL_DELIVERY_RESULTS,
+            entry: eedr,
         });
     }
 
     console.log(
-        'addAuxiliaryEmailCaseToDatabase executed successfully'
+        'addEEDRToDatabase executed successfully'
     );
 });
