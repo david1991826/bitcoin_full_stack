@@ -565,6 +565,15 @@ Below lists in detail which operations specifically are in Q-Locks.
       </td>
     </tr>
     <tr>
+      <td>exchangeEmailDeliveryResults:email</td>
+      <td align="center">handle exchange email delivery results</td>
+      <td>
+        <ul>
+          <li>add exchange email delivery result data to database</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td>exchangeUsers:exchangeUserId</td>
       <td align="center">POST/login</td>
       <td>

@@ -7,6 +7,10 @@ const {
                 updateDatabaseEntry,
             }
         },
+        javascript: {
+            getQueueId
+        },
+        doOperationInQueue,
         stringify,
     },
 } = require( '@bitcoin-api.io/common-private' );
@@ -23,7 +27,41 @@ const {
     },
 } = require( '@bitcoin-api.io/common-exchange' );
 
-// const getUuid = require( 'uuid' ).v4;
+const addEEDR = Object.freeze( async ({
+
+    email,
+    type,
+    data,
+
+}) => {
+
+    await doOperationInQueue({
+            
+        queueId: getQueueId({
+            
+            type: EXCHANGE_EMAIL_DELIVERY_RESULTS,
+            id: email,
+        }),
+        
+        doOperation: async () => {
+
+            const eedr = Object.assign(
+                {
+                    email,
+                    type,
+                    creationDate: Date.now(),
+                },
+                data
+            );
+
+            await updateDatabaseEntry({
+
+                tableName: EXCHANGE_EMAIL_DELIVERY_RESULTS,
+                entry: eedr,
+            });
+        }
+    });
+});
 
 
 module.exports = Object.freeze( async ({
@@ -47,19 +85,11 @@ module.exports = Object.freeze( async ({
 
     for( const email of emailAddresses ) {
 
-        const eedr = Object.assign(
-            {
-                email,
-                type,
-                creationDate: Date.now(),
-            },
-            data
-        );
+        await addEEDR({
 
-        await updateDatabaseEntry({
-
-            tableName: EXCHANGE_EMAIL_DELIVERY_RESULTS,
-            entry: eedr,
+            email,
+            type,
+            data,
         });
     }
 
