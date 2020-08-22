@@ -30,7 +30,7 @@ module.exports = Object.freeze( async ({
 
     emailAddresses,
     type,
-    coreData,
+    data,
 
 }) => {
 
@@ -41,19 +41,20 @@ module.exports = Object.freeze( async ({
         stringify({
             emailAddresses,
             type,
-            coreData,
+            data,
         })
     );
 
     for( const email of emailAddresses ) {
 
-        const eedr = {
-
-            email,
-            type,
-            creationDate: Date.now(),
-            coreData,
-        };
+        const eedr = Object.assign(
+            {
+                email,
+                type,
+                creationDate: Date.now(),
+            },
+            data
+        );
 
         await updateDatabaseEntry({
 

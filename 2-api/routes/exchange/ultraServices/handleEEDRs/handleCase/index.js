@@ -70,11 +70,13 @@ module.exports = Object.freeze( async ({
 
         const snsMessageObjectMailObject = snsMessageObject.mail || {};
 
-        const coreData = {
+        const data = {
 
             messageId: snsMessageObjectMailObject.messageId,
             sourceArn: snsMessageObjectMailObject.sourceArn,
-            timestamp: snsMessageObjectMailObject.timestamp,             
+            messageEventTime: (
+                new Date( snsMessageObjectMailObject.timestamp )
+            ).valueOf(),             
         };
 
         switch( notificationType ) {
@@ -82,16 +84,14 @@ module.exports = Object.freeze( async ({
             case Delivery: {
 
                 const emailAddresses = (
-                    snsMessageObject.delivery.recipients.map(
-                        ({ emailAddress }) => emailAddress
-                    )
+                    snsMessageObject.delivery.recipients.slice() 
                 );
     
                 await addEEDRToDatabase({
     
                     emailAddresses,
                     type: success,
-                    coreData,
+                    data,
                 });
 
                 break;
@@ -118,7 +118,7 @@ module.exports = Object.freeze( async ({
                 
                 Object.assign(
     
-                    coreData,
+                    data,
                     {
                         bounceType,
                         bounceSubType,
@@ -129,7 +129,7 @@ module.exports = Object.freeze( async ({
     
                     emailAddresses,
                     type,
-                    coreData,
+                    data,
                 });
 
                 break;
@@ -150,7 +150,7 @@ module.exports = Object.freeze( async ({
     
                 Object.assign(
     
-                    coreData,
+                    data,
                     {
                         complaintFeedbackType,
                     }
@@ -160,7 +160,7 @@ module.exports = Object.freeze( async ({
     
                     emailAddresses,
                     type: review,
-                    coreData,
+                    data,
                 });
 
                 break;
