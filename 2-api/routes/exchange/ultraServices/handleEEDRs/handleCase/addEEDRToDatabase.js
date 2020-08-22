@@ -30,7 +30,7 @@ module.exports = Object.freeze( async ({
 
     emails,
     type,
-    mainData,
+    coreData,
 
 }) => {
 
@@ -41,7 +41,7 @@ module.exports = Object.freeze( async ({
         stringify({
             emails,
             type,
-            mainData,
+            coreData,
         })
     );
 
@@ -52,11 +52,9 @@ module.exports = Object.freeze( async ({
             email,
             type,
             creationDate: Date.now(),
-            mainData,
+            coreData,
         };
 
-        // email  - creation date - type - mainData - lastUpdated
-    
         await updateDatabaseEntry({
 
             tableName: EXCHANGE_EMAIL_DELIVERY_RESULTS,

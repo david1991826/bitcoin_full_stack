@@ -25,7 +25,7 @@ const {
 
 const {
     constants: {
-        auxiliaryEmailCases:{
+        exchangeEmailDeliveryResults: {
             types: {
                 block,
             },

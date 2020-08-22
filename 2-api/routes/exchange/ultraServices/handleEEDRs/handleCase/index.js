@@ -10,7 +10,7 @@ const {
 
 const {
     constants: {
-        auxiliaryEmailCases: {
+        exchangeEmailDeliveryResults: {
             snsNotificationTypes: {
                 Delivery,
                 Bounce,
@@ -68,7 +68,7 @@ module.exports = Object.freeze( async ({
             
         } = snsMessageObject;
 
-        const mainData = {
+        const coreData = {
 
             messageId:  snsMessageObject.mail.messageId,
             sourceArn: snsMessageObject.mail.sourceArn,
@@ -87,7 +87,7 @@ module.exports = Object.freeze( async ({
 
                 emailAddresses,
                 type: success,
-                mainData,
+                coreData,
             });
         }
         else if( notificationType === Bounce ) {
@@ -111,7 +111,7 @@ module.exports = Object.freeze( async ({
             
             Object.assign(
 
-                mainData,
+                coreData,
                 {
                     bounceType,
                     bounceSubType,
@@ -122,7 +122,7 @@ module.exports = Object.freeze( async ({
 
                 emailAddresses,
                 type,
-                mainData,
+                coreData,
             });
         }
         else if( notificationType === Complaint ) {
@@ -140,7 +140,7 @@ module.exports = Object.freeze( async ({
 
             Object.assign(
 
-                mainData,
+                coreData,
                 {
                     complaintFeedbackType,
                 }
@@ -150,7 +150,7 @@ module.exports = Object.freeze( async ({
 
                 emailAddresses,
                 type: review,
-                mainData,
+                coreData,
             });
         }
     }    

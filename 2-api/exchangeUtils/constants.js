@@ -35,7 +35,7 @@ module.exports = Object.freeze({
 
     exchanges,
 
-    auxiliaryEmailCases: {
+    exchangeEmailDeliveryResults: {
 
         snsNotificationTypes: {
 
