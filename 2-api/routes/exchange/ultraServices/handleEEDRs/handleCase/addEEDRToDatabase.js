@@ -27,6 +27,7 @@ const {
     },
 } = require( '@bitcoin-api.io/common-exchange' );
 
+
 const addEEDR = Object.freeze( async ({
 
     email,

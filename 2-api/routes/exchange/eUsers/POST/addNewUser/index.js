@@ -6,9 +6,19 @@ const {
     }
 } = require( '@bitcoin-api.io/common-private' );
 
+const {
+    aws: {
+        dinoCombos: {
+            emails: {
+                ensureEmailIsNotBlocked,
+            }
+        }
+    }
+} = require( '../../../../../exchangeUtils' );
+
 const validateAndGetValues = require( './validateAndGetValues' );
 const ensureUserDoesNotExist = require( './ensureUserDoesNotExist' );
-const ensureEmailIsNotBlocked = require( './ensureEmailIsNotBlocked' );
+// const ensureEmailIsNotBlocked = require( './ensureEmailIsNotBlocked' );
 const addNewUserToDatabase = require( './addNewUserToDatabase' );
 const sendVerificationCodeEmail = require( './sendVerificationCodeEmail' );
 

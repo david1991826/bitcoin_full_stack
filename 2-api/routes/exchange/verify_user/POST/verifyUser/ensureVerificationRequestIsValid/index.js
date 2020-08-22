@@ -21,6 +21,8 @@ const {
     }
 } = require( '@bitcoin-api.io/common-exchange' );
 
+const verifyIsMostRecentSignUpRequest = require( './verifyIsMostRecentSignUpRequest' );
+
 const {
     aws: {
         dino: {
@@ -35,9 +37,9 @@ const {
             getVerificationCodeComponents,
         }
     },
-} = require( '../../../../../exchangeUtils' );
+} = require( '../../../../../../exchangeUtils' );
 
-const flamingoCrescentDecrypt = require( '../../../../../sacredElementals/crypto/flamingoCrescentDecrypt' );
+const flamingoCrescentDecrypt = require( '../../../../../../sacredElementals/crypto/flamingoCrescentDecrypt' );
 
 
 module.exports = Object.freeze( async ({
@@ -64,7 +66,7 @@ module.exports = Object.freeze( async ({
         baseId,
         expiryDate
 
-    } = getVerificationCodeComponents({ // NOTE: can wrap to throw proper error
+    } = getVerificationCodeComponents({
 
         verificationCode: verifyEmailCode
     });
@@ -141,6 +143,11 @@ module.exports = Object.freeze( async ({
         error.bulltrue = true;
         throw error;
     }
+
+    await verifyIsMostRecentSignUpRequest({
+
+        
+    });
 
     const responseValues = {
 
