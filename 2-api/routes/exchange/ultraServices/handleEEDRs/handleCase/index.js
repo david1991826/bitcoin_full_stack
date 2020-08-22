@@ -27,6 +27,22 @@ const {
 
 const addEEDRToDatabase = require( './addEEDRToDatabase' );
 
+const MAILBOX_FULL = 'MailboxFull';
+
+const getBouncedEmailEEDRType = Object.freeze( ({
+
+    bounceSubType,
+
+}) => {
+
+    if( bounceSubType === MAILBOX_FULL ) {
+
+        return review;
+    }
+
+    return block;
+});
+
 
 module.exports = Object.freeze( async ({
 
@@ -51,24 +67,21 @@ module.exports = Object.freeze( async ({
             notificationType
             
         } = snsMessageObject;
+
+        const mainData = {
+
+            messageId:  snsMessageObject.mail.messageId,
+            sourceArn: snsMessageObject.mail.sourceArn,
+            timestamp: snsMessageObject.mail.timestamp,             
+        };
     
-        // TODO: check type
         if( notificationType === Delivery ) {
 
             const emailAddresses = (
-                // TODO:
-                snsMessageObject.delivery.deliveryRecipients.map(
+                snsMessageObject.delivery.recipients.map(
                     ({ emailAddress }) => emailAddress
                 )
             );
-
-            const mainData = {
-
-                // TODO: check is getting appropriate values
-                messageId:  snsMessageObject.mail.messageId,
-                sourceArn: snsMessageObject.mail.sourceArn,
-                timestamp: snsMessageObject.mail.timestamp,             
-            };
 
             await addEEDRToDatabase({
 
@@ -77,53 +90,61 @@ module.exports = Object.freeze( async ({
                 mainData,
             });
         }
-        if( notificationType === Bounce ) {
+        else if( notificationType === Bounce ) {
     
-            const emailAddresses = (
-                snsMessageObject.bounce.bouncedRecipients.map(
-                    ({ emailAddress }) => emailAddress
-                )
+            const {
+
+                bouncedRecipients,
+                bounceType,
+                bounceSubType,
+
+            } = snsMessageObject.bounce;
+
+            const emailAddresses = bouncedRecipients.map(
+                ({ emailAddress }) => emailAddress
             );
 
-            const mainData = {
+            const type = getBouncedEmailEEDRType({
 
-                messageId:  snsMessageObject.mail.messageId,
-                sourceArn: snsMessageObject.mail.sourceArn,
-                timestamp: snsMessageObject.mail.timestamp,             
-            };
+                bounceSubType,
+            });
+            
+            Object.assign(
+
+                mainData,
+                {
+                    bounceType,
+                    bounceSubType,
+                }
+            );
 
             await addEEDRToDatabase({
 
                 emailAddresses,
-                type: block,
+                type,
                 mainData,
             });
-
-            // await addAuxiliaryEmailCaseToDatabase({
-    
-            //     emails: bouncedEmailAddresses,
-            //     type: block,
-            //     metaData: {
-    
-            //         snsMessageObject,
-            //     }
-            // });
         }
         else if( notificationType === Complaint ) {
+
+            const {
+
+                complainedRecipients,
+                complaintFeedbackType = 'No complaint feedback type provided',
+
+            } = snsMessageObject.complaint;
     
-            const emailAddresses = (
-                snsMessageObject.complaint.complainedRecipients.map(
-                    ({ emailAddress }) => emailAddress
-                )
+            const emailAddresses = complainedRecipients.map(
+                ({ emailAddress }) => emailAddress
             );
 
-            const mainData = {
+            Object.assign(
 
-                // TODO: check is getting appropriate values
-                messageId:  snsMessageObject.mail.messageId,
-                sourceArn: snsMessageObject.mail.sourceArn,
-                timestamp: snsMessageObject.mail.timestamp,             
-            };
+                mainData,
+                {
+                    complaintFeedbackType,
+                }
+            );
 
             await addEEDRToDatabase({
 
@@ -131,16 +152,6 @@ module.exports = Object.freeze( async ({
                 type: review,
                 mainData,
             });
-
-            // await addAuxiliaryEmailCaseToDatabase({
-    
-            //     emails: usersWithComplaints,
-            //     type: review,
-            //     metaData: {
-                    
-            //         snsMessageObject,
-            //     }
-            // });
         }
     }    
 

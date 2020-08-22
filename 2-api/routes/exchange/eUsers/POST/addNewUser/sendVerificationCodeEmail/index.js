@@ -87,7 +87,10 @@ module.exports = Object.freeze( async ({
     const html = getEmailHtml({
 
         verificationLink,
-        appName: isProbablyCrypto ? 'ProbablyCrypto.com' : 'atExchange.io',
+        appName: isProbablyCrypto ? 'ProbablyCrypto.com' : (
+
+            process.env.EXCHANGE_APP_NAME || 'Bitcoin-Api Exchange'
+        ),
     });
 
     const text = (
