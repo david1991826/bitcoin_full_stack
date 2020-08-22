@@ -28,7 +28,7 @@ const {
 
 module.exports = Object.freeze( async ({
 
-    emails,
+    emailAddresses,
     type,
     coreData,
 
@@ -39,13 +39,13 @@ module.exports = Object.freeze( async ({
         'running addEEDRToDatabase with the following ' +
         'values: ' + 
         stringify({
-            emails,
+            emailAddresses,
             type,
             coreData,
         })
     );
 
-    for( const email of emails ) {
+    for( const email of emailAddresses ) {
 
         const eedr = {
 

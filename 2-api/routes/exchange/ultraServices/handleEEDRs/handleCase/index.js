@@ -63,16 +63,18 @@ module.exports = Object.freeze( async ({
         const snsMessageObject = JSON.parse( record.Sns.Message );
 
         const {
-    
+
             notificationType
             
         } = snsMessageObject;
 
+        const snsMessageObjectMailObject = snsMessageObject.mail || {};
+
         const coreData = {
 
-            messageId:  snsMessageObject.mail.messageId,
-            sourceArn: snsMessageObject.mail.sourceArn,
-            timestamp: snsMessageObject.mail.timestamp,             
+            messageId: snsMessageObjectMailObject.messageId,
+            sourceArn: snsMessageObjectMailObject.sourceArn,
+            timestamp: snsMessageObjectMailObject.timestamp,             
         };
 
         switch( notificationType ) {
