@@ -74,84 +74,107 @@ module.exports = Object.freeze( async ({
             sourceArn: snsMessageObject.mail.sourceArn,
             timestamp: snsMessageObject.mail.timestamp,             
         };
+
+        switch( notificationType ) {
+
+            case Delivery: {
+
+                const emailAddresses = (
+                    snsMessageObject.delivery.recipients.map(
+                        ({ emailAddress }) => emailAddress
+                    )
+                );
     
-        if( notificationType === Delivery ) {
-
-            const emailAddresses = (
-                snsMessageObject.delivery.recipients.map(
-                    ({ emailAddress }) => emailAddress
-                )
-            );
-
-            await addEEDRToDatabase({
-
-                emailAddresses,
-                type: success,
-                coreData,
-            });
-        }
-        else if( notificationType === Bounce ) {
+                await addEEDRToDatabase({
     
-            const {
+                    emailAddresses,
+                    type: success,
+                    coreData,
+                });
 
-                bouncedRecipients,
-                bounceType,
-                bounceSubType,
+                break;
+            }
 
-            } = snsMessageObject.bounce;
+            case Bounce: {
 
-            const emailAddresses = bouncedRecipients.map(
-                ({ emailAddress }) => emailAddress
-            );
+                const {
 
-            const type = getBouncedEmailEEDRType({
-
-                bounceSubType,
-            });
-            
-            Object.assign(
-
-                coreData,
-                {
+                    bouncedRecipients,
                     bounceType,
                     bounceSubType,
-                }
-            );
-
-            await addEEDRToDatabase({
-
-                emailAddresses,
-                type,
-                coreData,
-            });
-        }
-        else if( notificationType === Complaint ) {
-
-            const {
-
-                complainedRecipients,
-                complaintFeedbackType = 'No complaint feedback type provided',
-
-            } = snsMessageObject.complaint;
     
-            const emailAddresses = complainedRecipients.map(
-                ({ emailAddress }) => emailAddress
-            );
+                } = snsMessageObject.bounce;
+    
+                const emailAddresses = bouncedRecipients.map(
+                    ({ emailAddress }) => emailAddress
+                );
+    
+                const type = getBouncedEmailEEDRType({
+    
+                    bounceSubType,
+                });
+                
+                Object.assign(
+    
+                    coreData,
+                    {
+                        bounceType,
+                        bounceSubType,
+                    }
+                );
+    
+                await addEEDRToDatabase({
+    
+                    emailAddresses,
+                    type,
+                    coreData,
+                });
 
-            Object.assign(
+                break;
+            }
 
-                coreData,
-                {
-                    complaintFeedbackType,
-                }
-            );
+            case Complaint: {
 
-            await addEEDRToDatabase({
+                const {
 
-                emailAddresses,
-                type: review,
-                coreData,
-            });
+                    complainedRecipients,
+                    complaintFeedbackType = 'No complaint feedback type provided',
+    
+                } = snsMessageObject.complaint;
+        
+                const emailAddresses = complainedRecipients.map(
+                    ({ emailAddress }) => emailAddress
+                );
+    
+                Object.assign(
+    
+                    coreData,
+                    {
+                        complaintFeedbackType,
+                    }
+                );
+    
+                await addEEDRToDatabase({
+    
+                    emailAddresses,
+                    type: review,
+                    coreData,
+                });
+
+                break;
+            }
+
+            default: {
+
+                console.log(
+
+                    'Exchange email delivery result type is ' +
+                    `${ notificationType } - this case is not considered - ` +
+                    'NO-OP'
+                );
+
+                break;
+            }
         }
     }    
 
