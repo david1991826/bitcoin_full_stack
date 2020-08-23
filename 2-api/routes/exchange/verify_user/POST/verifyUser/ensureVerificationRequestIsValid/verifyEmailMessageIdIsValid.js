@@ -45,6 +45,7 @@ const attributes = f({
         email: '#email',
         emailMessageId: '#emailMessageId',
         creationDate: '#creationDate',
+        type: '#type',
     }),
 
     nameValues: f({
@@ -52,6 +53,7 @@ const attributes = f({
         email: 'email',
         emailMessageId: 'emailMessageId',
         creationDate: 'creationDate',
+        type: 'type',
     }),
 
     valueKeys: f({
@@ -135,8 +137,9 @@ module.exports = Object.freeze( async ({
             ].join( ', ' ),
             KeyConditionExpression: (
                 `${ nameKeys.email } = ${ valueKeys.email } and ` +
-                `${ nameKeys.creationDate } >= ${ valueKeys.searchStartTime } and ` +
-                `${ nameKeys.creationDate } < ${ valueKeys.searchEndTime }`
+                `${ nameKeys.creationDate } between ` +
+                `${ valueKeys.searchStartTime } and ` +
+                `${ valueKeys.searchEndTime }`
             ),
             FilterExpression: (
                 `${ nameKeys.type } = ${ valueKeys.success }`
@@ -151,7 +154,7 @@ module.exports = Object.freeze( async ({
                 [valueKeys.email]: email,
                 [valueKeys.success]: valueValues.success,
                 [valueKeys.searchStartTime]: searchStartTime,
-                [valueKeys.searchEndTime]: expiryDate,
+                [valueKeys.searchEndTime]: (expiryDate - 1),
             },
             ExclusiveStartKey: paginationValueToUse || undefined,
         };
