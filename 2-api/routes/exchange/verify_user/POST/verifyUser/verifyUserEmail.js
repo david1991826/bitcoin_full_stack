@@ -101,6 +101,12 @@ module.exports = Object.freeze( async ({
                                     verification: {
                                         date: Date.now(),
                                         ipAddress,
+                                        emailMessageId: (
+                                            exchangeUser.emailMessageId
+                                        ),
+                                        emailToVerify: (
+                                            exchangeUser.emailToVerify
+                                        ),
                                     }
                                 }
                             )
