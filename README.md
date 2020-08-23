@@ -39,8 +39,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Stack Overflow** for tech guidance and ideas
 * **Postman** for API testing
 * **BitPay** for Copay app (can be used for testing)
-* **TD Bank** for fiat money services
 * **SoSplush** for art design
+* **TD Bank** for fiat money services
 * **NDAX** for crypto and fiat money services
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
 * **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin
