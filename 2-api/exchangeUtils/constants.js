@@ -23,6 +23,11 @@ module.exports = Object.freeze({
         userId: 'user-id',
     },
 
+    verificationCode: {
+
+        expiryTime: oneDay,
+    },
+
     javascript: {
 
         styleSpacer: '__style__',

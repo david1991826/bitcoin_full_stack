@@ -2,13 +2,17 @@
 
 const uuidv4 = require( 'uuid/v4' );
 
-const oneDay = 24 * 60 * 60 * 1000;
+const {
+    verificationCode: {
+        expiryTime
+    }
+} = require( '../../constants' );
 
 
 module.exports = Object.freeze( ({
 
     baseId,
-    expiryDate = (Date.now() + oneDay),
+    expiryDate = (Date.now() + expiryTime),
 
 }) => {
 

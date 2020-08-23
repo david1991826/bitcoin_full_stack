@@ -148,6 +148,7 @@ module.exports = Object.freeze( async ({
 
         email,
         emailMessageId: exchangeUser.emailMessageId,
+        expiryDate,
     });
 
     const responseValues = {

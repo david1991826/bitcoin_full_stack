@@ -29,9 +29,12 @@ const {
             types: {
                 success
             }
-        }
+        },
+        verificationCode
     }
 } = require( '../../../../../../exchangeUtils' );
+
+const searchLimit = 1000;
 
 const f = Object.freeze;
 
@@ -41,18 +44,22 @@ const attributes = f({
      
         email: '#email',
         emailMessageId: '#emailMessageId',
+        creationDate: '#creationDate',
     }),
 
     nameValues: f({
      
         email: 'email',
         emailMessageId: 'emailMessageId',
+        creationDate: 'creationDate',
     }),
 
     valueKeys: f({
 
         email: ':email',
         success: ':success',
+        searchStartTime: ':searchStartTime',
+        searchEndTime: ':searchEndTime',
     }),
 
     valueValues: f({
@@ -62,17 +69,18 @@ const attributes = f({
 });
 
 
-// TODO: update to verifyEmailMessageIdIsValid
+// TODO: under construction
 module.exports = Object.freeze( async ({
 
     email,
     emailMessageId,
-    
+    expiryDate,
+
 }) => {
 
     console.log(
         
-        'running verifyIsMostRecentSignUpRequest with the ' +
+        'running verifyEmailMessageIdIsValid with the ' +
         `following values: ${ stringify({
             
             email,
@@ -89,58 +97,87 @@ module.exports = Object.freeze( async ({
 
     } = attributes;
 
-    const searchParams = {
+    let messageIdIsValid = false;
+    const searchStartTime = expiryDate - verificationCode.expiryTime;
+    let paginationValueToUse = null;
+    
+    do {
 
-        TableName: EXCHANGE_EMAIL_DELIVERY_RESULTS,
-        Limit: 1,
-        ScanIndexForward: false,
-        ProjectionExpression: [
-            nameKeys.emailMessageId,
-        ].join( ', ' ),
-        KeyConditionExpression: (
-            `${ nameKeys.email } = ${ valueKeys.email }`
-        ),
-        FilterExpression: (
-            `${ nameKeys.type } = ${ valueKeys.success }`
-        ),
-        ExpressionAttributeNames: {
-            [nameKeys.email]: nameValues.email,
-            [nameKeys.emailMessageId]: nameValues.emailMessageId,
-            [nameKeys.type]: nameValues.type,
-        },
-        ExpressionAttributeValues: {
-            [valueKeys.email]: email,
-            [valueKeys.success]: valueValues.success,
-        },
-        // ExclusiveStartKey: paginationValueToUse || undefined,
-    };
+        const searchParams = {
 
-    const {
+            TableName: EXCHANGE_EMAIL_DELIVERY_RESULTS,
+            Limit: searchLimit,
+            ScanIndexForward: false,
+            ProjectionExpression: [
+                nameKeys.emailMessageId,
+            ].join( ', ' ),
+            KeyConditionExpression: (
+                `${ nameKeys.email } = ${ valueKeys.email } and ` +
+                `${ nameKeys.creationDate } >= ${ valueKeys.searchStartTime } and ` +
+                `${ nameKeys.creationDate } < ${ valueKeys.searchEndTime }`
+            ),
+            FilterExpression: (
+                `${ nameKeys.type } = ${ valueKeys.success }`
+            ),
+            ExpressionAttributeNames: {
+                [nameKeys.email]: nameValues.email,
+                [nameKeys.emailMessageId]: nameValues.emailMessageId,
+                [nameKeys.type]: nameValues.type,
+                [nameKeys.creationDate]: nameValues.creationDate,
+            },
+            ExpressionAttributeValues: {
+                [valueKeys.email]: email,
+                [valueKeys.success]: valueValues.success,
+                [valueKeys.searchStartTime]: searchStartTime,
+                [valueKeys.searchEndTime]: expiryDate,
+            },
+            ExclusiveStartKey: paginationValueToUse || undefined,
+        };
 
-        ultimateResults,
+        const {
 
-    } = await searchDatabase({
+            ultimateResults,
+            paginationValue
 
-        searchParams
-    });
+        } = await searchDatabase({
 
-    const exchangeEmailDeliverySuccessResult = ultimateResults;
+            searchParams,
+        });
 
-    if( exchangeEmailDeliverySuccessResult.length === 0 ) {
+        const exchangeEmailDeliverySuccessResults = ultimateResults;
 
-        throw new Error(
+        console.log(`
+        
+        
+            TEMPORARY LOG: ${ JSON.stringify( {
 
-            'Weird verifyIsMostRecentSignUpRequest error: ' +
-            'no exchange email delivery results found for ' +
-            `email ${ email }.`
-        );
-    }
+                exchangeEmailDeliverySuccessResults
+                
+            }, null, 4 ) }
+        
+        
+        `);
+        
+        for( const eedr of exchangeEmailDeliverySuccessResults ) {
 
-    const eedrEmailMessageId = (
-        exchangeEmailDeliverySuccessResult[0].emailMessageId
-    );
+            if( eedr.emailMessageId === emailMessageId ) {
 
-    if( eedrEmailMessageId !== emailMessageId ) {
+                messageIdIsValid = true;
+            }
+        }
+
+        if( !messageIdIsValid && !!paginationValue ) {
+
+            paginationValueToUse = paginationValue;
+        }
+        else {
+
+            paginationValueToUse = null;
+        }
+
+    } while( !!paginationValueToUse );
+
+    if( !messageIdIsValid ) {
 
         const error = new Error(
             'The provided email verification link has been expired. ' +
@@ -154,6 +191,6 @@ module.exports = Object.freeze( async ({
 
     console.log(
         
-        'verifyIsMostRecentSignUpRequest executed successfully -'
+        'verifyEmailMessageIdIsValid executed successfully -'
     );
 });
