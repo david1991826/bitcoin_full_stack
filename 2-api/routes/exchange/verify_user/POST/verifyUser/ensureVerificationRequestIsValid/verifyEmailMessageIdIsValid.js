@@ -68,8 +68,29 @@ const attributes = f({
     }),
 });
 
+const getIfMessageIdIsValidBasedOnCurrentResults = Object.freeze( ({
 
-// TODO: under construction
+    exchangeEmailDeliverySuccessResults,
+    emailMessageId
+
+}) => {
+
+    for( const eedr of exchangeEmailDeliverySuccessResults ) {
+
+        if( eedr.emailMessageId === emailMessageId ) {
+
+            const messageIdIsValidBasedOnCurrentResults = true;
+
+            return messageIdIsValidBasedOnCurrentResults;
+        }
+    }
+
+    const messageIdIsValidBasedOnCurrentResults = false;
+
+    return messageIdIsValidBasedOnCurrentResults;
+});
+
+
 module.exports = Object.freeze( async ({
 
     email,
@@ -85,6 +106,7 @@ module.exports = Object.freeze( async ({
             
             email,
             emailMessageId,
+            expiryDate,
         })}`
     );
 
@@ -157,13 +179,18 @@ module.exports = Object.freeze( async ({
         
         
         `);
-        
-        for( const eedr of exchangeEmailDeliverySuccessResults ) {
 
-            if( eedr.emailMessageId === emailMessageId ) {
+        const messageIdIsValidBasedOnCurrentResults = (
+            getIfMessageIdIsValidBasedOnCurrentResults({
 
-                messageIdIsValid = true;
-            }
+                exchangeEmailDeliverySuccessResults,
+                emailMessageId,
+            })
+        );
+
+        if( messageIdIsValidBasedOnCurrentResults ) {
+
+            messageIdIsValid = true;
         }
 
         if( !messageIdIsValid && !!paginationValue ) {
