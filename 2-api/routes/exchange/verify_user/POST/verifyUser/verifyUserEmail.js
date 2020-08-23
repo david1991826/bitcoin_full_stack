@@ -109,6 +109,7 @@ module.exports = Object.freeze( async ({
 
                     delete newExchangeUser.emailToVerify;
                     delete newExchangeUser.verifyEmailCode;
+                    delete newExchangeUser.emailMessageId;
                 
                     await updateDatabaseEntry({
                 
