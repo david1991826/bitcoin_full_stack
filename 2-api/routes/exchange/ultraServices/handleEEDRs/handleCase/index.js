@@ -72,7 +72,7 @@ module.exports = Object.freeze( async ({
 
         const data = {
 
-            messageId: snsMessageObjectMailObject.messageId,
+            emailMessageId: snsMessageObjectMailObject.messageId,
             sourceArn: snsMessageObjectMailObject.sourceArn,
             messageEventTime: (
                 new Date( snsMessageObjectMailObject.timestamp )

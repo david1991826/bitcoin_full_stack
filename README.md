@@ -39,7 +39,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Stack Overflow** for tech guidance and ideas
 * **BitPay** for Copay app (can be used for testing)
 * **Postman** for API testing
-* **NDAX** for Canadian Bitcoin and fiat money services
+* **TD Bank** for fiat money services
+* **NDAX** for fiat money services
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
 * **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin
 * **SoSplush** for art design
@@ -578,7 +579,7 @@ Below lists in detail which operations specifically are in Q-Locks.
       <td align="center">POST/login</td>
       <td>
         <ul>
-          <li>assign bitcoin address</li>
+          <li>assign bitcoin address (only for first login)</li>
         </ul>
       </td>
     </tr>

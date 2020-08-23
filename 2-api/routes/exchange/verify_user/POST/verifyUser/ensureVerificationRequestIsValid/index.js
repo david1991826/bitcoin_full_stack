@@ -21,7 +21,7 @@ const {
     }
 } = require( '@bitcoin-api.io/common-exchange' );
 
-const verifyIsMostRecentSignUpRequest = require( './verifyIsMostRecentSignUpRequest' );
+const verifyEmailMessageIdIsValid = require( './verifyEmailMessageIdIsValid' );
 
 const {
     aws: {
@@ -74,7 +74,7 @@ module.exports = Object.freeze( async ({
     if( Date.now() > expiryDate ) {
 
         const error = new Error(
-            'The provided email verification code has been expired. ' +
+            'The provided email verification link has been expired. ' +
             'Please try creating your ' +
             'account again. Sorry for any inconvenience.'
         );
@@ -137,16 +137,17 @@ module.exports = Object.freeze( async ({
     ) {
 
         const error = new Error(
-            'The provided email verification code data is invalid.'
+            'The provided data for email verification is invalid.'
         );
         error.statusCode = 400;
         error.bulltrue = true;
         throw error;
     }
 
-    await verifyIsMostRecentSignUpRequest({
+    await verifyEmailMessageIdIsValid({
 
-        
+        email,
+        emailMessageId: exchangeUser.emailMessageId,
     });
 
     const responseValues = {
