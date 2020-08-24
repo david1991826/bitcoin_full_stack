@@ -171,18 +171,6 @@ module.exports = Object.freeze( async ({
 
         const exchangeEmailDeliverySuccessResults = ultimateResults;
 
-        console.log(`
-        
-        
-            TEMPORARY LOG: ${ JSON.stringify( {
-
-                exchangeEmailDeliverySuccessResults
-                
-            }, null, 4 ) }
-        
-        
-        `);
-
         const messageIdIsValidBasedOnCurrentResults = (
             getIfMessageIdIsValidBasedOnCurrentResults({
 
