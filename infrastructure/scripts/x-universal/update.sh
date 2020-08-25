@@ -124,6 +124,12 @@ popd
 ####  API
 ####
 
+pushd ../../../2-api/sacredElementals/crypto/exchangeBitcoinApi
+
+npm install bitcoin-api@latest --save
+npm install
+
+popd
 
 pushd ../../../2-api
 
