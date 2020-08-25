@@ -20,6 +20,7 @@ if( isProductionMode ) {
         {
             livenetMode: true,
             livenetToken: process.env.EXCHANGE_BITCOIN_API_LIVENET_TOKEN,
+            livenetBaseUrl: process.env.API_BASE_URL 
         }
     );
 }
@@ -29,6 +30,7 @@ else {
         initializationValues,
         {
             testnetToken: process.env.EXCHANGE_BITCOIN_API_TESTNET_TOKEN,
+            testnetBaseUrl: process.env.API_BASE_URL, 
         }
     );
 }

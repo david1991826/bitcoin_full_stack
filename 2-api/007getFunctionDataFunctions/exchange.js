@@ -17,6 +17,7 @@ module.exports = ({
         EXCHANGE_SIGN_UP_GOOGLE_CAPTCHA_SECRET,
         EXCHANGE_URL,
         EXCHANGE_MANAGEMENT_EMAIL,
+        API_BASE_URL,
     },
 
 }) => { 
@@ -87,6 +88,7 @@ module.exports = ({
                 EXCHANGE_BITCOIN_API_TESTNET_TOKEN,
                 EXCHANGE_BITCOIN_API_LIVENET_TOKEN,
                 WALHALLA_ADDRESS_MODE_SECRET,
+                API_BASE_URL,
             }
         },
 
@@ -109,6 +111,7 @@ module.exports = ({
                 EXCHANGE_BITCOIN_API_TESTNET_TOKEN,
                 EXCHANGE_BITCOIN_API_LIVENET_TOKEN,
                 WALHALLA_ADDRESS_MODE_SECRET,
+                API_BASE_URL,
             }
         },
 

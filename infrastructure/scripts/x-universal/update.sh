@@ -131,6 +131,7 @@ npm install
 
 popd
 
+
 pushd ../../../2-api
 
 npm install @bitcoin-api.io/common-bridge@latest --save
