@@ -112,65 +112,65 @@ module.exports = ({
             }
         },
 
-        {
-            nickname: 'ePOST/withdraws',
-            name: 'exchange_api_withdraws_post',
-            handler: 'routes/exchange/withdraws/POST/index.handler',
-            pathsToInclude: [
-                './routes/exchange/withdraws/POST',
-                './sacredElementals/crypto/xoOvoDecrypt',
-                './routes/withdraws/POST/withdrawMoney/getFeeData.js',
-                './routes/withdraws/POST/withdrawMoney/doWithdrawMoney/getMagnaFeeData.js',
-            ],
-            environmentVariables: {
-                EXCHANGE_XOOVO_ENCRYPTION_ID,
-                EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
-                EXCHANGE_TOKEN_USER_ID,
-            },
-            memory: 320,
-        },
+        // {
+        //     nickname: 'ePOST/withdraws',
+        //     name: 'exchange_api_withdraws_post',
+        //     handler: 'routes/exchange/withdraws/POST/index.handler',
+        //     pathsToInclude: [
+        //         './routes/exchange/withdraws/POST',
+        //         './sacredElementals/crypto/xoOvoDecrypt',
+        //         './routes/withdraws/POST/withdrawMoney/getFeeData.js',
+        //         './routes/withdraws/POST/withdrawMoney/doWithdrawMoney/getMagnaFeeData.js',
+        //     ],
+        //     environmentVariables: {
+        //         EXCHANGE_XOOVO_ENCRYPTION_ID,
+        //         EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
+        //         EXCHANGE_TOKEN_USER_ID,
+        //     },
+        //     memory: 320,
+        // },
 
-        {
-            nickname: 'ePOST/logout',
-            name: 'eApi_logout_post',
-            handler: 'routes/exchange/logout/POST/index.handler',
-            pathsToInclude: [
-                './routes/exchange/logout/POST',
-                './sacredElementals/crypto/xoOvoDecrypt'
-            ],
-            environmentVariables: {
-                EXCHANGE_XOOVO_ENCRYPTION_ID,
-                EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
-            },
-        },
+        // {
+        //     nickname: 'ePOST/logout',
+        //     name: 'eApi_logout_post',
+        //     handler: 'routes/exchange/logout/POST/index.handler',
+        //     pathsToInclude: [
+        //         './routes/exchange/logout/POST',
+        //         './sacredElementals/crypto/xoOvoDecrypt'
+        //     ],
+        //     environmentVariables: {
+        //         EXCHANGE_XOOVO_ENCRYPTION_ID,
+        //         EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
+        //     },
+        // },
 
-        {
-            nickname: 'ePOST/exchanges',
-            name: 'exchange_api_exchanges_post',
-            handler: 'routes/exchange/exchanges/POST/index.handler',
-            pathsToInclude: [
-                './routes/exchange/exchanges/POST',
-                './sacredElementals/crypto/xoOvoDecrypt'
-            ],
-            environmentVariables: {
-                EXCHANGE_XOOVO_ENCRYPTION_ID,
-                EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
-            },
-        },
+        // {
+        //     nickname: 'ePOST/exchanges',
+        //     name: 'exchange_api_exchanges_post',
+        //     handler: 'routes/exchange/exchanges/POST/index.handler',
+        //     pathsToInclude: [
+        //         './routes/exchange/exchanges/POST',
+        //         './sacredElementals/crypto/xoOvoDecrypt'
+        //     ],
+        //     environmentVariables: {
+        //         EXCHANGE_XOOVO_ENCRYPTION_ID,
+        //         EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
+        //     },
+        // },
 
-        {
-            nickname: 'ePOST/dreams',
-            name: 'exchange_api_dreams_post',
-            handler: 'routes/exchange/dreams/POST/index.handler',
-            pathsToInclude: [
-                './routes/exchange/dreams/POST',
-                './sacredElementals/crypto/xoOvoDecrypt'
-            ],
-            environmentVariables: {
-                EXCHANGE_XOOVO_ENCRYPTION_ID,
-                EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
-            },
-        },
+        // {
+        //     nickname: 'ePOST/dreams',
+        //     name: 'exchange_api_dreams_post',
+        //     handler: 'routes/exchange/dreams/POST/index.handler',
+        //     pathsToInclude: [
+        //         './routes/exchange/dreams/POST',
+        //         './sacredElementals/crypto/xoOvoDecrypt'
+        //     ],
+        //     environmentVariables: {
+        //         EXCHANGE_XOOVO_ENCRYPTION_ID,
+        //         EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
+        //     },
+        // },
 
         {
             nickname: 'eService/handleEEDRs',
