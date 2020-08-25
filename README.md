@@ -39,7 +39,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Stack Overflow** for tech guidance and ideas
 * **Postman** for API testing
 * **Blockchain.com** for blockchain monitoring and analytics
-* **Bitcoin.com** for Bitcoin wallet app
+* **Bitcoin.com** for their Bitcoin wallet app
 * **BitPay** for Copay app (can be used for testing)
 * **SoSplush** for art design
 * **TD Bank** for fiat money services
