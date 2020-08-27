@@ -28,7 +28,7 @@ const {
             }
         }
     },
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const exchangeTokenUserId = process.env.EXCHANGE_TOKEN_USER_ID;
 

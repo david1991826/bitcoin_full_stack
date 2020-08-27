@@ -4,7 +4,7 @@ const {
     utils: {
         stringify,
     },
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     constants: {
@@ -12,7 +12,7 @@ const {
             bounds
         }
     },
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const {
     crypto: {
