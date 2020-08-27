@@ -32,7 +32,7 @@ const {
             }
         }
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     constants: {
@@ -44,7 +44,7 @@ const {
             }
         }
     }
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const {
     aws: {
@@ -70,15 +70,15 @@ module.exports = Object.freeze( async ({
 
     const exchangeUserId = event.body.exchangeUserId;
     
-    const eventHeader = (
-        !!event.header &&
-        event.header
+    const eventHeaders = (
+        !!event.headers &&
+        event.headers
     ) || {};
 
     const megaCode = (
         
-        eventHeader.Token ||
-        eventHeader.token ||
+        eventHeaders.Token ||
+        eventHeaders.token ||
         null
     );
 

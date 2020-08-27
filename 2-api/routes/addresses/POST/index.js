@@ -2,7 +2,7 @@
 
 const getOrAssignAddressData = require( './getOrAssignAddressDatum' );
 
-// const runWalhallaAddressMode = require( './runWalhallaAddressMode' );
+const runWalhallaAddressMode = require( './runWalhallaAddressMode' );
 
 const {
     
@@ -50,15 +50,15 @@ exports.handler = Object.freeze( async rawEvent => {
                 '/addresses - POST function running Walhalla Address Mode🏛'
             );
 
-            // const walhallaAddressModeResults = await runWalhallaAddressMode({
+            const walhallaAddressModeResults = await runWalhallaAddressMode({
 
-            //     event,
-            // });
+                event,
+            });
 
             const results = Object.assign(
 
                 {},
-                // walhallaAddressModeResults || {}
+                walhallaAddressModeResults || {}
             );
 
             const response = getResponse({ body: results });

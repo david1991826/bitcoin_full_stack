@@ -1,6 +1,6 @@
 # Bitcoin-Api-Full-Stack
 
-[![Bitcoin-Api-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-13.png)](#bitcoin-api-full-stack)
+[![Bitcoin-Api-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-26.png)](#bitcoin-api-full-stack)
 
 #### Complete Code Base for Bitcoin-Api
 

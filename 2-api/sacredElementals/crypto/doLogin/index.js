@@ -94,8 +94,7 @@ module.exports = Object.freeze( async ({
         (exchangeUser.moneyData.bitcoin.length > 0)
     );
 
-    // NOTE: temporary
-    if( false && userDoesNotHaveABitcoinAddressAlready ) {
+    if( userDoesNotHaveABitcoinAddressAlready ) {
 
         console.log(
 
@@ -113,7 +112,7 @@ module.exports = Object.freeze( async ({
 
             console.log(
 
-                'bitcoin address successfully added😁⏫🏡'
+                'bitcoin add address operation performed successfully😃⏫🏡'
             );
         }
         catch( err ) {
