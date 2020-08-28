@@ -15,7 +15,7 @@ const {
     },
 } = require( '../../../../exchangeUtils' );
 
-const deleteLogouts = require( './deleteLogouts' );
+const deleteLogins = require( './deleteLogins' );
 
 
 exports.handler = Object.freeze( async rawEvent => {
@@ -51,7 +51,7 @@ exports.handler = Object.freeze( async rawEvent => {
             ({ signedOut = false }) => !signedOut
         );
 
-        const deleteLoginResults = await deleteLogouts({
+        const deleteLoginResults = await deleteLogins({
 
             exchangeUserId,
             hashedLoginTokenIdFromRequestHeader,
