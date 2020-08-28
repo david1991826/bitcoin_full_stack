@@ -69,7 +69,7 @@ const getIfLoginTokenIsValidGivenTokenData = Object.freeze( ({
 
             tokenCount++;
 
-            if( tokenCount > maximumNumberOfValidTokens ) {
+            if( tokenCount >= maximumNumberOfValidTokens ) {
 
                 return {
                 
