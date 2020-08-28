@@ -1113,6 +1113,8 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_role_lambda_eApi_logout_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
 
+* [`bitcoin_api_role_lambda_eApi_withdraws_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_withdraws_post.json)
+
 * [`bitcoin_api_role_lambda_eService_handleEEDRs`](infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleEEDRs.json)
 
 ##### API IAM Roles
@@ -1217,7 +1219,7 @@ policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_login_pos
 
 name: `bitcoin_api_lambda_eApi_withdraws_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_withdraws_post`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
 **Exchange API: POST - /logout**
