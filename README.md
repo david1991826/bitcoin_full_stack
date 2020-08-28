@@ -77,6 +77,8 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 * Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
 
+* move common NPM modules to `@bitcoin-api` domain
+
 Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
 
 ## API, Exchange, and Game Features
