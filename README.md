@@ -42,10 +42,14 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Bitcoin.com** for their Bitcoin wallet app
 * **BitPay** for Copay app (can be used for testing)
 * **SoSplush** for art design
+* **Werner Vogels and Company** for inspiration
+* **Elon Musk and Company** for inspiration
 * **TD Bank** for fiat money services
 * **NDAX** for crypto and fiat money services
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
-* **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin
+* **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin and crypto
+* **Justin Sun and The Tron Foundation** for developing and promoting Tron, JustSwap, and crypto
+* **Vitalik Buterin** for developing and promoting Ethereum and crypto
 * **Reddit** for social media services
 * **Facebook** for React and social media services
 * **Twitter** for social media services
@@ -1392,6 +1396,8 @@ Here is an example video of a live production API deployment. The website conten
 
 
 ### How to Deploy Frontend
+
+**Frontend under construction🚧👷‍♀️👷‍♂️🏗 - prepping for production🚀🌤✨**
 
 The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for the webapp in the [exchange and game platform video demo](https://youtu.be/EMAwIrHM2Qc) is [AWS Amplify](https://aws.amazon.com/amplify) using its monorepo functionality.
 
