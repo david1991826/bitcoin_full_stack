@@ -66,6 +66,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Open Source Developers** - you're the best!!!🤗💜
 
 
+**TODO:** add links to this list
+
 ## Sponsored Content
 
 Promote your material right here in this "Sponsored Content" section in this `README.md` file. More info on this in the [Sponsored Content Info](#sponsored-content-info) section below.
