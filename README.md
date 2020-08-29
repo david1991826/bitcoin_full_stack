@@ -42,8 +42,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Bitcoin.com** for their Bitcoin wallet app
 * **BitPay** for Copay app (can be used for testing)
 * **SoSplush** for art design
-* **Werner Vogels and The Crew** for inspiration
-* **Elon Musk and The Crew** for inspiration
+* **Werner Vogels and Company** for inspiration
+* **Elon Musk and Company** for inspiration
 * **TD Bank** for fiat money services
 * **NDAX** for crypto and fiat money services
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
