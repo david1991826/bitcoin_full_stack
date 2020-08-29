@@ -42,6 +42,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **Bitcoin.com** for their Bitcoin wallet app
 * **BitPay** for Copay app (can be used for testing)
 * **SoSplush** for art design
+* **Werner Vogels and The Crew** for inspiration
+* **Elon Musk and The Crew** for inspiration
 * **TD Bank** for fiat money services
 * **NDAX** for crypto and fiat money services
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
@@ -69,11 +71,11 @@ Promote your material right here in this "Sponsored Content" section in this `RE
     />
 </a>
 
-#### Upcoming updates 🚧👷‍♀️👷‍♂️🏗
+## Updates in Development
 
 * move common NPM modules to `@bitcoin-api` domain
 
-* develop frontend
+* get frontend ready for production
 
 Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
 
