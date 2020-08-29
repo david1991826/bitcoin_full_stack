@@ -637,7 +637,7 @@ Below lists in detail which operations specifically are in Q-Locks.
       <td align="center">POST/dreams</td>
       <td>
         <ul>
-          <li>enchanted luck function ✨🧞‍♀️✨ [add exchange transaction]</li>
+          <li>enchanted function ✨🧞‍♀️✨ [add exchange transaction]</li>
         </ul>
       </td>
     </tr>

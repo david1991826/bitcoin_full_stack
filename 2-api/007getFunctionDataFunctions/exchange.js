@@ -157,19 +157,19 @@ module.exports = ({
             },
         },
 
-        // {
-        //     nickname: 'ePOST/dreams',
-        //     name: 'exchange_api_dreams_post',
-        //     handler: 'routes/exchange/dreams/POST/index.handler',
-        //     pathsToInclude: [
-        //         './routes/exchange/dreams/POST',
-        //         './sacredElementals/crypto/xoOvoDecrypt'
-        //     ],
-        //     environmentVariables: {
-        //         EXCHANGE_XOOVO_ENCRYPTION_ID,
-        //         EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
-        //     },
-        // },
+        {
+            nickname: 'ePOST/dreams',
+            name: 'eApi_dreams_post',
+            handler: 'routes/exchange/dreams/POST/index.handler',
+            pathsToInclude: [
+                './routes/exchange/dreams/POST',
+                './sacredElementals/crypto/xoOvoDecrypt'
+            ],
+            environmentVariables: {
+                EXCHANGE_XOOVO_ENCRYPTION_ID,
+                EXCHANGE_XOOVO_ENCRYPTION_PASSWORD
+            },
+        },
 
         {
             nickname: 'eService/handleEEDRs',
