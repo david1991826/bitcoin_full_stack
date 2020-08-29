@@ -2,22 +2,17 @@
 
 const {
 
+    getFormattedEvent,
     getResponse,
     handleError,
-    // beginningDragonProtection,
     stringify,
 
 } = require( '../../../../utils' );
 
 const {
-    aws: {
-        lambda: {
-            getExchangeEvent
-        }
-    },
     loginTokens: {
         mongolianBeginningDragonProtection
-    }
+    },
 } = require( '../../../../exchangeUtils' );
 
 const doExchange = require( './doExchange' );
@@ -30,7 +25,7 @@ exports.handler = Object.freeze( async rawEvent => {
 
         console.log( 'running the exchange /exchanges - POST function' );
 
-        const event = getExchangeEvent({
+        const event = getFormattedEvent({
 
             rawEvent,
             shouldGetBodyFromEvent: true,
