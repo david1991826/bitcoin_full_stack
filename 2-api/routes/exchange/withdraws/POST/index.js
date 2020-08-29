@@ -2,26 +2,20 @@
 
 const {
 
+    getFormattedEvent,
     getResponse,
     handleError,
-    // beginningDragonProtection,
     stringify,
 
 } = require( '../../../../utils' );
 
 const {
-    aws: {
-        lambda: {
-            getExchangeEvent
-        }
-    },
     loginTokens: {
         mongolianBeginningDragonProtection
-    }
+    },
 } = require( '../../../../exchangeUtils' );
 
 const doWithdraw = require( './doWithdraw' );
-
 
 
 exports.handler = Object.freeze( async rawEvent => {
@@ -30,7 +24,7 @@ exports.handler = Object.freeze( async rawEvent => {
 
         console.log( 'running the exchange /withdraws - POST function' );
 
-        const event = getExchangeEvent({
+        const event = getFormattedEvent({
 
             rawEvent,
             shouldGetBodyFromEvent: true,

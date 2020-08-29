@@ -113,3 +113,6 @@ infrastructure/policies/awsTemporary
 
 
 lick_file.json
+
+stagingCredentials
+productionCredentials

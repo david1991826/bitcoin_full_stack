@@ -1,9 +1,6 @@
 # Bitcoin-Api-Full-Stack
 
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner.png"
-    width="900"
-/>
+[![Bitcoin-Api-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-36.png)](#bitcoin-api-full-stack)
 
 #### Complete Code Base for Bitcoin-Api
 
@@ -34,18 +31,21 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 ☁️Additional cloud credits☁️
 * **Satoshi Nakamoto** for Bitcoin
 * **Bitcoin.org** for Bitcoin Core
-* **Xapo** for Bitcoin and fiat money services, and for promoting and developing Bitcoin
+* **Xapo** for crypto and fiat money services, and for promoting and developing Bitcoin and the crypto space
 * **Linus Torvalds** for Linux
 * **RedisLabs** for Redis database
 * **pm2** for NodeJS process management 
 * **MongoDB** for MongoDB database
 * **Stack Overflow** for tech guidance and ideas
-* **BitPay** for Copay app (can be used for testing)
 * **Postman** for API testing
-* **NDAX** for Canadian Bitcoin and fiat money services
+* **Blockchain.com** for blockchain monitoring and analytics
+* **Bitcoin.com** for their Bitcoin wallet app
+* **BitPay** for Copay app (can be used for testing)
+* **SoSplush** for art design
+* **TD Bank** for fiat money services
+* **NDAX** for crypto and fiat money services
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
 * **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin
-* **SoSplush** for art design
 * **Reddit** for social media services
 * **Facebook** for React and social media services
 * **Twitter** for social media services
@@ -69,17 +69,11 @@ Promote your material right here in this "Sponsored Content" section in this `RE
     />
 </a>
 
-#### This public repo version is still under construction 🚧👷‍♀️👷‍♂️🏗
-
-* the core API documentation and code is ready to be used although the exchange API documentation and code still needs to be updated
-
 #### Upcoming updates 🚧👷‍♀️👷‍♂️🏗
 
-* Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
+* move common NPM modules to `@bitcoin-api` domain
 
-* More descriptive folder names for the backend NodeJS modules Fee Fee, Korg, and The Omega. More descriptive names for other folders and modules.
-
-* npx commands to help set up the local and remote files and folders necessary to run a Bitcoin-Api instance
+* develop frontend
 
 Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
 
@@ -374,15 +368,15 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
-* [`bitcoin_api_user_calzoneSun`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_calzoneSun.json)
+* [`bitcoin_api_user_calzoneSun`](infrastructure/policies/aws/bitcoin_api_user_calzoneSun.json)
 
-* [`bitcoin_api_user_feeFee`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_feeFee.json)
+* [`bitcoin_api_user_feeFee`](infrastructure/policies/aws/bitcoin_api_user_feeFee.json)
 
-* [`bitcoin_api_user_korg`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_korg.json)
+* [`bitcoin_api_user_korg`](infrastructure/policies/aws/bitcoin_api_user_korg.json)
 
-* [`bitcoin_api_user_theomega`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_theomega.json)
+* [`bitcoin_api_user_theomega`](infrastructure/policies/aws/bitcoin_api_user_theomega.json)
 
-* [`bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
+* [`bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`](infrastructure/policies/aws/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
 
 
 ##### Backend IAM Users
@@ -572,11 +566,20 @@ Below lists in detail which operations specifically are in Q-Locks.
       </td>
     </tr>
     <tr>
+      <td>exchangeEmailDeliveryResults:email</td>
+      <td align="center">handle exchange email delivery results</td>
+      <td>
+        <ul>
+          <li>add exchange email delivery result data to database</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td>exchangeUsers:exchangeUserId</td>
       <td align="center">POST/login</td>
       <td>
         <ul>
-          <li>assign bitcoin address</li>
+          <li>assign bitcoin address (only for first login)</li>
         </ul>
       </td>
     </tr>
@@ -630,7 +633,7 @@ Below lists in detail which operations specifically are in Q-Locks.
       <td align="center">POST/dreams</td>
       <td>
         <ul>
-          <li>enchanted luck function ✨🧞‍♀️✨ [add exchange transaction]</li>
+          <li>enchanted function ✨🧞‍♀️✨ [add exchange transaction]</li>
         </ul>
       </td>
     </tr>
@@ -685,49 +688,49 @@ The following environment files need to be created and set up:
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/calzoneSun/.env`
 
-.env Template: [Calzone Sun .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/calzoneSun.env)
+.env Template: [Calzone Sun .env Template File](infrastructure/environment/dotenv-templates/1-backend/calzoneSun.env)
 
 
 **Fee Fee**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/FeeFee/.env`
 
-.env Template: [Fee Fee .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/feeFee.env)
+.env Template: [Fee Fee .env Template File](infrastructure/environment/dotenv-templates/1-backend/feeFee.env)
 
 
 **Giraffe**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/giraffe/.env`
 
-.env Template: [Giraffe .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/giraffe.env)
+.env Template: [Giraffe .env Template File](infrastructure/environment/dotenv-templates/1-backend/giraffe.env)
 
 
 **Korg**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/korg/.env`
 
-.env Template: [Korg .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/korg.env)
+.env Template: [Korg .env Template File](infrastructure/environment/dotenv-templates/1-backend/korg.env)
 
 
 **The Omega**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/theomega/.env`
 
-.env Template: [The Omega .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/theomega.env)
+.env Template: [The Omega .env Template File](infrastructure/environment/dotenv-templates/1-backend/theomega.env)
 
 
 **Tree**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/tree/.env`
 
-.env Template: [Tree .env Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/1-backend/tree.env)
+.env Template: [Tree .env Template File](infrastructure/environment/dotenv-templates/1-backend/tree.env)
 
 
 **d)** Send and Start Initial NodeJS Services Modules
 
 For this step, you will manually send and start up the NodeJS service modules (a.k.a. "The Tigers"). This is only necessary for the initial setup and after this the Giraffe Lick Leaf (GLL) deployment can be used for instant deploys with a single simple command.
 
-For this command you will need to create a `/infrastructure/scripts/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/infrastructure/scripts/1-backend/setUpTigers.template.sh` template file](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/scripts/1-backend/setUpTigers.template.sh).
+For this command you will need to create a `/infrastructure/scripts/1-backend/setUpTigers.sh` pre-gitignored set up command file using the provided [`/infrastructure/scripts/1-backend/setUpTigers.template.sh` template file](infrastructure/scripts/1-backend/setUpTigers.template.sh).
 
 A chart is provided showing how to replace the template placeholder values in detail:
 
@@ -836,7 +839,7 @@ This pm2 command can also be used to monitor your fee data service and all your 
 pm2 monit
 ```
 
-> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
+> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
@@ -966,7 +969,7 @@ When an iteration of the withdraw Bitcoin worker completes, it should look like 
 
 This step explains how to set up the tree deploy code.
 
-To transfer the tree deploy code first you must create a `/infrastructure/scripts/1-backend/plantTree.sh` file (pre-gitignored). A template file is provided at [`/infrastructure/scripts/1-backend/plantTree.template.sh`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/scripts/1-backend/plantTree.template.sh).
+To transfer the tree deploy code first you must create a `/infrastructure/scripts/1-backend/plantTree.sh` file (pre-gitignored). A template file is provided at [`/infrastructure/scripts/1-backend/plantTree.template.sh`](infrastructure/scripts/1-backend/plantTree.template.sh).
 
 Refer to the [Set Up Tigers Configuration Chart](#set-up-tigers-configuration-chart) for details on how to configure the required values which are the same for `plantTree.sh`.
 
@@ -1052,7 +1055,7 @@ The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) funct
 
 **a)** Set Up Environment Variables
 
-Use the [API Environment Variable Template File](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/credentials/beautifulRiver3/staging/.env` in staging, and add it to `/2-api/credentials/beautifulRiver3/production/.env` in production.
+Use the [API Environment Variable Template File](infrastructure/environment/dotenv-templates/2-api/api.env), create an environment variable file and add it to `/2-api/stagingCredentials/.env` in staging, and add it to `/2-api/productionCredentials/.env` in production.
 
 
 **b)** Set Up AWS API Resources
@@ -1074,39 +1077,41 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 **Custom AWS Policies to Set Up:**
 
-* [`bitcoin_api_user_deployApiFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployApiFunctions.json)
+* [`bitcoin_api_user_deployApiFunctions`](infrastructure/policies/aws/bitcoin_api_user_deployApiFunctions.json)
 
-* [`bitcoin_api_user_deployExchangeFunctions`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
+* [`bitcoin_api_user_deployExchangeFunctions`](infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
 
-* [`bitcoin_api_eFunction_mongolianBeginningDragonProtection`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_eFunction_mongolianBeginningDragonProtection.json)
+* [`bitcoin_api_eFunction_mongolianBeginningDragonProtection`](infrastructure/policies/aws/bitcoin_api_eFunction_mongolianBeginningDragonProtection.json)
 
-* [`bitcoin_api_role_lambda_api_tokens_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_post.json)
+* [`bitcoin_api_role_lambda_api_tokens_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_post.json)
 
-* [`bitcoin_api_role_lambda_api_tokens_get`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_get.json)
+* [`bitcoin_api_role_lambda_api_tokens_get`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_get.json)
 
-* [`bitcoin_api_role_lambda_api_tokens_put`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_put.json)
+* [`bitcoin_api_role_lambda_api_tokens_put`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_tokens_put.json)
 
-* [`bitcoin_api_role_lambda_api_addresses_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_addresses_post.json)
+* [`bitcoin_api_role_lambda_api_addresses_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_addresses_post.json)
 
-* [`bitcoin_api_role_lambda_api_feeData_get`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_feeData_get.json)
+* [`bitcoin_api_role_lambda_api_feeData_get`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_feeData_get.json)
 
-* [`bitcoin_api_role_lambda_api_withdraws_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_api_withdraws_post.json)
+* [`bitcoin_api_role_lambda_api_withdraws_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_api_withdraws_post.json)
 
-* [`bitcoin_api_role_lambda_service_cacheOnAndOffStatus`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
+* [`bitcoin_api_role_lambda_service_cacheOnAndOffStatus`](infrastructure/policies/aws/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_post.json)
+* [`bitcoin_api_role_lambda_eApi_eUsers_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_get`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
+* [`bitcoin_api_role_lambda_eApi_eUsers_get`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
+* [`bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
 
-* [`bitcoin_api_role_lambda_eApi_verifyUser_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_verifyUser_post.json)
+* [`bitcoin_api_role_lambda_eApi_verifyUser_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_verifyUser_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_login_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_login_post.json)
+* [`bitcoin_api_role_lambda_eApi_login_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_login_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_logout_post`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
+* [`bitcoin_api_role_lambda_eApi_logout_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
 
-* [`bitcoin_api_role_lambda_eService_handleExchangeEmailDeliveryResults`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleExchangeEmailDeliveryResults.json)
+* [`bitcoin_api_role_lambda_eApi_withdraws_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_withdraws_post.json)
+
+* [`bitcoin_api_role_lambda_eService_handleEEDRs`](infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleEEDRs.json)
 
 ##### API IAM Roles
 
@@ -1210,7 +1215,7 @@ policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_login_pos
 
 name: `bitcoin_api_lambda_eApi_withdraws_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_withdraws_post`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
 **Exchange API: POST - /logout**
@@ -1234,11 +1239,11 @@ name: `bitcoin_api_lambda_eApi_dreams_post`
 policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
-**Exchange Service - Handle Exchange Email Delivery Results**
+**Exchange Service - Handle Exchange Email Delivery Results (EEDRs)**
 
-name: `bitcoin_api_lambda_eService_handleExchangeEmailDeliveryResults`
+name: `bitcoin_api_lambda_eService_handleEEDRs`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eService_handleExchangeEmailDeliveryResults`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eService_handleEEDRs`
 
 
 ##### API IAM Users
@@ -1334,13 +1339,13 @@ And now, your Bitcoin-Api core API is active!
 
 #### Deploy The Exchange API
 
-(🚧👷‍♂️👷‍♀️🏗 the code for this section still needs to be updated)
-
 To finish the rest of the set up which includes setting up the exchange, there's a few more steps.
 
 **Set Up Exchange Bitcoin-Api Token**
 
 Create a token using the `POST - /tokens` endpoint on your newly created API. The token and the userId associated with this token both need to be added for your API environment variables `EXCHANGE_BITCOIN_API_TESTNET_TOKEN` and `EXCHANGE_TOKEN_USER_ID`. 
+
+Initialize this token by retrieving an address with it. Make a request to the `POST - /addresses` endpoint using your token.
 
 **Deploy Exchange API Lambda Functions**
 
@@ -1360,11 +1365,11 @@ Set up your [AWS SES](https://aws.amazon.com/ses/) email. SES is used to send em
 
 First, verify the email that you're going to be using to send the exchange emails from, this can be your exchange's support email. You can also verify the entire domain of the email that you're sending from. Verifying your email can be done on [this page in the AWS SES browser console](https://console.aws.amazon.com/ses/home#verified-senders-domain:).
 
-Next, create an [AWS SNS](https://aws.amazon.com/sns) topic to forward email events to an AWS Lambda function. Call this topic `bitcoin_api_exchangeEmailDeliveryResultsForwarder_staging` or `bitcoin_api_exchangeEmailDeliveryResultsForwarder`. On creation, give it a nickname `s_ba_email` or `p_ba_email` (this is optional, you can give it another nickname if you want😃🤠). You can create and configure your SNS topics in the [AWS SNS browser console](https://console.aws.amazon.com/sns/v3/home#/dashboard).
+Next, create an [AWS SNS](https://aws.amazon.com/sns) topic to forward email events to an AWS Lambda function. Call this topic `bitcoin_api_e_emailDeliveryResultsForwarder_staging` or `bitcoin_api_e_emailDeliveryResultsForwarder`. On creation, give it a nickname `s_ba_email` or `p_ba_email` (this is optional, you can give it another nickname if you want😃🤠). You can create and configure your SNS topics in the [AWS SNS browser console](https://console.aws.amazon.com/sns/v3/home#/dashboard).
 
-For the SNS topic you've just created, attach your `bitcoin_api_lambda_eService_handleExchangeEmailDeliveryResults_staging` or  `bitcoin_api_lambda_eService_handleExchangeEmailDeliveryResults` Lambda function as a subscriber.
+For the SNS topic you've just created, attach your `bitcoin_api_lambda_eService_handleEEDRs_staging` or `bitcoin_api_lambda_eService_handleEEDRs` Lambda function as a subscriber.
 
-Now, back in your [AWS SES browser console](https://console.aws.amazon.com/ses/home), go to your email's or your domain's settings.  In the settings, go to the notifications section and click "Edit configuration". In the "SNS Topic Configuration" settings, for `Bounces`, `Complaints`, and `Deliveries` choose `bitcoin_api_exchangeEmailDeliveryResultsForwarder_staging` or `bitcoin_api_exchangeEmailDeliveryResultsForwarder`. Leave the "Include original headers" checkbox unchecked. Press "Save Config" after.
+Now, back in your [AWS SES browser console](https://console.aws.amazon.com/ses/home), go to your email's or your domain's settings.  In the settings, go to the notifications section and click "Edit configuration". In the "SNS Topic Configuration" settings, for `Bounces`, `Complaints`, and `Deliveries` choose `bitcoin_api_e_emailDeliveryResultsForwarder_staging` or `bitcoin_api_e_emailDeliveryResultsForwarder`. Leave the "Include original headers" checkbox unchecked. Press "Save Config" after.
 
 In your API's .env file, your `EXCHANGE_MANAGEMENT_EMAIL` environment variable must be set to your verified SES's email used to send emails for your exchange.
 
@@ -1465,7 +1470,7 @@ This is the large image sponsored content text, it contains info and a [text-emb
 * for all main text sections: 100 characters max including the text-embedded link, the text of the text-embedded link can be up to 50 characters max
 
 
-There's a **limit of 12 sponsored content items** on this `README.md` file in the [Sponsored Content](#sponsored-content) section above. Reserve your Bitcoin-Api-Full-Stack marketing now using the [GitHub Sponsors page for Bitcoin-Api](https://github.com/sponsors/bitcoin-api)! 
+There's a **limit of 12 sponsored content items** in this `README.md` file in the [Sponsored Content](#sponsored-content) section above. Reserve your Bitcoin-Api-Full-Stack marketing now using the [GitHub Sponsors page for Bitcoin-Api](https://github.com/sponsors/bitcoin-api)! 
 
 ## Merch
 

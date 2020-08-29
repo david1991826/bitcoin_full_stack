@@ -44,7 +44,7 @@ module.exports = Object.freeze( async ({
 }) => {
     
     console.log(
-        'running the deleteLogouts function with the following values: ' +
+        'running the deleteLogins function with the following values: ' +
         stringify({
             exchangeUserId,
             hashedLoginTokenIdFromRequestHeader,
@@ -112,7 +112,7 @@ module.exports = Object.freeze( async ({
 
     console.log(
         
-        'deleteLogouts executed successfully: returning results ' +
+        'deleteLogins executed successfully: returning results ' +
         stringify( deleteLoginResults )
     );
 

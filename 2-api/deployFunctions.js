@@ -11,7 +11,7 @@ if( isProductionMode ) {
 
     require( 'dotenv' ).config({
 
-        path: `${ __dirname }/credentials/beautifulRiver3/production/.env`
+        path: `${ __dirname }/productionCredentials/.env`
     });
 
     process.env.BITCOIN_API_ENV = 'production';
@@ -22,7 +22,7 @@ else {
 
     require( 'dotenv' ).config({
 
-        path: `${ __dirname }/credentials/beautifulRiver3/staging/.env`
+        path: `${ __dirname }/stagingCredentials/.env`
     });
 
     process.env.BITCOIN_API_ENV = 'staging';

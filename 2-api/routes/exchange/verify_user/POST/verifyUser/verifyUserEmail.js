@@ -101,6 +101,12 @@ module.exports = Object.freeze( async ({
                                     verification: {
                                         date: Date.now(),
                                         ipAddress,
+                                        emailMessageId: (
+                                            exchangeUser.emailMessageId
+                                        ),
+                                        emailToVerify: (
+                                            exchangeUser.emailToVerify
+                                        ),
                                     }
                                 }
                             )
@@ -109,6 +115,7 @@ module.exports = Object.freeze( async ({
 
                     delete newExchangeUser.emailToVerify;
                     delete newExchangeUser.verifyEmailCode;
+                    delete newExchangeUser.emailMessageId;
                 
                     await updateDatabaseEntry({
                 

@@ -25,7 +25,7 @@ module.exports = Object.freeze( async ({
 
     rawEmail,
     rawPassword,
-    rawGoogleCode,
+    // rawGoogleCode,
     ipAddress
     
 }) => {
@@ -35,7 +35,7 @@ module.exports = Object.freeze( async ({
             with the following values - ${ stringify({
                 email: rawEmail,
                 password: rawPassword,
-                googleCode: rawGoogleCode,
+                // googleCode: rawGoogleCode,
                 ipAddress
             })
         }`

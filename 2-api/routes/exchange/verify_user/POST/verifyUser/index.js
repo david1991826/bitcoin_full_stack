@@ -6,6 +6,16 @@ const {
     }
 } = require( '@bitcoin-api.io/common-private' );
 
+const {
+    aws: {
+        dinoCombos: {
+            emails: {
+                ensureEmailIsNotBlocked,
+            }
+        }
+    }
+} = require( '../../../../../exchangeUtils' );
+
 const validateAndGetValues = require( './validateAndGetValues' );
 const ensureVerificationRequestIsValid = require( './ensureVerificationRequestIsValid' );
 const verifyUserEmail = require( './verifyUserEmail' );
@@ -44,6 +54,11 @@ module.exports = Object.freeze( async ({
         rawEmail,
         rawPassword,
         rawVerifyEmailCode,
+    });
+
+    await ensureEmailIsNotBlocked({
+
+        email,
     });
 
     const {

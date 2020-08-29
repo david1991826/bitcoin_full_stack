@@ -10,13 +10,13 @@ module.exports = ({
         EXCHANGE_FLAMINGO_ENCRYPTION_PASSWORD,
         EXCHANGE_XOOVO_ENCRYPTION_ID,
         EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
-        EXCHANGE_BITCOIN_API_TESTNET_TOKEN,
-        EXCHANGE_BITCOIN_API_LIVENET_TOKEN,
+        EXCHANGE_BITCOIN_API_TOKEN,
         WALHALLA_ADDRESS_MODE_SECRET,
         EXCHANGE_TOKEN_USER_ID,
         EXCHANGE_SIGN_UP_GOOGLE_CAPTCHA_SECRET,
         EXCHANGE_URL,
         EXCHANGE_MANAGEMENT_EMAIL,
+        API_BASE_URL,
     },
 
 }) => { 
@@ -84,9 +84,9 @@ module.exports = ({
                 EXCHANGE_FLAMINGO_ENCRYPTION_PASSWORD,
                 EXCHANGE_XOOVO_ENCRYPTION_ID,
                 EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
-                EXCHANGE_BITCOIN_API_TESTNET_TOKEN,
-                EXCHANGE_BITCOIN_API_LIVENET_TOKEN,
+                EXCHANGE_BITCOIN_API_TOKEN,
                 WALHALLA_ADDRESS_MODE_SECRET,
+                API_BASE_URL,
             }
         },
 
@@ -106,28 +106,10 @@ module.exports = ({
                 EXCHANGE_FLAMINGO_ENCRYPTION_PASSWORD,
                 EXCHANGE_XOOVO_ENCRYPTION_ID,
                 EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
-                EXCHANGE_BITCOIN_API_TESTNET_TOKEN,
-                EXCHANGE_BITCOIN_API_LIVENET_TOKEN,
+                EXCHANGE_BITCOIN_API_TOKEN,
                 WALHALLA_ADDRESS_MODE_SECRET,
+                API_BASE_URL,
             }
-        },
-
-        {
-            nickname: 'ePOST/withdraws',
-            name: 'exchange_api_withdraws_post',
-            handler: 'routes/exchange/withdraws/POST/index.handler',
-            pathsToInclude: [
-                './routes/exchange/withdraws/POST',
-                './sacredElementals/crypto/xoOvoDecrypt',
-                './routes/withdraws/POST/withdrawMoney/getFeeData.js',
-                './routes/withdraws/POST/withdrawMoney/doWithdrawMoney/getMagnaFeeData.js',
-            ],
-            environmentVariables: {
-                EXCHANGE_XOOVO_ENCRYPTION_ID,
-                EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
-                EXCHANGE_TOKEN_USER_ID,
-            },
-            memory: 320,
         },
 
         {
@@ -145,8 +127,25 @@ module.exports = ({
         },
 
         {
+            nickname: 'ePOST/withdraws',
+            name: 'eApi_withdraws_post',
+            handler: 'routes/exchange/withdraws/POST/index.handler',
+            pathsToInclude: [
+                './routes/exchange/withdraws/POST',
+                './sacredElementals/crypto/xoOvoDecrypt',
+                './routes/withdraws/POST/withdrawMoney/getFeeData.js',
+                './routes/withdraws/POST/withdrawMoney/doWithdrawMoney/getMagnaFeeData.js',
+            ],
+            environmentVariables: {
+                EXCHANGE_XOOVO_ENCRYPTION_ID,
+                EXCHANGE_XOOVO_ENCRYPTION_PASSWORD,
+                EXCHANGE_TOKEN_USER_ID,
+            }
+        },
+
+        {
             nickname: 'ePOST/exchanges',
-            name: 'exchange_api_exchanges_post',
+            name: 'eApi_exchanges_post',
             handler: 'routes/exchange/exchanges/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/exchanges/POST',
@@ -160,7 +159,7 @@ module.exports = ({
 
         {
             nickname: 'ePOST/dreams',
-            name: 'exchange_api_dreams_post',
+            name: 'eApi_dreams_post',
             handler: 'routes/exchange/dreams/POST/index.handler',
             pathsToInclude: [
                 './routes/exchange/dreams/POST',
@@ -173,11 +172,11 @@ module.exports = ({
         },
 
         {
-            nickname: 'eService/handleAuxiliaryEmailCase',
-            name: 'eService_handleAuxiliaryEmailCase',
-            handler: 'routes/exchange/ultraServices/handleAuxiliaryEmailCase/index.handler',
+            nickname: 'eService/handleEEDRs',
+            name: 'eService_handleEEDRs',
+            handler: 'routes/exchange/ultraServices/handleEEDRs/index.handler',
             pathsToInclude: [
-                './routes/exchange/ultraServices/handleAuxiliaryEmailCase',
+                './routes/exchange/ultraServices/handleEEDRs',
             ],
             environmentVariables: {}
         },

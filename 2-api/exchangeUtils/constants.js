@@ -23,6 +23,11 @@ module.exports = Object.freeze({
         userId: 'user-id',
     },
 
+    verificationCode: {
+
+        expiryTime: oneDay,
+    },
+
     javascript: {
 
         styleSpacer: '__style__',
@@ -35,15 +40,17 @@ module.exports = Object.freeze({
 
     exchanges,
 
-    auxiliaryEmailCases: {
+    exchangeEmailDeliveryResults: {
 
         snsNotificationTypes: {
 
+            Delivery: 'Delivery',
             Bounce: 'Bounce',
             Complaint: 'Complaint',
         },
 
         types: {
+            success: 'success',
             block: 'block',
             review: 'review',
         },

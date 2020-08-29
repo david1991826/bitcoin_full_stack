@@ -8,7 +8,7 @@ const {
             getQueueId
         },
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     utils: {
@@ -28,7 +28,7 @@ const {
             }
         }
     }
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const validateAndGetValues = require( './validateAndGetValues' );
 const getAddTransactionValues = require( './getAddTransactionValues' );

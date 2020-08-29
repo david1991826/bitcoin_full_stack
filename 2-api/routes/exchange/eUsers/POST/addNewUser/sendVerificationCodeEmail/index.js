@@ -16,7 +16,14 @@ const {
         urls: {
             exchangeUrl,
         }
-    }
+    },
+    javascript: {
+        getExchangeUserIdData,
+        verificationCodeTools: {
+            getVerificationCode
+        }
+    },
+    
 } = require( '../../../../../../exchangeUtils' );
 
 const {
@@ -25,14 +32,12 @@ const {
     }
 } = require( '../../../../../../utils' );
 
-
 const getEmailHtml = require( './getEmailHtml' );
 
 
 module.exports = Object.freeze( async ({
 
     email,
-    verifyEmailCode,
     isProbablyCrypto,
     
 }) => {
@@ -42,7 +47,6 @@ module.exports = Object.freeze( async ({
             with the following values - ${
                 stringify({
                     email,
-                    verifyEmailCode,
                     isProbablyCrypto,
                 })
         }`
@@ -53,6 +57,18 @@ module.exports = Object.freeze( async ({
         'https://probablycrypto.com'
 
     ) : exchangeUrl;
+
+    const {
+        
+        exchangeUserId,
+        baseId
+
+    } = getExchangeUserIdData();
+
+    const verifyEmailCode = getVerificationCode({
+
+        baseId,
+    });
 
     const verificationLink = (
      
@@ -71,13 +87,16 @@ module.exports = Object.freeze( async ({
     const html = getEmailHtml({
 
         verificationLink,
-        appName: isProbablyCrypto ? 'ProbablyCrypto.com' : 'atExchange.io',
+        appName: isProbablyCrypto ? 'ProbablyCrypto.com' : (
+
+            process.env.EXCHANGE_APP_NAME || 'Bitcoin-Api Exchange'
+        ),
     });
 
     const text = (
 
-        `Your ` +
-        `Account Verification Link is ${ verificationLink }`
+        'Your ' +
+        `account verification link is "${ verificationLink }".`
     );
 
     const fromEmailAddress = isProbablyCrypto ? (
@@ -94,9 +113,13 @@ module.exports = Object.freeze( async ({
         );
     }
 
-    await sendEmail({
+    const {
+        
+        emailMessageId,
 
-        subject: 'Account Verification Code',
+    } = await sendEmail({
+
+        subject: 'Account Verification Link',
         html,
         text,
         toEmailAddress: email,
@@ -104,7 +127,19 @@ module.exports = Object.freeze( async ({
         fromEmailAddress,
     });
 
+    const sendVerificationCodeEmailResults = {
+
+        exchangeUserId,
+        emailMessageId,
+        verifyEmailCode,
+    };
+
     console.log(
-        'sendVerificationCodeEmail executed successfully'
+        'sendVerificationCodeEmail executed successfully - ' +
+        `returning results: ${    
+            stringify( sendVerificationCodeEmailResults )
+        }`
     );
+
+    return sendVerificationCodeEmailResults;
 });

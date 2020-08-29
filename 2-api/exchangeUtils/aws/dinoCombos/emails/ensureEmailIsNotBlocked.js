@@ -24,14 +24,12 @@ const {
 } = require( '@bitcoin-api.io/common-exchange' );
 
 const {
-    constants: {
-        exchangeEmailDeliveryResults: {
-            types: {
-                block,
-            },
-        }
+    exchangeEmailDeliveryResults: {
+        types: {
+            block,
+        },
     }
-} = require( '../../../../../exchangeUtils' );
+} = require( '../../../constants' );
 
 const searchLimit = 1000;
 

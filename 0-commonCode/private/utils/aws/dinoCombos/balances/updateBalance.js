@@ -135,7 +135,7 @@ module.exports =  Object.freeze( async ({
 
             existingBalanceData,
             getNewBalance
-        })
+        });
 
         console.log( `new amount is: ${ amount } BTC` );
 
@@ -177,7 +177,7 @@ module.exports =  Object.freeze( async ({
             tableName,
             entry: newBalanceEntry,
         });
-    }
+    };
 
     if( shouldDoOperationWithLock ) {
 

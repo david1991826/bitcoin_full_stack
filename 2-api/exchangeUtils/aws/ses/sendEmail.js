@@ -57,7 +57,11 @@ module.exports = Object.freeze( async ({
         FromEmailAddress: fromEmailAddress,
     };
 
-    await new Promise( ( resolve, reject ) => {
+    const {
+
+        emailMessageId,
+        
+    } = await new Promise( ( resolve, reject ) => {
 
         sesv2.sendEmail(
             
@@ -79,12 +83,23 @@ module.exports = Object.freeze( async ({
                     `AWS response data: ${ stringify( data ) }`
                 );
 
-                resolve();
+                resolve({
+
+                    emailMessageId: data.MessageId,
+                });
             }
         );
     });
 
+    const sendEmailResults = {
+
+        emailMessageId,
+    };
+
     console.log(
-        'sendEmail executed successfully'
+        'sendEmail executed successfully - returning results: ' +
+        stringify( sendEmailResults )
     );
+
+    return sendEmailResults;
 });

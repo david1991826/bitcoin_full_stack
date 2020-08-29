@@ -6,9 +6,19 @@ const {
     }
 } = require( '@bitcoin-api.io/common-private' );
 
+const {
+    aws: {
+        dinoCombos: {
+            emails: {
+                ensureEmailIsNotBlocked,
+            }
+        }
+    }
+} = require( '../../../../../exchangeUtils' );
+
 const validateAndGetValues = require( './validateAndGetValues' );
 const ensureUserDoesNotExist = require( './ensureUserDoesNotExist' );
-const ensureEmailIsNotBlocked = require( './ensureEmailIsNotBlocked' );
+// const ensureEmailIsNotBlocked = require( './ensureEmailIsNotBlocked' );
 const addNewUserToDatabase = require( './addNewUserToDatabase' );
 const sendVerificationCodeEmail = require( './sendVerificationCodeEmail' );
 
@@ -22,7 +32,7 @@ module.exports = Object.freeze( async ({
 
     const rawEmail = event.body.email;
     const rawPassword = event.body.password;
-    const rawGoogleCode = event.body.googleCode;
+    // const rawGoogleCode = event.body.googleCode;
 
     console.log(
         
@@ -30,7 +40,7 @@ module.exports = Object.freeze( async ({
 
             email: rawEmail,
             password: rawPassword,
-            googleCode: rawGoogleCode,
+            // googleCode: rawGoogleCode,
         }) }`
     );
 
@@ -44,7 +54,7 @@ module.exports = Object.freeze( async ({
 
         rawEmail,
         rawPassword,
-        rawGoogleCode,
+        // rawGoogleCode,
         ipAddress,
     });
 
@@ -60,27 +70,32 @@ module.exports = Object.freeze( async ({
 
     const {
         
-        userObject,
+        exchangeUserId,
+        emailMessageId,
         verifyEmailCode,
 
-     } = await addNewUserToDatabase({
+    } = await sendVerificationCodeEmail({
+        email,
+        // verifyEmailCode,
+        isProbablyCrypto: event.isProbablyCrypto,
+    });
+
+    await addNewUserToDatabase({
 
         email,
         password,
         ipAddress,
+        exchangeUserId,
+        emailMessageId,
+        verifyEmailCode,
         // isHumanScore
     });
 
-    await sendVerificationCodeEmail({
-        email,
-        verifyEmailCode,
-        isProbablyCrypto: event.isProbablyCrypto,
-    });
-
-    const addNewUserResponse = Object.assign(
-        {},
-        userObject
-    );
+    const addNewUserResponse = {};
+    // Object.assign(
+    //     {},
+    //     {}
+    // );
 
     console.log(
         

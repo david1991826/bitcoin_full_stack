@@ -18,13 +18,13 @@ const {
             } 
         }
     }
-} = require( '@npm.m.stecky.efantis/commonprivate' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     utils: {
         aws: {
             dinoCombos: {
-                addTransactionAndUpdateExchangeUser, // TODO: make more memory efficient
+                addTransactionAndUpdateExchangeUser,
                 getExchangeUser,
             }
         }
@@ -42,7 +42,7 @@ const {
             }
         }
     }
-} = require( '@npm.m.stecky.efantis/common-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const {
     exchangeUsers: {
@@ -272,7 +272,7 @@ const doWithdrawCore = Object.freeze( async ({
 module.exports = Object.freeze( async ({
 
     event,
-    ipAddress,
+    // ipAddress,
     exchangeUserId
     
 }) => {

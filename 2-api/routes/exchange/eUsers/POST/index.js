@@ -15,8 +15,6 @@ const addNewUser = require( './addNewUser' );
 
 exports.handler = Object.freeze( async rawEvent => {
 
-    // TODO: on new user add email message id on database user
-    
     try {
 
         console.log( 'running the exchange /exchange-users - POST function' );
@@ -43,7 +41,6 @@ exports.handler = Object.freeze( async rawEvent => {
             ipAddressTimeRange: 60000,
         });
 
-        // const userObject = 
         await addNewUser({
 
             event,

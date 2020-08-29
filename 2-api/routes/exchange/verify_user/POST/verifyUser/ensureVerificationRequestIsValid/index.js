@@ -21,6 +21,8 @@ const {
     }
 } = require( '@bitcoin-api.io/common-exchange' );
 
+const verifyEmailMessageIdIsValid = require( './verifyEmailMessageIdIsValid' );
+
 const {
     aws: {
         dino: {
@@ -35,9 +37,9 @@ const {
             getVerificationCodeComponents,
         }
     },
-} = require( '../../../../../exchangeUtils' );
+} = require( '../../../../../../exchangeUtils' );
 
-const flamingoCrescentDecrypt = require( '../../../../../sacredElementals/crypto/flamingoCrescentDecrypt' );
+const flamingoCrescentDecrypt = require( '../../../../../../sacredElementals/crypto/flamingoCrescentDecrypt' );
 
 
 module.exports = Object.freeze( async ({
@@ -64,7 +66,7 @@ module.exports = Object.freeze( async ({
         baseId,
         expiryDate
 
-    } = getVerificationCodeComponents({ // NOTE: can wrap to throw proper error
+    } = getVerificationCodeComponents({
 
         verificationCode: verifyEmailCode
     });
@@ -72,7 +74,7 @@ module.exports = Object.freeze( async ({
     if( Date.now() > expiryDate ) {
 
         const error = new Error(
-            'The provided email verification code has been expired. ' +
+            'The provided email verification link has been expired. ' +
             'Please try creating your ' +
             'account again. Sorry for any inconvenience.'
         );
@@ -135,12 +137,19 @@ module.exports = Object.freeze( async ({
     ) {
 
         const error = new Error(
-            'The provided email verification code data is invalid.'
+            'The provided data for email verification is invalid.'
         );
         error.statusCode = 400;
         error.bulltrue = true;
         throw error;
     }
+
+    await verifyEmailMessageIdIsValid({
+
+        email,
+        emailMessageId: exchangeUser.emailMessageId,
+        expiryDate,
+    });
 
     const responseValues = {
 
