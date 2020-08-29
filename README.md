@@ -32,7 +32,7 @@ Xapo is an established digital banking company which is used for ultra-secure an
 
 #### Why are Amazon Web Services (AWS) used as the foundation for Bitcoin-Api's tech?
 
-The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). AWS is used because their services provide a good tech foundation for the following reasons:
+The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). AWS is used as a foundation for Bitcoin-Api's tech for the following reasons:
 1. In using AWS, you have full ownership of your data 💯🤠
 2. AWS has very high quality and competitively priced cloud services🖥📊
 
