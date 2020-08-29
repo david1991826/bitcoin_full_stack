@@ -48,7 +48,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **NDAX** for crypto and fiat money services
 * **TJ Holowaychuk** for open source code, cloud tools, and inspiration
 * **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin
-* **Justin Sun and The Tron Foundation** for developing and promoting Tron, JustSwap and crypto
+* **Justin Sun and The Tron Foundation** for developing and promoting Tron, JustSwap, and crypto
 * **Vitalik Buterin** for developing and promoting Ethereum and crypto
 * **Reddit** for social media services
 * **Facebook** for React and social media services
