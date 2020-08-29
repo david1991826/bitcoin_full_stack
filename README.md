@@ -24,7 +24,11 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
-#### Why are Amazon Web Services (AWS) used as the foundation for Bitcoin-Api?
+#### What is Xapo used for in the context of Bitcoin-Api?
+
+[Xapo](https://xapo.com) is used for ultra secure and discrete Bitcoin and fiat money storage, exchanging, and management, with very high international legal compliance. Check out [their vault](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)! Xapo also promotes and develops [Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).
+
+#### Why are Amazon Web Services (AWS) used as the foundation for Bitcoin-Api's tech?
 
 The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
 1. They have very high quality and competitively priced cloud services
@@ -33,7 +37,6 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 ☁️Additional cloud credits☁️
 * **Satoshi Nakamoto** for Bitcoin
 * **Bitcoin.org** for Bitcoin Core
-* **Xapo** for crypto and fiat money services, and for promoting and developing Bitcoin and the crypto space
 * **Linus Torvalds** for Linux
 * **RedisLabs** for Redis database
 * **pm2** for NodeJS process management 
