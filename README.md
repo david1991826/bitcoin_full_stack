@@ -26,7 +26,7 @@ It's important to note that even though all the code in this repository is publi
 
 #### What's Xapo used for in the context of Bitcoin-Api?
 
-[Xapo](https://xapo.com) is used for ultra secure and discrete Bitcoin and fiat money storage, exchanging, and management, with very high international legal compliance. Xapo also promotes and develops [Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/). Check out [their nuclear blast and EMP proof underground money vault](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)!
+[Xapo](https://xapo.com) is used for ultra-secure and discrete Bitcoin and fiat money storage, exchanging, and management, with very high international legal compliance. Xapo also promotes, contributes to, and develops [Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/). Check out [their nuclear blast and EMP proof underground money vault](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)!
 
 #### Why are Amazon Web Services (AWS) used as the foundation for Bitcoin-Api's tech?
 
