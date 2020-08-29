@@ -69,15 +69,11 @@ Promote your material right here in this "Sponsored Content" section in this `RE
     />
 </a>
 
-#### This public repo version is still under construction 🚧👷‍♀️👷‍♂️🏗
-
-* the core API documentation and code is ready to be used although the exchange API documentation and code still needs to be updated
-
 #### Upcoming updates 🚧👷‍♀️👷‍♂️🏗
 
-* Exchange code updates: getting exchange code ready for production, cleaning up code, and adding necessary features like improved email handling logic including handling bounces and complaints
-
 * move common NPM modules to `@bitcoin-api` domain
+
+* develop frontend
 
 Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
 
@@ -1342,8 +1338,6 @@ And now, your Bitcoin-Api core API is active!
 
 
 #### Deploy The Exchange API
-
-(🚧👷‍♂️👷‍♀️🏗 the code for this section still needs to be updated)
 
 To finish the rest of the set up which includes setting up the exchange, there's a few more steps.
 
