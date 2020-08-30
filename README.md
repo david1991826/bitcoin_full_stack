@@ -75,6 +75,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Bitcoin.com](https://www.bitcoin.com/)** for their Bitcoin.com wallet app
 * **[BitcoinBookmarks.com](https://bitcoinbookmarks.com)** for their ultimate cryptocurrency sites collection 
 * **[SoSplush](https://twitter.com/SoSplush)** for art design
+* **[Kapwing](https://www.kapwing.com/)** for video editing services
 * **[TD Bank](https://www.td.com/)** for fiat money services
 * **[NDAX](https://ndax.io/)** for crypto and fiat money services
 * **[TJ Holowaychuk](https://github.com/tj)** for open source code, cloud tools, and inspiration
