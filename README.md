@@ -84,7 +84,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Reddit](https://www.reddit.com/)** for social media services
 * **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and [social media services](https://www.youtube.com/watch?v=ncbb5B85sd0)
 * **[T](https://bitcoin-api.s3.amazonaws.com/images/documentation/http-twitter-dog.png)[witter](https://twitter.com)** for social media services
-* **[Googl](https://google.com)[e]](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg)** for email services, YouTube, and other Google services
+* **[Googl](https://google.com)[e](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg)** for email services, YouTube, and other Google services
 * **[Apple](https://apple.com)** for MacOS, [iOS](https://www.youtube.com/watch?v=MnrJzXM7a6o), and their devices
 * **[Microsoft](https://www.microsoft.com)** for Github, NPM, LinkedIn, and [Microsoft Windows 95](https://www.youtube.com/watch?v=lAkuJXGldrM)
 * **[Open Source Developers](https://bitcoin-api.s3.amazonaws.com/images/documentation/steve-jobs-come-at-me-bro.jpg)** - you're the best!!!🤗💜
