@@ -56,6 +56,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 1. In using AWS, you have full ownership of your data 💯🤠
 2. AWS has very high quality and competitively priced cloud services 🖥📊
 
+----
+
 **☁️Additional Mentions☁️**
 * **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
 * **[Bitcoin.org](https://bitcoin.org)** for Bitcoin Core
