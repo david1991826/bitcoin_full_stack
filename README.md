@@ -29,7 +29,7 @@ It's important to note that even though all the code in this repository is publi
 <a href="https://xapo.com">
     <img
         src="https://bitcoin-api.s3.amazonaws.com/images/documentation/xapo-1.png"
-        width="200"
+        width="270"
     />
 </a>
 
