@@ -35,7 +35,7 @@ It's important to note that even though all the code in this repository is publi
 
 #### What's Xapo used for in the context of Bitcoin-Api?
 
-After setting up your own Bitcoin-Api instance and generating revenue from it, [Xapo](https://xapo.com) is the perfect place to store larger amounts of generated money.
+After setting up your own Bitcoin-Api instance and generating revenue from it, [Xapo](https://xapo.com) is the perfect place to safely store generated money that's not immediately needed for your instance.
 
 Xapo is an established digital banking company which has ultra-secure, highly reliable, and very discrete Bitcoin and fiat money storage, exchange, and management services. To demonstrate Xapo's commitment to security for your assets, check out one of their money vaults: [Xapo's underground nuclear blast and EMP proof vault in the Swiss Alps](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)! In addition to their robust infrastructure and techology, Xapo has achieved a very high level of international legal compliance. This first-rate ability to be compliant with international money regulations is essential for doing serious business in the crypto industry.
 
