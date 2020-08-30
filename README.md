@@ -24,39 +24,69 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
-The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). Bitcoin-Api is not sponsored by AWS although AWS is good because:
-1. They have very high quality and competitively priced cloud services
-2. You have full responsibility for and ownership of your data 💯🤠
+## Important Mentions
 
-☁️Additional cloud credits☁️
-* **Satoshi Nakamoto** for Bitcoin
-* **Bitcoin.org** for Bitcoin Core
-* **Xapo** for crypto and fiat money services, and for promoting and developing Bitcoin and the crypto space
-* **Linus Torvalds** for Linux
-* **RedisLabs** for Redis database
-* **pm2** for NodeJS process management 
-* **MongoDB** for MongoDB database
-* **Stack Overflow** for tech guidance and ideas
-* **Postman** for API testing
-* **Blockchain.com** for blockchain monitoring and analytics
-* **Bitcoin.com** for their Bitcoin wallet app
-* **BitPay** for Copay app (can be used for testing)
-* **SoSplush** for art design
-* **Werner Vogels and Company** for inspiration
-* **Elon Musk and Company** for inspiration
-* **TD Bank** for fiat money services
-* **NDAX** for crypto and fiat money services
-* **TJ Holowaychuk** for open source code, cloud tools, and inspiration
-* **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin and the crypto space
-* **Justin Sun and The Tron Foundation** for developing and promoting Tron, JustSwap, and the crypto space
-* **Vitalik Buterin** for developing and promoting Ethereum and the crypto space
-* **Reddit** for social media services
-* **Facebook** for React and social media services
-* **Twitter** for social media services
-* **Google** for email services, YouTube, and other Google services
-* **Apple** for MacOS, iOS, and their devices
-* **Microsoft** for Github, NPM, LinkedIn, and Microsoft Windows 95
-* **Open Source Developers** - you're the best!!!🤗💜
+<a href="https://xapo.com">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/images/documentation/xapo-1.png"
+        height="50"
+    />
+</a>
+
+#### What's Xapo used for in the context of Bitcoin-Api?
+
+After setting up your own Bitcoin-Api instance and generating revenue from it, [Xapo](https://xapo.com) is the perfect place to safely store generated money that's not immediately needed for your instance.
+
+Xapo is an established digital banking company which has ultra-secure, highly reliable, and very discrete Bitcoin and fiat money storage, exchange, and management services. To demonstrate Xapo's commitment to security for your assets, check out one of their money vaults: [Xapo's underground nuclear blast and EMP proof vault in the Swiss Alps](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)! In addition to their robust infrastructure and techology, Xapo has achieved a very high level of international legal compliance. This first-rate ability to be compliant with international money regulations is essential for doing serious business in the crypto industry.
+
+Xapo as a company is run in a very ethical manner and they promote freedom and autonomy with respect to how your money is managed. In giving back and in advancing the crypto world, [Xapo promotes, contributes to, and develops Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).🚀✨
+
+----
+
+<a href="https://aws.amazon.com/">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/images/documentation/aws-2.png"
+        height="50"
+    />
+</a>
+
+#### Why are Amazon Web Services (AWS) used in the foundation of Bitcoin-Api's tech?
+
+The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). AWS is used in the foundation of Bitcoin-Api's tech for the following reasons:
+1. In using AWS, you have full ownership of your data. For this Bitcoin-Api system, your [private keys](https://en.bitcoin.it/wiki/Private_key), which grant you direct access to your Bitcoin when connected to the Bitcoin network generally, are included within your system's data which you have full ownership of.💯🤠 (your private keys are automatically managed by Bitcoin Core within your Bitcoin node Linux server, you can access your private keys manually if necessary)
+2. AWS has very high quality and competitively priced cloud services 🖥📊
+
+----
+
+**☁️Additional Mentions☁️**
+* **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
+* **[Bitcoin.org](https://bitcoin.org)** for Bitcoin Core
+* **[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)** for Linux
+* **[RedisLabs](https://redislabs.com/)** for Redis database
+* **[pm2](https://pm2.keymetrics.io/)** for NodeJS process management 
+* **[MongoDB](https://www.mongodb.com/)** for MongoDB database
+* **[Stack Overflow](https://stackoverflow.com/)** for tech guidance and ideas
+* **[Wikipedia](https://www.wikipedia.org/)** for information
+* **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration
+* **[Elon Musk and Compan](https://twitter.com/elonmusk)[y](http://stankmemes.com/)** for inspiration
+* **[Postman](https://www.postman.com/)** for API testing
+* **[Blockchain.com](https://www.blockchain.com/)** for blockchain monitoring and analytics
+* **[Bitcoin.com](https://www.bitcoin.com/)** for their Bitcoin.com wallet app
+* **[BitPay](https://bitpay.com/)** for their Copay app (can be used for testing)
+* **[SoSplush](https://twitter.com/SoSplush)** for art design
+* **[TD Bank](https://www.td.com/)** for fiat money services
+* **[NDAX](https://ndax.io/)** for crypto and fiat money services
+* **[TJ Holowaychuk](https://github.com/tj)** for open source code, cloud tools, and inspiration
+* **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and [Celsius](https://celsius.network/)** for getting down on the streets and promoting Bitcoin and the crypto space
+* **[Justin Sun](https://twitter.com/justinsuntron) and [The Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and the crypto space
+* **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and the crypto space
+* **[Reddit](https://www.reddit.com/)** for social media services
+* **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and [social media services](https://www.youtube.com/watch?v=ncbb5B85sd0)
+* **[T](https://bitcoin-api.s3.amazonaws.com/images/documentation/http-twitter-dog.png)[witter](https://twitter.com)** for social media services
+* **[Google](https://google.com)** for email services, YouTube, and other [Google](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg) services
+* **[Appl](https://apple.com)[e](https://www.youtube.com/watch?v=MnrJzXM7a6o)** for MacOS, iOS, and their devices
+* **[Microsoft](https://www.microsoft.com)** for Github, NPM, LinkedIn, and [Microsoft Windows 95](https://www.youtube.com/watch?v=lAkuJXGldrM)
+* **[Open Source Developers](https://bitcoin-api.s3.amazonaws.com/images/documentation/steve-jobs-come-at-me-bro.jpg)** - you're the best!!!🤗💜
 
 
 ## Sponsored Content
@@ -843,7 +873,7 @@ This pm2 command can also be used to monitor your fee data service and all your 
 pm2 monit
 ```
 
-> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function. As a result of the fast seamless Giraffe Lick Leaf deployments, it's possible to do fast changes of what the fee is!! At the backend level... wow!!!😲🤠🧐👁
+> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function.
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
