@@ -96,7 +96,7 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 ## Video Demos 
 
-* **[Withdrawing Bitcoin from Bitcoin-Api API instance Using Postman Demo Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)**
+* **[Withdrawing Bitcoin from Bitcoin-Api API Instance Using Postman Demo Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)**
 
 * **[Exchange and Game Technology Demo Video on YouTube](https://youtu.be/EMAwIrHM2Qc)**
 
