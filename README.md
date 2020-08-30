@@ -24,13 +24,31 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
+---
+
+<a href="https://xapo.com">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/images/documentation/xapo-1.png"
+        width="150"
+    />
+</a>
+
 #### What's Xapo used for in the context of Bitcoin-Api?
 
 After creating your own Bitcoin-Api instance and generating revenue from it, [Xapo](https://xapo.com) is the perfect place to store larger amounts of generated money.
 
 Xapo is an established digital banking company which has ultra-secure, highly reliable, and very discrete Bitcoin and fiat money storage, exchanging, and management services. To demonstrate Xapo's commitment to security for your assets, check out one of their money vaults: [Xapo's underground nuclear blast and EMP proof vault in the Swiss Alps](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)! In addition to their robust infrastructure and tech, Xapo has achieved a very high level of international legal compliance. This first-rate ability to be compliant with international money regulations is essential for doing serious business in the crypto industry.
 
-In giving back and in advancing the crypto world, [Xapo promotes, contributes to, and develops Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).
+In giving back and in advancing the crypto world, [Xapo promotes, contributes to, and develops Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).🚀✨
+
+----
+
+<a href="https://aws.amazon.com/">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/images/documentation/aws-1.jpg"
+        width="100"
+    />
+</a>
 
 #### Why are Amazon Web Services (AWS) used in the foundation of Bitcoin-Api's tech?
 
