@@ -71,8 +71,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Elon Musk and Compan](https://twitter.com/elonmusk)[y](http://stankmemes.com/)** for inspiration
 * **[Postman](https://www.postman.com/)** for API testing
 * **[BitPay](https://bitpay.com/)** for their Copay app (can be used for testing)
-* **[Blockchain.com](https://www.blockchain.com/)** for blockchain monitoring and analytics
 * **[Bitcoin.com](https://www.bitcoin.com/)** for their Bitcoin.com wallet app
+* **[Blockchain.com](https://www.blockchain.com/)** for blockchain monitoring and analytics
 * **[BitcoinBookmarks.com](https://bitcoinbookmarks.com)** for their ultimate cryptocurrency sites collection 
 * **[SoSplush](https://twitter.com/SoSplush)** for art design
 * **[TD Bank](https://www.td.com/)** for fiat money services
