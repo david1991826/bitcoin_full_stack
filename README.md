@@ -24,12 +24,12 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
----
+## Important Mentions
 
 <a href="https://xapo.com">
     <img
         src="https://bitcoin-api.s3.amazonaws.com/images/documentation/xapo-1.png"
-        width="270"
+        height="100"
     />
 </a>
 
@@ -56,7 +56,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 1. In using AWS, you have full ownership of your data 💯🤠
 2. AWS has very high quality and competitively priced cloud services 🖥📊
 
-**☁️Additional cloud credits☁️**
+**☁️Additional Mentions☁️**
 * **Satoshi Nakamoto** for Bitcoin
 * **Bitcoin.org** for Bitcoin Core
 * **Linus Torvalds** for Linux
