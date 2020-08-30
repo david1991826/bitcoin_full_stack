@@ -94,14 +94,12 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 Promote your material right here in this "Sponsored Content" section in this `README.md` file. More info on this in the [Sponsored Content Info](#sponsored-content-info) section below.
 
 
-## Video Demo of Exchange and Game Technology
+## Video Demos 
 
-<a href="https://youtu.be/EMAwIrHM2Qc">
-    <img
-        src="https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/youtube-logo-2.png"
-        width="85"
-    />
-</a>
+* **[Withdrawing Bitcoin from Bitcoin-Api API instance Using Postman Demo Video on Twitter]("https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1")**
+
+* **[Exchange and Game Technology Demo Video on YouTube]("https://youtu.be/EMAwIrHM2Qc")**
+
 
 ## Updates in Development
 
