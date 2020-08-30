@@ -86,7 +86,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Google](https://google.com)** for email services, YouTube, and other [Google](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg) services
 * **[Appl](https://apple.com)[e](https://www.youtube.com/watch?v=MnrJzXM7a6o)** for MacOS, iOS, and their devices
 * **[Microsoft](https://www.microsoft.com)** for Github, NPM, LinkedIn, and [Microsoft Windows 95](https://www.youtube.com/watch?v=lAkuJXGldrM)
-* **[Open Source Developers](https://bitcoin-api.s3.amazonaws.com/images/documentation/open-source-projects.jpg)** - you're the best!!!🤗💜
+* **[Open Source Developers](https://bitcoin-api.s3.amazonaws.com/images/documentation/steve-jobs-come-at-me.jpg)** - you're the best!!!🤗💜
 
 
 ## Sponsored Content
