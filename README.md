@@ -68,7 +68,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Stack Overflow](https://stackoverflow.com/)** for tech guidance and ideas
 * **[Wikipedia](https://www.wikipedia.org/)** for information
 * **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration
-* **[Elon Musk and Company](http://stankmemes.com/)** for inspiration
+* **[Elon Musk and Company](https://twitter.com/elonmusk)** for inspiration
 * **[Postman](https://www.postman.com/)** for API testing
 * **[Blockchain.com](https://www.blockchain.com/)** for blockchain monitoring and analytics
 * **[Bitcoin.com](https://www.bitcoin.com/)** for their Bitcoin.com wallet app
