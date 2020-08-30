@@ -46,7 +46,7 @@ Xapo as a company is run in a very ethical manner and they promote freedom and a
 <a href="https://aws.amazon.com/">
     <img
         src="https://bitcoin-api.s3.amazonaws.com/images/documentation/aws-2.png"
-        width="50"
+        height="50"
     />
 </a>
 
