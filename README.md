@@ -29,7 +29,7 @@ It's important to note that even though all the code in this repository is publi
 <a href="https://xapo.com">
     <img
         src="https://bitcoin-api.s3.amazonaws.com/images/documentation/xapo-1.png"
-        width="150"
+        width="165"
     />
 </a>
 
@@ -46,7 +46,7 @@ In giving back and in advancing the crypto world, [Xapo promotes, contributes to
 <a href="https://aws.amazon.com/">
     <img
         src="https://bitcoin-api.s3.amazonaws.com/images/documentation/aws-1.jpg"
-        width="100"
+        width="75"
     />
 </a>
 
