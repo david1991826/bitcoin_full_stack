@@ -58,7 +58,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 
 ----
 
-#### ☁️Additional Mentions☁️
+#### ☁️Cloud Mentions☁️
 * **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
 * **[Bitcoin.org](https://bitcoin.org)** for Bitcoin Core
 * **[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)** for Linux
