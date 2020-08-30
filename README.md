@@ -57,36 +57,35 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 2. AWS has very high quality and competitively priced cloud services 🖥📊
 
 **☁️Additional Mentions☁️**
-* **Satoshi Nakamoto** for Bitcoin
-* **Bitcoin.org** for Bitcoin Core
-* **Linus Torvalds** for Linux
-* **RedisLabs** for Redis database
-* **pm2** for NodeJS process management 
-* **MongoDB** for MongoDB database
-* **Stack Overflow** for tech guidance and ideas
-* **Postman** for API testing
-* **Blockchain.com** for blockchain monitoring and analytics
-* **Bitcoin.com** for their Bitcoin wallet app
-* **BitPay** for Copay app (can be used for testing)
-* **SoSplush** for art design
-* **Werner Vogels and Company** for inspiration
-* **Elon Musk and Company** for inspiration
-* **TD Bank** for fiat money services
-* **NDAX** for crypto and fiat money services
-* **TJ Holowaychuk** for open source code, cloud tools, and inspiration
-* **Alex Mashinsky and Celsius** for getting down on the streets and promoting Bitcoin and the crypto space
-* **Justin Sun and The Tron Foundation** for developing and promoting Tron, JustSwap, and the crypto space
-* **Vitalik Buterin** for developing and promoting Ethereum and the crypto space
-* **Reddit** for social media services
-* **Facebook** for React and social media services
-* **Twitter** for social media services
-* **Google** for email services, YouTube, and other Google services
-* **Apple** for MacOS, iOS, and their devices
-* **Microsoft** for Github, NPM, LinkedIn, and Microsoft Windows 95
-* **Open Source Developers** - you're the best!!!🤗💜
+* **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
+* **[Bitcoin.org](https://bitcoin.org)** for Bitcoin Core
+* **[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)** for Linux
+* **[RedisLabs](https://redislabs.com/)** for Redis database
+* **[pm2](https://pm2.keymetrics.io/)** for NodeJS process management 
+* **[MongoDB](https://www.mongodb.com/)** for MongoDB database
+* **[Stack Overflow](https://stackoverflow.com/)** for tech guidance and ideas
+* **[Wikipedia](https://www.wikipedia.org/)** for information
+* **[Postman](https://www.postman.com/)** for API testing
+* **[Blockchain.com](https://www.blockchain.com/)** for blockchain monitoring and analytics
+* **[Bitcoin.com](https://www.bitcoin.com/)** for their Bitcoin.com wallet app
+* **[BitPay](https://bitpay.com/)** for their Copay app (can be used for testing)
+* **[SoSplush](https://twitter.com/SoSplush)** for art design
+* **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration
+* **[Elon Musk and Company](https://twitter.com/elonmusk)** for inspiration
+* **[TD Bank](https://www.td.com/)** for fiat money services
+* **[NDAX](https://ndax.io/)** for crypto and fiat money services
+* **[TJ Holowaychuk](https://github.com/tj)** for open source code, cloud tools, and inspiration
+* **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and [Celsius](https://celsius.network/)** for getting down on the streets and promoting Bitcoin and the crypto space
+* **[Justin Sun](https://twitter.com/justinsuntron) and [The Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and the crypto space
+* **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and the crypto space
+* **[Reddit](https://www.reddit.com/)** for social media services
+* **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and social media services
+* **[T](https://bitcoin-api.s3.amazonaws.com/images/documentation/http-twitter-dog.png)[witter](https://twitter.com)** for social media services
+* **[Google](https://google.com)** for email services, YouTube, and other [Google](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg) services
+* **[Appl](https://apple.com)[e](https://www.youtube.com/watch?v=MnrJzXM7a6o)** for MacOS, iOS, and their devices
+* **[Microsoft](https://www.microsoft.com)** for Github, NPM, LinkedIn, and [Microsoft Windows 95](https://www.youtube.com/watch?v=lAkuJXGldrM)
+* **[Open Source Developers](https://bitcoin-api.s3.amazonaws.com/images/documentation/open-source-projects.jpg)** - you're the best!!!🤗💜
 
-
-**TODO:** add links to this list
 
 ## Sponsored Content
 
