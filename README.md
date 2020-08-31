@@ -41,7 +41,7 @@ Xapo is an established digital banking company which has ultra-secure, highly re
 
 Xapo as a company is run in a very ethical manner and they promote freedom and autonomy with respect to how your money is managed. In giving back to and in advancing the crypto world, [Xapo promotes, contributes to, and develops Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).
 
-Overall, because of Xapo's industry leading digital banking services, ethical management, and their contributes to the community, Xapo is an ideal place to keep Bitcoin-Api earned money that your instance doesn't immediately need.🔒🏦
+Overall, because of Xapo's industry leading digital banking services, ethical management, and their contributions to the community, Xapo is an ideal place to keep Bitcoin-Api earned money that your instance doesn't immediately need.🔒🏦
 
 ----
 
