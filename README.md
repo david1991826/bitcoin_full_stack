@@ -39,7 +39,9 @@ After setting up your own Bitcoin-Api instance and generating revenue from it, [
 
 Xapo is an established digital banking company which has ultra-secure, highly reliable, and very discrete Bitcoin and fiat money storage, exchange, and management services. To demonstrate Xapo's commitment to security for your assets, check out one of their money vaults: [Xapo's underground nuclear blast and EMP proof vault in the Swiss Alps](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)! In addition to their robust infrastructure and techology, Xapo has achieved a very high level of international legal compliance. This first-rate ability to be compliant with international money regulations is essential for businesses which involve cryptocurrencies.
 
-Xapo as a company is run in a very ethical manner and they promote freedom and autonomy with respect to how your money is managed. In giving back and in advancing the crypto world, [Xapo promotes, contributes to, and develops Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).🚀✨
+Xapo as a company is run in a very ethical manner and they promote freedom and autonomy with respect to how your money is managed. In giving back to and in advancing the crypto world, [Xapo promotes, contributes to, and develops Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).
+
+Overall, because of Xapo's industry leading digital banking services, Xapo is an ideal place to keep Bitcoin-Api earned money that your instance doesn't immediately need.🔒🏦
 
 ----
 
@@ -54,7 +56,8 @@ Xapo as a company is run in a very ethical manner and they promote freedom and a
 
 The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). AWS is used in the foundation of Bitcoin-Api's tech for the following reasons:
 1. In using AWS, you have full ownership of your data. For this Bitcoin-Api system, your [private keys](https://en.bitcoin.it/wiki/Private_key), which grant you direct access to your Bitcoin when connected to the Bitcoin network generally, are included within your system's data which you have full ownership of.💯🤠 (your private keys are automatically managed by Bitcoin Core within your Bitcoin node Linux server, you can access your private keys manually if necessary)
-2. AWS has very high quality and competitively priced cloud services 🖥📊
+2. AWS has excellent quality and competitively priced cloud services 🖥📊
+3. AWS has very high security standards which means very high security for your cryptocurrencies and other data.🛡💂🏼‍♂️
 
 ----
 
