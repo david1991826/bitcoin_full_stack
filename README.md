@@ -82,7 +82,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[TD Bank](https://www.td.com/)** for fiat money services
 * **[NDAX](https://ndax.io/)** for crypto and fiat money services
 * **[TJ Holowaychuk](https://github.com/tj)** for open source code, cloud tools, and inspiration
-* **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and [Celsius](https://celsius.network/)** for getting down on the streets and promoting Bitcoin and the crypto space
+* **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and [Celsius Network](https://celsius.network/)** for getting down on the streets and promoting Bitcoin and the crypto space
 * **[Justin Sun](https://twitter.com/justinsuntron) and [The Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and the crypto space
 * **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and the crypto space
 * **[Andreas Antonopoulos](https://aantonop.com/)** for promoting and helping develop bitcoin and the crypto space
