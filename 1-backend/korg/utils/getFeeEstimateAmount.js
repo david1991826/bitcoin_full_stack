@@ -10,7 +10,7 @@ const {
     utils: {
         database: { metadata: { getFeeToPayFromFeeData } },
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const stagingTransactionFee = 0.00001000;
 

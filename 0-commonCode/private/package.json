@@ -1,6 +1,6 @@
 {
-  "name": "@bitcoin-api.io/common-private",
-  "version": "29.0.4",
+  "name": "@bitcoin-api/full-stack-api",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,15 +8,12 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api.io/common-general": "^1.0.4",
-    "@bitcoin-api.io/redis-streams-utils": "^1.0.3",
+    "@bitcoin-api/redis-streams-utils": "^1.0.3",
     "aws-sdk": "^2.523.0",
     "do-redis-request": "^1.0.6",
     "drf": "^1.0.12",
     "drq": "^4.2.0",
     "get-redis-client": "^1.0.5",
-    "loglevels": "^8.0.1",
-    "orgasm": "^1.0.4",
     "redis": "^2.8.0",
     "uuid": "^3.3.2"
   },

@@ -6,7 +6,7 @@ const {
 
 const stringify = require( '../stringify' );
 
-const { formatting: { getAmountNumber } } = require( 'orgasm' );
+const { formatting: { getAmountNumber } } = require( '../bitcoin' );
 
 
 const getMoneyIn = Object.freeze( ({

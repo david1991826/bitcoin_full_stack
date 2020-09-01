@@ -1,16 +1,6 @@
 'use strict';
 
 const {
-    constants: {
-        withdraws: {
-            limits: {
-                maximumWithdrawAmount,
-            }
-        }
-    }
-} = require( '@bitcoin-api.io/common-general' );
-
-const {
 
     aws: {
         database: {
@@ -19,6 +9,11 @@ const {
             metadataPartitionKeyValues
         }
     },
+    withdraws: {
+        limits: {
+            maximumWithdrawAmount,
+        }
+    }
 
 } = require( '../../../constants' );
 

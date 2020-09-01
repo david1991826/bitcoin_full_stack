@@ -13,23 +13,18 @@ const {
             }
         }
     },
+    withdraws: {
+        states: {
+            verifying,
+            verifyingToFail,
+            complete,
+            failed
+        }
+    }
 } = require( '../../../../../constants' );
 
 const refreshBalance = require( './refreshBalance' );
 const updateWithdraw = require( './updateWithdraw' );
-
-const {
-    constants: {
-        withdraws: {
-            states: {
-                verifying,
-                verifyingToFail,
-                complete,
-                failed
-            }
-        }
-    }
-} = require( '@bitcoin-api.io/common-general' );
 
 
 const getVanguardValues = Object.freeze( ({

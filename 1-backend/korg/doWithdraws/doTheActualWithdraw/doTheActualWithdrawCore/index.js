@@ -29,12 +29,12 @@ const {
         },
         stringify
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const {
     doBitcoinRequest,
     constants
-} = require( '@bitcoin-api.io/backend-common-utilities' );
+} = require( '@bitcoin-api/full-stack-backend' );
 
 const {
     

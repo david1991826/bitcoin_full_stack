@@ -1,15 +1,13 @@
 'use strict';
 
 const {
-    constants: {
-        withdraws: {
-            limits: {
-                minimumWithdrawAmount,
-                maximumWithdrawAmount
-            }
+    withdraws: {
+        limits: {
+            minimumWithdrawAmount,
+            maximumWithdrawAmount
         }
-    },
-} = require( '@bitcoin-api.io/common-general' );
+    }
+} = require( '../../constants' );
 
 
 module.exports = Object.freeze( ({

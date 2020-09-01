@@ -36,7 +36,6 @@ const {
 
 } = require( '../../../../../exchangeUtils' );
 
-// const { formatting: { getAmountNumber } } = require( 'orgasm' );
 // const doWithdraw = require( './doWithdraw' );
 
 

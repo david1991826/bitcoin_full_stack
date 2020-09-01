@@ -2,7 +2,7 @@
 
 const {
     formatting: { getAmountNumber }
-} = require( 'orgasm' );
+} = require( '../../bitcoin' );
 
 const feeSumReducer = Object.freeze(
     

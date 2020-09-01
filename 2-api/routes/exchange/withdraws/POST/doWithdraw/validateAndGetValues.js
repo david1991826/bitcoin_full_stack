@@ -1,15 +1,14 @@
 'use strict';
 
-const  {
-    validation: { getIsValidAddress },
-    formatting: { getAmountNumber }
-} = require( 'orgasm' );
-
 const {
     utils: {
         stringify,
         business: {
             getIsValidWithdrawAmount
+        },
+        bitcoin: {
+            validation: { getIsValidAddress },
+            formatting: { getAmountNumber }
         }
     },
     constants: {

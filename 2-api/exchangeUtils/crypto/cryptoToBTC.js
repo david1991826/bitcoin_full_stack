@@ -8,7 +8,13 @@ const {
     }
 } = require( '../constants' );
 
-const { formatting: { getAmountNumber } } = require( 'orgasm' );
+const { 
+	utils: {
+		bitcoin: {
+			formatting: { getAmountNumber }
+		},	
+	},
+} = require( '@bitcoin-api.io/common-private' );
 
 
 module.exports = Object.freeze( ({

@@ -1,6 +1,12 @@
 'use strict';
 
-const { formatting: { getAmountNumber } } = require( 'orgasm' );
+const {
+    utils: {
+        bitcoin: {
+            formatting: { getAmountNumber }
+        }    
+    },
+} = require( '@bitcoin-api/full-stack-api' );
 
 const {
     transactions: {

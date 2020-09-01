@@ -26,7 +26,7 @@ const {
             }
         }
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const f = Object.freeze;
 

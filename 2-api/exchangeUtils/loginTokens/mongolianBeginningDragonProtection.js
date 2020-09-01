@@ -27,8 +27,6 @@ module.exports = Object.freeze( async ({
     event,
     ipAddressMaxRate,
     ipAddressTimeRange,
-    advancedCodeMaxRate,
-    advancedCodeTimeRange,
 
     shouldOnlyGetInitialTokens = true,
     shouldGetFullLoginTokenInfo = false,
@@ -67,8 +65,6 @@ module.exports = Object.freeze( async ({
                 event,
                 ipAddressMaxRate,
                 ipAddressTimeRange,
-                advancedCodeMaxRate,
-                advancedCodeTimeRange,
                 exchangeUserId,
                 shouldGetFullLoginTokenInfo,
                 shouldOnlyGetInitialTokens
@@ -91,8 +87,6 @@ module.exports = Object.freeze( async ({
 
         ipAddressMaxRate,
         ipAddressTimeRange,
-        advancedCodeMaxRate,
-        advancedCodeTimeRange,
 
         customDragonFunction: async () => {
 

@@ -1,4 +1,4 @@
 'use strict';
 
 
-module.exports = require( '@bitcoin-api.io/redis-streams-utils' );
+module.exports = require( '@bitcoin-api/redis-streams-utils' );
