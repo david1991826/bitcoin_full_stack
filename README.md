@@ -82,14 +82,14 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[TD Bank](https://www.td.com/)** for fiat money services
 * **[NDAX](https://ndax.io/)** for crypto and fiat money services
 * **[TJ Holowaychuk](https://github.com/tj)** for open source code, cloud tools, and inspiration
-* **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and [Celsius Network](https://celsius.network/)** for getting down on the streets and promoting the crypto space
-* **[Justin Sun](https://twitter.com/justinsuntron) and [The Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and the crypto space
-* **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and the crypto space
-* **[Andreas Antonopoulos](https://aantonop.com/)** for promoting and helping develop bitcoin and the crypto space
+* **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and [Celsius Network](https://celsius.network/)** for getting down on the streets and promoting crypto
+* **[Justin Sun](https://twitter.com/justinsuntron) and [The Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and crypto
+* **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and crypto
+* **[Andreas Antonopoulos](https://aantonop.com/)** for promoting and helping develop bitcoin and crypto
 * **[Jimmy Song](https://twitter.com/jimmysong) and [Programming Bitcoin](https://programmingbitcoin.com/)** for promoting Bitcoin and for helping develop the Bitcoin ecosystem
-* **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting Bitcoin and the crypto space
+* **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting Bitcoin and crypto
 * **[Paul McNeal and The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
-* **[Crypto Finally](https://twitter.com/CryptoFinally)** for promoting Bitcoin and the crypto space
+* **[Crypto Finally](https://twitter.com/CryptoFinally)** for promoting Bitcoin and crypto
 * **[Reddit](https://www.reddit.com/)** for social media services
 * **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and [social media services](https://www.youtube.com/watch?v=ncbb5B85sd0)
 * **[T](https://bitcoin-api.s3.amazonaws.com/images/documentation/http-twitter-dog.png)[witter](https://twitter.com)** for social media services
