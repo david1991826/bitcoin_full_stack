@@ -37,9 +37,11 @@ It's important to note that even though all the code in this repository is publi
 
 After setting up your own Bitcoin-Api instance and generating revenue from it, [Xapo](https://xapo.com) is the perfect place to safely store generated money that's not immediately needed for your instance.
 
-Xapo is an established digital banking company which has ultra-secure, highly reliable, and very discrete Bitcoin and fiat money storage, exchange, and management services. To demonstrate Xapo's commitment to security for your assets, check out one of their money vaults: [Xapo's underground nuclear blast and EMP proof vault in the Swiss Alps](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)! In addition to their robust infrastructure and techology, Xapo has achieved a very high level of international legal compliance. This first-rate ability to be compliant with international money regulations is essential for doing serious business in the crypto industry.
+Xapo is an established digital banking company which has ultra-secure, highly reliable, and very discrete Bitcoin and fiat money storage, exchange, and management services. To demonstrate Xapo's commitment to security for your assets, check out one of their money vaults: [Xapo's underground nuclear blast and EMP proof vault in the Swiss Alps](https://qz.com/1103310/photos-the-secret-swiss-mountain-bunker-where-millionaires-stash-their-bitcoins/)! In addition to their robust infrastructure and techology, Xapo has achieved a very high level of international legal compliance. This first-rate ability to be compliant with international money regulations is essential for businesses which involve cryptocurrencies.
 
-Xapo as a company is run in a very ethical manner and they promote freedom and autonomy with respect to how your money is managed. In giving back and in advancing the crypto world, [Xapo promotes, contributes to, and develops Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).🚀✨
+Xapo as a company is run in a very ethical manner and they promote freedom and autonomy with respect to how your money is managed. In giving back to and in advancing the crypto world, [Xapo promotes, contributes to, and develops Bitcoin](https://www.forbes.com/sites/rorymurray/2020/06/18/bitcoin-grant-marks-another-step-forward-but-questions-on-industry-funding-remain/#7f5ac7627091) and the [crypto space](https://www.facebook.com/xapoapp/posts/welcome-to-libra-today-we-are-announcing-a-new-global-currency-built-on-blockcha/2425315364198784/).
+
+Overall, because of Xapo's industry leading digital banking services, ethical management, and their contributions to the community, Xapo is an ideal place to keep Bitcoin-Api earned money that your instance doesn't immediately need.🔒🏦
 
 ----
 
@@ -72,21 +74,27 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Elon Musk and Compan](https://twitter.com/elonmusk)[y](http://stankmemes.com/)** for inspiration
 * **[Postman](https://www.postman.com/)** for API testing
 * **[BitPay](https://bitpay.com/)** for their Copay app (can be used for testing)
-* **[Bitcoin.com](https://www.bitcoin.com/)** for their Bitcoin.com wallet app
 * **[Blockchain.com](https://www.blockchain.com/)** for blockchain monitoring and analytics
+* **[Bitcoin.com](https://www.bitcoin.com/)** for their Bitcoin.com wallet app
 * **[BitcoinBookmarks.com](https://bitcoinbookmarks.com)** for their ultimate cryptocurrency sites collection 
 * **[SoSplush](https://twitter.com/SoSplush)** for art design
+* **[Kapwing](https://www.kapwing.com/)** for video editing services
 * **[TD Bank](https://www.td.com/)** for fiat money services
 * **[NDAX](https://ndax.io/)** for crypto and fiat money services
 * **[TJ Holowaychuk](https://github.com/tj)** for open source code, cloud tools, and inspiration
 * **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and [Celsius](https://celsius.network/)** for getting down on the streets and promoting Bitcoin and the crypto space
 * **[Justin Sun](https://twitter.com/justinsuntron) and [The Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and the crypto space
 * **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and the crypto space
+* **[Andreas Antonopoulos](https://aantonop.com/)** for promoting bitcoin and the crypto space
+* **[Jimmy Song](https://twitter.com/jimmysong)** for promoting bitcoin
+* **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting bitcoin and the crypto space
+* **[Paul McNeal and The Crypto Curator](https://www.thecryptocurator.com/)** for the latest bitcoin and cryptocurrency updates
+* **[Crypto Finally](https://twitter.com/CryptoFinally)** for promoting bitcoin and the crypto space
 * **[Reddit](https://www.reddit.com/)** for social media services
 * **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and [social media services](https://www.youtube.com/watch?v=ncbb5B85sd0)
 * **[T](https://bitcoin-api.s3.amazonaws.com/images/documentation/http-twitter-dog.png)[witter](https://twitter.com)** for social media services
-* **[Google](https://google.com)** for email services, YouTube, and other [Google](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg) services
-* **[Appl](https://apple.com)[e](https://www.youtube.com/watch?v=MnrJzXM7a6o)** for MacOS, iOS, and their devices
+* **[Googl](https://google.com)[e](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg)** for email services, YouTube, and other Google services
+* **[Apple](https://apple.com)** for MacOS, [iOS](https://www.youtube.com/watch?v=MnrJzXM7a6o), and their devices
 * **[Microsoft](https://www.microsoft.com)** for Github, NPM, LinkedIn, and [Microsoft Windows 95](https://www.youtube.com/watch?v=lAkuJXGldrM)
 * **[Open Source Developers](https://bitcoin-api.s3.amazonaws.com/images/documentation/steve-jobs-come-at-me-bro.jpg)** - you're the best!!!🤗💜
 
