@@ -54,7 +54,8 @@ Xapo as a company is run in a very ethical manner and they promote freedom and a
 
 The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). AWS is used in the foundation of Bitcoin-Api's tech for the following reasons:
 1. In using AWS, you have full ownership of your data. For this Bitcoin-Api system, your [private keys](https://en.bitcoin.it/wiki/Private_key), which grant you direct access to your Bitcoin when connected to the Bitcoin network generally, are included within your system's data which you have full ownership of.💯🤠 (your private keys are automatically managed by Bitcoin Core within your Bitcoin node Linux server, you can access your private keys manually if necessary)
-2. AWS has very high quality and competitively priced cloud services 🖥📊
+2. AWS has excellent quality and competitively priced cloud services. 🖥📊
+3. AWS has very high security standards which means very high security for your cryptocurrencies and other data. 🛡💂🏼‍♂️
 
 ----
 
