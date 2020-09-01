@@ -56,8 +56,8 @@ Overall, because of Xapo's industry leading digital banking services, ethical ma
 
 The Bitcoin-Api system's foundation uses several cloud services provided by [Amazon Web Services (AWS)](https://aws.amazon.com). AWS is used in the foundation of Bitcoin-Api's tech for the following reasons:
 1. In using AWS, you have full ownership of your data. For this Bitcoin-Api system, your [private keys](https://en.bitcoin.it/wiki/Private_key), which grant you direct access to your Bitcoin when connected to the Bitcoin network generally, are included within your system's data which you have full ownership of.💯🤠 (your private keys are automatically managed by Bitcoin Core within your Bitcoin node Linux server, you can access your private keys manually if necessary)
-2. AWS has excellent quality and competitively priced cloud services 🖥📊
-3. AWS has very high security standards which means very high security for your cryptocurrencies and other data.🛡💂🏼‍♂️
+2. AWS has excellent quality and competitively priced cloud services. 🖥📊
+3. AWS has very high security standards which means very high security for your cryptocurrencies and other data. 🛡💂🏼‍♂️
 
 ----
 
@@ -85,6 +85,11 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and [Celsius](https://celsius.network/)** for getting down on the streets and promoting Bitcoin and the crypto space
 * **[Justin Sun](https://twitter.com/justinsuntron) and [The Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and the crypto space
 * **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and the crypto space
+* **[Andreas Antonopoulos](https://aantonop.com/)** for promoting and helping develop bitcoin and the crypto space
+* **[Jimmy Song](https://twitter.com/jimmysong) and [Programming Bitcoin](https://programmingbitcoin.com/)** for promoting Bitcoin and for helping develop the Bitcoin ecosystem
+* **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting Bitcoin and the crypto space
+* **[Paul McNeal and The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
+* **[Crypto Finally](https://twitter.com/CryptoFinally)** for promoting Bitcoin and the crypto space
 * **[Reddit](https://www.reddit.com/)** for social media services
 * **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and [social media services](https://www.youtube.com/watch?v=ncbb5B85sd0)
 * **[T](https://bitcoin-api.s3.amazonaws.com/images/documentation/http-twitter-dog.png)[witter](https://twitter.com)** for social media services
