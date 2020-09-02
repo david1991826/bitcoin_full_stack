@@ -63,6 +63,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 
 #### ☁️Cloud Mentions☁️
 * **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
+* **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration
+* **[Elon Musk and Compan](https://twitter.com/elonmusk)[y](http://stankmemes.com/)** for inspiration
 * **[Bitcoin.org](https://bitcoin.org)** for Bitcoin Core
 * **[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)** for Linux
 * **[RedisLabs](https://redislabs.com/)** for Redis database
@@ -70,8 +72,6 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[MongoDB](https://www.mongodb.com/)** for MongoDB database
 * **[Stack Overflow](https://stackoverflow.com/)** for tech guidance and ideas
 * **[Wikipedia](https://www.wikipedia.org/)** for information
-* **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration
-* **[Elon Musk and Compan](https://twitter.com/elonmusk)[y](http://stankmemes.com/)** for inspiration
 * **[Postman](https://www.postman.com/)** for API testing
 * **[BitPay](https://bitpay.com/)** for their Copay app (can be used for testing)
 * **[Blockchain.com](https://www.blockchain.com/)** for blockchain monitoring and analytics
