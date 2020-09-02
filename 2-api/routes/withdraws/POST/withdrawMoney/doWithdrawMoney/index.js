@@ -7,7 +7,7 @@ const {
         database: { metadata: { metaGetFeeToPayFromFeeData } },
         stringify,
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const { throwNotEnoughBitcoinOnTokenError } = require( '../../common' );
 const validateAndGetValues = require( './validateAndGetValues' );

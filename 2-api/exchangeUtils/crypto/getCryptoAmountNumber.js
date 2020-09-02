@@ -3,6 +3,6 @@
 
 module.exports = require(
     
-    '@bitcoin-api.io/common-exchange'
+    '@bitcoin-api/full-stack-exchange'
 
 ).utils.crypto.getCryptoAmountNumber;

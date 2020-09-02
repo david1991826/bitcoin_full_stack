@@ -8,7 +8,7 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api/full-stack-api": "^1.0.0"
+    "@bitcoin-api/full-stack-api": "^1.0.0",
   },
   "devDependencies": {},
   "description": "",

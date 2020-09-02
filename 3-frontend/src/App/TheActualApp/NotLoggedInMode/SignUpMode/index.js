@@ -114,6 +114,7 @@ export default () => {
             usefulComponents.Nav,
             {
                 marginTop: 50,
+                marginBottom: 40,
                 isLoadingMode: getState( 'isLoading' ),
                 onClick: () => {
 

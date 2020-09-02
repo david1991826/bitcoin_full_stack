@@ -86,8 +86,8 @@ export const {
 
         notLoggedInMode: {
 
-            mainMode: v( null ),
-            // mainMode: v( 'signUpMode' ),
+            // mainMode: v( null ),
+            mainMode: v( 'signUpMode' ),
             // mainMode: v( 'loginMode' ),
             // mainMode: v( 'verifyUserMode' ),
         },

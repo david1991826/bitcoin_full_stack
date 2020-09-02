@@ -2,7 +2,7 @@ import { createElement as e, useEffect } from 'react';
 import { getState } from '../reduxX';
 import getLoginCredentialsFromLocalStorage from './getLoginCredentialsFromLocalStorage';
 import NotLoggedInMode from './NotLoggedInMode';
-import LoggedInMode from './LoggedInMode';
+// import LoggedInMode from './LoggedInMode';
 // import ColourSwitcher from '../TheSource/usefulComponents/ColourSwitcher';
 
 
@@ -61,15 +61,15 @@ export default ({
 
     if( hasLoggedInCredentials ) {
 
-        createElementArguments.push(
-            e(
+        // createElementArguments.push(
+        //     e(
                 
-                LoggedInMode,
-                {
-                    safeMode,
-                }
-            )
-        );
+        //         LoggedInMode,
+        //         {
+        //             safeMode,
+        //         }
+        //     )
+        // );
     }
     else {
 

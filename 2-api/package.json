@@ -13,8 +13,8 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api.io/common-exchange": "^6.0.1",
-    "@bitcoin-api.io/common-private": "^29.0.4",
+    "@bitcoin-api/full-stack-exchange": "^1.0.0",
+    "@bitcoin-api/full-stack-api": "^1.0.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
     "uuid": "^3.3.2"

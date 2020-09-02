@@ -9,7 +9,7 @@ const {
         },
         stringify
     },
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const {
     constants: {
@@ -21,7 +21,7 @@ const {
             }
         }
     }
-} = require( '@bitcoin-api.io/common-exchange' );
+} = require( '@bitcoin-api/full-stack-exchange' );
 
 const flamingoCrescent = require( '../../../../../sacredElementals/crypto/flamingoCrescent/index' );
 

@@ -8,7 +8,7 @@ const {
     withdraws,
     urls
 
-} = require( '@bitcoin-api.io/common-private' ).constants;
+} = require( '@bitcoin-api/full-stack-api' ).constants;
 
 module.exports = Object.freeze({
 

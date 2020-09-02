@@ -2,13 +2,13 @@ import * as browser from './browser';
 import * as actions from './actions';
 import * as grecaptcha from './grecaptcha';
 import * as validation from './validation';
-import bitcoinExchangeComponent from './bitcoinExchangeComponent';
+import bitcoinExchangeInstance from './bitcoinExchangeInstance';
 
 
 export {
     
     browser,
-    bitcoinExchangeComponent as bitcoinExchange,
+    bitcoinExchangeInstance as bitcoinExchange,
     actions,
     grecaptcha,
     validation

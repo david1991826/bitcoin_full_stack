@@ -1,6 +1,6 @@
-import { createElement as e, useEffect } from 'react';
+import { createElement as e } from 'react';
 import { getState, setState } from '../../reduxX';
-import { grecaptcha, validation } from '../../utils';
+import { validation } from '../../utils';
 import { story } from '../../constants';
 import { WatermelonInput, POWBlock } from '../usefulComponents';
 import LegalCheckbox from './LegalCheckbox';
@@ -49,25 +49,14 @@ export default ({
 
 }) => {
 
-    useEffect( () => {
-
-        grecaptcha.showGrecaptcha();
-
-        return () => {
-
-            grecaptcha.hideGrecaptcha();
-        };
-
-    }, [] );
-
     const styles = getStyles();
 
     const emailInput = getState( 'signUpPolygon', 'emailInput' );
     const passwordInput = getState( 'signUpPolygon', 'passwordInput' );
     const reTypePasswordInput = getState( 'signUpPolygon', 'reTypePasswordInput' );
     const isLoading = getState( 'isLoading' );
-    const agreeToTermsOfService =  getState( 'signUpPolygon', 'agreeToTermsOfService' );
-    const agreeToPrivacyPolicy =  getState( 'signUpPolygon', 'agreeToPrivacyPolicy' );
+    const agreeToTermsOfService = getState( 'signUpPolygon', 'agreeToTermsOfService' );
+    const agreeToPrivacyPolicy = getState( 'signUpPolygon', 'agreeToPrivacyPolicy' );
 
     const itIsOkayToMakeASignUpRequestRightNow = (
 

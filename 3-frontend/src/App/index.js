@@ -17,8 +17,11 @@ const getStyles = () => {
 
         outerContainer: {
             backgroundColor: mainStyleObject.backgroundColor,
+            // backgroundColor: 'orange',
+            // width: '100%',
+            // height: '100%',
             width: '100%',
-            height: '100%',
+            // height: 500,
 
             display: 'flex',
             flexDirection: 'column',
@@ -29,12 +32,12 @@ const getStyles = () => {
             color: 'white',
         },
 
-        spiritual: {
+        // spiritual: {
 
-            width: 300,
-            height: 600,
-            backgroundColor: 'beige',  
-        }
+        //     width: 300,
+        //     height: 600,
+        //     backgroundColor: 'beige',  
+        // }
     };
 };
 
@@ -65,16 +68,6 @@ export default ({
         {
             style: styles.outerContainer,
         },
-        // e( PrivacyPolicyRealm ),
-        // e( TheActualApp )
-        // ,
-        // e(
-        //     'div',
-        //     {
-        //         style: styles.spiritual,
-        //     }
-        // ),
-        // e( TheSource )
     ];
 
     if( metaMode === story.metaModes.privacyPolicy ) {

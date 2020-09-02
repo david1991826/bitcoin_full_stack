@@ -1,5 +1,5 @@
 import { getState, setState } from '../../reduxX';
-import bitcoinExchange from '../bitcoinExchangeComponent';
+import bitcoinExchange from '../bitcoinExchangeInstance';
 
 
 export default async ({
@@ -87,7 +87,7 @@ export default async ({
             );
         }
 
-        setState( ... setStateArguments );
+        setState( ...setStateArguments );
     }
     catch( err ) {
 

@@ -1,6 +1,6 @@
 import { setState } from '../../reduxX';
 import { bitcoinExchange } from '../../utils';
-import safeGetGoogleCode from './safeGetGoogleCode';
+// import safeGetGoogleCode from './safeGetGoogleCode';
 
 
 export default async ({
@@ -21,20 +21,20 @@ export default async ({
 
         setState( 'isLoading', true );
         
-        const googleCode = await safeGetGoogleCode();
+        // const googleCode = await safeGetGoogleCode();
 
-        if( !googleCode ) {
+        // if( !googleCode ) {
 
-            setState( 'isLoading', false );
+        //     setState( 'isLoading', false );
 
-            return;
-        }
+        //     return;
+        // }
 
         await bitcoinExchange.createUser({
 
             email: emailInput,
             password: passwordInput,
-            googleCode,
+            // googleCode,
         });
 
         setState( 'isLoading', false );

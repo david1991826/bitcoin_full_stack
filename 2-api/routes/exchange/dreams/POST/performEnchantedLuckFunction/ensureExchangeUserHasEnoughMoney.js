@@ -4,7 +4,7 @@ const {
     utils: {
         stringify,
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const {
     utils: {
@@ -14,7 +14,7 @@ const {
             }
         }
     }
-} = require( '@bitcoin-api.io/common-exchange' );
+} = require( '@bitcoin-api/full-stack-exchange' );
 
 const {
     exchangeUsers: {
