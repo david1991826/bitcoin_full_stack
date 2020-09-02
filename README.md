@@ -87,9 +87,9 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and crypto
 * **[Andreas Antonopoulos](https://aantonop.com/)** for promoting and helping develop bitcoin and crypto
 * **[Jimmy Song](https://twitter.com/jimmysong) and [Programming Bitcoin](https://programmingbitcoin.com/)** for promoting Bitcoin and for helping develop the Bitcoin ecosystem
+* **[Laura Shin](https://twitter.com/laurashin) and the [Unchained Podcast](https://unchainedpodcast.com/)** for the latest Bitcoin and cryptocurrency updates
 * **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting Bitcoin and crypto
 * **[Paul McNeal](https://twitter.com/_cryptocurator) and [The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
-* **[Laura Shin](https://twitter.com/laurashin) and the [Unchained Podcast](https://unchainedpodcast.com/)** for the latest Bitcoin and cryptocurrency updates
 * **[Crypto Finally](https://twitter.com/CryptoFinally)** for promoting Bitcoin and crypto
 * **[Reddit](https://www.reddit.com/)** for social media services
 * **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and [social media services](https://www.youtube.com/watch?v=ncbb5B85sd0)
