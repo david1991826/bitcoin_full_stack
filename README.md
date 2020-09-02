@@ -85,8 +85,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and the [Celsius Network](https://celsius.network/)** for getting down on the streets and promoting crypto
 * **[Justin Sun](https://twitter.com/justinsuntron) and the [Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and crypto
 * **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and crypto
-* **[Andreas Antonopoulos](https://aantonop.com/)** for promoting and helping develop Bitcoin and crypto
-* **[Jimmy Song](https://twitter.com/jimmysong) and [Programming Bitcoin](https://programmingbitcoin.com/)** for promoting Bitcoin and for helping develop the Bitcoin ecosystem
+* **[Andreas Antonopoulos](https://aantonop.com/)** for promoting and helping develop the crypto ecosystem
+* **[Jimmy Song](https://twitter.com/jimmysong) and [Programming Bitcoin](https://programmingbitcoin.com/)** for promoting and helping develop the Bitcoin ecosystem
 * **[Laura Shin](https://twitter.com/laurashin) and the [Unchained Podcast](https://unchainedpodcast.com/)** for the latest Bitcoin and cryptocurrency updates
 * **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting Bitcoin and crypto
 * **[Paul McNeal](https://twitter.com/_cryptocurator) and [The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
