@@ -81,6 +81,9 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Kapwing](https://www.kapwing.com/)** for video editing services
 * **[TD Bank](https://www.td.com/)** for fiat money services
 * **[NDAX](https://ndax.io/)** for crypto and fiat money services
+* **[Kraken](https://www.kraken.com/)** for crypto exchange services
+* **[Coinbase](https://www.coinbase.com/)** for crypto exchange services
+* **[Coinsquare](https://www.coinsquare.com/)** for crypto exchange services
 * **[TJ Holowaychuk](https://github.com/tj)** for open source code, cloud tools, and inspiration
 * **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and the [Celsius Network](https://celsius.network/)** for getting down on the streets and promoting crypto
 * **[Justin Sun](https://twitter.com/justinsuntron) and the [Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and crypto
