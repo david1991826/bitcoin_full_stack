@@ -1,6 +1,8 @@
 import { createElement as e } from 'react';
-import { setState } from '../../../reduxX';
+import { setState, getState } from '../../../reduxX';
 import { story } from '../../../constants';
+import AppBar from '@material-ui/core/AppBar';
+import Typography from '@material-ui/core/Typography';
 import {
 
     usefulComponents
@@ -9,12 +11,27 @@ import {
 import Chaturanga from './Chaturanga';
 
 
-// const getStyles = () => {
-    
-//     return {
+const getStyles = () => {
 
-//     };
-// };
+    const {
+
+        backgroundColor
+
+    } = getState( 'mainStyleObject' );
+
+    return {
+
+        outerContainer: {
+            backgroundColor,
+            // width: 300,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+        },
+    };
+};
+
 
 
 export default ({
@@ -23,39 +40,59 @@ export default ({
 
 }) => {
 
-    // const styles = getStyles();
+    const styles = getStyles();
 
     return e(
-
-        usefulComponents.OmegaBorder,
+        'div',
         {
-            websiteName
+            style: styles.outerContainer,
         },
         e(
-            Chaturanga,
+            AppBar,
             {
-                onClick: () => {
+                position: 'static',
+            },
+            e(
+                Typography,
+                {
+                    variant: 'h6',
 
-                    setState(
-                        ['notLoggedInMode', 'mainMode' ],
-                        story.NotLoggedInMode.mainModes.signUpMode
-                    );
                 },
-                text: 'Sign Up'
-            }
+                websiteName
+            )
         ),
         e(
-            Chaturanga,
-            {
-                onClick: () => {
 
-                    setState(
-                        ['notLoggedInMode', 'mainMode' ],
-                        story.NotLoggedInMode.mainModes.loginMode
-                    );
-                },
-                text: 'Login'
-            }
+            usefulComponents.OmegaBorder,
+            {
+                websiteName
+            },
+            e(
+                Chaturanga,
+                {
+                    onClick: () => {
+
+                        setState(
+                            ['notLoggedInMode', 'mainMode' ],
+                            story.NotLoggedInMode.mainModes.signUpMode
+                        );
+                    },
+                    text: 'Sign Up'
+                }
+            ),
+            e(
+                Chaturanga,
+                {
+                    onClick: () => {
+
+                        setState(
+                            ['notLoggedInMode', 'mainMode' ],
+                            story.NotLoggedInMode.mainModes.loginMode
+                        );
+                    },
+                    text: 'Login'
+                }
+            )
         )
     );
 };

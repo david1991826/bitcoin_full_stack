@@ -24,6 +24,7 @@ export default () => {
         splitPath.pop();
     }
 
+    // https://localhost:42069/account_verification/fake-account-verification-code/email/john@smith.com
     if(
         (splitPath[0] === pathValues.mode) &&
         (splitPath[1] === pathValues.account_verification) &&

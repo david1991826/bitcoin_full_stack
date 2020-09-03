@@ -17,18 +17,18 @@ export default class BitcoinExchange {
 
         email,
         password,
-        googleCode
+        // googleCode
 
     }) {
 
         return await makeApiCall({
 
-            resource: 'users',
+            resource: 'exchange-users',
             method: 'POST',
             body: {
                 email,
                 password,
-                googleCode,
+                // googleCode,
             },
         });
     }
@@ -80,7 +80,7 @@ export default class BitcoinExchange {
 
         return await makeApiCall({
 
-            resource: `users/${ userId }`,
+            resource: `exchange-users/${ userId }`,
             method: 'GET',
             headers: {
 
@@ -146,7 +146,7 @@ export default class BitcoinExchange {
 
         return await makeApiCall({
 
-            resource: `users/${ userId }`,
+            resource: `exchange-users/${ userId }`,
             method: 'DELETE',
             headers: {
 

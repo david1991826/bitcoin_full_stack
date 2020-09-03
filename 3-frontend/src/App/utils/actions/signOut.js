@@ -1,5 +1,5 @@
 import { getState, setState, resetReduxX } from '../../reduxX';
-import bitcoinExchangeComponent from '../bitcoinExchangeComponent';
+import bitcoinExchangeInstance from '../bitcoinExchangeInstance';
 
 
 export default async () => {
@@ -16,7 +16,7 @@ export default async () => {
 
         try {
 
-            await bitcoinExchangeComponent.signOut({
+            await bitcoinExchangeInstance.signOut({
 
                 userId,
                 loginToken

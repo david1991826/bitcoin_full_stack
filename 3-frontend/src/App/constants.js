@@ -105,35 +105,10 @@ export const pathValues = {
     email: 'email',
 };
 
-const {
 
-    apiUrl,
-    grecaptchaCode
-
-} = isLivenetMode ? {
-
-    apiUrl: 'https://w89kse34ae.execute-api.us-east-1.amazonaws.com/production',
-    grecaptchaCode: '6Lex16sZAAAAAICFOeEmvgJhYH8-jjN77acoVqpl',
-
-} : {
-
-    apiUrl: 'https://mmb8qnn4il.execute-api.us-east-1.amazonaws.com/staging',
-    grecaptchaCode: '6LdR1_kUAAAAAH-qswQ91wqG5NtN6qfrdvbn1eK2',
-};
-
-
-export {
-
-    apiUrl,
-    grecaptchaCode
-};
+export const apiUrl = process.env.REACT_APP_EXCHANGE_API_BASE_URL;
 
 // if( isLivenetMode ) {
-
 //     export const apiUrl = isLivenetMode ? (
-        
 //     ) : 
-    
 // }
-
-

@@ -17,6 +17,16 @@ export default Object.freeze( async ({
     headers = {},
 
 }) => {
+
+    !!process.env.REACT_APP_LOGS_ON && console.log(
+        'Make API Call:',
+        {
+            resource,
+            method,
+            body,
+            headers
+        }
+    );
     
     const url = `${ apiUrl }/${ resource }`;
 

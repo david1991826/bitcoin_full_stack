@@ -43,26 +43,33 @@ export const {
 
         signUpPolygon: {
 
-            emailInput: v( '' ),
-            passwordInput: v( '' ),
-            reTypePasswordInput: v( '' ),
-            agreeToTermsOfService: v( false ),
-            // agreeToTermsOfService: v( true ),
-            agreeToPrivacyPolicy: v( false ),
-            // agreeToPrivacyPolicy: v( true ),
+            // emailInput: v( '' ),
+            emailInput: v( 'test-email@gmail.com' ),
+            // passwordInput: v( '' ),
+            passwordInput: v( 'password' ),
+            // reTypePasswordInput: v( '' ),
+            reTypePasswordInput: v( 'password' ),
+            // agreeToTermsOfService: v( false ),
+            agreeToTermsOfService: v( true ),
+            // agreeToPrivacyPolicy: v( false ),
+            agreeToPrivacyPolicy: v( true ),
         },
 
         verifyEmailPolygon: {
 
             emailInput: v( '' ),
-            passwordInput: v( '' ),
+            // passwordInput: v( '' ),
+            passwordInput: v( 'password' ),
             verifyEmailCodeInput: v( '' ),
         },
 
         loginPolygon: {
 
-            emailInput: v( '' ),
-            passwordInput: v( '' ),
+            // emailInput: v( '' ),
+            emailInput: v( 'john@smith.com' ),
+            // emailInput: v( '' ),
+            // passwordInput: v( '' ),
+            passwordInput: v( 'password' ),
         },
 
         getUserPolygon: {
@@ -86,8 +93,8 @@ export const {
 
         notLoggedInMode: {
 
-            // mainMode: v( null ),
-            mainMode: v( 'signUpMode' ),
+            mainMode: v( null ),
+            // mainMode: v( 'signUpMode' ),
             // mainMode: v( 'loginMode' ),
             // mainMode: v( 'verifyUserMode' ),
         },
