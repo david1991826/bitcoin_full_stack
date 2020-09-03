@@ -84,7 +84,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Kraken](https://www.kraken.com/)** for crypto exchange services
 * **[Coinbase](https://www.coinbase.com/)** for crypto exchange services
 * **[Coinsquare](https://www.coinsquare.com/)** for crypto exchange services
-* **[TJ Holowaychuk](https://github.com/tj)** for open source code, cloud tools, and inspiration
+* **[TJ Holowaychuk](https://github.com/tj) and [Apex Software](https://apex.sh/)** for open source code, cloud tools, and inspiration
 * **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and the [Celsius Network](https://celsius.network/)** for getting down on the streets and promoting crypto
 * **[Justin Sun](https://twitter.com/justinsuntron) and the [Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and crypto
 * **[Quru Lab](https://www.linkedin.com/company/qurulab/) and [Muna](https://play.google.com/store/apps/details?id=com.munawallet.muna)** for excellent [Waves](https://github.com/wavesplatform) and crypto services and for promoting crypto
