@@ -18,7 +18,7 @@ const {
             } 
         }
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const timeUntilRhinoPondBecomesMurky = 5 * 60 * 1000;
 

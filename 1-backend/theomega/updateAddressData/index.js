@@ -6,7 +6,7 @@ const {
     utils: {
         stringify,
     },
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const updateAddressDatum = require( './updateAddressDatum' );
 

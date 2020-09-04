@@ -1,11 +1,15 @@
 'use strict';
 
-const {
-    utils: { stringify },
-} = require( '@bitcoin-api.io/common-private' );
+const { 
+    utils: {
+        stringify,
+        bitcoin: {
+            formatting: { getAmountNumber }
+        },  
+    },
+} = require( '@bitcoin-api/full-stack-api' );
 
 const {
-
     constants: {
         withdraws: {
             states: {
@@ -13,12 +17,7 @@ const {
             }
         }
     }
-
-} = require( '@bitcoin-api.io/common-exchange' );
-
-const {
-    formatting: { getAmountNumber }
-} = require( 'orgasm' );
+} = require( '@bitcoin-api/full-stack-exchange' );
 
 const getCryptoAmountNumber = require( '../crypto/getCryptoAmountNumber' );
 

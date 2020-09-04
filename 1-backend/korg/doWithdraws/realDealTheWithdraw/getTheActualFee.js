@@ -1,10 +1,10 @@
 'use strict';
 
 const bluebird = require( 'bluebird' );
-const { doBitcoinRequest } = require( '@bitcoin-api.io/backend-common-utilities' );
+const { doBitcoinRequest } = require( '@bitcoin-api/full-stack-backend' );
 const {
     utils: { stringify }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const maxAllowedTriesToGetTheActualFee = 5;
 

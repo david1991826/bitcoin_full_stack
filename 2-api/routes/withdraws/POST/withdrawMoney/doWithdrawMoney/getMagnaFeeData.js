@@ -4,7 +4,7 @@ const {
     utils: {
         stringify,
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 // used by ePOST/withdraws
 module.exports = Object.freeze( ({

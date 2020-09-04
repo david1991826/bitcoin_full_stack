@@ -4,7 +4,7 @@
 //     utils: {
 //         stringify
 //     },    
-// } = require( '@bitcoin-api.io/common-private' );
+// } = require( '@bitcoin-api/full-stack-api' );
 
 const updateTokenValue = require( './updateTokenValue' );
 

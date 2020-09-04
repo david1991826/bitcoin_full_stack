@@ -4,7 +4,7 @@ const {
 
     runSpiritual
 
-} = require( '@bitcoin-api.io/backend-common-utilities' );
+} = require( '@bitcoin-api/full-stack-backend' );
 
 const {
     constants: {
@@ -12,7 +12,7 @@ const {
             monkeyPaw     
         }
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const {
 

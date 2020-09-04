@@ -1,6 +1,6 @@
 'use strict';
 
-const { doBitcoinRequest } = require( '@bitcoin-api.io/backend-common-utilities' );
+const { doBitcoinRequest } = require( '@bitcoin-api/full-stack-backend' );
 
 const numberOfConfirmationsRequiredForValidity = 6;
 

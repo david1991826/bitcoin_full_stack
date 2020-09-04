@@ -2,8 +2,8 @@ import { createElement as e } from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-import App from 'common-code';
+// import 'fontsource-roboto';
+import App from './App';
 
 
 // ReactDOM.render( e('div'), document.getElementById('root'));

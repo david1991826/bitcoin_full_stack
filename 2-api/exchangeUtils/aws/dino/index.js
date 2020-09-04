@@ -8,7 +8,7 @@ const {
             } 
         }
     }
-} = require( '@bitcoin-api.io/common-exchange' );
+} = require( '@bitcoin-api/full-stack-exchange' );
 
 
 module.exports = Object.freeze({

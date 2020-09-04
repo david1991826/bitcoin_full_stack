@@ -1,15 +1,14 @@
 'use strict';
 
-const  {
-    validation: { getIsValidAddress },
-    formatting: { getAmountNumber }
-} = require( 'orgasm' );
-
 const {
     utils: {
         stringify,
         business: {
             getIsValidWithdrawAmount
+        },
+        bitcoin: {
+            validation: { getIsValidAddress },
+            formatting: { getAmountNumber }
         }
     },
     constants: {
@@ -17,7 +16,7 @@ const {
             isProductionMode
         }
     }
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const {
     errors: { ValidationError },

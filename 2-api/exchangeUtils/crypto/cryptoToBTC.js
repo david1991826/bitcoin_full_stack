@@ -8,7 +8,13 @@ const {
     }
 } = require( '../constants' );
 
-const { formatting: { getAmountNumber } } = require( 'orgasm' );
+const { 
+	utils: {
+		bitcoin: {
+			formatting: { getAmountNumber }
+		},	
+	},
+} = require( '@bitcoin-api/full-stack-api' );
 
 
 module.exports = Object.freeze( ({

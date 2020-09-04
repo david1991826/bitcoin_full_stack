@@ -25,7 +25,7 @@ const {
         }
     }
 
-} = require( '@bitcoin-api.io/backend-common-utilities' );
+} = require( '@bitcoin-api/full-stack-backend' );
 
 const limit = 10;
 const oneGreaterThanTheLimit = limit + 1;

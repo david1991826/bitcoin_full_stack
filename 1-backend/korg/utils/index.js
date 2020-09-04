@@ -4,7 +4,7 @@ const {
 
     backgroundExecutor
 
-} = require( '@bitcoin-api.io/backend-common-utilities' );
+} = require( '@bitcoin-api/full-stack-backend' );
 
 
 module.exports = Object.freeze({

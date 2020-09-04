@@ -7,8 +7,10 @@ const {
         mongo: {
             collectionNames
         }
-    }
-} = require( '@bitcoin-api.io/backend-common-utilities' );
+    },
+    backgroundExecutor
+
+} = require( '@bitcoin-api/full-stack-backend' );
 
 const {
     constants: {
@@ -16,13 +18,7 @@ const {
             juiceCamel     
         }
     }
-} = require( '@bitcoin-api.io/common-private' );
-
-const {
-
-    backgroundExecutor
-
-} = require( '@bitcoin-api.io/backend-common-utilities' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const getCanonicalAddressData = require( './getCanonicalAddressData' );
 const updateAddressData = require( './updateAddressData' );

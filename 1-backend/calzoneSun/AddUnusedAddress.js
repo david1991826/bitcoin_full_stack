@@ -21,13 +21,15 @@ const {
     constants: {
         megaServerId
     }
-} = require( '@bitcoin-api.io/backend-common-utilities' );
+} = require( '@bitcoin-api/full-stack-backend' );
 
 const {
-    validation: {
-        getIsValidAddress
+    bitcoin: {
+        validation: {
+            getIsValidAddress
+        },    
     }
-} = require( 'orgasm' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const {
     utils: {
@@ -48,7 +50,7 @@ const {
         },
     },
 
-} = require( '@bitcoin-api.io/common-private' );
+} = require( '@bitcoin-api/full-stack-backend' );
 
 const args = Object.freeze([ 'getnewaddress' ]);
 
