@@ -71,6 +71,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[pm2](https://pm2.keymetrics.io/)** for NodeJS process management 
 * **[MongoDB](https://www.mongodb.com/)** for MongoDB database
 * **[Stack Overflow](https://stackoverflow.com/)** for tech guidance and ideas
+* **[Figma](https://www.figma.com/)** for art and design tools
 * **[Wikipedia](https://www.wikipedia.org/)** for information
 * **[Postman](https://www.postman.com/)** for API testing
 * **[BitPay](https://bitpay.com/)** for their Copay app (can be used for testing)
