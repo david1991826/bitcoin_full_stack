@@ -28,7 +28,7 @@ const {
             }
         }
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 // const oneHundredDays = (100 * 24 * 60 * 60 * 1000);
 

@@ -25,7 +25,7 @@ const {
         }
     }
 
-} = require( '@bitcoin-api/full-stack-backend' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const cleanAll = Object.freeze( async ({
 

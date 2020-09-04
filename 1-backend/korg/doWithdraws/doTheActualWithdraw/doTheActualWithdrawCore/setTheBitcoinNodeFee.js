@@ -2,14 +2,9 @@
 
 const {
     utils: {
-        stringify,
-        bitcoin: {
-            formatting: {
-                getAmountNumber
-            },
-        }
+        stringify
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     
@@ -17,10 +12,15 @@ const {
 
 } = require( '../../../utils' );
 
+const {
+    formatting: {
+        getAmountNumber
+    },
+} = require( 'orgasm' );
 
 const {
     doBitcoinRequest,
-} = require( '@bitcoin-api/full-stack-backend' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 
 const errorTypes = Object.freeze({

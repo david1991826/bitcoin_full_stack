@@ -1,13 +1,12 @@
 'use strict';
 
 const {
+
     utils: {
         stringify,
-        bitcoin: {
-            formatting: { getAmountNumber },
-        }
     }
-} = require( '@bitcoin-api/full-stack-api' );
+
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
 
@@ -25,6 +24,7 @@ const {
     errors: { ValidationError },
 } = require( '../../../../../utils' );
 
+const { formatting: { getAmountNumber } } = require( 'orgasm' );
 // const doWithdraw = require( './doWithdraw' );
 
 

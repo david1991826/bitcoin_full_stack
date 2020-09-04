@@ -20,7 +20,7 @@ const {
 
     utils: { aws: { dino: { getDatabaseEntry } } }
 
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 
 module.exports = Object.freeze( async ({

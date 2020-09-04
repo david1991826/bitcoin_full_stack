@@ -13,7 +13,7 @@ const {
         stringify,
         javascript,
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const doTheActualWithdraw = require( './doTheActualWithdraw' );
 const realDealTheWithdraw = require( './realDealTheWithdraw' );

@@ -11,7 +11,7 @@ const {
         },
         stringify,
     },
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     throwNotEnoughBitcoinOnTokenError

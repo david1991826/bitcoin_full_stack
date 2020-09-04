@@ -9,7 +9,7 @@ const {
     constants: {
         aws: { database: { tableNames: { BALANCES, WITHDRAWS } } }
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const getFeeData = require( './getFeeData' );
 const doWithdrawMoney = require( './doWithdrawMoney' );

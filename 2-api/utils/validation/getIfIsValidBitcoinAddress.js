@@ -1,9 +1,7 @@
 'use strict';
 
 const {
-    bitcoin: {
-    	validation: { getIsValidAddress }
-    },
-} = require( '@bitcoin-api/full-stack-api' );
+    validation: { getIsValidAddress }
+} = require( 'orgasm' );
 
 module.exports = getIsValidAddress;

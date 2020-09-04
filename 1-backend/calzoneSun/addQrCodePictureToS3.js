@@ -13,7 +13,7 @@ const {
         // }
     }
 
-} = require( '@bitcoin-api/full-stack-backend' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const fs = require( 'fs' );
 

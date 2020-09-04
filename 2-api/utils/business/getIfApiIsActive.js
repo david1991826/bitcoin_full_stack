@@ -1,5 +1,7 @@
 'use strict';
 
+const stringify = require( '../stringify' );
+
 const {
     constants: {
         redis: {
@@ -25,10 +27,9 @@ const {
         server: {
             // getServiceNameStreamKey,
             decodeServiceNameStreamKey
-        },
-        stringify,
+        }
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const f = Object.freeze;
 

@@ -8,7 +8,7 @@ const {
             isProductionMode,
         }
     },
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const initializationValues = {};
 

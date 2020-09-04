@@ -9,7 +9,10 @@ const {
                 }
             }
         }
-    },
+    },    
+} = require( '@bitcoin-api.io/common-private' );
+
+const {
     constants: {
         balances: {
             states: {
@@ -17,8 +20,8 @@ const {
                 transformation
             }
         }
-    }   
-} = require( '@bitcoin-api/full-stack-api' );
+    }
+} = require( '@bitcoin-api.io/common-general' );
 
 const {
     

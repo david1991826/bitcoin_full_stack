@@ -12,12 +12,10 @@ const getCryptoAmountNumber = require(
 );
 
 const {
-    utils: {
-        bitcoin: {
-            formatting: { getAmountNumber }
-        }    
+    formatting: {
+        getAmountNumber
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( 'orgasm' );
 
 
 module.exports = Object.freeze( ({

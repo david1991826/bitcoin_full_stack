@@ -20,14 +20,14 @@ const {
             }
         }
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     mongo,
     constants: {
         megaServerId
     },
-} = require( '@bitcoin-api/full-stack-backend' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 
 module.exports = Object.freeze( async ({

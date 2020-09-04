@@ -6,7 +6,7 @@ const {
         stringify,
     },
 
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const createLickFile = require( './createLickFile' );
 const sendLickFile = require( './sendLickFile' );

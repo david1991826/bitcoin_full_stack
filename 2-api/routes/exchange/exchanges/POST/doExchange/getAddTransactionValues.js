@@ -6,7 +6,7 @@ const {
         stringify,
     }
 
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
 
@@ -16,7 +16,7 @@ const {
         },
     }
 
-} = require( '@bitcoin-api/full-stack-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const {
 
@@ -36,6 +36,7 @@ const {
 
 } = require( '../../../../../exchangeUtils' );
 
+// const { formatting: { getAmountNumber } } = require( 'orgasm' );
 // const doWithdraw = require( './doWithdraw' );
 
 

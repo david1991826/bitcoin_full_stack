@@ -4,7 +4,7 @@ const {
     utils: {
         delay
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const signalOnStatusToCommandCenter = require( './signalOnStatusToCommandCenter' );
 const runGiraffeEvolutionProcedure = require( './runGiraffeEvolutionProcedure' );

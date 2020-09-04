@@ -19,7 +19,7 @@ const {
             }
         }
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 // idempotent
 module.exports = Object.freeze( async ({

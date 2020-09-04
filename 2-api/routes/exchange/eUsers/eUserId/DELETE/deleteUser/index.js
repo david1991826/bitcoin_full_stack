@@ -8,7 +8,7 @@ const {
             getQueueId
         },
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     constants: {
@@ -20,7 +20,7 @@ const {
             }
         }
     }
-} = require( '@bitcoin-api/full-stack-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const validateAndGetExchangeUser = require( './validateAndGetExchangeUser' );
 const signOutLoginTokens = require( './signOutLoginTokens' );

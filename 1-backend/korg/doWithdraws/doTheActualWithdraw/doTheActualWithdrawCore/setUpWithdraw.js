@@ -23,14 +23,14 @@ const {
                 updateDatabaseEntry
             },
         },
-        stringify,
-        bitcoin: {
-            validation: {
-                getIsValidAddress
-            }
-        }
+        stringify
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
+const {
+    validation: {
+        getIsValidAddress
+    }
+} = require( 'orgasm' );
 
 
 module.exports = Object.freeze( async ({

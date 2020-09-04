@@ -13,11 +13,12 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api/full-stack-backend": "^1.0.0",
-    "@bitcoin-api/full-stack-api": "^29.0.4",
+    "@bitcoin-api.io/backend-common-utilities": "^1.0.0",
+    "@bitcoin-api.io/common-private": "^29.0.4",
     "aws-sdk": "^2.395.0",
     "dotenv": "^6.2.0",
     "execa": "^1.0.0",
+    "loglevels": "^7.0.9",
     "yargs": "^15.0.2"
   }
 }

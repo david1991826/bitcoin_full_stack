@@ -6,7 +6,7 @@ const {
 
     doBitcoinRequest
 
-} = require( '@bitcoin-api/full-stack-backend' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 const DELAY_BETWEEN_GETS_IN_MS = 0.2;
 

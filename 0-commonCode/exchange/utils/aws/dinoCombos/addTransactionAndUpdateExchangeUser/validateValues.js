@@ -1,18 +1,21 @@
 'use strict';
 
 const {
+
+    validation
+
+} = require( 'orgasm' );
+
+const {
     utils: {
-        stringify,
-        bitcoin: {
-            validation
-        },
+        stringify
     },
     constants: {
         environment: {
             isProductionMode
         }        
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     transactions,

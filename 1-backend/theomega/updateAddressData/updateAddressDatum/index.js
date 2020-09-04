@@ -7,7 +7,7 @@ const {
     utils: {
         stringify,
     },
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const {
     utils: {
@@ -22,12 +22,12 @@ const {
             types
         }
     }
-} = require( '@bitcoin-api/full-stack-exchange' );
+} = require( '@bitcoin-api.io/common-exchange' );
 
 const {
     mongo,
     backgroundExecutor,
-} = require( '@bitcoin-api/full-stack-backend' );
+} = require( '@bitcoin-api.io/backend-common-utilities' );
 
 
 const getAddressCacheObject = Object.freeze( ({

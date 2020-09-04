@@ -1,4 +1,4 @@
 'use strict';
 
 
-module.exports = require( '@bitcoin-api/full-stack-api' ).utils.stringify;
+module.exports = require( '@bitcoin-api.io/common-private' ).utils.stringify;

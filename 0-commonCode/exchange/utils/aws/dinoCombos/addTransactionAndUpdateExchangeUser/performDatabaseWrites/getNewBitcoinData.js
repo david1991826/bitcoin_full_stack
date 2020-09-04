@@ -1,12 +1,10 @@
 'use strict';
 
 const {
-    utils: {
-        bitcoin: {
-            formatting: { getAmountNumber }
-        }    
+    formatting: {
+        getAmountNumber
     }
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( 'orgasm' );
 
 const {
     transactions: {

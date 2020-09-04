@@ -19,7 +19,7 @@ const {
         }
     }
 
-} = require( '@bitcoin-api/full-stack-api' );
+} = require( '@bitcoin-api.io/common-private' );
 
 const megaServerId = process.env.ID_OF_CURRENT_MEGA_SERVER;
 

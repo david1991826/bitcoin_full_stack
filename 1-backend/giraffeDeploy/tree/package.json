@@ -9,7 +9,7 @@
   "author": "Michael Stecky-Efantis",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api/full-stack-api": "^1.0.0",
+    "@bitcoin-api.io/common-private": "^29.0.4",
     "dotenv": "^8.2.0",
     "execa": "^4.0.0",
     "giraffe-utils": "file:../commonUtilities",
