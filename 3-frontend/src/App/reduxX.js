@@ -43,16 +43,16 @@ export const {
 
         signUpPolygon: {
 
-            // emailInput: v( '' ),
-            emailInput: v( 'test-email@gmail.com' ),
-            // passwordInput: v( '' ),
-            passwordInput: v( 'password' ),
-            // reTypePasswordInput: v( '' ),
-            reTypePasswordInput: v( 'password' ),
-            // agreeToTermsOfService: v( false ),
-            agreeToTermsOfService: v( true ),
-            // agreeToPrivacyPolicy: v( false ),
-            agreeToPrivacyPolicy: v( true ),
+            emailInput: v( '' ),
+            // emailInput: v( 'test-email@gmail.com' ),
+            passwordInput: v( '' ),
+            // passwordInput: v( 'password' ),
+            reTypePasswordInput: v( '' ),
+            // reTypePasswordInput: v( 'password' ),
+            agreeToTermsOfService: v( false ),
+            // agreeToTermsOfService: v( true ),
+            agreeToPrivacyPolicy: v( false ),
+            // agreeToPrivacyPolicy: v( true ),
         },
 
         verifyEmailPolygon: {

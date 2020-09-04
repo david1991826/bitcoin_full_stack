@@ -1,15 +1,12 @@
 import { createElement as e } from 'react';
 import { setState, getState } from '../../../reduxX';
 import { story } from '../../../constants';
-import AppBar from '@material-ui/core/AppBar';
-import Typography from '@material-ui/core/Typography';
 import {
 
     usefulComponents
 
 } from '../../../TheSource';
 import Chaturanga from './Chaturanga';
-
 
 const getStyles = () => {
 
@@ -24,6 +21,7 @@ const getStyles = () => {
         outerContainer: {
             backgroundColor,
             // width: 300,
+            width: '100%',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-start',
@@ -47,20 +45,6 @@ export default ({
         {
             style: styles.outerContainer,
         },
-        e(
-            AppBar,
-            {
-                position: 'static',
-            },
-            e(
-                Typography,
-                {
-                    variant: 'h6',
-
-                },
-                websiteName
-            )
-        ),
         e(
 
             usefulComponents.OmegaBorder,

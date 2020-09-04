@@ -15,7 +15,8 @@ const getStyles = () => {
 
         outerContainer: {
             backgroundColor: mainStyleObject.backgroundColor,
-            width: 300,
+            // backgroundColor: 'lightblue',
+            width: '100%',
             // height: 200,
 
             display: 'flex',

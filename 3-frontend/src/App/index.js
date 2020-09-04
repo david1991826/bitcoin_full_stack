@@ -5,7 +5,7 @@ import { setUpReduxX, getState } from './reduxX';
 import { story } from './constants';
 import TheActualApp from './TheActualApp';
 import componentDidMount from './componentDidMount';
-import { zanzibarRealms } from './TheSource';
+import { zanzibarRealms/*, AppBar, Drawer */ } from './TheSource';
 
 Amplify.configure( aws_exports );
 
@@ -69,6 +69,18 @@ export default ({
         {
             style: styles.outerContainer,
         },
+        // e(
+        //     AppBar,
+        //     {
+        //         websiteName,
+        //     }
+        // ),
+        // e(
+        //     Drawer,
+        //     {
+                
+        //     }
+        // )
     ];
 
     if( metaMode === story.metaModes.privacyPolicy ) {
