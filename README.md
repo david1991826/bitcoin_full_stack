@@ -63,7 +63,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 
 #### ☁️Cloud Mentions☁️
 * **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
-* **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration
+* **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration and cloud services
 * **[Elon Musk and Compa](https://twitter.com/elonmusk)[n](https://www.youtube.com/watch?v=ZucUZZkIQw0)[y](http://stankmemes.com/)** for inspiration
 * **[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)** for Linux
 * **[Bitcoin.org](https://bitcoin.org)** for Bitcoin Core
