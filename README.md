@@ -64,7 +64,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 #### ☁️Cloud Mentions☁️
 * **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
 * **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration
-* **[Elon Musk and Compan](https://twitter.com/elonmusk)[y](http://stankmemes.com/)** for inspiration
+* **[Elon Musk and Compa](https://twitter.com/elonmusk)[n](https://www.youtube.com/watch?v=ZucUZZkIQw0)[y](http://stankmemes.com/)** for inspiration
 * **[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)** for Linux
 * **[Bitcoin.org](https://bitcoin.org)** for Bitcoin Core
 * **[RedisLabs](https://redislabs.com/)** for Redis database
@@ -86,6 +86,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Kraken](https://www.kraken.com/)** for crypto exchange services
 * **[Coinbase](https://www.coinbase.com/)** for crypto exchange services
 * **[Coinsquare](https://www.coinsquare.com/)** for crypto exchange services
+* **[Wealth Simple](https://www.wealthsimple.com/)** for investment services
 * **[TJ Holowaychuk](https://github.com/tj) and [Apex Software](https://apex.sh/)** for open source code, cloud tools, and inspiration
 * **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and the [Celsius Network](https://celsius.network/)** for getting down on the streets and promoting crypto
 * **[Justin Sun](https://twitter.com/justinsuntron) and the [Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and crypto
@@ -93,6 +94,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Vitalik Buterin](https://twitter.com/VitalikButerin)** for developing and promoting [Ethereum](https://ethereum.org/) and crypto
 * **[Andreas Antonopoulos](https://aantonop.com/)** for promoting and helping develop the crypto ecosystem
 * **[Jimmy Song](https://twitter.com/jimmysong) and [Programming Bitcoin](https://programmingbitcoin.com/)** for promoting and helping develop the Bitcoin ecosystem
+* **[TechToronto](https://www.techtoronto.org/)** for promoting the Toronto tech ecosystem
 * **[Laura Shin](https://twitter.com/laurashin) and the [Unchained Podcast](https://unchainedpodcast.com/)** for the latest Bitcoin and cryptocurrency updates
 * **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting Bitcoin and crypto
 * **[Paul McNeal](https://twitter.com/_cryptocurator) and [The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
