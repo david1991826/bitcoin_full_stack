@@ -115,11 +115,11 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 ## Demo Videos 
 
-* **[Withdrawing Bitcoin from Bitcoin-Api Instance Using Postman Demo Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)**
+* **[Withdrawing Bitcoin from Bitcoin-Api Instance Using Postman, Demo Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)**
 
-* **[12 Concurrent Bitcoin Withdraws Using API Calls to a Bitcoin-Api Instance](https://www.youtube.com/watch?v=eIwgwse94Sg)**
+* **[12 Concurrent Bitcoin Withdraws from Bitcoin-Api Instance Using a NodeJS Script, Demo Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)**
 
-* **[Exchange and Game Technology Demo Video on YouTube](https://youtu.be/EMAwIrHM2Qc)**
+* **[Exchange and Game Technology, Demo Video on YouTube](https://youtu.be/EMAwIrHM2Qc)**
 
 
 ## Updates in Development
