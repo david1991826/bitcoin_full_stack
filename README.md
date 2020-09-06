@@ -96,6 +96,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Jimmy Song](https://twitter.com/jimmysong) and [Programming Bitcoin](https://programmingbitcoin.com/)** for promoting and helping develop the Bitcoin ecosystem
 * **[TechToronto](https://www.techtoronto.org/)** for promoting the Toronto tech ecosystem
 * **[The Winklevoss](https://twitter.com/winklevoss)[ Twins](https://twitter.com/tylerwinklevoss)** for promoting Bitcoin
+* **[Draper Goren Holm](https://drapergorenholm.com/)** for promoting Bitcoin
 * **[Laura Shin](https://twitter.com/laurashin) and the [Unchained Podcast](https://unchainedpodcast.com/)** for the latest Bitcoin and cryptocurrency updates
 * **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting Bitcoin and crypto
 * **[Paul McNeal](https://twitter.com/_cryptocurator) and [The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
