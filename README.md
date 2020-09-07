@@ -447,7 +447,7 @@ user name: `bitcoin_api_calzoneSun`
 policies: `bitcoin_api_user_calzoneSun`
 
 
-**Fee Fee User**
+**Fee Data Bot User**
 
 user name: `bitcoin_api_feeDataBot`
 
@@ -746,11 +746,11 @@ The following environment files need to be created and set up:
 .env Template: [Calzone Sun .env Template File](infrastructure/environment/dotenv-templates/1-backend/calzoneSun.env)
 
 
-**Fee Fee**
+**Fee Data Bot**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/feeDataBot/.env`
 
-.env Template: [Fee Fee .env Template File](infrastructure/environment/dotenv-templates/1-backend/feeDataBot.env)
+.env Template: [Fee Data Bot .env Template File](infrastructure/environment/dotenv-templates/1-backend/feeDataBot.env)
 
 
 **Giraffe**
@@ -839,7 +839,7 @@ Adding an address to your Bitcoin-Api system will look like this:
 
 <br>
 
-**Fee Fee (runs in infinite loop)**
+**Fee Data Bot (runs in infinite loop)**
 
 This NodeJS service updates your Bitcoin-Api system's fee data which includes the fee itself in terms of how much the user pays on Bitcoin withdraw. This service is managed by pm2. To set up the NodeJS fee data service, in the `/[Linux user home path]/tigerScript/feeDataBot` path on your Linux server, first install the node modules:
 
