@@ -102,6 +102,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Paul McNeal](https://twitter.com/_cryptocurator) and [The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
 * **[Crypto Finally](https://twitter.com/CryptoFinally)** for promoting Bitcoin and crypto
 * **[Reddit](https://www.reddit.com/)** for social media services
+* **[Medium](https://medium.com/)** for writing and publication services
 * **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and [social media services](https://www.youtube.com/watch?v=ncbb5B85sd0)
 * **[T](https://bitcoin-api.s3.amazonaws.com/images/documentation/http-twitter-dog.png)[witter](https://twitter.com)** for social media services
 * **[Googl](https://google.com)[e](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg)** for email services, YouTube, and other Google services
