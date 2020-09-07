@@ -1,6 +1,6 @@
 {
   "name": "@bitcoin-api/full-stack-api",
-  "version": "30.0.2",
+  "version": "30.0.3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,7 @@
     "aws-sdk": "^2.523.0",
     "do-redis-request": "^1.0.6",
     "drf": "^1.0.12",
-    "drq": "^5.0.0",
+    "drq": "^5.0.1",
     "get-redis-client": "^1.0.5",
     "redis": "^2.8.0",
     "uuid": "^3.3.2"
