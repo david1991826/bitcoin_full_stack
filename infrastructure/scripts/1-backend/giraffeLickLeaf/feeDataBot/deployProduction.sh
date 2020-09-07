@@ -8,10 +8,10 @@ pushd ../../../../../1-backend/giraffeDeploy
 
 if [ "$1" == "--force=true" ]; then
 
-    npm run feeFeeF
+    npm run feeDataBotF
 else
 
-    npm run feeFee
+    npm run feeDataBot
 fi
 
 popd

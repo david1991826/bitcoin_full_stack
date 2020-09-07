@@ -61,7 +61,7 @@ npm install
 popd
 
 
-pushd ../../../1-backend/feeFee
+pushd ../../../1-backend/feeDataBot
 
 npm install @bitcoin-api.io/common-private@latest --save
 npm install @bitcoin-api.io/backend-common-utilities@latest --save

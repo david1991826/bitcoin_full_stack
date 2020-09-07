@@ -43,14 +43,14 @@ const commonUtilitiesFolder = `${ zarbonSpot }/commonUtilities`;
 
 const deployCommandToTigerSpotData = f({
 
-    [deployCommands.feeFee]: f({
+    [deployCommands.feeDataBot]: f({
         
-        tigerSpot: `${ zarbonSpot }/feeFee`,
+        tigerSpot: `${ zarbonSpot }/feeDataBot`,
         tigerKeySpot: (
-            `${ zarbonSpot }/${ credentialsFolderName }/FeeFee/.env`
+            `${ zarbonSpot }/${ credentialsFolderName }/feeDataBot/.env`
         ),
         tigerKeyFolderStructure: [
-            'FeeFee',
+            'feeDataBot',
         ],
     }),
 

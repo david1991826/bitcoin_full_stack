@@ -425,7 +425,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_user_calzoneSun`](infrastructure/policies/aws/bitcoin_api_user_calzoneSun.json)
 
-* [`bitcoin_api_user_feeFee`](infrastructure/policies/aws/bitcoin_api_user_feeFee.json)
+* [`bitcoin_api_user_feeDataBot`](infrastructure/policies/aws/bitcoin_api_user_feeDataBot.json)
 
 * [`bitcoin_api_user_korg`](infrastructure/policies/aws/bitcoin_api_user_korg.json)
 
@@ -449,9 +449,9 @@ policies: `bitcoin_api_user_calzoneSun`
 
 **Fee Fee User**
 
-user name: `bitcoin_api_feeFee`
+user name: `bitcoin_api_feeDataBot`
 
-policies: `bitcoin_api_user_feeFee`
+policies: `bitcoin_api_user_feeDataBot`
 
 
 **Korg User**
@@ -748,9 +748,9 @@ The following environment files need to be created and set up:
 
 **Fee Fee**
 
-.env path: `/1-backend/<stagingCredentials OR productionCredentials>/FeeFee/.env`
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/feeDataBot/.env`
 
-.env Template: [Fee Fee .env Template File](infrastructure/environment/dotenv-templates/1-backend/feeFee.env)
+.env Template: [Fee Fee .env Template File](infrastructure/environment/dotenv-templates/1-backend/feeDataBot.env)
 
 
 **Giraffe**
@@ -841,7 +841,7 @@ Adding an address to your Bitcoin-Api system will look like this:
 
 **Fee Fee (runs in infinite loop)**
 
-This NodeJS service updates your Bitcoin-Api system's fee data which includes the fee itself in terms of how much the user pays on Bitcoin withdraw. This service is managed by pm2. To set up the NodeJS fee data service, in the `/[Linux user home path]/tigerScript/feeFee` path on your Linux server, first install the node modules:
+This NodeJS service updates your Bitcoin-Api system's fee data which includes the fee itself in terms of how much the user pays on Bitcoin withdraw. This service is managed by pm2. To set up the NodeJS fee data service, in the `/[Linux user home path]/tigerScript/feeDataBot` path on your Linux server, first install the node modules:
 
 ```
 npm install
@@ -894,7 +894,7 @@ This pm2 command can also be used to monitor your fee data service and all your 
 pm2 monit
 ```
 
-> **Important Note:** In the file [`/1-backend/feeFee/updateFee.js`](1-backend/feeFee/updateFee.js), you can adjust the fee levels using the `getFeeData` function.
+> **Important Note:** In the file [`/1-backend/feeDataBot/updateFee.js`](1-backend/feeDataBot/updateFee.js), you can adjust the fee levels using the `getFeeData` function.
 
 > **Errors:** If the service stops working or if you see any errors, particularly as soon as you first run the service, it could be possible there's a misconfiguration. It's also possible there could be a network, a blockchain, or a cloud service provider error. The logs will provide details about the cause of any error that occurs.
 
@@ -1075,7 +1075,7 @@ node WaterTree --mode=production
 This command will start up your tree code acceptor and installer. 
 
 
-Now, on your home computer in one of the `/infrastructure/scripts/1-backend/giraffeLickLeaf/feeFee`, `/infrastructure/scripts/1-backend/giraffeLickLeaf/korg`, or `/infrastructure/scripts/1-backend/giraffeLickLeaf/theomega` folders in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
+Now, on your home computer in one of the `/infrastructure/scripts/1-backend/giraffeLickLeaf/feeDataBot`, `/infrastructure/scripts/1-backend/giraffeLickLeaf/korg`, or `/infrastructure/scripts/1-backend/giraffeLickLeaf/theomega` folders in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
 
 ##### Deploy Backend NodeJS Service with GLL
 

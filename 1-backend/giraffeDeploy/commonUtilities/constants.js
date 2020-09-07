@@ -26,7 +26,7 @@ const {
 
 const deployCommands = {
 
-    feeFee: refreshingDrank,
+    feeDataBot: refreshingDrank,
     korg: monkeyPaw,
     theomega: juiceCamel,
 };

@@ -6,13 +6,13 @@ const argv = require( 'yargs' ).argv;
 if( argv.mode === 'production' ) {
 
     require( 'dotenv' ).config({
-        path: `${ __dirname }/../productionCredentials/FeeFee/.env`
+        path: `${ __dirname }/../productionCredentials/feeDataBot/.env`
     });
 }
 else {
 
     require( 'dotenv' ).config({
-        path: `${ __dirname }/../stagingCredentials/FeeFee/.env`
+        path: `${ __dirname }/../stagingCredentials/feeDataBot/.env`
     });
 }
 

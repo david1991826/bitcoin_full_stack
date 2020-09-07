@@ -166,7 +166,7 @@ module.exports = Object.freeze( async ({
             
             stringify({
 
-                feeFee: blessedWithdraw.feeData
+                fee: blessedWithdraw.feeData
             })
         }
     `);

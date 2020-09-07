@@ -22,7 +22,7 @@ const f = Object.freeze;
 
 const deployCommandToSpecialTigerFunctionData = f({
 
-    [deployCommands.feeFee]: f({}),
+    [deployCommands.feeDataBot]: f({}),
 
     [deployCommands.korg]: f({}),
 

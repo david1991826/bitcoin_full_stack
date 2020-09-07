@@ -44,9 +44,9 @@ const f = Object.freeze;
 
 const deployCommandToTigerSpotData = f({
 
-    [deployCommands.feeFee]: f({
+    [deployCommands.feeDataBot]: f({
         
-        tigerFolder: 'feeFee',
+        tigerFolder: 'feeDataBot',
         mainFileName: 'UpdateFeeDataWorker.js',
     }),
 

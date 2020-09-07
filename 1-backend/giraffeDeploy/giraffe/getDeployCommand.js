@@ -14,7 +14,7 @@ const {
 
 module.exports = Object.freeze( () => {
 
-    const command = argv.command || argv.c || deployCommands.feeFee;
+    const command = argv.command || argv.c || deployCommands.feeDataBot;
 
     if( deployCommandList.includes( command ) ) {
 
