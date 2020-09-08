@@ -170,9 +170,22 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 
 ### Bitcoin Node Servers
 
-![https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture-2.png](https://bitcoin-api.s3.amazonaws.com/documents/open-source/bitcoin-api-full-stack/bitcoin-node-server-architecture-2.png)
+**Architecture Outline**
 
-Briefly put: The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. Overall, this means the NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data worker gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be retrieved publicly using the `https://api-bitcoin.io/v3/fee-data` endpoint (testnet).
+* Redis Server
+
+* Linux Server
+  * Bitcoin-Core
+  * MongoDB
+  * pm2 Instances:
+    * withdraw bitcoin bot
+    * update deposit data bot
+    * update fee data bot
+    * pm2-logrotate 
+
+**Summary of How the Bitcoin Node Servers Work**
+
+The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. Overall, this means the NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data bot gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be retrieved publicly using the `https://api-bitcoin.io/v3/fee-data` endpoint (testnet).
 
 ### How to Set Up the Backend
 
