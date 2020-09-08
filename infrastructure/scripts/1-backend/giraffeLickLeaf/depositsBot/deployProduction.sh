@@ -8,10 +8,10 @@ pushd ../../../../../1-backend/giraffeDeploy
 
 if [ "$1" == "--force=true" ]; then
 
-    npm run theomegaSF
+    npm run depositsBotF
 else
 
-    npm run theomegaS
+    npm run depositsBot
 fi
 
 popd

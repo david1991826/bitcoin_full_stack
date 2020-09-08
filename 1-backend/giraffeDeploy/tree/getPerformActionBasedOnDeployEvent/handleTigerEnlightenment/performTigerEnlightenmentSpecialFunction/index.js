@@ -16,7 +16,7 @@ const {
 
 } = require( 'giraffe-utils' );
 
-const theomegaSpecialTigerFunction = require( './theomegaSpecialTigerFunction' );
+const depositsBotSpecialTigerFunction = require( './depositsBotSpecialTigerFunction' );
 
 const f = Object.freeze;
 
@@ -26,9 +26,9 @@ const deployCommandToSpecialTigerFunctionData = f({
 
     [deployCommands.withdrawsBot]: f({}),
 
-    [deployCommands.theomega]: f({
+    [deployCommands.depositsBot]: f({
 
-        specialTigerFunction: theomegaSpecialTigerFunction
+        specialTigerFunction: depositsBotSpecialTigerFunction
     }),
 });
 

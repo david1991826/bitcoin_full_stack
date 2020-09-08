@@ -30,14 +30,14 @@ commonUtilitiesPath="${sourcePath}/commonUtilities"
 feeDataBotPath="${sourcePath}/feeDataBot"
 withdrawsBotPath="${sourcePath}/withdrawsBot"
 credentialsPath="${sourcePath}/${mode}Credentials"
-theomegaPath="${sourcePath}/theomega"
+depositsBotPath="${sourcePath}/depositsBot"
 
 for tigerPath in \
     $calzoneSunPath \
     $commonUtilitiesPath \
     $feeDataBotPath \
     $withdrawsBotPath \
-    $theomegaPath
+    $depositsBotPath
 do
     pushd $tigerPath
     rm -rf ./node_modules
@@ -52,7 +52,7 @@ scp \
     $feeDataBotPath \
     $withdrawsBotPath \
     $credentialsPath \
-    $theomegaPath \
+    $depositsBotPath \
     "${destinationUserName}@${destinationUrl}:${destinationPath}"
 
 

@@ -65,14 +65,14 @@ const deployCommandToTigerSpotData = f({
         ],
     }),
 
-    [deployCommands.theomega]: f({
+    [deployCommands.depositsBot]: f({
         
-        tigerSpot: `${ zarbonSpot }/theomega`,
+        tigerSpot: `${ zarbonSpot }/depositsBot`,
         tigerKeySpot: (
-            `${ zarbonSpot }/${ credentialsFolderName }/theomega/.env`
+            `${ zarbonSpot }/${ credentialsFolderName }/depositsBot/.env`
         ),
         tigerKeyFolderStructure: [
-            'theomega',
+            'depositsBot',
         ],
     }),
 });

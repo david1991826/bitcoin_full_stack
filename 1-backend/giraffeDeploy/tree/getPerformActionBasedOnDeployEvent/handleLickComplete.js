@@ -44,9 +44,9 @@ const deployCommandToTigerSpotData = f({
         tigerFolder: 'withdrawsBot',
     }),
 
-    [deployCommands.theomega]: f({
+    [deployCommands.depositsBot]: f({
         
-        tigerFolder: 'theomega',
+        tigerFolder: 'depositsBot',
     }),
 });
 

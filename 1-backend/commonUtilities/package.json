@@ -1,6 +1,6 @@
 {
   "name": "@bitcoin-api/full-stack-backend",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Magna-Tiger🦁",
   "repository": {
     "type": "tiger",
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api/full-stack-api": "^30.0.3",
+    "@bitcoin-api/full-stack-api": "^30.1.0",
     "bitcoin-request": "^1.0.2",
     "bqe": "^1.0.3",
     "mongodb": "^3.4.0"

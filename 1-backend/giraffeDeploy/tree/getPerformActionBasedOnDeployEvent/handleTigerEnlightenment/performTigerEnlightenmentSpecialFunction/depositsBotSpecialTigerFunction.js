@@ -21,11 +21,11 @@ module.exports = Object.freeze( async ({
 
 }) => {
 
-    log( 'running theomegaSpecialTigerFunction' );
+    log( 'running depositsBotSpecialTigerFunction' );
 
     const localDatabaseCacheCleanScriptPath = (
 
-        `${ treeTigerSpot }/theomega/scripts`
+        `${ treeTigerSpot }/depositsBot/scripts`
     );
 
     log(
@@ -67,7 +67,7 @@ module.exports = Object.freeze( async ({
     await execaInstance;
 
     log(
-        'theomegaSpecialTigerFunction executed successfully - ' +
+        'depositsBotSpecialTigerFunction executed successfully - ' +
         'cache database successfully cleaned'
     );
 });

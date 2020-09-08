@@ -56,9 +56,9 @@ const deployCommandToTigerSpotData = f({
         mainFileName: 'WithdrawMoneyDoer.js',
     }),
 
-    [deployCommands.theomega]: f({
+    [deployCommands.depositsBot]: f({
         
-        tigerFolder: 'theomega',
+        tigerFolder: 'depositsBot',
         mainFileName: 'UpdateDepositData.js',
     }),
 });

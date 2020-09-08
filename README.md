@@ -436,7 +436,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_user_withdrawsBot`](infrastructure/policies/aws/bitcoin_api_user_withdrawsBot.json)
 
-* [`bitcoin_api_user_theomega`](infrastructure/policies/aws/bitcoin_api_user_theomega.json)
+* [`bitcoin_api_user_depositsBot`](infrastructure/policies/aws/bitcoin_api_user_depositsBot.json)
 
 * [`bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`](infrastructure/policies/aws/bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser.json)
 
@@ -468,11 +468,11 @@ user name: `bitcoin_api_withdrawsBot`
 policies: `bitcoin_api_user_withdrawsBot`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
 
 
-**TheOmega User**
+**Deposits Bot User**
 
-user name: `bitcoin_api_theomega`
+user name: `bitcoin_api_depositsBot`
 
-policies: `bitcoin_api_user_theomega`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
+policies: `bitcoin_api_user_depositsBot`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
 
 
 ##### Backend DynamoDB Tables
@@ -571,10 +571,10 @@ Below lists in detail which operations specifically are in Q-Locks.
     </tr>
     <tr>
       <td>balances:user_id</td>
-      <td align="center">theomega</td>
+      <td align="center">deposits bot</td>
       <td>
         <ul>
-          <li>update balance</li>
+          <li>deposits bot</li>
         </ul>
       </td>
     </tr>
@@ -656,7 +656,7 @@ Below lists in detail which operations specifically are in Q-Locks.
     </tr>
     <tr>
       <td>exchangeUsers:exchangeUserId</td>
-      <td align="center">theomega</td>
+      <td align="center">deposits bot</td>
       <td>
         <ul>
           <li>update Bitcoin deposit info [add exchange transaction]</li>
@@ -776,9 +776,9 @@ The following environment files need to be created and set up:
 
 **The Omega**
 
-.env path: `/1-backend/<stagingCredentials OR productionCredentials>/theomega/.env`
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/depositsBot/.env`
 
-.env Template: [The Omega .env Template File](infrastructure/environment/dotenv-templates/1-backend/theomega.env)
+.env Template: [The Omega .env Template File](infrastructure/environment/dotenv-templates/1-backend/depositsBot.env)
 
 
 **Tree**
@@ -959,7 +959,7 @@ EnviroWithdraw or not, Bitcoin-Api suggests to please consider contributing a po
 
 **The Omega (runs in infinite loop)**
 
-This NodeJS service updates Bitcoin addresses and user balances for Bitcoin deposits to Bitcoin-Api addresses. To set up this pm2 managed NodeJS Bitcoin deposit worker service, in the `/[Linux user home path]/tigerScript/theomega` path on your Linux server, first install the node modules:
+This NodeJS service updates Bitcoin addresses and user balances for Bitcoin deposits to Bitcoin-Api addresses. To set up this pm2 managed NodeJS Bitcoin deposit worker service, in the `/[Linux user home path]/tigerScript/depositsBot` path on your Linux server, first install the node modules:
 
 ```
 npm install
@@ -1082,7 +1082,7 @@ node WaterTree --mode=production
 This command will start up your tree code acceptor and installer. 
 
 
-Now, on your home computer in one of the `/infrastructure/scripts/1-backend/giraffeLickLeaf/feeDataBot`, `/infrastructure/scripts/1-backend/giraffeLickLeaf/withdrawsBot`, or `/infrastructure/scripts/1-backend/giraffeLickLeaf/theomega` folders in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
+Now, on your home computer in one of the `/infrastructure/scripts/1-backend/giraffeLickLeaf/feeDataBot`, `/infrastructure/scripts/1-backend/giraffeLickLeaf/withdrawsBot`, or `/infrastructure/scripts/1-backend/giraffeLickLeaf/depositsBot` folders in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
 
 ##### Deploy Backend NodeJS Service with GLL
 

@@ -28,7 +28,7 @@ const deployCommands = {
 
     feeDataBot: refreshingDrank,
     withdrawsBot: monkeyPaw,
-    theomega: juiceCamel,
+    depositsBot: juiceCamel,
 };
 
 
