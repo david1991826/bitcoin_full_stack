@@ -87,6 +87,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Coinbase](https://www.coinbase.com/)** for crypto exchange services
 * **[Coinsquare](https://www.coinsquare.com/)** for crypto exchange services
 * **[Wealthsimple](https://www.wealthsimple.com/)** for investment services
+* **[Cypherpunks](https://en.wikipedia.org/wiki/Cypherpunk)** for early work on crypto
 * **[TJ Holowaychuk](https://github.com/tj) and [Apex Software](https://apex.sh/)** for open source code, cloud tools, and inspiration
 * **[Alex Mashinsky](https://www.linkedin.com/in/mashinsky/) and the [Celsius Network](https://celsius.network/)** for getting down on the streets and promoting crypto
 * **[Justin Sun](https://twitter.com/justinsuntron) and the [Tron Network](https://tron.network)** for developing and promoting Tron, JustSwap, and crypto
@@ -101,8 +102,13 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Layah Heilpern](https://twitter.com/layahheilpern)** for promoting Bitcoin and crypto
 * **[Paul McNeal](https://twitter.com/_cryptocurator) and [The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
 * **[Crypto Finally](https://twitter.com/CryptoFinally)** for promoting Bitcoin and crypto
+* **[Canada](https://en.wikipedia.org/wiki/Canada)** for being a great country to live
+* **[The Government of Canada](https://www.canada.ca/en.html)** for managing the country well
 * **[Reddit](https://www.reddit.com/)** for social media services
+* **[TikTok](https://www.tiktok.com/)** for social media services
+* **[Patreon](https://patreon.com/)** for sponsorship services
 * **[Medium](https://medium.com/)** for writing and publication services
+* **[Nintendo](https://nintendo.com)** for awesome video game technology
 * **[Facebook](https://www.facebook.com/)** for [React](https://reactjs.org/) and [social media services](https://www.youtube.com/watch?v=ncbb5B85sd0)
 * **[T](https://bitcoin-api.s3.amazonaws.com/images/documentation/http-twitter-dog.png)[witter](https://twitter.com)** for social media services
 * **[Googl](https://google.com)[e](https://bitcoin-api.s3.amazonaws.com/images/documentation/google-burning-man.jpg)** for email services, YouTube, and other Google services
