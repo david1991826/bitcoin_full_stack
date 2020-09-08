@@ -70,7 +70,7 @@ npm install
 popd
 
 
-pushd ../../../1-backend/korg
+pushd ../../../1-backend/withdrawsBot
 
 npm install @bitcoin-api.io/common-private@latest --save
 npm install @bitcoin-api.io/common-exchange@latest --save

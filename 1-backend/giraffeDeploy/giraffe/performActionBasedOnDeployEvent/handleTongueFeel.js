@@ -54,14 +54,14 @@ const deployCommandToTigerSpotData = f({
         ],
     }),
 
-    [deployCommands.korg]: f({
+    [deployCommands.withdrawsBot]: f({
         
-        tigerSpot: `${ zarbonSpot }/korg`,
+        tigerSpot: `${ zarbonSpot }/withdrawsBot`,
         tigerKeySpot: (
-            `${ zarbonSpot }/${ credentialsFolderName }/korg/.env`
+            `${ zarbonSpot }/${ credentialsFolderName }/withdrawsBot/.env`
         ),
         tigerKeyFolderStructure: [
-            'korg',
+            'withdrawsBot',
         ],
     }),
 

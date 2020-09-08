@@ -28,7 +28,7 @@ destinationPath="${destinationHomePath}/tigerScript"
 calzoneSunPath="${sourcePath}/calzoneSun"
 commonUtilitiesPath="${sourcePath}/commonUtilities"
 feeDataBotPath="${sourcePath}/feeDataBot"
-korgPath="${sourcePath}/korg"
+withdrawsBotPath="${sourcePath}/withdrawsBot"
 credentialsPath="${sourcePath}/${mode}Credentials"
 theomegaPath="${sourcePath}/theomega"
 
@@ -36,7 +36,7 @@ for tigerPath in \
     $calzoneSunPath \
     $commonUtilitiesPath \
     $feeDataBotPath \
-    $korgPath \
+    $withdrawsBotPath \
     $theomegaPath
 do
     pushd $tigerPath
@@ -50,7 +50,7 @@ scp \
     $calzoneSunPath \
     $commonUtilitiesPath \
     $feeDataBotPath \
-    $korgPath \
+    $withdrawsBotPath \
     $credentialsPath \
     $theomegaPath \
     "${destinationUserName}@${destinationUrl}:${destinationPath}"

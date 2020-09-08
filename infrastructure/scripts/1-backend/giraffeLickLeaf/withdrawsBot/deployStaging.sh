@@ -8,10 +8,10 @@ pushd ../../../../../1-backend/giraffeDeploy
 
 if [ "$1" == "--force=true" ]; then
 
-    npm run korgF
+    npm run withdrawsBotSF
 else
 
-    npm run korg
+    npm run withdrawsBotS
 fi
 
 popd

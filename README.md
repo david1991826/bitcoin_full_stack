@@ -434,7 +434,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_user_feeDataBot`](infrastructure/policies/aws/bitcoin_api_user_feeDataBot.json)
 
-* [`bitcoin_api_user_korg`](infrastructure/policies/aws/bitcoin_api_user_korg.json)
+* [`bitcoin_api_user_withdrawsBot`](infrastructure/policies/aws/bitcoin_api_user_withdrawsBot.json)
 
 * [`bitcoin_api_user_theomega`](infrastructure/policies/aws/bitcoin_api_user_theomega.json)
 
@@ -461,11 +461,11 @@ user name: `bitcoin_api_feeDataBot`
 policies: `bitcoin_api_user_feeDataBot`
 
 
-**Korg User**
+**Withdraws Bot User**
 
-user name: `bitcoin_api_korg`
+user name: `bitcoin_api_withdrawsBot`
 
-policies: `bitcoin_api_user_korg`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
+policies: `bitcoin_api_user_withdrawsBot`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`
 
 
 **TheOmega User**
@@ -542,7 +542,7 @@ Below lists in detail which operations specifically are in Q-Locks.
     </tr>
     <tr>
       <td>withdraws:user_id</td>
-      <td align="center">korg</td>
+      <td align="center">withdraws bot</td>
       <td>
         <ul>
           <li>do withdraw from Bitcoin node (withdraw part 2/4)</li>
@@ -562,7 +562,7 @@ Below lists in detail which operations specifically are in Q-Locks.
     </tr>
     <tr>
       <td>balances:user_id</td>
-      <td align="center">korg</td>
+      <td align="center">withdraws bot</td>
       <td>
         <ul>
           <li>verify withdraw (withdraw part 4/4)</li>
@@ -674,7 +674,7 @@ Below lists in detail which operations specifically are in Q-Locks.
     </tr>
     <tr>
       <td>exchangeUsers:exchangeUserId</td>
-      <td align="center">korg</td>
+      <td align="center">withdraws bot</td>
       <td>
         <ul>
           <li>finalize withdraw (exchange withdraw part 5/5) [add exchange transaction]</li>
@@ -701,7 +701,7 @@ Below lists in detail which operations specifically are in Q-Locks.
     </tr>
     <tr>
       <td>vanguard_withdraws:exchangeUserId</td>
-      <td align="center">korg</td>
+      <td align="center">withdraws bot</td>
       <td>
         <ul>
             <li>withdraw from Bitcoin node (exchange withdraw 
@@ -767,11 +767,11 @@ The following environment files need to be created and set up:
 .env Template: [Giraffe .env Template File](infrastructure/environment/dotenv-templates/1-backend/giraffe.env)
 
 
-**Korg**
+**Withdraws Bot**
 
-.env path: `/1-backend/<stagingCredentials OR productionCredentials>/korg/.env`
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/withdrawsBot/.env`
 
-.env Template: [Korg .env Template File](infrastructure/environment/dotenv-templates/1-backend/korg.env)
+.env Template: [Withdraws Bot .env Template File](infrastructure/environment/dotenv-templates/1-backend/withdrawsBot.env)
 
 
 **The Omega**
@@ -993,9 +993,9 @@ A successful iteration of the Bitcoin deposit worker should look like this:
 <br>
 
 
-**Korg (runs in infinite loop)**
+**Withdraws Bot (runs in infinite loop)**
 
-This NodeJS service performs Bitcoin withdraws. To set up this pm2 managed NodeJS withdraw Bitcoin worker service, in the `/[Linux user home path]/tigerScript/korg` path on your Linux server, first install the node modules:
+This NodeJS service performs Bitcoin withdraws. To set up this pm2 managed NodeJS withdraw Bitcoin worker service, in the `/[Linux user home path]/tigerScript/withdrawsBot` path on your Linux server, first install the node modules:
 
 ```
 npm install
@@ -1082,7 +1082,7 @@ node WaterTree --mode=production
 This command will start up your tree code acceptor and installer. 
 
 
-Now, on your home computer in one of the `/infrastructure/scripts/1-backend/giraffeLickLeaf/feeDataBot`, `/infrastructure/scripts/1-backend/giraffeLickLeaf/korg`, or `/infrastructure/scripts/1-backend/giraffeLickLeaf/theomega` folders in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
+Now, on your home computer in one of the `/infrastructure/scripts/1-backend/giraffeLickLeaf/feeDataBot`, `/infrastructure/scripts/1-backend/giraffeLickLeaf/withdrawsBot`, or `/infrastructure/scripts/1-backend/giraffeLickLeaf/theomega` folders in this repo, run one of the following commands to do an instant deployment of a NodeJS service:
 
 ##### Deploy Backend NodeJS Service with GLL
 

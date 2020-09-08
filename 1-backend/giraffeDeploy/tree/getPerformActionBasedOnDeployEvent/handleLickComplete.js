@@ -39,9 +39,9 @@ const deployCommandToTigerSpotData = f({
         tigerFolder: 'feeDataBot',
     }),
 
-    [deployCommands.korg]: f({
+    [deployCommands.withdrawsBot]: f({
         
-        tigerFolder: 'korg',
+        tigerFolder: 'withdrawsBot',
     }),
 
     [deployCommands.theomega]: f({

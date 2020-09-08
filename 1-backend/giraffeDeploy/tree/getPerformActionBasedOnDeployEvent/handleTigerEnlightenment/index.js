@@ -50,9 +50,9 @@ const deployCommandToTigerSpotData = f({
         mainFileName: 'UpdateFeeDataWorker.js',
     }),
 
-    [deployCommands.korg]: f({
+    [deployCommands.withdrawsBot]: f({
         
-        tigerFolder: 'korg',
+        tigerFolder: 'withdrawsBot',
         mainFileName: 'WithdrawMoneyDoer.js',
     }),
 

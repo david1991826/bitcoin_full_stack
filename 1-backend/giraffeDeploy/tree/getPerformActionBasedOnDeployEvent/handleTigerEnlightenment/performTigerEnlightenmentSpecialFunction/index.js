@@ -24,7 +24,7 @@ const deployCommandToSpecialTigerFunctionData = f({
 
     [deployCommands.feeDataBot]: f({}),
 
-    [deployCommands.korg]: f({}),
+    [deployCommands.withdrawsBot]: f({}),
 
     [deployCommands.theomega]: f({
 
