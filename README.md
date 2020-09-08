@@ -172,8 +172,6 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 
 **Architecture Outline**
 
-* Redis Server
-
 * Linux Server
   * Bitcoin-Core
   * MongoDB
@@ -182,6 +180,8 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
     * update deposit data bot
     * update fee data bot
     * pm2-logrotate 
+
+* Cloud Redis
 
 **Summary of How the Bitcoin Node Servers Work**
 
