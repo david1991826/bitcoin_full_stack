@@ -1,8 +1,10 @@
 'use strict';
 
 const {
-    bitcoin: {
-    	validation: { getIsValidAddress }
+    utils: {
+        bitcoin: {
+            validation: { getIsValidAddress }
+        },
     },
 } = require( '@bitcoin-api/full-stack-api' );
 

@@ -134,8 +134,6 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 ## Updates in Development
 
-* updating modules for API
-
 * get frontend ready for production
 
 Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
@@ -1121,8 +1119,6 @@ After you've finished your deployments, you can shut down your Water Tree code a
 
 
 ### How to Deploy API
-
-**API upgrades🚧👷‍♀️👷‍♂️🏗 - modules updates coming soon🚀🌤✨**
 
 The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) functions which are accessed through [API Gateway](https://aws.amazon.com/api-gateway). This section goes over how to set the API up.
 
