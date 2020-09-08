@@ -774,11 +774,11 @@ The following environment files need to be created and set up:
 .env Template: [Withdraws Bot .env Template File](infrastructure/environment/dotenv-templates/1-backend/withdrawsBot.env)
 
 
-**The Omega**
+**Deposits Bot**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/depositsBot/.env`
 
-.env Template: [The Omega .env Template File](infrastructure/environment/dotenv-templates/1-backend/depositsBot.env)
+.env Template: [Deposits Bot .env Template File](infrastructure/environment/dotenv-templates/1-backend/depositsBot.env)
 
 
 **Tree**
@@ -957,7 +957,7 @@ EnviroWithdraw or not, Bitcoin-Api suggests to please consider contributing a po
 <br>
 
 
-**The Omega (runs in infinite loop)**
+**Deposits Bot (runs in infinite loop)**
 
 This NodeJS service updates Bitcoin addresses and user balances for Bitcoin deposits to Bitcoin-Api addresses. To set up this pm2 managed NodeJS Bitcoin deposit worker service, in the `/[Linux user home path]/tigerScript/depositsBot` path on your Linux server, first install the node modules:
 
