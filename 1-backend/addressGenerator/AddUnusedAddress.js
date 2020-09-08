@@ -6,13 +6,13 @@ const argv = require( 'yargs' ).argv;
 if( argv.mode === 'production' ) {
 
     require( 'dotenv' ).config({
-        path: `${ __dirname }/../productionCredentials/calzoneSun/.env`
+        path: `${ __dirname }/../productionCredentials/addressGenerator/.env`
     });
 }
 else {
 
     require( 'dotenv' ).config({
-        path: `${ __dirname }/../stagingCredentials/calzoneSun/.env`
+        path: `${ __dirname }/../stagingCredentials/addressGenerator/.env`
     });
 }
 
@@ -24,15 +24,12 @@ const {
 } = require( '@bitcoin-api/full-stack-backend' );
 
 const {
-    bitcoin: {
-        validation: {
-            getIsValidAddress
-        },    
-    }
-} = require( '@bitcoin-api/full-stack-api' );
-
-const {
     utils: {
+        bitcoin: {
+            validation: {
+                getIsValidAddress
+            },    
+        },
         redis: {
             rhinoCombos: {
                 addUnusedAddressDatum
@@ -50,7 +47,7 @@ const {
         },
     },
 
-} = require( '@bitcoin-api/full-stack-backend' );
+} = require( '@bitcoin-api/full-stack-api' );
 
 const args = Object.freeze([ 'getnewaddress' ]);
 

@@ -25,7 +25,7 @@ destinationHomePath="/home/ec2-user"
 sourcePath="${sourceRepoPath}/1-backend"
 destinationPath="${destinationHomePath}/tigerScript"
 
-calzoneSunPath="${sourcePath}/calzoneSun"
+addressGeneratorPath="${sourcePath}/addressGenerator"
 commonUtilitiesPath="${sourcePath}/commonUtilities"
 feeDataBotPath="${sourcePath}/feeDataBot"
 withdrawsBotPath="${sourcePath}/withdrawsBot"
@@ -33,7 +33,7 @@ credentialsPath="${sourcePath}/${mode}Credentials"
 depositsBotPath="${sourcePath}/depositsBot"
 
 for tigerPath in \
-    $calzoneSunPath \
+    $addressGeneratorPath \
     $commonUtilitiesPath \
     $feeDataBotPath \
     $withdrawsBotPath \
@@ -47,7 +47,7 @@ done
 scp \
     -i $pemPath \
     -r \
-    $calzoneSunPath \
+    $addressGeneratorPath \
     $commonUtilitiesPath \
     $feeDataBotPath \
     $withdrawsBotPath \

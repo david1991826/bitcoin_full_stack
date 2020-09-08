@@ -430,7 +430,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
-* [`bitcoin_api_user_calzoneSun`](infrastructure/policies/aws/bitcoin_api_user_calzoneSun.json)
+* [`bitcoin_api_user_addressGenerator`](infrastructure/policies/aws/bitcoin_api_user_addressGenerator.json)
 
 * [`bitcoin_api_user_feeDataBot`](infrastructure/policies/aws/bitcoin_api_user_feeDataBot.json)
 
@@ -447,11 +447,11 @@ Next, the [AWS IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_us
 
 [AWS IAM User Management Console](https://console.aws.amazon.com/iam/home#/users)
 
-**Calzone Sun User**
+**Address Generator User**
 
-user name: `bitcoin_api_calzoneSun`
+user name: `bitcoin_api_addressGenerator`
 
-policies: `bitcoin_api_user_calzoneSun`
+policies: `bitcoin_api_user_addressGenerator`
 
 
 **Fee Data Bot User**
@@ -746,11 +746,11 @@ This section goes over how to set up the required [AWS S3](https://aws.amazon.co
 The following environment files need to be created and set up:
 
 
-**Calzone Sun**
+**Address Generator**
 
-.env path: `/1-backend/<stagingCredentials OR productionCredentials>/calzoneSun/.env`
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/addressGenerator/.env`
 
-.env Template: [Calzone Sun .env Template File](infrastructure/environment/dotenv-templates/1-backend/calzoneSun.env)
+.env Template: [Address Generator .env Template File](infrastructure/environment/dotenv-templates/1-backend/addressGenerator.env)
 
 
 **Fee Data Bot**
@@ -822,11 +822,11 @@ After the modules have been transported to your Linux server, it's time to start
 
 #### Here's the instructions to manually run your NodeJS services:
 
-**Calzone Sun (manually triggered)**
+**Address Generator (manually triggered)**
 
-This NodeJS service adds unused addresses to the system. Run the following commands in the `/[Linux user home path]/tigerScript/calzoneSun` path on your Linux server:
+This NodeJS service adds unused addresses to the system. Run the following commands in the `/[Linux user home path]/tigerScript/addressGenerator` path on your Linux server:
 
-If not already, install the Calzone Sun node modules with:
+If not already, install the address generator node modules with:
 ```
 npm install
 ```
@@ -842,7 +842,7 @@ node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=prod
 ```
 
 Adding an address to your Bitcoin-Api system will look like this:
-![Calzone Sun Creating New Bitcoin Address](https://bitcoin-api.s3.amazonaws.com/images/documentation/calzone-sun-successfully-added-address.png)
+![Address Generator Creating New Bitcoin Address](https://bitcoin-api.s3.amazonaws.com/images/documentation/calzone-sun-successfully-added-address.png)
 
 <br>
 

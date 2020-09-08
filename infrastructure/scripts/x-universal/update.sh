@@ -40,9 +40,10 @@ npm install
 popd
 
 
-pushd ../../../1-backend/calzoneSun
+pushd ../../../1-backend/addressGenerator
 
 npm install @bitcoin-api/full-stack-api@latest --save
+npm install @bitcoin-api/full-stack-backend@latest --save
 npm install
 
 popd
