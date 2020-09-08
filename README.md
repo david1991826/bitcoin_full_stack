@@ -181,8 +181,6 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
     * update fee data bot
     * pm2-logrotate 
 
-* Cloud Redis
-
 **Summary of How the Bitcoin Node Servers Work**
 
 The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. Overall, this means the NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data bot gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be retrieved publicly using the `https://api-bitcoin.io/v3/fee-data` endpoint (testnet).
