@@ -133,7 +133,7 @@ Promote your material right here in this "Sponsored Content" section in this `RE
 
 ## Updates in Development
 
-* move common NPM modules to `@bitcoin-api` domain
+* updating modules for API
 
 * get frontend ready for production
 
@@ -1109,6 +1109,8 @@ After you've finished your deployments, you can shut down your Water Tree code a
 
 
 ### How to Deploy API
+
+**API upgrades🚧👷‍♀️👷‍♂️🏗 - modules updates coming soon🚀🌤✨**
 
 The API is serverless, it uses [AWS Lambda](https://aws.amazon.com/lambda) functions which are accessed through [API Gateway](https://aws.amazon.com/api-gateway). This section goes over how to set the API up.
 
