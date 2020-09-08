@@ -6,6 +6,16 @@
 
 <br>
 
+## Demo Videos 
+
+* **[Withdrawing Bitcoin from Bitcoin-Api Instance Using Postman, Demo Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)**
+
+* **[12 Concurrent Bitcoin Withdraws from Bitcoin-Api Instance Using a NodeJS Script, Demo Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)**
+
+* **[Exchange and Game Technology, Demo Video on YouTube](https://youtu.be/EMAwIrHM2Qc)**
+
+<br>
+
 ## Introduction
 
 This code repository, Bitcoin-Api-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and game platform (the exchange and game platform are still under construction). The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-Api system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of APIs, exchanges, and game platforms instead of just having to use other companies', if they're okay with holding custody of their own Bitcoin. It's also designed in way so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
@@ -120,15 +130,6 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 ## Sponsored Content
 
 Promote your material right here in this "Sponsored Content" section in this `README.md` file. More info on this in the [Sponsored Content Info](#sponsored-content-info) section below.
-
-
-## Demo Videos 
-
-* **[Withdrawing Bitcoin from Bitcoin-Api Instance Using Postman, Demo Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)**
-
-* **[12 Concurrent Bitcoin Withdraws from Bitcoin-Api Instance Using a NodeJS Script, Demo Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)**
-
-* **[Exchange and Game Technology, Demo Video on YouTube](https://youtu.be/EMAwIrHM2Qc)**
 
 
 ## Updates in Development
