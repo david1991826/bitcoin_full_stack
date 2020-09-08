@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bitcoin-api/full-stack-api": "^30.1.0"
+    "@bitcoin-api/full-stack-api": "^30.1.1"
   }
 }
