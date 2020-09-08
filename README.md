@@ -410,14 +410,12 @@ mkdir treeDeploy/giraffeDeploy
 and in staging:
 ```
 mkdir treeDeploy/stagingCredentials
-mkdir treeDeploy/stagingCredentials/tree
 ```
 OR
 
 in production:
 ```
 mkdir treeDeploy/productionCredentials
-mkdir treeDeploy/productionCredentials/tree
 ```
 
 **b)** Set Up AWS Resources
@@ -760,13 +758,6 @@ The following environment files need to be created and set up:
 .env Template: [Fee Data Bot .env Template File](infrastructure/environment/dotenv-templates/1-backend/feeDataBot.env)
 
 
-**Giraffe**
-
-.env path: `/1-backend/<stagingCredentials OR productionCredentials>/giraffe/.env`
-
-.env Template: [Giraffe .env Template File](infrastructure/environment/dotenv-templates/1-backend/giraffe.env)
-
-
 **Withdraws Bot**
 
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/withdrawsBot/.env`
@@ -779,6 +770,13 @@ The following environment files need to be created and set up:
 .env path: `/1-backend/<stagingCredentials OR productionCredentials>/depositsBot/.env`
 
 .env Template: [Deposits Bot .env Template File](infrastructure/environment/dotenv-templates/1-backend/depositsBot.env)
+
+
+**Giraffe**
+
+.env path: `/1-backend/<stagingCredentials OR productionCredentials>/giraffe/.env`
+
+.env Template: [Giraffe .env Template File](infrastructure/environment/dotenv-templates/1-backend/giraffe.env)
 
 
 **Tree**
