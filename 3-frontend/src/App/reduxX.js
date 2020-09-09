@@ -58,18 +58,18 @@ export const {
         verifyEmailPolygon: {
 
             emailInput: v( '' ),
-            // passwordInput: v( '' ),
-            passwordInput: v( 'password' ),
+            passwordInput: v( '' ),
+            // passwordInput: v( 'password' ),
             verifyEmailCodeInput: v( '' ),
         },
 
         loginPolygon: {
 
+            emailInput: v( '' ),
+            // emailInput: v( 'john@smith.com' ),
             // emailInput: v( '' ),
-            emailInput: v( 'john@smith.com' ),
-            // emailInput: v( '' ),
-            // passwordInput: v( '' ),
-            passwordInput: v( 'password' ),
+            passwordInput: v( '' ),
+            // passwordInput: v( 'password' ),
         },
 
         getUserPolygon: {
