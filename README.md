@@ -10,7 +10,7 @@
 
 ### Live
 
-* **[ProbablyCrypto.com](https://probablycrypto.com)** - testnet demo of exchange and game technology
+* **[TestnetDashboard.com](https://testnetdashboard.com)** - testnet demo of exchange and game technology
 
 ### Video
 
