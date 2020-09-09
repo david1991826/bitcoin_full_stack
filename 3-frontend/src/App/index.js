@@ -45,9 +45,9 @@ const getStyles = () => {
 
 export default ({
 
-    websiteName = 'ProbablyCrypto.com',
-    websiteAbbreviation = 'PC',
-    supportEmail = 'support@probablycrypto.com',
+    websiteName = 'TestnetDashboard.com',
+    websiteAbbreviation = 'TD',
+    supportEmail = 'support@testnetdashboard.com',
     safeMode = false,
     
 }) => {
