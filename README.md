@@ -10,15 +10,15 @@
 
 ### Live
 
-* **[ProbablyCrypto.com](https://probablycrypto.com)** - Real Testnet Demo of Exchange and Game Technology
+* **[ProbablyCrypto.com](https://probablycrypto.com)** - testnet demo of exchange and game technology
 
 ### Video
 
-* **[Withdrawing Bitcoin from Bitcoin-Api Instance Using Postman, Demo Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)**
+*  **[Withdraw, Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)** - withdrawing Bitcoin from Bitcoin-Api instance using postman
 
-* **[12 Concurrent Bitcoin Withdraws from Bitcoin-Api Instance Using a NodeJS Script, Demo Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)**
+* **[12 Withdraws, Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)** - 12 concurrent Bitcoin withdraws from Bitcoin-Api instance using a NodeJS script
 
-* **[Exchange and Game Technology, Demo Video on YouTube](https://youtu.be/EMAwIrHM2Qc)**
+* **[Exchange and Game Technology, Video on YouTube](https://youtu.be/EMAwIrHM2Qc)** - exchange and game technology
 
 <br>
 
