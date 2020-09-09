@@ -45,9 +45,9 @@ const getStyles = () => {
 
 export default ({
 
-    websiteName = 'AtExchange.io',
-    websiteAbbreviation = 'AE',
-    supportEmail = 'support@atexchange.io',
+    websiteName = 'ProbablyCrypto.com',
+    websiteAbbreviation = 'PC',
+    supportEmail = 'support@probablycrypto.com',
     safeMode = false,
     
 }) => {
