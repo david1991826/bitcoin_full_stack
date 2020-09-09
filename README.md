@@ -14,7 +14,7 @@
 
 ### Video
 
-*  **[Withdraw, Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)** - withdrawing Bitcoin from Bitcoin-Api instance using postman
+*  **[Withdraw, Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)** - withdrawing Bitcoin from Bitcoin-Api instance using Postman
 
 * **[12 Withdraws, Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)** - 12 concurrent Bitcoin withdraws from Bitcoin-Api instance using a NodeJS script
 
