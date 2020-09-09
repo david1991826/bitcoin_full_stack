@@ -46,12 +46,6 @@ It's important to note that even though all the code in this repository is publi
 Promote your material right here in this "Sponsored Content" section in this `README.md` file. More info on this in the [Sponsored Content Info](#sponsored-content-info) section below.
 
 
-## Updates in Development
-
-* get frontend ready for production
-
-Visit the [Development branch on GitHub](https://github.com/bitcoin-api/bitcoin-api-full-stack/tree/development) and keep up to date with the latest Bitcoin-Api-Full-Stack documentation and code🚧👷‍♀️👷‍♂️🏗😃!
-
 ## API, Exchange, and Game Features
 
 * Can configure the lowest possible fees (blockchain fee only on withdraw)
@@ -1376,8 +1370,6 @@ Here is an example video of a live production API deployment. The website conten
 
 
 ### How to Deploy Frontend
-
-**Frontend under construction🚧👷‍♀️👷‍♂️🏗 - prepping for production🚀🌤✨**
 
 The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for the webapp in the [exchange and game platform video demo](https://youtu.be/EMAwIrHM2Qc) is [AWS Amplify](https://aws.amazon.com/amplify) using its monorepo functionality.
 
