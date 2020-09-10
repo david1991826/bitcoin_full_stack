@@ -45,7 +45,7 @@ const getStyles = () => {
 
 export default ({
 
-    websiteName = 'Testnet Dashboard',
+    websiteName = 'TestnetDashboard.com',
     websiteAbbreviation = 'TD',
     supportEmail = 'support@testnetdashboard.com',
     safeMode = false,
