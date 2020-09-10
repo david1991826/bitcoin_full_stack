@@ -18,15 +18,5 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {},
-  "description": "",
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/bitcoin-api"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/bitcoinapi"
-    }
-  ]
+  "description": ""
 }
