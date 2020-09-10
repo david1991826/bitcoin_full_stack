@@ -54,6 +54,7 @@ export default () => {
                 marginTop: 30,
                 title: 'email',
                 isLoadingMode: isLoading,
+                type: 'email',
                 onChange: event => {
 
                     const newText = event.target.value;

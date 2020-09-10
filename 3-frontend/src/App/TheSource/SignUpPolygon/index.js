@@ -80,6 +80,7 @@ export default ({
                 marginTop: 30,
                 value: emailInput,
                 title: 'email',
+                type: 'email',
                 onChange: event => {
 
                     const newText = event.target.value;
