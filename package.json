@@ -24,15 +24,5 @@
   "bugs": {
     "url": "https://github.com/bitcoin-api/bitcoin-api-full-stack/issues"
   },
-  "homepage": "https://github.com/bitcoin-api/bitcoin-api-full-stack#readme",
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/bitcoin-api"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/bitcoinapi"
-    }
-  ]
+  "homepage": "https://github.com/bitcoin-api/bitcoin-api-full-stack#readme"
 }
