@@ -41,11 +41,6 @@ The "frontend" exchange and game webapp set up instructions and code are provide
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
 
-## Sponsored Content
-
-Promote your material right here in this "Sponsored Content" section in this `README.md` file. More info on this in the [Sponsored Content Info](#sponsored-content-info) section below.
-
-
 ## API, Exchange, and Game Features
 
 * Can configure the lowest possible fees (blockchain fee only on withdraw)
@@ -1376,97 +1371,8 @@ The frontend code modules are [React](https://reactjs.org) webapps made with [Cr
 
 ----
 
-
-### Bitcoin-Api by Bitcoin-Api.io
-
-PRs and collaborative efforts welcome.👏
-
-
-## Sponsored Content Info
-
-You can sponsor Bitcoin-Api to get sought after marketing towards developers or you can simply get recognition in the [`Contributors.txt`](https://github.com/bitcoin-api/bitcoin-api-full-stack/blob/master/Contributors.txt) document.  
-
-To add your sponsored content to this `README.md` file in the [Sponsored Content](#sponsored-content) section above, use one of the following sponsorship websites: 
-
-* [Bitcoin-Api on GitHub Sponsors](https://github.com/sponsors/bitcoin-api)
-* [Bitcoin-Api on Patreon](https://www.patreon.com/bitcoinapi)
-
-
-Here's examples of the available sponsored content types you can have on this `README.md` file:
-
-### Readme Sponsored Content Example
-
-**Sponsor Title in Bold Letters**
-
-This is the sponsored content text, it contains info and a [text-embedded link](#readme-sponsored-content-example).
-
-
-**Features:**
-
-* a title above in a **bold text font**
-* regular font main text which can also contain a  [text-embedded link](#readme-sponsored-content-example)
-
-### Readme Image Sponsored Content Example
-
-**Sponsor Title in Bold Letters**
-
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-2.png"
-/>
-
-This is the image sponsored content text, it contains info and a [text-embedded link](#readme-image-sponsored-content-example).
-
-
-**Features:**
-
-* a title above in a **bold text font**
-* a 50 pixel by 50 pixel image
-* regular font main text which can also contain a  [text-embedded link](#readme-image-sponsored-content-example)
-
-
-### Readme Large Image Sponsored Content Example
-
-**Sponsor Title in Bold Letters**
-
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/images/documentation/advertisement-large-2.png"
-/>
-
-This is the large image sponsored content text, it contains info and a [text-embedded link](#readme-large-image-sponsored-content-example).
-
-
-**Features:**
-
-* a title above in a **bold text font**
-* a large 100 pixel by 100 pixel image
-* regular font main text which can also contain a  [text-embedded link](#readme-large-image-sponsored-content-example)
-
-
-### Sponsored Content Attributes
-
-* for all sponsor titles: 50 characters max
-* for all main text sections: 100 characters max including the text-embedded link, the text of the text-embedded link can be up to 50 characters max
-
-
-There's a **limit of 12 sponsored content items** in this `README.md` file in the [Sponsored Content](#sponsored-content) section above. Reserve your Bitcoin-Api-Full-Stack marketing now using the [GitHub Sponsors page for Bitcoin-Api](https://github.com/sponsors/bitcoin-api)! 
-
-## Merch
-
-Show your support for Bitcoin-Api to the world and be part of the development of new open source technologies.  
-
-<img
-    src="https://bitcoin-api.s3.amazonaws.com/merch/tshirts/classic-tShirt4.jpg"
-    width="320"
-/>
-
-**Limited Edition Classic Watchful Eye Tee** - 0.005 BTC, shipping included - contact support@bitcoin-api.io to purchase
-
-
----
-
-
 ### Credits:
 
-**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/michael-se) - contact for enterprise collaborations and sponsorships
+**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/michael-se)
 
 **Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire for excellent quality design and art work
