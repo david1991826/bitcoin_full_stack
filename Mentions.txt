@@ -1,4 +1,4 @@
-Contributors
+Mentions
 ------------
 
 Xapo - Key Mention
@@ -14,5 +14,8 @@ Overall, because of Xapo's industry leading digital banking services, ethical ma
 
 ---
 
-* BitcoinBookmarks.com - The Ultimate Cryptocurrency Sites Collection - List of the Most Popular and Best Crypto Sites - https://bitcoinbookmarks.com/
+Werner Vogels and Company - allthingsdistributed.com
 
+---
+
+BitcoinBookmarks.com - The Ultimate Cryptocurrency Sites Collection - List of the Most Popular and Best Crypto Sites - https://bitcoinbookmarks.com/
