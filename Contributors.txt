@@ -15,5 +15,4 @@ Overall, because of Xapo's industry leading digital banking services, ethical ma
 ---
 
 * BitcoinBookmarks.com - The Ultimate Cryptocurrency Sites Collection - List of the Most Popular and Best Crypto Sites - https://bitcoinbookmarks.com/
-* Your name/nickname/comment/link/text could be here! Sponsor Bitcoin-Api-Full-Stack at https://github.com/sponsors/bitcoin-api!
 
