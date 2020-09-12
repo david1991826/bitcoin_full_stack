@@ -37,7 +37,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 3. AWS has very high security standards which means very high security for your cryptocurrencies and other data. 🛡💂🏼‍♂️
 
 
-Keep in mind, since this is open source, other solutions are always welcome too for the cloud infrastructure.✌️
+Keep in mind, since this is open source, other solutions for the cloud infrastructure are always welcome too.✌️
 
 
 ----
