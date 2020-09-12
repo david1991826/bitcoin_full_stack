@@ -1,7 +1,7 @@
 Contributors
 ------------
 
-Xapo - Special Mention
+Xapo - Key Mention
 
 What's Xapo used for in the context of Bitcoin-Api?
 After setting up your own Bitcoin-Api instance and generating revenue from it, Xapo is the perfect place to safely store generated money that's not immediately needed for your instance.
