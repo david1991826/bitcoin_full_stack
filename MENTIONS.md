@@ -38,6 +38,8 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 
 
 Keep in mind, since this is open source, other solutions are always welcome too.✌️
+
+
 ----
 
 #### ☁️Cloud Mentions☁️
