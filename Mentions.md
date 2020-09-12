@@ -1,7 +1,7 @@
 Mentions
 ------------
 
-### Key Mentions🔑🗝🔐🔑🗝🔐
+### Key Mentions
 
 <a href="https://xapo.com">
     <img
