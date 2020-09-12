@@ -80,7 +80,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 * **[Paul McNeal](https://twitter.com/_cryptocurator) and [The Crypto Curator](https://www.thecryptocurator.com/)** for the latest Bitcoin and cryptocurrency updates
 * **[Crypto Finally](https://twitter.com/CryptoFinally)** for promoting Bitcoin and crypto
 * **[Canada](https://en.wikipedia.org/wiki/Canada)** for being a great country to live
-* **[The Government of Canada](https://www.canada.ca/)** for being global leaders and an excellent government
+* **[The Government of Canada](https://www.canada.ca/)** for being a great government and for being great leaders locally and globally
 * **[Reddit](https://www.reddit.com/)** for social media services
 * **[TikTok](https://www.tiktok.com/)** for social media services
 * **[Patreon](https://patreon.com/)** for sponsorship services
