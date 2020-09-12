@@ -42,7 +42,7 @@ Because Bitcoin-Api is open source, more solutions for the cloud infrastructure 
 
 ----
 
-#### ☁️Cloud Mentions☁️
+#### ☁️Api Mentions☁️
 * **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
 * **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration and innovative tech
 * **[Elon Musk and Compa](https://twitter.com/elonmusk)[n](https://www.youtube.com/watch?v=ZucUZZkIQw0)[y](http://stankmemes.com/)** for inspiration and innovative tech
