@@ -1050,7 +1050,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 **Custom AWS Policies to Set Up:**
 
-* [`bitcoin_api_user_deployApiFunctions`](infrastructure/policies/aws/bitcoin_api_user_deployApiFunctions.json)
+* [`bitcoin_api_user_deployAPIFunctions`](infrastructure/policies/aws/bitcoin_api_user_deployAPIFunctions.json)
 
 * [`bitcoin_api_user_deployExchangeFunctions`](infrastructure/policies/aws/bitcoin_api_user_deployExchangeFunctions.json)
 
@@ -1070,19 +1070,19 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 * [`bitcoin_api_role_lambda_service_cacheOnAndOffStatus`](infrastructure/policies/aws/bitcoin_api_role_lambda_service_cacheOnAndOffStatus.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_post.json)
+* [`bitcoin_api_role_lambda_eAPI_eUsers_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eAPI_eUsers_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_get`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_get.json)
+* [`bitcoin_api_role_lambda_eAPI_eUsers_get`](infrastructure/policies/aws/bitcoin_api_role_lambda_eAPI_eUsers_eUserId_get.json)
 
-* [`bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete.json)
+* [`bitcoin_api_role_lambda_eAPI_eUsers_eUserId_delete`](infrastructure/policies/aws/bitcoin_api_role_lambda_eAPI_eUsers_eUserId_delete.json)
 
-* [`bitcoin_api_role_lambda_eApi_verifyUser_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_verifyUser_post.json)
+* [`bitcoin_api_role_lambda_eAPI_verifyUser_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eAPI_verifyUser_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_login_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_login_post.json)
+* [`bitcoin_api_role_lambda_eAPI_login_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eAPI_login_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_logout_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_logout_post.json)
+* [`bitcoin_api_role_lambda_eAPI_logout_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eAPI_logout_post.json)
 
-* [`bitcoin_api_role_lambda_eApi_withdraws_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eApi_withdraws_post.json)
+* [`bitcoin_api_role_lambda_eAPI_withdraws_post`](infrastructure/policies/aws/bitcoin_api_role_lambda_eAPI_withdraws_post.json)
 
 * [`bitcoin_api_role_lambda_eService_handleEEDRs`](infrastructure/policies/aws/bitcoin_api_role_lambda_eService_handleEEDRs.json)
 
@@ -1151,63 +1151,63 @@ policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_api_withdraws_
 
 **Exchange API: POST - /exchange-users**
 
-name: `bitcoin_api_lambda_eApi_eUsers_post`
+name: `bitcoin_api_lambda_eAPI_eUsers_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_eUsers_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eAPI_eUsers_post`
 
 
 **Exchange API: GET - /exchange-users/:exchange-user-id**
 
-name: `bitcoin_api_lambda_eApi_eUsers_eUserId_get`
+name: `bitcoin_api_lambda_eAPI_eUsers_eUserId_get`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eApi_eUsers_eUserId_get`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eAPI_eUsers_eUserId_get`
 
 
 **Exchange API: DELETE - /exchange-users/:exchange-user-id**
 
-name: `bitcoin_api_lambda_eApi_eUsers_eUserId_delete`
+name: `bitcoin_api_lambda_eAPI_eUsers_eUserId_delete`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eApi_eUsers_eUserId_delete`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eAPI_eUsers_eUserId_delete`
 
 
 **Exchange API: POST - /verify-user**
 
-name: `bitcoin_api_lambda_eApi_verifyUser_post`
+name: `bitcoin_api_lambda_eAPI_verifyUser_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_login_post`, `bitcoin_api_role_lambda_eApi_verifyUser_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eAPI_login_post`, `bitcoin_api_role_lambda_eAPI_verifyUser_post`
 
 
 **Exchange API: POST - /login**
 
-name: `bitcoin_api_lambda_eApi_login_post`
+name: `bitcoin_api_lambda_eAPI_login_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_login_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eAPI_login_post`
 
 
 **Exchange API: POST - /withdraws**
 
-name: `bitcoin_api_lambda_eApi_withdraws_post`
+name: `bitcoin_api_lambda_eAPI_withdraws_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eApi_withdraws_post`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_role_lambda_eAPI_withdraws_post`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
 **Exchange API: POST - /logout**
 
-name: `bitcoin_api_lambda_eApi_logout_post`
+name: `bitcoin_api_lambda_eAPI_logout_post`
 
-policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eApi_logout_post`
+policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`, `bitcoin_api_role_lambda_eAPI_logout_post`
 
 
 **Exchange API: POST - /exchanges**
 
-name: `bitcoin_api_lambda_eApi_exchanges_post`
+name: `bitcoin_api_lambda_eAPI_exchanges_post`
 
 policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
 
 **Exchange API: POST - /dreams**
 
-name: `bitcoin_api_lambda_eApi_dreams_post`
+name: `bitcoin_api_lambda_eAPI_dreams_post`
 
 policies: `AWSLambdaBasicExecutionRole`, `bitcoin_api_eFunction_addTransactionAndUpdateExchangeUser`, `bitcoin_api_eFunction_mongolianBeginningDragonProtection`
 
@@ -1227,9 +1227,9 @@ To deploy the API, the following [AWS IAM User](https://docs.aws.amazon.com/IAM/
 
 **Deploy API User**
 
-user name: `bitcoin_api_deployApi`
+user name: `bitcoin_api_deployAPI`
 
-policies: `bitcoin_api_user_deployApiFunctions`, `bitcoin_api_user_deployExchangeFunctions`
+policies: `bitcoin_api_user_deployAPIFunctions`, `bitcoin_api_user_deployExchangeFunctions`
 
 
 #### Deploy API
