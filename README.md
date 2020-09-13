@@ -1,8 +1,8 @@
-# Bitcoin-Api-Full-Stack
+# Bitcoin-API-Full-Stack
 
-[![Bitcoin-Api-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-36.png)](#bitcoin-api-full-stack)
+[![Bitcoin-API-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-37.png)](#bitcoin-api-full-stack)
 
-#### Complete Code Base for Bitcoin-Api
+#### Complete Code Base for Bitcoin-API
 
 <br>
 
@@ -14,9 +14,9 @@
 
 ### Video
 
-*  **[Withdraw, Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)** - withdrawing Bitcoin from Bitcoin-Api instance using Postman
+*  **[Withdraw, Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)** - withdrawing Bitcoin from Bitcoin-API instance using Postman
 
-* **[12 Withdraws, Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)** - 12 concurrent Bitcoin withdraws from Bitcoin-Api instance using a NodeJS script
+* **[12 Withdraws, Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)** - 12 concurrent Bitcoin withdraws from Bitcoin-API instance using a NodeJS script
 
 * **[Exchange and Game Technology, Video on YouTube](https://youtu.be/EMAwIrHM2Qc)** - exchange and game technology
 
@@ -24,7 +24,7 @@
 
 ## Introduction
 
-This code repository, Bitcoin-Api-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and game platform. The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-Api system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of APIs, exchanges, and game platforms instead of just having to use other companies', if they're okay with holding custody of their own Bitcoin. It's also designed in way so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
+This code repository, Bitcoin-API-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and game platform. The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-API system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of APIs, exchanges, and game platforms instead of just having to use other companies', if they're okay with holding custody of their own Bitcoin. It's also designed in way so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
 
 **About APIs and Bitcoin APIs**
 
@@ -32,11 +32,11 @@ Application programming interfaces (APIs) allow developers to build technology t
 
 What this Bitcoin API allows you to do is to easily send and receive Bitcoin using simple URLs. This lets developers program Bitcoin functionality into whatever technology they want, such as exchanges, wallet apps, IoT devices, or anything connected to the internet.
 
-In this Bitcoin-Api system, the Bitcoin itself is stored on a Bitcoin node (Bitcoin node set up instructions provided) and the API connects to the Bitcoin node. Overall, your apps and your tech connect to the API and then the API connects to the Bitcoin node which is on your computer server.
+In this Bitcoin-API system, the Bitcoin itself is stored on a Bitcoin node (Bitcoin node set up instructions provided) and the API connects to the Bitcoin node. Overall, your apps and your tech connect to the API and then the API connects to the Bitcoin node which is on your computer server.
 
 The Bitcoin node and the API are considered to be the "backend" of the "stack" in the "full stack" concept. When implemented, the backend code and the associated data is on your computer servers and is not publicly accessible by users.
 
-The "frontend" exchange and game webapp set up instructions and code are provided. The webapp connects to your built Bitcoin-Api backend. The webapp code is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve data that they're authorized to access, such as their Bitcoin balance data, from the backend.
+The "frontend" exchange and game webapp set up instructions and code are provided. The webapp connects to your built Bitcoin-API backend. The webapp code is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve data that they're authorized to access, such as their Bitcoin balance data, from the backend.
 
 It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
 
@@ -85,7 +85,7 @@ Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated,
 
 **Summary of How the Bitcoin Node Servers Work**
 
-The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. Overall, this means the NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-Api database. For example the fee data bot gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-Api database with that fee. That fee estimate can then be retrieved publicly using the `/fee-data` API endpoint.
+The NodeJS services interact with the Bitcoin node which in turn interacts with the Bitcoin blockchain. Overall, this means the NodeJS services gather data from the Bitcoin blockchain. The NodeJS services then perform the required actions on the Bitcoin-API database. For example the fee data bot gets an estimate for the fee from the Bitcoin blockchain and updates the Bitcoin-API database with that fee. That fee estimate can then be retrieved publicly using the `/fee-data` API endpoint.
 
 ### How to Set Up the Backend
 
@@ -94,7 +94,7 @@ The NodeJS services interact with the Bitcoin node which in turn interacts with 
 
 * Have a Mac or Linux server, this can be a computer in your home, or in the cloud (e.g. an [EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)). The Linux server must meet [Bitcoin Core's computer requirements](https://bitcoin.org/en/bitcoin-core/features/requirements). You need to have access to the server. This means you should be able to access a command-line or terminal in that server using [ssh](https://en.wikipedia.org/wiki/Secure_Shell). You can also manually install the backend on a computer locally without ssh, that computer just needs to stay running and connected to the internet for the services to remain active.
 
-* On the computer you're working on (e.g. your home computer), clone or download this Bitcoin-Api-Full-Stack code repository. This repo is like the "command center" for your Bitcoin-Api instance. Set up, deployment, and other useful commands are performed using the files and scripts in this repo.
+* On the computer you're working on (e.g. your home computer), clone or download this Bitcoin-API-Full-Stack code repository. This repo is like the "command center" for your Bitcoin-API instance. Set up, deployment, and other useful commands are performed using the files and scripts in this repo.
 
 * Have a Redis service that you can access using a URL. [Redis Labs](https://redislabs.com) provides great Redis services.
 
@@ -114,7 +114,7 @@ The backend node server is responsible for updating the database. The backend no
 You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (This hasn't been tested yet although this is according to what [Andreas Antonopoulos](https://aantonop.com/) said. It should be taken into consideration that this claim was made in 2019 and that the tech is always improving.)
 
 
-#### Steps to Setup a Bitcoin-Api Bitcoin Node Server
+#### Steps to Setup a Bitcoin-API Bitcoin Node Server
 
 This section assumes you have the requirements listed above.
 
@@ -262,7 +262,7 @@ pm2 install pm2-logrotate
 
 **About**
 
-MongoDB is used locally on your Bitcoin-Api Bitcoin node server for caching. It prevents unnecessary non local server database writes to the main cloud database when updating addresses and balances.
+MongoDB is used locally on your Bitcoin-API Bitcoin node server for caching. It prevents unnecessary non local server database writes to the main cloud database when updating addresses and balances.
 
 These instructions will go through setting up MongoDB on an Amazon Linux server. If your machine is not an Amazon Linux, you can find the appropriate instructions here in the [official MongoDB Linux installation instructions](https://docs.mongodb.com/manual/administration/install-on-linux/).
 
@@ -299,13 +299,13 @@ sudo systemctl status mongod
 ```
 
 
-#### 4) Set Up Bitcoin-Api Bitcoin Node Backend
+#### 4) Set Up Bitcoin-API Bitcoin Node Backend
 
 **About**
 
 This section deals with set up for deployment to a remote Linux server. The deployment method used is called Giraffe Lick Leaf (GLL). The way GLL deployment works is you input a deploy command on your home computer that specifies a NodeJS service for the Bitcoin node. The deploy command triggers your home computer to send the most recent code for the specified NodeJS service to the remote Linux server. The Linux server accepts and installs the NodeJS service if it doesn't already exist, or it updates the existing service. 
 
-This section goes through how to set up the Bitcoin-Api Bitcoin node backend for deployment. The main task is to transfer the Tree Deploy🌲🌳 code to the Linux server. The tree deploy code runs on your Linux server and it accepts and install the incoming code sent from your home computer.
+This section goes through how to set up the Bitcoin-API Bitcoin node backend for deployment. The main task is to transfer the Tree Deploy🌲🌳 code to the Linux server. The tree deploy code runs on your Linux server and it accepts and install the incoming code sent from your home computer.
 
 
 **Steps**
@@ -337,7 +337,7 @@ This section goes over the AWS resources that are needed to operate the backend.
 
 ##### Backend IAM Policies
 
-Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-Api's backend. The naming for the staging IAM policies is the same except for `_staging` is appended to the policy name.
+Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-API's backend. The naming for the staging IAM policies is the same except for `_staging` is appended to the policy name.
 
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
@@ -354,7 +354,7 @@ Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/a
 
 ##### Backend IAM Users
 
-Next, the [AWS IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) for Bitcoin-Api's backend need to be set up. The naming for the staging IAM users is the same except for `_staging` is appended to the user name.
+Next, the [AWS IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) for Bitcoin-API's backend need to be set up. The naming for the staging IAM users is the same except for `_staging` is appended to the user name.
 
 [AWS IAM User Management Console](https://console.aws.amazon.com/iam/home#/users)
 
@@ -388,7 +388,7 @@ policies: `bitcoin_api_user_depositsBot`, `bitcoin_api_eFunction_addTransactionA
 
 ##### Backend DynamoDB Tables
 
-This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-Api. The staging tables are the same except for `_staging` is appended on the table name.
+This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamodb) production tables for Bitcoin-API. The staging tables are the same except for `_staging` is appended on the table name.
 
 [AWS DynamoDB Management Console](https://console.aws.amazon.com/dynamodb/home)
 
@@ -417,11 +417,11 @@ This section describes the required [AWS DynamoDB](https://aws.amazon.com/dynamo
 
 #### About the Database
 
-In the Bitcoin-Api system, some DynamoDB database operations are queued with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For preciseness, the locking queues will be called *Q-Locks👨🏿‍🔬* in this documentation.
+In the Bitcoin-API system, some DynamoDB database operations are queued with [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) to prevent conflicting updates. For preciseness, the locking queues will be called *Q-Locks👨🏿‍🔬* in this documentation.
 
 #### About Dr. Q's Q-Locks👨🏿‍🔬
 
-Q-Locks run the operations their locking in series as opposed to running them concurrently in parallel. If an operation is in a Q-Lock and another operation with the same Q-Lock attempts to be performed, the second operation will have to wait until the first operation has finished in its own Q-Lock. A Q-Lock is identified in Bitcoin-Api using a string with the following format `{type}:{id}`. An example of this would be the Q-Lock used in the `POST /withdraws` endpoint whose identifier is `withdraws:user_id`. This endpoint starts the withdraw process for a user attempting to make a withdraw. What having the Q-Lock on this withdraw operation means is that for an individual user, a second withdraw operation can only occur after the first withdraw operation has finished, this prevents double spends.👨🏿‍🔬
+Q-Locks run the operations their locking in series as opposed to running them concurrently in parallel. If an operation is in a Q-Lock and another operation with the same Q-Lock attempts to be performed, the second operation will have to wait until the first operation has finished in its own Q-Lock. A Q-Lock is identified in Bitcoin-API using a string with the following format `{type}:{id}`. An example of this would be the Q-Lock used in the `POST /withdraws` endpoint whose identifier is `withdraws:user_id`. This endpoint starts the withdraw process for a user attempting to make a withdraw. What having the Q-Lock on this withdraw operation means is that for an individual user, a second withdraw operation can only occur after the first withdraw operation has finished, this prevents double spends.👨🏿‍🔬
 
 Below lists in detail which operations specifically are in Q-Locks.
 
@@ -633,19 +633,19 @@ Below lists in detail which operations specifically are in Q-Locks.
 | Q | stream - max length 300000 | all [Dr. Q👨🏿‍🔬](https://github.com/bitcoin-api/drq) operations |
 | ipAddressRateLimiterQueueId | stream - max length 200000 | rate limit by ip address (per endpoint per ip address) |
 | advancedCodeRateLimiterQueueId | stream - max length 200000 | rate limit by advanced code (per endpoint per advanced code) |
-| bankStatusQueueId | stream - max length 2000 | The NodeJS services periodically send requests to this queue to indicate whether they're active or not. This is used by the API to determine if the entire Bitcoin-Api system is active or not. If the system is not active, all the API endpoints will respond with an error indicating the service is currently unavailable. |
+| bankStatusQueueId | stream - max length 2000 | The NodeJS services periodically send requests to this queue to indicate whether they're active or not. This is used by the API to determine if the entire Bitcoin-API system is active or not. If the system is not active, all the API endpoints will respond with an error indicating the service is currently unavailable. |
 | cacheOnAndOffStatus | stream - max length 1000 | cache for on and off status of API, you can edit a database value to switch the entire API off or back on |
 | zarbonDeploy | stream - max length 1000 | Giraffe Lick Leaf (GLL) deploy queue |
-| unusedAddressData | list of encoded JSON objects | contains unused address data, this data including the address itself is assigned to users (equivalently Bitcoin-Api tokens) when they make requests to the `POST - /addresses` endpoint |
+| unusedAddressData | list of encoded JSON objects | contains unused address data, this data including the address itself is assigned to users (equivalently Bitcoin-API tokens) when they make requests to the `POST - /addresses` endpoint |
 
 
 ##### Backend S3 Storage Bucket
 
-This section goes over how to set up the required [AWS S3](https://aws.amazon.com/s3) production bucket for Bitcoin-Api. The staging bucket is the same except for `_staging` is appended onto the bucket name (recommended for simplicity, although it's not necessary and the S3 staging bucket can have a completely different name if wanted).
+This section goes over how to set up the required [AWS S3](https://aws.amazon.com/s3) production bucket for Bitcoin-API. The staging bucket is the same except for `_staging` is appended onto the bucket name (recommended for simplicity, although it's not necessary and the S3 staging bucket can have a completely different name if wanted).
 
 [AWS S3 Management Console](https://console.aws.amazon.com/s3/home)
 
-**Steps to Set Up Bitcoin-Api S3 Bucket (Staging or Production)**
+**Steps to Set Up Bitcoin-API S3 Bucket (Staging or Production)**
 
 1. Create a bucket in S3
 
@@ -742,7 +742,7 @@ If not already, install the address generator node modules with:
 npm install
 ```
 
-Then, to add new addresses to your Bitcoin-Api system, you can run the following command:
+Then, to add new addresses to your Bitcoin-API system, you can run the following command:
 ```
 node AddUnusedAddress [number of addresses to add, defaults to 1]
 ```
@@ -752,14 +752,14 @@ or in production:
 node AddUnusedAddress.js [number of addresses to add, defaults to 1] --mode=production
 ```
 
-Adding an address to your Bitcoin-Api system will look like this:
+Adding an address to your Bitcoin-API system will look like this:
 ![Address Generator Creating New Bitcoin Address](https://bitcoin-api.s3.amazonaws.com/images/documentation/calzone-sun-successfully-added-address.png)
 
 <br>
 
 **Fee Data Bot (runs in infinite loop)**
 
-This NodeJS service updates your Bitcoin-Api system's fee data which includes the fee itself in terms of how much the user pays on Bitcoin withdraw. This service is managed by pm2. To set up the NodeJS fee data service, in the `/[Linux user home path]/tigerScript/feeDataBot` path on your Linux server, first install the node modules:
+This NodeJS service updates your Bitcoin-API system's fee data which includes the fee itself in terms of how much the user pays on Bitcoin withdraw. This service is managed by pm2. To set up the NodeJS fee data service, in the `/[Linux user home path]/tigerScript/feeDataBot` path on your Linux server, first install the node modules:
 
 ```
 npm install
@@ -785,7 +785,7 @@ or:
 node UpdateFeeDataWorker --mode=production
 ```
 
-After the main function finishes, it starts again after 10 seconds to keep the fee up to date in your Bitcoin-Api system.
+After the main function finishes, it starts again after 10 seconds to keep the fee up to date in your Bitcoin-API system.
 
 When the main function has finished, it should look like this:
 
@@ -863,14 +863,14 @@ Here's an example of the resulting `businessFeeData` with an `enviroWithdrawAmou
 }
 ```
 
-EnviroWithdraw or not, Bitcoin-Api suggests to please consider contributing a portion of the fees you collect towards the environment and thank you very much for considering our environment!🌲🌳🌄
+EnviroWithdraw or not, Bitcoin-API suggests to please consider contributing a portion of the fees you collect towards the environment and thank you very much for considering our environment!🌲🌳🌄
 
 <br>
 
 
 **Deposits Bot (runs in infinite loop)**
 
-This NodeJS service updates Bitcoin addresses and user balances for Bitcoin deposits to Bitcoin-Api addresses. To set up this pm2 managed NodeJS Bitcoin deposit worker service, in the `/[Linux user home path]/tigerScript/depositsBot` path on your Linux server, first install the node modules:
+This NodeJS service updates Bitcoin addresses and user balances for Bitcoin deposits to Bitcoin-API addresses. To set up this pm2 managed NodeJS Bitcoin deposit worker service, in the `/[Linux user home path]/tigerScript/depositsBot` path on your Linux server, first install the node modules:
 
 ```
 npm install
@@ -971,14 +971,14 @@ It will look like this:
 ![Water Tree No-Op](https://bitcoin-api.s3.amazonaws.com/images/documentation/water-tree-no-op.png)
 
 
-And that's it, your Bitcoin-Api backend Bitcoin node server is now operational and is also ready for ultra-fast Giraffe Lick Leaf deployments! See more on this in the next step.
+And that's it, your Bitcoin-API backend Bitcoin node server is now operational and is also ready for ultra-fast Giraffe Lick Leaf deployments! See more on this in the next step.
 
 
 <br>
 
 ### How to Deploy Backend
 
-Now that we've got our Bitcoin-Api backend Bitcoin node server up and running, let's go over how to do a super fast Giraffe Lick Leaf (GLL) deployment to instantly update your backend NodeJS services!
+Now that we've got our Bitcoin-API backend Bitcoin node server up and running, let's go over how to do a super fast Giraffe Lick Leaf (GLL) deployment to instantly update your backend NodeJS services!
 
 First, in your Linux server at `/[Linux user home path]/treeDeploy/giraffeDeploy/tree`, run:
 ```
@@ -1015,7 +1015,7 @@ This will trigger a GLL deployment to update your NodeJS service, here's an exam
     />
 </a>
 
-GLL deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server. The overall Bitcoin-Api service doesn't need to be shut down or be interrupted.
+GLL deployment provides continuous integration for the backend NodeJS services that interact with the Bitcoin node on the Linux server. The overall Bitcoin-API service doesn't need to be shut down or be interrupted.
 
 After you've finished your deployments, you can shut down your Water Tree code acceptor and installer process in your Linux server. To do this simply input the keyboard keys `control` plus `c`.
 
@@ -1033,12 +1033,12 @@ Use the [API Environment Variable Template File](infrastructure/environment/dote
 
 **b)** Set Up AWS API Resources
 
-This section goes over the [AWS](https://aws.amazon.com) resources that necessary to set up and run the Bitcoin-Api API.
+This section goes over the [AWS](https://aws.amazon.com) resources that necessary to set up and run the Bitcoin-API API.
 
 
 ##### API IAM Policies
 
-Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-Api's API. The naming for the staging IAM policies is the same except for `_staging` is appended to the policy name.
+Here's the [AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) that are needed for Bitcoin-API's API. The naming for the staging IAM policies is the same except for `_staging` is appended to the policy name.
 
 [AWS IAM Policy Management Console](https://console.aws.amazon.com/iam/home#/policies)
 
@@ -1234,7 +1234,7 @@ policies: `bitcoin_api_user_deployApiFunctions`, `bitcoin_api_user_deployExchang
 
 #### Deploy API
 
-To deploy the [AWS Lambda](https://aws.amazon.com/lambda) functions required for the Bitcoin-Api API, in the `/infrastructure/scripts/2-api` path in this repo, run the following script:
+To deploy the [AWS Lambda](https://aws.amazon.com/lambda) functions required for the Bitcoin-API API, in the `/infrastructure/scripts/2-api` path in this repo, run the following script:
 ```
 ./deployStaging --meta="a"
 ```
@@ -1251,7 +1251,7 @@ For reference here are the API deploy command options:
 | functions |  filter functions by nickname, function names separated by commas  | any Lambda function nickname (e.g. `POST/tokens,GET/tokens`) |
 | meta | API(a) or exchange(e) | `a`, `e`, or `ae` (deploy all functions, defaults to `ae`)  |
 
-This will set up the Lambda functions associated with the core API part of your Bitcoin-Api. Next, the set up for the [AWS API Gateway](https://aws.amazon.com/api-gateway) API used as your core API will be explained in detail. How this works is you create an HTTP API with API Gateway and you attach your deployed Lambda functions to the HTTP API Gateway. After you set up the core API, you will be able to set up the exchange API.
+This will set up the Lambda functions associated with the core API part of your Bitcoin-API. Next, the set up for the [AWS API Gateway](https://aws.amazon.com/api-gateway) API used as your core API will be explained in detail. How this works is you create an HTTP API with API Gateway and you attach your deployed Lambda functions to the HTTP API Gateway. After you set up the core API, you will be able to set up the exchange API.
 
 #### API Gateway Set Up 
 
@@ -1290,14 +1290,14 @@ Next, create six Lambda integrations, and attach them to the appropriate routes:
 | Access-Control-Expose-Headers | * |
 | Access-Control-Max-Age | 0 Seconds |
 
-Next, now your core Bitcoin-Api API is almost active, only a couple more steps.
+Next, now your core Bitcoin-API API is almost active, only a couple more steps.
 
 First, add the following database entry to the `bitcoin_api_metadata` or the `bitcoin_api_metadata_staging` DynamoDB table:
 ```.json
 {
   "key": "onAndOffSwitch",
   "bitcoinApiIsOn": true,
-  "bitcoinApiIsOffReason": "This Bitcoin-Api instance is off because I'm out having fun with my lover!!!🌹💕💘️💖💏💖💘️💕🌹"
+  "bitcoinApiIsOffReason": "This Bitcoin-API instance is off because I'm out having fun with my lover!!!🌹💕💘️💖💏💖💘️💕🌹"
 }
 ```
 You can use this database object to control whether the whole API is on or off. Simply set 
@@ -1314,7 +1314,7 @@ And now, your Bitcoin-Api core API is active!
 
 To finish the rest of the set up which includes setting up the exchange, there's a few more steps.
 
-**Set Up Exchange Bitcoin-Api Token**
+**Set Up Exchange Bitcoin-API Token**
 
 Create a token using the `POST - /tokens` endpoint on your newly created API. The token and the userId associated with this token both need to be added for your API environment variables `EXCHANGE_BITCOIN_API_TESTNET_TOKEN` and `EXCHANGE_TOKEN_USER_ID`. 
 
@@ -1322,7 +1322,7 @@ Initialize this token by retrieving an address with it. Make a request to the `P
 
 **Deploy Exchange API Lambda Functions**
 
-Deploy your Bitcoin-Api exchange API functions with the following command in the `/infrastructure/scripts/2-api` path in this repo:
+Deploy your Bitcoin-API exchange API functions with the following command in the `/infrastructure/scripts/2-api` path in this repo:
 
 ```
 ./deployStaging --meta="e"
@@ -1348,13 +1348,13 @@ In your API's .env file, your `EXCHANGE_MANAGEMENT_EMAIL` environment variable m
 
 **Set Up API Gateway HTTP API**
 
-For the Bitcoin-Api exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
+For the Bitcoin-API exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
 
-And there go!! Your very own Bitcoin-Api API, exchange, and game platform!!!😃🤠🧐😎👁🎉🎊🥳
+And there go!! Your very own Bitcoin-API API, exchange, and game platform!!!😃🤠🧐😎👁🎉🎊🥳
 
 #### Deploy API Demo Video
 
-Here is an example video of a live production API deployment. The website contents for [Bitcoin-Api.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
+Here is an example video of a live production API deployment. The website contents for [Bitcoin-API.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
 
 <a href="https://www.youtube.com/watch?v=8FCWWAyXB8A">
     <img
