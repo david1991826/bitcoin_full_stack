@@ -1,6 +1,6 @@
 'use strict';
 
-const BitcoinApi = require( 'bitcoin-api' );
+const BitcoinAPI = require( 'bitcoin-api' );
 
 const {
     constants: {
@@ -23,7 +23,7 @@ Object.assign(
 );
 
 
-const bitcoinApi = new BitcoinApi( initializationValues );
+const bitcoinAPI = new BitcoinAPI( initializationValues );
 
 
-module.exports = bitcoinApi;
+module.exports = bitcoinAPI;
