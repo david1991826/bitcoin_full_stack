@@ -20,7 +20,7 @@ const {
 
 const validateAndGetValues = require( './validateAndGetValues' );
 const flamingoCrescentDecrypt = require( '../flamingoCrescentDecrypt' );
-const bitcoinApi = require( '../exchangeBitcoinApi' );
+const bitcoinApi = require( '../exchangeBitcoinAPI' );
 
 
 module.exports = Object.freeze( async ({

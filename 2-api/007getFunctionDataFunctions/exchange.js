@@ -76,7 +76,7 @@ module.exports = ({
                 './routes/exchange/verify_user/POST',
                 './sacredElementals/crypto/flamingoCrescentDecrypt',
                 './sacredElementals/crypto/doLogin',
-                './sacredElementals/crypto/exchangeBitcoinApi',
+                './sacredElementals/crypto/exchangeBitcoinAPI',
                 './sacredElementals/crypto/xoOvo'
             ],
             environmentVariables: {
@@ -98,7 +98,7 @@ module.exports = ({
                 './routes/exchange/login/POST',
                 './sacredElementals/crypto/flamingoCrescentDecrypt',
                 './sacredElementals/crypto/xoOvo',
-                './sacredElementals/crypto/exchangeBitcoinApi',
+                './sacredElementals/crypto/exchangeBitcoinAPI',
                 './sacredElementals/crypto/doLogin'
             ],
             environmentVariables: {
