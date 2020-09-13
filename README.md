@@ -1297,7 +1297,7 @@ First, add the following database entry to the `bitcoin_api_metadata` or the `bi
 {
   "key": "onAndOffSwitch",
   "bitcoinApiIsOn": true,
-  "bitcoinApiIsOffReason": "This Bitcoin-API instance is off because I'm out having fun with my lover!!!🌹💕💘️💖💏💖💘️💕🌹"
+  "bitcoinAPIIsOffReason": "This Bitcoin-API instance is off because I'm out having fun with my lover!!!🌹💕💘️💖💏💖💘️💕🌹"
 }
 ```
 You can use this database object to control whether the whole API is on or off. Simply set 

@@ -39,8 +39,8 @@ module.exports = Object.freeze( async ({
         const errorMessage = (
 
             !!onAndOffSwitchData &&
-            !!onAndOffSwitchData.bitcoinApiIsOffReason &&
-            onAndOffSwitchData.bitcoinApiIsOffReason
+            !!onAndOffSwitchData.bitcoinAPIIsOffReason &&
+            onAndOffSwitchData.bitcoinAPIIsOffReason
 
         ) || defaultErrorMessage;
 
