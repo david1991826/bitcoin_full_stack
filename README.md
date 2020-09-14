@@ -1367,12 +1367,3 @@ Here is an example video of a live production API deployment. The website conten
 ### How to Deploy Frontend
 
 The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for the webapp in the [exchange and game platform video demo](https://youtu.be/EMAwIrHM2Qc) is [AWS Amplify](https://aws.amazon.com/amplify) using its monorepo functionality.
-
-
-----
-
-### Credits:
-
-**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/michael-se)
-
-**Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire for excellent quality design and art work
