@@ -1352,7 +1352,7 @@ For the Bitcoin-API exchange API, just repeat creating an HTTP API in the same w
 
 #### Deploy API Demo Video
 
-Here is an example video of a live production API deployment. The website contents for [bitcoin-api.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
+Here is an example video of a live production API deployment. Updated website contents are retrieved using a newly deployed [AWS Lambda](https://aws.amazon.com/lambda) function:
 
 <a href="https://www.youtube.com/watch?v=8FCWWAyXB8A">
     <img
