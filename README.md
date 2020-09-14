@@ -1366,8 +1366,7 @@ Here is an example video of a live production API deployment. Updated website co
 
 The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for the webapp in the [exchange and game platform video demo](https://youtu.be/EMAwIrHM2Qc) is [AWS Amplify](https://aws.amazon.com/amplify) using its monorepo functionality.
 
-And that's it!! Your very own Bitcoin API, exchange, and game platform!!!😃🤠🧐😎👁🎉🎊🥳
-
+---
 
 ### Contributing
 
