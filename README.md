@@ -1348,7 +1348,7 @@ In your API's .env file, your `EXCHANGE_MANAGEMENT_EMAIL` environment variable m
 
 **Set Up API Gateway HTTP API**
 
-For the Bitcoin-API exchange API, just repeat creating an HTTP API in the same way you created the [core API](#api-gateway-set-up) except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
+For the Bitcoin-API exchange API, just repeat creating an HTTP API in the same way you created the [core HTTP API](#api-gateway-set-up) except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
 
 #### Deploy API Demo Video
 
