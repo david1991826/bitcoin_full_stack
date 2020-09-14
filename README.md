@@ -1259,7 +1259,7 @@ First go to the [AWS API Gateway Console](https://console.aws.amazon.com/apigate
 
 For the "Choose an API type" section, choose "Build" for the "HTTP API" type API.
 
-You will next be prompted to input a name for your API. Input the following API name `bitcoin_api_core_api_staging` or `bitcoin_api_core_api` and press "Next" (you can also choose a different name).
+You will next be prompted to input a name for your API. Input an API name such as `bitcoin_api_core_api_staging` or `bitcoin_api_core_api` and press "Next".
 
 Next, you will be prompted to "Configure routes". Press "Next".
 
