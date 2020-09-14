@@ -28,7 +28,7 @@ This code repository, *Bitcoin-API-Full-Stack* (used interchangeably with *Bitco
 
 #### About APIs and Bitcoin APIs
 
-Application programming interfaces (APIs) allow developers to build technology that connects across the internet in a systematic way using URLs and internet requests from computers to those URLs. An example of this is sending a Tweet on Twitter from your phone, which is the computer in this case. Your phone makes an internet request with the specified information to Tweet to the Twitter API URL which is then responsible for creating the Tweet.
+Application programming interfaces (APIs) allow developers to build technology that connects across the internet in a systematic way using URLs and internet requests from computers to those URLs. An example of this is sending a Tweet on Twitter from your phone, which is the computer in this case. Your phone makes an internet request, with the specified information to Tweet, to the Twitter API URL which is then responsible for creating the Tweet.
 
 What this Bitcoin-API API allows you to do is to easily send and receive Bitcoin using simple URLs. This lets developers program Bitcoin and digital currency functionality into whatever technology they want, such as exchanges, wallet apps, IoT devices, or anything connected to the internet.
 
