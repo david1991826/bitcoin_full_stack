@@ -2,7 +2,7 @@
 
 [![Bitcoin-API-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-37.png)](#bitcoin-api-full-stack)
 
-#### Complete Code Base for Bitcoin-API
+#### Full Stack Bitcoin API Technology
 
 <br>
 
