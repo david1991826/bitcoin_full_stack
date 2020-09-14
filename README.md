@@ -24,7 +24,7 @@
 
 ## Introduction
 
-This code repository, Bitcoin-API-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin and digital currency API ([see below](#about-apis-and-bitcoin-apis) for info about what APIs are), exchange, and game platform. The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-API system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of Bitcoin and digital currency APIs, exchanges, and game platforms instead of only having other people's technologies and companies to use. It's also designed so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
+This code repository, Bitcoin-API-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin and digital currency API ([see below](#about-apis-and-bitcoin-apis) for info about what APIs are), exchange, and game platform. The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-API system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of Bitcoin and digital currency APIs, exchanges, and game platforms instead of only having other people's technologies and companies to use. It's also designed so that even an individual can have control over these financial technologies instead of needing a big team or a company.
 
 #### About APIs and Bitcoin APIs
 
@@ -62,7 +62,7 @@ It's important to note that even though all the code in this repository is publi
 ### About
 
 The repo `Bitcoin-API-Full-Stack` is a repo for anybody, even an individual,
-to have their own Bitcoin and digital currency management technology. Instead of needing a big team or a company to manage a Bitcoin and digital currency wallet app,
+to have their own Bitcoin and digital currency management technology. Instead of needing a big team or company to manage a Bitcoin and digital currency wallet app,
 exchange, or game platform, this repo aims to give individual users complete control over
 these financial technologies.
 
