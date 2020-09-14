@@ -24,7 +24,7 @@
 
 ## Introduction
 
-This code repository, Bitcoin-API-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and game platform. The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-API system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of APIs, exchanges, and game platforms instead of just having to use other companies', if they're okay with holding custody of their own Bitcoin. It's also designed in way so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
+This code repository, Bitcoin-API-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin API (see below for info about what APIs are), exchange, and game platform. The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-API system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of APIs, exchanges, and game platforms instead of just having to use other companies', if they're okay with holding custody of their own Bitcoin. It's also designed so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
 
 **About APIs and Bitcoin APIs**
 
@@ -38,7 +38,7 @@ The Bitcoin node and the API are considered to be the "backend" of the "stack" i
 
 The "frontend" exchange and game webapp set up instructions and code are provided. The webapp connects to your built Bitcoin-API backend. The webapp code is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve data that they're authorized to access, such as their Bitcoin balance data, from the backend.
 
-It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to operate it.
+It's important to note that even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the system's backend access keys to access the private data (other than the case of a user getting their own private data with their tokens and passwords, which does not need the backend access keys).
 
 
 ## API, Exchange, and Game Features
