@@ -30,7 +30,7 @@ This code repository, *Bitcoin-API-Full-Stack*, is a JavaScript/NodeJS full stac
 
 Application programming interfaces (APIs) allow developers to build technology that connects across the internet in a systematic way using URLs and internet requests from computers to those URLs. An example of this is sending a Tweet on Twitter from your phone, which is the computer in this case. Your phone makes an internet request to the Twitter API URL which is then responsible for creating Tweets.
 
-What this API allows you to do is to easily send and receive Bitcoin using simple URLs. This lets developers program Bitcoin and digital currency functionality into whatever technology they want, such as exchanges, wallet apps, IoT devices, or anything connected to the internet.
+What this Bitcoin-API API allows you to do is to easily send and receive Bitcoin using simple URLs. This lets developers program Bitcoin and digital currency functionality into whatever technology they want, such as exchanges, wallet apps, IoT devices, or anything connected to the internet.
 
 In this Bitcoin-API system, the Bitcoin itself is stored on a Bitcoin node (Bitcoin node set up instructions provided) and the API connects to the Bitcoin node. Overall, your apps and your tech connect to the API and then the API connects to the Bitcoin node which is on your computer server.
 
