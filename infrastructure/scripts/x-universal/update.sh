@@ -121,11 +121,8 @@ popd
 
 # pushd ../../../2-api
 
-# npm install @bitcoin-api.io/common-bridge@latest --save
-# npm install @bitcoin-api.io/common-general@latest --save
-# npm install @bitcoin-api.io/common-private@latest --save
-# npm install @bitcoin-api.io/common-exchange@latest --save
-# npm install
-# npm fund
+npm install @bitcoin-api/full-stack-api@latest --save
+npm install @bitcoin-api/full-stack-exchange@latest --save
+npm install
 
 # popd
