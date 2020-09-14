@@ -1370,4 +1370,4 @@ The frontend code modules are [React](https://reactjs.org) webapps made with [Cr
 
 ### Contributing
 
-Bitcoin-API-Full-Stack is open source. Pull requests, GitHub issues, or any other types of feedback or suggestions are welcome and are greatly appreciated.
+Bitcoin-API-Full-Stack is open source. Pull requests, GitHub issues, or any other feedback or suggestions are welcome and are greatly appreciated.
