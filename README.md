@@ -24,9 +24,9 @@
 
 ## Introduction
 
-This code repository, Bitcoin-API-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin and cryptocurrency API (see below for info about what APIs are), exchange, and game platform. The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-API system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of Bitcoin and cryptocurrency APIs, exchanges, and game platforms instead of only having other people's companies' and technology to use. It's also designed so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
+This code repository, Bitcoin-API-Full-Stack, is a JavaScript/NodeJS full stack Bitcoin and cryptocurrency API ([see below](#about-apis-and-bitcoin-apis) for info about what APIs are), exchange, and game platform. The term "full stack" in the title means that all the instructions and all the components are in this repository so you can build your own Bitcoin-API system from scratch and you can build every aspect of it from computer server to phone webapp. This system lets people have their own versions of Bitcoin and cryptocurrency APIs, exchanges, and game platforms instead of only having other people's companies' and technology to use. It's also designed so that even an individual can have control over these financial technologies instead of having to need a big team or a company.
 
-**About APIs and Bitcoin APIs**
+### About APIs and Bitcoin APIs
 
 Application programming interfaces (APIs) allow developers to build technology that connects across the internet in a systematic way using URLs and internet requests from computers to those URLs. An example of this is sending a Tweet on Twitter from your phone, which is the computer in this case. Your phone makes an internet request to the Twitter API URL which is then responsible for creating Tweets.
 
