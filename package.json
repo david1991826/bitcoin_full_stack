@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-api-full-stack",
-  "version": "1.0.71",
+  "version": "1.0.72",
   "description": "Open source Bitcoin API, exchange, and game platform.",
   "main": "index.js",
   "scripts": {
