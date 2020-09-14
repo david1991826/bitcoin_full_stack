@@ -1350,8 +1350,6 @@ In your API's .env file, your `EXCHANGE_MANAGEMENT_EMAIL` environment variable m
 
 For the Bitcoin-API exchange API, just repeat creating an HTTP API in the same way you created the `bitcoin_api_core_api` API except using the exchange Lambda functions. You can name it `bitcoin_api_exchange_api_staging` or `bitcoin_api_exchange_api`.
 
-And there go!! Your very own Bitcoin-API API, exchange, and game platform!!!😃🤠🧐😎👁🎉🎊🥳
-
 #### Deploy API Demo Video
 
 Here is an example video of a live production API deployment. The website contents for [bitcoin-api.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
@@ -1367,3 +1365,5 @@ Here is an example video of a live production API deployment. The website conten
 ### How to Deploy Frontend
 
 The frontend code modules are [React](https://reactjs.org) webapps made with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). They can be deployed in the same way as any other React webapp. The deployment tool currently used for the webapp in the [exchange and game platform video demo](https://youtu.be/EMAwIrHM2Qc) is [AWS Amplify](https://aws.amazon.com/amplify) using its monorepo functionality.
+
+And there go!! Your very own Bitcoin-API API, exchange, and game platform!!!😃🤠🧐😎👁🎉🎊🥳
