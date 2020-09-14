@@ -1371,4 +1371,4 @@ And that's it!! Your very own Bitcoin API, exchange, and game platform!!!ðŸ˜ƒðŸ¤
 
 ### Contributing
 
-Bitcoin-API-Full-Stack is open source. Pull requests, GitHub issues, or any  other types of feedback or suggestions are welcome and are greatly appreciated.
+Bitcoin-API-Full-Stack is open source. Pull requests, GitHub issues, or any other types of feedback or suggestions are welcome and are greatly appreciated.
