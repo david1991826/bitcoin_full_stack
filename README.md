@@ -61,9 +61,9 @@ It's important to note that even though all the code in this repository is publi
 
 ### About
 
-The repo `bitcoin-api-full-stack` is a repo for anybody, even an individual,
-to have their own Bitcoin management technology. Instead of needing a big team or a company to manage a Bitcoin wallet app,
-exchange, or game platform, this repo aims to give the user complete individual control over
+The repo `Bitcoin-API-Full-Stack` is a repo for anybody, even an individual,
+to have their own Bitcoin and cryptocurrency management technology. Instead of needing a big team or a company to manage a Bitcoin wallet app,
+exchange, or game platform, this repo aims to give individual users complete control over
 these financial technologies.
 
 Github Stars⭐️⭐️⭐️⭐️⭐️ are always super-greatly appreciated, thank you very much!😁✌️
