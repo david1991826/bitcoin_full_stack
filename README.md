@@ -1354,7 +1354,7 @@ And there go!! Your very own Bitcoin-API API, exchange, and game platform!!!😃
 
 #### Deploy API Demo Video
 
-Here is an example video of a live production API deployment. The website contents for [Bitcoin-API.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
+Here is an example video of a live production API deployment. The website contents for [bitcoin-api.io](https://bitcoin-api.io) are retrieved using an [AWS Lambda](https://aws.amazon.com/lambda) function:
 
 <a href="https://www.youtube.com/watch?v=8FCWWAyXB8A">
     <img
