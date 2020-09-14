@@ -36,14 +36,14 @@ const defaultOffReasonMessage = (
 
 const getCacheOnAndOffStatusRhinoPond = Object.freeze( ({
 
-    bitcoinApiIsOn,
+    bitcoinAPIIsOn,
     bitcoinAPIIsOffReason = null,
 
 }) => {
 
     const rawRhinoPond = {
 
-        bitcoinApiIsOn,
+        bitcoinAPIIsOn,
         bitcoinAPIIsOffReason,
         rhinoTime: Date.now()    
     };
@@ -75,7 +75,7 @@ module.exports = Object.freeze( async () => {
             value: onAndOffSwitch,
         })) || {};
     
-        const bitcoinApiIsOff = !onAndOffSwitchData.bitcoinApiIsOn;
+        const bitcoinApiIsOff = !onAndOffSwitchData.bitcoinAPIIsOn;
 
         if( bitcoinApiIsOff ) {
 
@@ -83,7 +83,7 @@ module.exports = Object.freeze( async () => {
 
             return getCacheOnAndOffStatusRhinoPond({
 
-                bitcoinApiIsOn: false,
+                bitcoinAPIIsOn: false,
                 bitcoinAPIIsOffReason: (
                     
                     onAndOffSwitchData.bitcoinAPIIsOffReason ||
@@ -96,7 +96,7 @@ module.exports = Object.freeze( async () => {
 
         return getCacheOnAndOffStatusRhinoPond({
             
-            bitcoinApiIsOn: true
+            bitcoinAPIIsOn: true
         });
     }
     catch( err ) {
@@ -105,7 +105,7 @@ module.exports = Object.freeze( async () => {
 
         return getCacheOnAndOffStatusRhinoPond({
 
-            bitcoinApiIsOn: false,
+            bitcoinAPIIsOn: false,
             bitcoinAPIIsOffReason: defaultOffReasonMessage,
         });      
     }

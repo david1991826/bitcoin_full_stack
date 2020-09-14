@@ -25,12 +25,12 @@ const timeUntilRhinoPondBecomesMurky = 5 * 60 * 1000;
 
 const getApiIsOnData = Object.freeze( ({
 
-    bitcoinApiIsOn = false,
+    bitcoinAPIIsOn = false,
     bitcoinAPIIsOffReason = null,
 
 }) => ({
     
-    bitcoinApiIsOn,
+    bitcoinAPIIsOn,
     bitcoinAPIIsOffReason,
 }));
 
@@ -58,7 +58,7 @@ const getIfBankIsOn = Object.freeze( async ({
 
         const {
 
-            bitcoinApiIsOn,
+            bitcoinAPIIsOn,
             bitcoinAPIIsOffReason,
             rhinoTime,
 
@@ -70,7 +70,7 @@ const getIfBankIsOn = Object.freeze( async ({
         
             ${ stringify({
 
-                bitcoinApiIsOn,
+                bitcoinAPIIsOn,
                 bitcoinAPIIsOffReason,
                 rhinoTime,
             })}
@@ -85,7 +85,7 @@ const getIfBankIsOn = Object.freeze( async ({
 
         const apiIsOnData = getApiIsOnData({
 
-            bitcoinApiIsOn,
+            bitcoinAPIIsOn,
             bitcoinAPIIsOffReason,
         });
 
@@ -97,7 +97,7 @@ const getIfBankIsOn = Object.freeze( async ({
 
         const apiIsOnData = getApiIsOnData({
 
-            bitcoinApiIsOn: false,
+            bitcoinAPIIsOn: false,
         });
 
         return apiIsOnData;

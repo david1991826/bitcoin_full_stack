@@ -1259,7 +1259,7 @@ First go to the [AWS API Gateway Console](https://console.aws.amazon.com/apigate
 
 For the "Choose an API type" section, choose "Build" for the "HTTP API" type API.
 
-You will next be prompted to input a name for your API. Input the following API name `bitcoin_api_core_api_staging` or `bitcoin_api_core_api` and press "Next".
+You will next be prompted to input a name for your API. Input the following API name `bitcoin_api_core_api_staging` or `bitcoin_api_core_api` and press "Next" (you can also choose a different name).
 
 Next, you will be prompted to "Configure routes". Press "Next".
 
@@ -1296,12 +1296,12 @@ First, add the following database entry to the `bitcoin_api_metadata` or the `bi
 ```.json
 {
   "key": "onAndOffSwitch",
-  "bitcoinApiIsOn": true,
+  "bitcoinAPIIsOn": true,
   "bitcoinAPIIsOffReason": "This Bitcoin-API instance is off because I'm out having fun with my lover!!!🌹💕💘️💖💏💖💘️💕🌹"
 }
 ```
 You can use this database object to control whether the whole API is on or off. Simply set 
-`bitcoinApiIsOn` to `false` to turn the API off.
+`bitcoinAPIIsOn` to `false` to turn the API off.
 
 Now, add the following Lambda function to [run periodically using CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#rules):
 

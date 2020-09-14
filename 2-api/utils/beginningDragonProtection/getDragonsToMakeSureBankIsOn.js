@@ -20,7 +20,7 @@ module.exports = Object.freeze( async ({
         redisClient
     });
 
-    if( !onAndOffSwitchData || !onAndOffSwitchData.bitcoinApiIsOn ) {
+    if( !onAndOffSwitchData || !onAndOffSwitchData.bitcoinAPIIsOn ) {
 
         console.log(
             '🐉🐲Beginning Dragon Protection🐉🐲 -\n' +
