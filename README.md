@@ -38,7 +38,7 @@ The Bitcoin node and the API are considered to be the "backend" of the "stack" i
 
 "Frontend" exchange and game webapp set up instructions and code are provided. The webapp connects to your Bitcoin-API backend. The webapp code is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve private data that they're authorized to access, such as their Bitcoin balance data, from the backend.
 
-Even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the implementation's unique backend access keys to access the system's private data (other than the case of a user getting their own private data within the system's private data using their tokens and passwords, which does not need the unique backend access keys).
+Even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the implementation's unique backend access keys to access the system's private data (other than the case of a user getting their own private data within the system's private data using their tokens and passwords, which does not need the backend access keys).
 
 
 ## API, Exchange, and Game Features
