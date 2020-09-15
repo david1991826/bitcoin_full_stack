@@ -32,7 +32,7 @@ Application programming interfaces (APIs) allow developers to build technology t
 
 What this Bitcoin-API API allows you to do is to easily send and receive Bitcoin using simple URLs. This lets developers program Bitcoin and digital currency functionality into whatever technology they want, such as exchanges, wallet apps, IoT devices, or anything connected to the internet.
 
-In this Bitcoin-API system, the Bitcoin itself is stored on a Bitcoin node (Bitcoin node set up instructions provided) and the API connects to the Bitcoin node. Overall, your apps and your tech connect to the API and then the API connects to the Bitcoin node which is on your computer server.
+In this Bitcoin-API system, the Bitcoin itself is stored on a Bitcoin node ([Bitcoin node set up instructions provided](#set-up-the-bitcoin-node-servers)) and the API connects to the Bitcoin node. Overall, your apps and your tech connect to the API and then the API connects to the Bitcoin node which is on your computer server.
 
 The Bitcoin node and the API are considered to be the "backend" of the "stack" in the "full stack" concept. When implemented, the backend code and the associated data is on your computer servers and is not publicly accessible by users.
 
