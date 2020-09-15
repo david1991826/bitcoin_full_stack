@@ -63,7 +63,7 @@ Even though all the code in this repository is publicly accessible, an implement
 
 This code repository, *Bitcoin-API-Full-Stack*, is a code repository for anybody
 to have their own Bitcoin and digital currency management technology. Instead of needing a team or company to manage a Bitcoin and digital currency wallet app,
-exchange, or game platform, Bitcoin-API-Full-Stack allows individuals to have control over
+exchange, or game platform, Bitcoin-API-Full-Stack allows individuals to manage
 these financial technologies.
 
 
