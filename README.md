@@ -5,14 +5,6 @@
 
 #### Full Stack Bitcoin API Code
 
-## API, Exchange, and Game Features
-
-* Can configure the lowest possible fees (blockchain fee only on withdraw)
-* Quick to set up
-* Extremely scalable
-* Highly economical operational fees 
-* Very robust security
-
 
 ## Contents
 * [About](#about)
