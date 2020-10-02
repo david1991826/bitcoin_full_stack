@@ -70,7 +70,7 @@ The backend node server is responsible for updating the database. The backend no
 
 
 > About multiple servers:
-You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a large amount of addresses.
+You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a large number of addresses.
 
 
 #### Steps to Setup a Bitcoin-API Bitcoin Node Server
