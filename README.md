@@ -4,20 +4,6 @@
 
 #### Full Stack Bitcoin API Code
 
-<br>
-
-## Demos
-
-### Video
-
-*  **[Withdraw, Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)** - withdrawing Bitcoin from Bitcoin-API instance using Postman
-
-* **[12 Withdraws, Video on Youtube](https://www.youtube.com/watch?v=eIwgwse94Sg)** - 12 concurrent Bitcoin withdraws from Bitcoin-API instance using a NodeJS script
-
-* **[Exchange and Game Technology, Video on YouTube](https://youtu.be/EMAwIrHM2Qc)** - exchange and game technology
-
-<br>
-
 ## Introduction
 
 This code repository, *Bitcoin-API-Full-Stack* (used interchangeably with *Bitcoin-API* in this readme), serves as instructions for and contains full stack JavaScript/NodeJS code for implementing Bitcoin and digital currency APIs ([see below](#about-apis-and-bitcoin-apis) for info about what APIs are), exchanges, and game platforms. The term "full stack" in the title means that all the instructions and all the components are in this repository so that anybody can build their own Bitcoin-API system from scratch and they can build every aspect of it from computer server to phone webapp. Bitcoin-API-Full-Stack lets developers have their own versions of Bitcoin and digital currency APIs, exchanges, and game platforms instead of only having other's technologies and companies to use. This system is designed so even an individual can have control over these financial technologies instead of needing a team or company.
