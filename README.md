@@ -2,26 +2,8 @@
 
 [![Bitcoin-API-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-42.png)](#bitcoin-api-full-stack)
 
+
 #### Full Stack Bitcoin API Code
-
-## Introduction
-
-This code repository, *Bitcoin-API-Full-Stack* (used interchangeably with *Bitcoin-API* in this readme), serves as instructions for and contains full stack JavaScript/NodeJS code for implementing Bitcoin and digital currency APIs ([see below](#about-apis-and-bitcoin-apis) for info about what APIs are), exchanges, and game platforms. The term "full stack" in the title means that all the instructions and all the components are in this repository so that anybody can build their own Bitcoin-API system from scratch and they can build every aspect of it from computer server to phone webapp. Bitcoin-API-Full-Stack lets developers have their own versions of Bitcoin and digital currency APIs, exchanges, and game platforms instead of only having other's technologies and companies to use. This system is designed so even an individual can have control over these financial technologies instead of needing a team or company.
-
-#### About APIs and Bitcoin APIs
-
-Application programming interfaces (APIs) allow developers to build technology that connects across the internet in a systematic way using URLs and internet requests from computers to those URLs. An example of this is sending a Tweet on Twitter from your phone, which is the computer in this case. Your phone makes an internet request, with the specified information to Tweet, to the Twitter API URL which is then responsible for creating the Tweet.
-
-What this Bitcoin-API API allows you to do is to easily send and receive Bitcoin using simple URLs. This lets developers program Bitcoin and digital currency functionality into whatever technology they want, such as exchanges, wallet apps, IoT devices, or anything connected to the internet.
-
-In this Bitcoin-API system, the Bitcoin itself is stored on a Bitcoin node ([Bitcoin node set up instructions provided](#set-up-the-bitcoin-node-servers)) and the API connects to the Bitcoin node. Overall, your apps and your tech connect to the API and then the API connects to the Bitcoin node which is on your computer server.
-
-The Bitcoin node and the API are considered to be the "backend" of the "stack" in the "full stack" concept. When implemented, the backend code and the associated data is on your computer servers and is not publicly accessible by users.
-
-"Frontend" exchange and game webapp set up instructions and code are provided. The webapp connects to your Bitcoin-API backend. The webapp code is a processed version of the frontend code which is sent to users' devices which implies the webapp code is publicly accessible. Frontend webapp users retrieve private data that they're authorized to access, such as their Bitcoin balance data, from the backend.
-
-Even though all the code in this repository is publicly accessible, an implementation of this system is still secure because you still need the implementation's unique backend access keys to access the system's private data (other than the case of a user getting their own private data within the system's private data using their tokens and passwords, which does not need the backend access keys).
-
 
 ## API, Exchange, and Game Features
 
