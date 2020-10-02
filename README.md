@@ -84,7 +84,7 @@ This section assumes you have the requirements listed above.
 
 **About**
 
-Install and start [Bitcoin Core](https://bitcoin.org/en/bitcoin-core) on the server. This can take a while because the livenet blockchain takes a decent amount of time to transfer to your server through the internet because of its size which is currently over 250GB. The testnet blockchain downloads much faster because it's currently only around 25GB.
+Install and start [Bitcoin Core](https://bitcoin.org/en/bitcoin-core) on the server. This can take a while because the mainnet blockchain takes a decent amount of time to transfer to your server through the internet because of its size which is currently over 250GB. The testnet blockchain downloads much faster because it's currently only around 25GB.
 
 
 **Steps**
@@ -116,7 +116,7 @@ bitcoind -testnet -daemon
 
 OR
 
-Start your bitcoin in production mode (livenet):
+Start your bitcoin in production mode (mainnet):
 ```
 bitcoind -daemon
 ```
@@ -140,7 +140,7 @@ The resulting number of this bitcoin-cli command can be compared with the total 
 
 * [Blockchain.com Webpage with the Testnet Total Block Height](https://www.blockchain.com/btc-testnet/blocks)
 
-* [Blockchain.com Webpage with the Livenet Total Block Height](https://www.blockchain.com/btc/blocks)
+* [Blockchain.com Webpage with the Mainnet Total Block Height](https://www.blockchain.com/btc/blocks)
 
 > Warning: if the getblockcount command stops working, it could mean your Bitcoin node crashed due to insufficient memory on your Linux computer.
 
