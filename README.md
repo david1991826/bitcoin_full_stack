@@ -8,10 +8,6 @@
 
 ## Demos
 
-### Live
-
-* **[TestnetDashboard.com](https://testnetdashboard.com)** - testnet demo of exchange and game technology
-
 ### Video
 
 *  **[Withdraw, Video on Twitter](https://twitter.com/Bitcoin_Api_io/status/1294575054479654913/video/1)** - withdrawing Bitcoin from Bitcoin-API instance using Postman
