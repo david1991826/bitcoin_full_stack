@@ -25,8 +25,7 @@
 
 ### About
 
-This code repository, *Bitcoin-API-Full-Stack*, is a code repository for anybody
-to have their own Bitcoin and digital currency management technology.
+Bitcoin and digital currency management technology.
 
 
 ### Bitcoin Node Servers
@@ -783,17 +782,17 @@ multiplier,
 business fee data object of the form:
 {
     [custom fee key 1]: {
-        amount: x
+        amount: a1
     },
     [custom fee key 2]: {
-        amount: y
+        amount: a2
     },
     ...
     [custom fee key n]: {
-        amount: z
+        amount: an
     }
 }
-where 0 <= x,y,z and x,y,z are real numbers
+where 0 <= a1,a2,...,an and a1,a2,...,an are real numbers
 
 Calculation:
 
