@@ -26,9 +26,7 @@
 ### About
 
 This code repository, *Bitcoin-API-Full-Stack*, is a code repository for anybody
-to have their own Bitcoin and digital currency management technology. Instead of needing a team or company to manage a Bitcoin and digital currency wallet app,
-exchange, or game platform, Bitcoin-API-Full-Stack allows individuals to manage
-these financial technologies.
+to have their own Bitcoin and digital currency management technology.
 
 
 ### Bitcoin Node Servers
@@ -72,7 +70,7 @@ The backend node server is responsible for updating the database. The backend no
 
 
 > About multiple servers:
-You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a few hundred thousand addresses. (This hasn't been tested yet although this is according to what [Andreas Antonopoulos](https://aantonop.com/) said. It should be taken into consideration that this claim was made in 2019 and that the tech is always improving.)
+You can set up multiple backend servers if you have lots and lots of addresses although you only need one backend server, even if you have a large amount of addresses.
 
 
 #### Steps to Setup a Bitcoin-API Bitcoin Node Server
