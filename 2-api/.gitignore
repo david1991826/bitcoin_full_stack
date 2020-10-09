@@ -1,9 +1,0 @@
-node_modules
-dist
-.cache
-.env
-old
-**/ErrorLogs/**
-z-Temporary
-configure_environment.sh
-dump.rdb
