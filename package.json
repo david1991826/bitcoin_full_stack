@@ -1,11 +1,9 @@
 {
   "name": "bitcoin-api-full-stack",
   "version": "1.0.121",
-  "description": "Open source Bitcoin API, exchange, and game platform.",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bitcoin-api/bitcoin-api-full-stack.git"
