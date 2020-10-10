@@ -2,6 +2,13 @@
 
 [![Bitcoin-API-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-55.png)](#bitcoin-api-full-stack)
 
+<a href="https://xapo.com">
+    <img
+        src="https://bitcoin-api.s3.amazonaws.com/images/documentation/xapo-1.png"
+        height="75"
+    />
+</a>
+
 # [Xapo](https://xapo.com)
 
 ### [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/)
