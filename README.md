@@ -9,7 +9,7 @@
     />
 </a>
 
-# [Xapo](https://xapo.com)
+# [Xapo - digital banking services](https://xapo.com)
 
 ### [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/)
 
