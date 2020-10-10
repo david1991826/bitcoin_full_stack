@@ -2,6 +2,8 @@
 
 [![Bitcoin-API-Full-Stack](https://bitcoin-api.s3.amazonaws.com/images/visual_art/so-splush-bee-and-lamby-full-stack-banner-55.png)](#bitcoin-api-full-stack)
 
+### [Xapo](https://xapo.com)
+
 ### [Bitcoin Core](https://bitcoin.org/en/bitcoin-core/)
 
 ### [Bitcore](https://github.com/bitpay/bitcore)
