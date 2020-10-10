@@ -10,15 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/bitcoin-api/bitcoin-api-full-stack.git"
   },
-  "keywords": [
-    "bitcoin",
-    "api",
-    "full",
-    "stack",
-    "exchange",
-    "game",
-    "platform"
-  ],
+  "keywords": [],
   "author": "Michael Stecky-Efantis",
   "license": "BSD-3-Clause",
   "bugs": {
