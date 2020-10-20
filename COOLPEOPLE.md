@@ -82,7 +82,7 @@ Cool People
 
 * Bell
 
-* Last Pass
+* LastPass
 
 * NordVPN
 
