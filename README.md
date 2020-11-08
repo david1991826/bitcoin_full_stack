@@ -19,6 +19,15 @@
 
 Bitcoin and digital currency management technology.
 
+This repository was made open source so others don't have to waste time figuring out how to create their own Bitcoin API services. Also, it was made open source so others have an alternative to using available paid products for creating Bitcoin API services. With this library, people can have their own highly scalable, secure, and performant cloud based Bitcoin APIs, exchanges, and game platforms that require very little money to operate.
+
+It was intended to help people everywhere in the world, anybody who wants to provide robust financial services.
+
+Enjoy🎅
+
+
+--
+
 
 ### Bitcoin Node Servers
 
