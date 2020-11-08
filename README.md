@@ -27,7 +27,7 @@ This GitHub repository, Bitcoin-API-Full-Stack, was made open source so others d
 
 Making Bitcoin-API-Full-Stack open source was done with the intention of helping people everywhere in the world, helping anybody who wants to provide robust financial services.🌍🌏🌎🏦
 
-This repository was built in a way such that the resulting created services can be run by an individual, a team isn't required.😃
+This repository was built in a way such that the resulting created Bitcoin API services can be run by an individual, a team isn't required.😃
 
 It's not perfect, although it's yours to discover.😇
 
