@@ -25,8 +25,9 @@ It was intended to help people everywhere in the world, anybody who wants to pro
 
 Also, it was built in a way such that it can be run by an individual, a team isn't required.😃
 
-Enjoy.🎅
+It's not perfect, although it's yours to discover.😇
 
+Enjoy.🎅
 
 --
 
