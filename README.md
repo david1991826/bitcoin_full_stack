@@ -23,7 +23,7 @@ This repository was made open source so others don't have to waste time figuring
 
 It was intended to help people everywhere in the world, anybody who wants to provide robust financial services.
 
-Enjoy🎅
+Enjoy.🎅
 
 
 --
