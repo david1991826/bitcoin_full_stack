@@ -23,7 +23,7 @@ Bitcoin and digital currency management technology.
 --
 
 
-This repository, Bitcoin-API-Full-Stack, was made open source so others don't have to waste time figuring out how to create their own Bitcoin API services. Also, it was made open source so others have an alternative to using available paid products for creating Bitcoin API services. With this repository, people can create their own highly secure, scalable, and performant cloud based Bitcoin APIs, exchanges, and game platforms that require very little money to operate.
+This GitHub repository, Bitcoin-API-Full-Stack, was made open source so others don't have to waste time figuring out how to create their own Bitcoin API services. Also, it was made open source so others have an alternative to using available paid products for creating Bitcoin API services. With this repository, people can create their own highly secure, scalable, and performant cloud based Bitcoin APIs, exchanges, and game platforms that require very little money to operate.
 
 Making Bitcoin-API-Full-stack open source was done with the intention of helping people everywhere in the world, helping anybody who wants to provide robust financial services.🌍🌏🌎🏦
 
