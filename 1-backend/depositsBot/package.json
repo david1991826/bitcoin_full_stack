@@ -1,0 +1,21 @@
+{
+  "name": "updatetransactiondataworker",
+  "version": "1.0.1",
+  "description": "Tiger Omega🐅🐅🐅🐅🐅🐅🐅",
+  "main": "runUpdateTransactionDataWorker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Stecky-Efantis",
+  "license": "ISC",
+  "dependencies": {
+    "@bitcoin-api/full-stack-api": "^30.1.1",
+    "@bitcoin-api/full-stack-backend": "^2.1.2",
+    "@bitcoin-api/full-stack-exchange": "^7.1.1",
+    "aws-sdk": "^2.395.0",
+    "bluebird": "^3.5.3",
+    "dotenv": "^6.2.0",
+    "execa": "^1.0.0",
+    "yargs": "^15.0.2"
+  }
+}
