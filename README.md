@@ -23,6 +23,8 @@ This repository was made open source so others don't have to waste time figuring
 
 It was intended to help people everywhere in the world, anybody who wants to provide robust financial services.🌍🌏🌎🏦
 
+Also, it was built in a way such that it can be run by an individual, a team isn't required.😃
+
 Enjoy.🎅
 
 
