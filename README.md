@@ -23,7 +23,7 @@ This repository, Bitcoin-API-Full-Stack, was made open source so others don't ha
 
 It was intended to help people everywhere in the world, anybody who wants to provide robust financial services.🌍🌏🌎🏦
 
-The repository was built in a way such that it can be run by an individual, a team isn't required.😃
+This repository was built in a way such that it can be run by an individual, a team isn't required.😃
 
 It's not perfect, although it's yours to discover.😇
 
