@@ -40,6 +40,7 @@ The Bitcoin-Api system's foundation uses several cloud services provided by [Ama
 
 ----
 
+
 #### 😎Mega Cool😎
 * **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
 * **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration and innovative [tech](https://www.youtube.com/watch?v=zMua0cuhFnc)
