@@ -22,7 +22,7 @@ Cool People
 
 #### 😎Mega Cool😎
 * **[Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto)** for Bitcoin
-* **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration and innovative tech
+* **[Werner Vogels and Company](https://www.allthingsdistributed.com/)** for inspiration and innovative [tech](https://www.youtube.com/watch?v=zMua0cuhFnc)
 * **[Elon Musk and Compa](https://twitter.com/elonmusk)[n](https://www.youtube.com/watch?v=ZucUZZkIQw0)[y](http://stankmemes.com/)** for inspiration and innovative tech
 * **[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)** for Linux
 * **[Bitcoin.org](https://bitcoin.org)** for Bitcoin Core
