@@ -14,7 +14,7 @@
     "drf": "^1.0.12",
     "drq": "^5.0.1",
     "get-redis-client": "^1.0.5",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "uuid": "^3.3.2"
   },
   "devDependencies": {},
